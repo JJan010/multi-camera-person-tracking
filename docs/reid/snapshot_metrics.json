@@ -1,0 +1,199 @@
+{
+  "protocol": {
+    "name": "scene_snapshot_cross_camera_retrieval_v1",
+    "frame_index": 150,
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "source_resolution_wh": [
+      1920,
+      1080
+    ],
+    "gt_assignment": "Clip boxes; IoU >= 0.5; max valid cardinality then max total IoU",
+    "gt_box_policy": "Exclude zero-area GT after clipping; keep all crop observations",
+    "similarity": "Dot product of L2-normalized embeddings; descending order",
+    "gallery": "All observations in the target camera, including unmatched observations",
+    "query_eligibility": "Query has assigned GT and that GT has an assigned gallery observation",
+    "ties": "Original embedding row order",
+    "similarity_threshold": null,
+    "aggregation": "Pool eligible directed queries; observations are reused across directions",
+    "scope": "One integration frame; diagnostic labels from IoU; not an official benchmark"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "script_sha256": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd",
+  "gt_matching": [
+    {
+      "camera": 4,
+      "crops": 16,
+      "gt_visible": 16,
+      "matched_crops": 16,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "camera": 5,
+      "crops": 22,
+      "gt_visible": 22,
+      "matched_crops": 22,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "camera": 8,
+      "crops": 19,
+      "gt_visible": 19,
+      "matched_crops": 19,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    }
+  ],
+  "directions": [
+    {
+      "query_camera": 4,
+      "gallery_camera": 5,
+      "queries": 16,
+      "evaluated_queries": 15,
+      "unmatched_queries": 0,
+      "no_positive_in_gallery": 1,
+      "rank1_hits": 14,
+      "rank1": 0.9333333333333333,
+      "rank3_hits": 14,
+      "rank3": 0.9333333333333333
+    },
+    {
+      "query_camera": 4,
+      "gallery_camera": 8,
+      "queries": 16,
+      "evaluated_queries": 16,
+      "unmatched_queries": 0,
+      "no_positive_in_gallery": 0,
+      "rank1_hits": 14,
+      "rank1": 0.875,
+      "rank3_hits": 16,
+      "rank3": 1.0
+    },
+    {
+      "query_camera": 5,
+      "gallery_camera": 4,
+      "queries": 22,
+      "evaluated_queries": 15,
+      "unmatched_queries": 0,
+      "no_positive_in_gallery": 7,
+      "rank1_hits": 14,
+      "rank1": 0.9333333333333333,
+      "rank3_hits": 14,
+      "rank3": 0.9333333333333333
+    },
+    {
+      "query_camera": 5,
+      "gallery_camera": 8,
+      "queries": 22,
+      "evaluated_queries": 17,
+      "unmatched_queries": 0,
+      "no_positive_in_gallery": 5,
+      "rank1_hits": 16,
+      "rank1": 0.9411764705882353,
+      "rank3_hits": 16,
+      "rank3": 0.9411764705882353
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 4,
+      "queries": 19,
+      "evaluated_queries": 16,
+      "unmatched_queries": 0,
+      "no_positive_in_gallery": 3,
+      "rank1_hits": 14,
+      "rank1": 0.875,
+      "rank3_hits": 16,
+      "rank3": 1.0
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 5,
+      "queries": 19,
+      "evaluated_queries": 17,
+      "unmatched_queries": 0,
+      "no_positive_in_gallery": 2,
+      "rank1_hits": 16,
+      "rank1": 0.9411764705882353,
+      "rank3_hits": 16,
+      "rank3": 0.9411764705882353
+    }
+  ],
+  "pooled": {
+    "queries": 114,
+    "evaluated_queries": 96,
+    "unmatched_queries": 0,
+    "no_positive_in_gallery": 18,
+    "rank1_hits": 88,
+    "rank1": 0.9166666666666666,
+    "rank3_hits": 92,
+    "rank3": 0.9583333333333334
+  },
+  "pair_similarities": {
+    "same_gt": {
+      "count": 48,
+      "min": 0.3581625819206238,
+      "p05": 0.5628248661756515,
+      "median": 0.7995809316635132,
+      "p95": 0.9158483684062958,
+      "max": 0.9419722557067871
+    },
+    "different_gt": {
+      "count": 1026,
+      "min": 0.2161574363708496,
+      "p05": 0.2798202708363533,
+      "median": 0.40604396164417267,
+      "p95": 0.5966253727674484,
+      "max": 0.7758693695068359
+    },
+    "counting": "Each unordered cross-camera pair with assigned GT, once"
+  },
+  "inputs": {
+    "embedding_manifest": {
+      "path": "artifacts/reid_embeddings/20261006T194219632494Z/manifest.json",
+      "sha256": "da15f8ca3c20bb3712aa1f6bf3c06f985facdbfabfc472106199b0b3209e1f18"
+    },
+    "embeddings": {
+      "path": "artifacts/reid_embeddings/20261006T194219632494Z/embeddings.npy",
+      "sha256": "b1b873087e08b67901cb80e4f0c921df3b040ef23e4b29c2bdb173d8a0546766"
+    },
+    "gt": {
+      "path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "source_report": {
+    "path": "artifacts/reid_evaluation/20261006T194834726351Z/report.json",
+    "sha256": "e098287a5dbef64214fa8c55d51938e258780916018a8af5d6db68f85461dfe3"
+  },
+  "rankings": {
+    "path": "snapshot_rankings.csv",
+    "sha256": "809764de8edbfc5b4b997fbb6ea136bff978efd1174be791060d8e9f3bc1c9c8"
+  },
+  "failure_count": 8,
+  "interpretation": {
+    "partial_crop_comparisons_among_failed_queries": 6,
+    "partial_observations": [
+      {
+        "camera": 4,
+        "local_id": 17
+      },
+      {
+        "camera": 5,
+        "local_id": 24
+      }
+    ],
+    "evidence": "Crop appearance and boundary coordinates suggest truncation; causal effect has not been isolated.",
+    "scope": "One synthetic integration frame; repeated directed queries are not independent people."
+  }
+}
