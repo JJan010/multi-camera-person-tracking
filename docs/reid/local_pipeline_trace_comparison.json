@@ -1,0 +1,250 @@
+{
+  "source_old": {
+    "project_path": "artifacts/tracking_preview/tracks.jsonl",
+    "sha256": "aad5ef0c8dc44e042f50dba9936c3f0a805950a8851d8f7ca9d08dc2eb03ed70",
+    "size_bytes": 3543175
+  },
+  "source_new": {
+    "project_path": "artifacts/local_reid/20261006T204237314810Z/tracks.jsonl",
+    "sha256": "2a9b529c1a0e6cb6202d6467d64214a917d9d2403a7be201fcfdc77405faa736",
+    "size_bytes": 8194756
+  },
+  "new_trace_matches_pipeline_report_hash": true,
+  "frame_range": [
+    0,
+    299
+  ],
+  "frames_per_trace": 300,
+  "run_id": "20261006T204237314810Z",
+  "new_embedding_rows": 15914,
+  "contiguous_unique_embedding_rows": true,
+  "per_camera": {
+    "4": {
+      "old_distinct_local_ids": 22,
+      "new_distinct_local_ids": 22,
+      "first_raw_detection_difference_frame": 0,
+      "detector_count_difference_frames": [
+        22,
+        24,
+        53,
+        73,
+        106,
+        115,
+        139,
+        151,
+        173,
+        212,
+        214,
+        222,
+        226,
+        238,
+        242,
+        255,
+        275,
+        276,
+        284,
+        287,
+        288,
+        289,
+        295,
+        297
+      ],
+      "visible_track_count_difference_frames": [
+        38
+      ],
+      "first_local_id_set_difference_frame": 38
+    },
+    "5": {
+      "old_distinct_local_ids": 27,
+      "new_distinct_local_ids": 26,
+      "first_raw_detection_difference_frame": 0,
+      "detector_count_difference_frames": [
+        19,
+        20,
+        25,
+        33,
+        37,
+        40,
+        46,
+        47,
+        49,
+        50,
+        54,
+        55,
+        57,
+        85,
+        89,
+        90,
+        99,
+        110,
+        112,
+        113,
+        116,
+        118,
+        120,
+        143,
+        162,
+        166,
+        169,
+        180,
+        188,
+        190,
+        197,
+        204,
+        208,
+        212,
+        213,
+        214,
+        217,
+        222,
+        228,
+        237,
+        242,
+        247,
+        248,
+        249,
+        255,
+        257,
+        262,
+        271,
+        276,
+        278,
+        290,
+        294,
+        297
+      ],
+      "visible_track_count_difference_frames": [
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        248,
+        249,
+        250
+      ],
+      "first_local_id_set_difference_frame": 225
+    },
+    "8": {
+      "old_distinct_local_ids": 25,
+      "new_distinct_local_ids": 25,
+      "first_raw_detection_difference_frame": 0,
+      "detector_count_difference_frames": [
+        11,
+        20,
+        28,
+        35,
+        36,
+        52,
+        57,
+        58,
+        64,
+        67,
+        70,
+        78,
+        82,
+        86,
+        92,
+        100,
+        114,
+        116,
+        124,
+        125,
+        130,
+        131,
+        145,
+        148,
+        149,
+        157,
+        158,
+        161,
+        180,
+        185,
+        196,
+        199,
+        202,
+        204,
+        206,
+        208,
+        212,
+        213,
+        220,
+        223,
+        224,
+        225,
+        234,
+        259,
+        260,
+        261,
+        269,
+        271,
+        272,
+        281,
+        285,
+        293,
+        296,
+        297
+      ],
+      "visible_track_count_difference_frames": [],
+      "first_local_id_set_difference_frame": 279
+    }
+  },
+  "tracking_evaluation": {
+    "new_report_project_path": "artifacts/tracking_evaluation/20261006T204559524610Z/report.json",
+    "metric_value_source": "Rounded console output supplied by user; full evaluator report to be copied separately into docs/reid/local_pipeline_evaluation.json.",
+    "old": {
+      "camera_0004": {
+        "idf1_percent": 95.5,
+        "idsw": 1,
+        "fp": 66,
+        "fn": 277
+      },
+      "camera_0005": {
+        "idf1_percent": 91.7,
+        "idsw": 7,
+        "fp": 44,
+        "fn": 264
+      },
+      "camera_0008": {
+        "idf1_percent": 90.5,
+        "idsw": 8,
+        "fp": 61,
+        "fn": 127
+      },
+      "ALL_CAMERAS_LOCAL": {
+        "idf1_percent": 92.3,
+        "idsw": 16,
+        "fp": 171,
+        "fn": 668
+      }
+    },
+    "new": {
+      "camera_0004": {
+        "idf1_percent": 95.5,
+        "idsw": 1,
+        "fp": 66,
+        "fn": 278
+      },
+      "camera_0005": {
+        "idf1_percent": 93.1,
+        "idsw": 6,
+        "fp": 40,
+        "fn": 251
+      },
+      "camera_0008": {
+        "idf1_percent": 88.3,
+        "idsw": 10,
+        "fp": 61,
+        "fn": 127
+      },
+      "ALL_CAMERAS_LOCAL": {
+        "idf1_percent": 92.1,
+        "idsw": 17,
+        "fp": 167,
+        "fn": 656
+      }
+    }
+  },
+  "interpretation": "Raw detections differ before tracking. OSNet features are not used by the local tracker. This comparison does not establish the cause of detector differences."
+}

@@ -1,0 +1,106 @@
+{
+  "protocol": {
+    "name": "scene_001_local_2d_iou_v1",
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "first_frame": 2,
+    "last_frame": 299,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "min_iou": 0.5,
+    "box_policy": "Clip GT and predictions; exclude zero-area GT; keep all predictions",
+    "max_switch_time": "infinity",
+    "solver": "scipy",
+    "aggregation": "Pool local identity counts; not cross-camera identity evaluation",
+    "scope": "Integration subset, not official AI City evaluation"
+  },
+  "versions": {
+    "motmetrics": "1.4.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3"
+  },
+  "inputs": {
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/tracks.jsonl",
+      "sha256": "2a9b529c1a0e6cb6202d6467d64214a917d9d2403a7be201fcfdc77405faa736"
+    },
+    "gt": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "script_sha256": "ba125872f571a7a0ff044216870d812d1bc9df5d0a7933d9a72d22245efd5f7e",
+  "excluded_gt": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "fully_outside_predictions": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "metrics": {
+    "camera_0004": {
+      "num_frames": 298,
+      "num_objects": 4649,
+      "num_predictions": 4437,
+      "idtp": 4337.0,
+      "idfp": 100.0,
+      "idfn": 312.0,
+      "idf1": 0.954655514,
+      "precision": 0.9851250845,
+      "recall": 0.940202194,
+      "num_switches": 1,
+      "num_false_positives": 66,
+      "num_misses": 278
+    },
+    "camera_0005": {
+      "num_frames": 298,
+      "num_objects": 6013,
+      "num_predictions": 5802,
+      "idtp": 5498.0,
+      "idfp": 304.0,
+      "idfn": 515.0,
+      "idf1": 0.9306813373,
+      "precision": 0.9931058256,
+      "recall": 0.9582571096,
+      "num_switches": 6,
+      "num_false_positives": 40,
+      "num_misses": 251
+    },
+    "camera_0008": {
+      "num_frames": 298,
+      "num_objects": 5655,
+      "num_predictions": 5589,
+      "idtp": 4962.0,
+      "idfp": 627.0,
+      "idfn": 693.0,
+      "idf1": 0.8826040555,
+      "precision": 0.9890857041,
+      "recall": 0.9775419982,
+      "num_switches": 10,
+      "num_false_positives": 61,
+      "num_misses": 127
+    },
+    "ALL_CAMERAS_LOCAL": {
+      "num_frames": 894,
+      "num_objects": 16317,
+      "num_predictions": 15828,
+      "idtp": 14797.0,
+      "idfp": 1031.0,
+      "idfn": 1520.0,
+      "idf1": 0.9206408462,
+      "precision": 0.9894490776,
+      "recall": 0.9597965312,
+      "num_switches": 17,
+      "num_false_positives": 167,
+      "num_misses": 656
+    }
+  }
+}
