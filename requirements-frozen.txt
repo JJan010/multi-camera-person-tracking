@@ -1,3 +1,4 @@
+av==16.0.1
 cuda-bindings==12.9.7
 cuda-pathfinder==1.6.0
 cuda-toolkit==12.8.1

@@ -1,0 +1,295 @@
+{
+  "created_utc": "2026-10-06T16:47:41.859303+00:00",
+  "git_commit": "8fb6167b9fc5243572fc15738c3134951c097230",
+  "git_status": "?? requirements-video.txt\n?? scripts/audit_video_timestamps.py\n?? scripts/benchmark_replay.py\n?? src/mtmc/video/",
+  "python": "3.10.12",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "pyav": "16.0.1",
+  "numpy": "2.2.6",
+  "ffmpeg_libraries": {
+    "libavutil": [
+      60,
+      8,
+      100
+    ],
+    "libavcodec": [
+      62,
+      11,
+      100
+    ],
+    "libavformat": [
+      62,
+      3,
+      100
+    ],
+    "libavdevice": [
+      62,
+      1,
+      100
+    ],
+    "libavfilter": [
+      11,
+      4,
+      100
+    ],
+    "libswscale": [
+      9,
+      1,
+      100
+    ],
+    "libswresample": [
+      6,
+      1,
+      100
+    ]
+  },
+  "source_manifest": {
+    "dataset": "nvidia/PhysicalAI-SmartSpaces",
+    "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+    "scene": "MTMC_Tracking_2024/train/scene_001",
+    "camera_ids": [
+      4,
+      5,
+      8
+    ],
+    "files": [
+      {
+        "camera": 4,
+        "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4",
+        "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4",
+        "size_bytes": 258128173,
+        "sha256": "4b5d471d64ac74f701abe97b040bdc41bd78a514885457f26dca4d397c3b0572",
+        "source_sha256_verified": true
+      },
+      {
+        "camera": 5,
+        "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4",
+        "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4",
+        "size_bytes": 252849812,
+        "sha256": "363fbe6afe393a7c1deb46611243985ac4ef89d12dc4862d4b8bf80975d58a24",
+        "source_sha256_verified": true
+      },
+      {
+        "camera": 8,
+        "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4",
+        "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4",
+        "size_bytes": 292658430,
+        "sha256": "84b7acb45197d239358403ee2d700787bb6b7aca61904189a5746dd0a7377e52",
+        "source_sha256_verified": true
+      }
+    ]
+  },
+  "configuration": {
+    "backend": "pyav_cpu",
+    "scheduling": "sequential_cameras",
+    "decoder_threads_per_camera": 1,
+    "decoder_thread_type": "SLICE",
+    "output": "RGB uint8 arrays in CPU RAM",
+    "warmup_rounds": 60,
+    "measured_rounds": 900,
+    "repeats": 3,
+    "playback_rate_limit": false,
+    "filesystem_cache": "uncontrolled; no cold-cache claim"
+  },
+  "runs": [
+    {
+      "repeat": 1,
+      "elapsed_s": 9.548577005,
+      "rounds_per_second": 94.25488211790359,
+      "images_per_second": 282.76464635371076,
+      "round_latency": {
+        "mean_ms": 10.408907052222222,
+        "median_ms": 9.4459165,
+        "p95_ms": 14.489662350000001
+      },
+      "startup": [
+        {
+          "camera": 4,
+          "open_ms": 13.911638,
+          "first_read_rgb_ms": 18.59997
+        },
+        {
+          "camera": 5,
+          "open_ms": 12.657371,
+          "first_read_rgb_ms": 20.699757
+        },
+        {
+          "camera": 8,
+          "open_ms": 14.043802,
+          "first_read_rgb_ms": 21.158105
+        }
+      ],
+      "per_camera": {
+        "4": {
+          "read_decode_ms": {
+            "mean_ms": 2.094993142222222,
+            "median_ms": 1.798975,
+            "p95_ms": 3.40836865
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.3568958555555557,
+            "median_ms": 1.3519610000000002,
+            "p95_ms": 1.4859308999999998
+          }
+        },
+        "5": {
+          "read_decode_ms": {
+            "mean_ms": 1.9741255633333332,
+            "median_ms": 1.61426,
+            "p95_ms": 3.3057113499999997
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.41878287,
+            "median_ms": 1.406293,
+            "p95_ms": 1.53859565
+          }
+        },
+        "8": {
+          "read_decode_ms": {
+            "mean_ms": 2.0842156166666665,
+            "median_ms": 1.652292,
+            "p95_ms": 3.58750115
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.4325208755555554,
+            "median_ms": 1.418958,
+            "p95_ms": 1.5482697
+          }
+        }
+      }
+    },
+    {
+      "repeat": 2,
+      "elapsed_s": 9.772668647,
+      "rounds_per_second": 92.09357571703617,
+      "images_per_second": 276.2807271511085,
+      "round_latency": {
+        "mean_ms": 10.650261024444443,
+        "median_ms": 9.679295499999998,
+        "p95_ms": 14.72842395
+      },
+      "startup": [
+        {
+          "camera": 4,
+          "open_ms": 7.66236,
+          "first_read_rgb_ms": 10.91273
+        },
+        {
+          "camera": 5,
+          "open_ms": 9.425801,
+          "first_read_rgb_ms": 13.35512
+        },
+        {
+          "camera": 8,
+          "open_ms": 10.856794,
+          "first_read_rgb_ms": 15.690855
+        }
+      ],
+      "per_camera": {
+        "4": {
+          "read_decode_ms": {
+            "mean_ms": 2.1181867577777775,
+            "median_ms": 1.823,
+            "p95_ms": 3.45609675
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.3753947177777779,
+            "median_ms": 1.3549105,
+            "p95_ms": 1.5225312
+          }
+        },
+        "5": {
+          "read_decode_ms": {
+            "mean_ms": 2.0307854566666665,
+            "median_ms": 1.7357909999999999,
+            "p95_ms": 3.36072575
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.4528348966666667,
+            "median_ms": 1.427141,
+            "p95_ms": 1.6015517499999998
+          }
+        },
+        "8": {
+          "read_decode_ms": {
+            "mean_ms": 2.1482434577777774,
+            "median_ms": 1.7533910000000001,
+            "p95_ms": 3.6971266
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.473894212222222,
+            "median_ms": 1.4440525,
+            "p95_ms": 1.60987065
+          }
+        }
+      }
+    },
+    {
+      "repeat": 3,
+      "elapsed_s": 9.343824052,
+      "rounds_per_second": 96.3203068670112,
+      "images_per_second": 288.9609206010336,
+      "round_latency": {
+        "mean_ms": 10.18228866777778,
+        "median_ms": 9.2885525,
+        "p95_ms": 14.054662249999998
+      },
+      "startup": [
+        {
+          "camera": 4,
+          "open_ms": 7.802664,
+          "first_read_rgb_ms": 11.313266
+        },
+        {
+          "camera": 5,
+          "open_ms": 8.977167,
+          "first_read_rgb_ms": 13.589489
+        },
+        {
+          "camera": 8,
+          "open_ms": 10.973152,
+          "first_read_rgb_ms": 15.742486
+        }
+      ],
+      "per_camera": {
+        "4": {
+          "read_decode_ms": {
+            "mean_ms": 2.0424021855555554,
+            "median_ms": 1.7472064999999999,
+            "p95_ms": 3.34491265
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.328474191111111,
+            "median_ms": 1.332471,
+            "p95_ms": 1.4070798
+          }
+        },
+        "5": {
+          "read_decode_ms": {
+            "mean_ms": 1.9251790088888887,
+            "median_ms": 1.5645665,
+            "p95_ms": 3.2047152499999996
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.384493677777778,
+            "median_ms": 1.3768850000000001,
+            "p95_ms": 1.4491491499999998
+          }
+        },
+        "8": {
+          "read_decode_ms": {
+            "mean_ms": 2.0481350055555554,
+            "median_ms": 1.6427930000000002,
+            "p95_ms": 3.4927954
+          },
+          "rgb_conversion_ms": {
+            "mean_ms": 1.40791933,
+            "median_ms": 1.398644,
+            "p95_ms": 1.471336
+          }
+        }
+      }
+    }
+  ],
+  "original_report": "artifacts/benchmarks/replay_cpu_20261006T164815216778Z.json"
+}

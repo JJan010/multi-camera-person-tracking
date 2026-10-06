@@ -1,0 +1,2 @@
+# CPU video reader baseline
+av==16.0.1
