@@ -1,0 +1,1 @@
+"""Cross-camera association primitives."""
