@@ -1,0 +1,106 @@
+{
+  "protocol": {
+    "name": "scene_001_local_2d_iou_v1",
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "first_frame": 2,
+    "last_frame": 299,
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "min_iou": 0.5,
+    "box_policy": "Clip GT and predictions; exclude zero-area GT; keep all predictions",
+    "max_switch_time": "infinity",
+    "solver": "scipy",
+    "aggregation": "Pool local identity counts; not cross-camera identity evaluation",
+    "scope": "Integration subset, not official AI City evaluation"
+  },
+  "versions": {
+    "motmetrics": "1.4.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pandas": "2.3.3"
+  },
+  "inputs": {
+    "tracks": {
+      "path": "artifacts/tracking_preview/tracks.jsonl",
+      "sha256": "aad5ef0c8dc44e042f50dba9936c3f0a805950a8851d8f7ca9d08dc2eb03ed70"
+    },
+    "gt": {
+      "path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "script_sha256": "ba125872f571a7a0ff044216870d812d1bc9df5d0a7933d9a72d22245efd5f7e",
+  "excluded_gt": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "fully_outside_predictions": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "metrics": {
+    "camera_0004": {
+      "num_frames": 298,
+      "num_objects": 4649,
+      "num_predictions": 4438,
+      "idtp": 4338.0,
+      "idfp": 100.0,
+      "idfn": 311.0,
+      "idf1": 0.9547705513,
+      "precision": 0.9851284362,
+      "recall": 0.940417294,
+      "num_switches": 1,
+      "num_false_positives": 66,
+      "num_misses": 277
+    },
+    "camera_0005": {
+      "num_frames": 298,
+      "num_objects": 6013,
+      "num_predictions": 5793,
+      "idtp": 5415.0,
+      "idfp": 378.0,
+      "idfn": 598.0,
+      "idf1": 0.9173301711,
+      "precision": 0.9924046263,
+      "recall": 0.9560951272,
+      "num_switches": 7,
+      "num_false_positives": 44,
+      "num_misses": 264
+    },
+    "camera_0008": {
+      "num_frames": 298,
+      "num_objects": 5655,
+      "num_predictions": 5589,
+      "idtp": 5086.0,
+      "idfp": 503.0,
+      "idfn": 569.0,
+      "idf1": 0.9046602633,
+      "precision": 0.9890857041,
+      "recall": 0.9775419982,
+      "num_switches": 8,
+      "num_false_positives": 61,
+      "num_misses": 127
+    },
+    "ALL_CAMERAS_LOCAL": {
+      "num_frames": 894,
+      "num_objects": 16317,
+      "num_predictions": 15820,
+      "idtp": 14839.0,
+      "idfp": 981.0,
+      "idfn": 1478.0,
+      "idf1": 0.9234838348,
+      "precision": 0.9891908976,
+      "recall": 0.9590611019,
+      "num_switches": 16,
+      "num_false_positives": 171,
+      "num_misses": 668
+    }
+  }
+}
