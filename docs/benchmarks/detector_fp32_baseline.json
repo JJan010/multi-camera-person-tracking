@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-10-06T17:05:21.557724+00:00",
+  "git_commit": "acb306f2ce05d61ab39104793a46b2e11f684173",
+  "git_status": "?? scripts/benchmark_detector.py",
+  "benchmark_script_sha256": "9f5fca3872ab96bca0c8eceb0fc46dbda8f0a368e1b5e318a96ff0f60cc0bb47",
+  "python": "3.10.12",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "gpu": "NVIDIA GeForce RTX 5080",
+  "torch": "2.11.0+cu128",
+  "cuda_build": "12.8",
+  "rfdetr": "1.11.2",
+  "supervision": "0.30.7",
+  "transformers": "5.19.0",
+  "pyav": "16.0.1",
+  "ffmpeg_libraries": {
+    "libavutil": [
+      60,
+      8,
+      100
+    ],
+    "libavcodec": [
+      62,
+      11,
+      100
+    ],
+    "libavformat": [
+      62,
+      3,
+      100
+    ],
+    "libavdevice": [
+      62,
+      1,
+      100
+    ],
+    "libavfilter": [
+      11,
+      4,
+      100
+    ],
+    "libswscale": [
+      9,
+      1,
+      100
+    ],
+    "libswresample": [
+      6,
+      1,
+      100
+    ]
+  },
+  "torch_cpu_threads": 24,
+  "weights_sha256": "d81979a9213a2109345158ce9232668df4c1ae52e9b8db3f2ec0a8cbad959b33",
+  "source_manifest": {
+    "dataset": "nvidia/PhysicalAI-SmartSpaces",
+    "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+    "scene": "MTMC_Tracking_2024/train/scene_001",
+    "camera_ids": [
+      4,
+      5,
+      8
+    ],
+    "files": [
+      {
+        "camera": 4,
+        "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4",
+        "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4",
+        "size_bytes": 258128173,
+        "sha256": "4b5d471d64ac74f701abe97b040bdc41bd78a514885457f26dca4d397c3b0572",
+        "source_sha256_verified": true
+      },
+      {
+        "camera": 5,
+        "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4",
+        "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4",
+        "size_bytes": 252849812,
+        "sha256": "363fbe6afe393a7c1deb46611243985ac4ef89d12dc4862d4b8bf80975d58a24",
+        "source_sha256_verified": true
+      },
+      {
+        "camera": 8,
+        "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4",
+        "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4",
+        "size_bytes": 292658430,
+        "sha256": "84b7acb45197d239358403ee2d700787bb6b7aca61904189a5746dd0a7377e52",
+        "source_sha256_verified": true
+      }
+    ]
+  },
+  "configuration": {
+    "model": "RFDETRSmall",
+    "precision": "FP32",
+    "tf32": false,
+    "optimized": false,
+    "resolution": 512,
+    "confidence_threshold": 0.5,
+    "batch_size": 3,
+    "decoder_threads_per_camera": 1,
+    "scheduling": "sequential replay, then batched prediction",
+    "warmup_rounds": 30,
+    "measured_rounds": 300,
+    "measured_frame_range": [
+      30,
+      329
+    ],
+    "repeats": 3,
+    "model_reused_across_repeats": true,
+    "filesystem_cache": "uncontrolled",
+    "visualization": false,
+    "playback_rate_limit": false
+  },
+  "runs": [
+    {
+      "repeat": 1,
+      "elapsed_s": 9.170461998,
+      "rounds_per_second": 32.71372806140273,
+      "images_per_second": 98.1411841842082,
+      "timings": {
+        "replay_ms": {
+          "mean_ms": 7.571054926666665,
+          "median_ms": 6.723449499999999,
+          "p95_ms": 11.275306750000002
+        },
+        "predict_ms": {
+          "mean_ms": 22.90420596,
+          "median_ms": 20.919127,
+          "p95_ms": 27.486131150000002
+        },
+        "round_ms": {
+          "mean_ms": 30.552137063333333,
+          "median_ms": 29.7540735,
+          "p95_ms": 37.077247050000004
+        }
+      },
+      "peak_torch_allocated_mib": 325.314453125,
+      "peak_torch_reserved_mib": 420.0
+    },
+    {
+      "repeat": 2,
+      "elapsed_s": 9.265112268,
+      "rounds_per_second": 32.379532090090805,
+      "images_per_second": 97.13859627027242,
+      "timings": {
+        "replay_ms": {
+          "mean_ms": 7.627836413333334,
+          "median_ms": 6.8093215,
+          "p95_ms": 11.220536899999999
+        },
+        "predict_ms": {
+          "mean_ms": 23.163173843333333,
+          "median_ms": 20.9284375,
+          "p95_ms": 28.4826866
+        },
+        "round_ms": {
+          "mean_ms": 30.867858660000003,
+          "median_ms": 29.7924195,
+          "p95_ms": 38.04570715
+        }
+      },
+      "peak_torch_allocated_mib": 325.314453125,
+      "peak_torch_reserved_mib": 420.0
+    },
+    {
+      "repeat": 3,
+      "elapsed_s": 9.045281023,
+      "rounds_per_second": 33.166465390867494,
+      "images_per_second": 99.49939617260249,
+      "timings": {
+        "replay_ms": {
+          "mean_ms": 7.521588573333333,
+          "median_ms": 6.803203,
+          "p95_ms": 11.23194865
+        },
+        "predict_ms": {
+          "mean_ms": 22.53802856333333,
+          "median_ms": 20.817681999999998,
+          "p95_ms": 27.4876709
+        },
+        "round_ms": {
+          "mean_ms": 30.13546442,
+          "median_ms": 29.674626500000002,
+          "p95_ms": 36.14057015
+        }
+      },
+      "peak_torch_allocated_mib": 325.314453125,
+      "peak_torch_reserved_mib": 420.0
+    }
+  ],
+  "original_report": "artifacts/benchmarks/detector_fp32_20261006T170558433409Z.json"
+}
