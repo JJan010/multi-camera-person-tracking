@@ -1,0 +1,5 @@
+{
+  "max_observations": 8,
+  "max_age_seconds": "1",
+  "note": "Initial diagnostic policy, not tuned or claimed optimal. Include the current observation. Compare latest against the L2-normalized arithmetic mean; preserve all input crop selections."
+}

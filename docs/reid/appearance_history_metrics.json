@@ -1,0 +1,582 @@
+{
+  "completed": true,
+  "source_run_id": "20261006T204237314810Z",
+  "protocol": {
+    "name": "scene_001_latest_vs_mean_retrieval_v1",
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "first_frame": 2,
+    "last_frame": 299,
+    "fps": 30,
+    "source_resolution_wh": [
+      1920,
+      1080
+    ],
+    "variants": [
+      "latest query / latest gallery",
+      "mean query / mean gallery"
+    ],
+    "gt_assignment": "Once per camera/frame: clipped boxes; IoU >= 0.5; max valid count then max IoU sum",
+    "gallery": "All encoded current observations in the target camera, including unmatched distractors",
+    "query_eligibility": "Assigned query GT has an assigned observation in the current target camera",
+    "ranking": "Normalized dot product accumulated in float64; descending; stable source row ties",
+    "similarity_threshold": null,
+    "same_queries_for_both_variants": true,
+    "aggregation": "Pool eligible directed queries; no frame/camera averaging of percentages",
+    "frames_0_1": "Excluded from retrieval; retained as unknown GT members of early histories",
+    "history_policy": {
+      "max_observations": 8,
+      "max_age_seconds": "1",
+      "note": "Initial diagnostic policy, not tuned or claimed optimal. Include the current observation. Compare latest against the L2-normalized arithmetic mean; preserve all input crop selections."
+    },
+    "gt_usage": "Evaluation labels only; no history resets, crop filters or descriptor changes"
+  },
+  "inputs": {
+    "history_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_history/20261006T211035258446Z/report.json",
+      "sha256": "6a1eb789a915cd2eda2d9027bc2812663da2fcb2adf1e847a43654b50e04a5dc"
+    },
+    "source_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/report.json",
+      "sha256": "c8e9b56a684f3d0b108343264d82657e9bfe4fdb9aeda8bd74ae409969155387"
+    },
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/tracks.jsonl",
+      "sha256": "2a9b529c1a0e6cb6202d6467d64214a917d9d2403a7be201fcfdc77405faa736"
+    },
+    "latest_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/embeddings.npy",
+      "sha256": "7df353bb8b226fe9b20b7d59d9b8b6e23c37eca793ef6c3a7fb3fbb7f4d30334"
+    },
+    "mean_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_history/20261006T211035258446Z/mean_embeddings.npy",
+      "sha256": "d4826f4d5a023e246d5fc249ecc1668c54018298fb298be8df306d140be59568"
+    },
+    "history_rows": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_history/20261006T211035258446Z/observations.jsonl",
+      "sha256": "59fef3cd8a72cfd365cf68557f4e735662b75cd719a68436f57397057f880f0b"
+    },
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_001_source.json",
+      "sha256": "64bf042c6078e39d5d632d1acda1a13200eeefcebbe28e596010457272a74225"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "code_sha256": {
+    "evaluate_appearance_history.py": "a968b90be20312fe8fc7bf2c85f4cba55eac6f7ee6944e0de59da2ddfa0b9625",
+    "evaluate_reid_snapshot.py": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd",
+    "preview_appearance_history.py": "46039ea10712fdae7512e38f4a7b593167cdeb4c4180aa7935ac627e338f8a81"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "pooled": {
+    "queries": 31656,
+    "eligible_queries": 24062,
+    "unmatched_queries": 324,
+    "no_positive_in_gallery": 7270,
+    "latest": {
+      "rank1_hits": 22236,
+      "rank3_hits": 23443,
+      "rank1": 0.9241127088355082,
+      "rank3": 0.9742747901255091
+    },
+    "mean": {
+      "rank1_hits": 22427,
+      "rank3_hits": 23555,
+      "rank1": 0.9320505361150362,
+      "rank3": 0.9789294322998919
+    },
+    "rank1_delta_percentage_points": 0.7937827279527886,
+    "rank1_transitions": {
+      "both_correct": 21893,
+      "improved": 534,
+      "worsened": 343,
+      "both_wrong": 1292
+    }
+  },
+  "directions": [
+    {
+      "query_camera": 4,
+      "gallery_camera": 5,
+      "queries": 4437,
+      "eligible_queries": 3724,
+      "unmatched_queries": 66,
+      "no_positive_in_gallery": 647,
+      "latest": {
+        "rank1_hits": 3653,
+        "rank3_hits": 3690,
+        "rank1": 0.9809344790547798,
+        "rank3": 0.9908700322234156
+      },
+      "mean": {
+        "rank1_hits": 3663,
+        "rank3_hits": 3691,
+        "rank1": 0.9836197636949516,
+        "rank3": 0.9911385606874329
+      },
+      "rank1_delta_percentage_points": 0.26852846401718583,
+      "rank1_transitions": {
+        "both_correct": 3637,
+        "improved": 26,
+        "worsened": 16,
+        "both_wrong": 45
+      }
+    },
+    {
+      "query_camera": 4,
+      "gallery_camera": 8,
+      "queries": 4437,
+      "eligible_queries": 4088,
+      "unmatched_queries": 66,
+      "no_positive_in_gallery": 283,
+      "latest": {
+        "rank1_hits": 3466,
+        "rank3_hits": 3946,
+        "rank1": 0.8478473581213307,
+        "rank3": 0.9652641878669276
+      },
+      "mean": {
+        "rank1_hits": 3470,
+        "rank3_hits": 3981,
+        "rank1": 0.848825831702544,
+        "rank3": 0.973825831702544
+      },
+      "rank1_delta_percentage_points": 0.09784735812133072,
+      "rank1_transitions": {
+        "both_correct": 3322,
+        "improved": 148,
+        "worsened": 144,
+        "both_wrong": 474
+      }
+    },
+    {
+      "query_camera": 5,
+      "gallery_camera": 4,
+      "queries": 5802,
+      "eligible_queries": 3724,
+      "unmatched_queries": 40,
+      "no_positive_in_gallery": 2038,
+      "latest": {
+        "rank1_hits": 3597,
+        "rank3_hits": 3676,
+        "rank1": 0.9658968850698174,
+        "rank3": 0.9871106337271751
+      },
+      "mean": {
+        "rank1_hits": 3606,
+        "rank3_hits": 3685,
+        "rank1": 0.9683136412459721,
+        "rank3": 0.9895273899033298
+      },
+      "rank1_delta_percentage_points": 0.24167561761546724,
+      "rank1_transitions": {
+        "both_correct": 3570,
+        "improved": 36,
+        "worsened": 27,
+        "both_wrong": 91
+      }
+    },
+    {
+      "query_camera": 5,
+      "gallery_camera": 8,
+      "queries": 5802,
+      "eligible_queries": 4219,
+      "unmatched_queries": 40,
+      "no_positive_in_gallery": 1543,
+      "latest": {
+        "rank1_hits": 3960,
+        "rank3_hits": 4096,
+        "rank1": 0.9386110452713913,
+        "rank3": 0.9708461720786916
+      },
+      "mean": {
+        "rank1_hits": 4005,
+        "rank3_hits": 4129,
+        "rank1": 0.949277079876748,
+        "rank3": 0.9786679307892866
+      },
+      "rank1_delta_percentage_points": 1.066603460535672,
+      "rank1_transitions": {
+        "both_correct": 3913,
+        "improved": 92,
+        "worsened": 47,
+        "both_wrong": 167
+      }
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 4,
+      "queries": 5589,
+      "eligible_queries": 4088,
+      "unmatched_queries": 56,
+      "no_positive_in_gallery": 1445,
+      "latest": {
+        "rank1_hits": 3672,
+        "rank3_hits": 3917,
+        "rank1": 0.898238747553816,
+        "rank3": 0.9581702544031311
+      },
+      "mean": {
+        "rank1_hits": 3742,
+        "rank3_hits": 3933,
+        "rank1": 0.9153620352250489,
+        "rank3": 0.9620841487279843
+      },
+      "rank1_delta_percentage_points": 1.7123287671232876,
+      "rank1_transitions": {
+        "both_correct": 3607,
+        "improved": 135,
+        "worsened": 65,
+        "both_wrong": 281
+      }
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 5,
+      "queries": 5589,
+      "eligible_queries": 4219,
+      "unmatched_queries": 56,
+      "no_positive_in_gallery": 1314,
+      "latest": {
+        "rank1_hits": 3888,
+        "rank3_hits": 4118,
+        "rank1": 0.9215453899028205,
+        "rank3": 0.9760606778857549
+      },
+      "mean": {
+        "rank1_hits": 3941,
+        "rank3_hits": 4136,
+        "rank1": 0.9341076084380184,
+        "rank3": 0.9803270917278976
+      },
+      "rank1_delta_percentage_points": 1.2562218535197913,
+      "rank1_transitions": {
+        "both_correct": 3844,
+        "improved": 97,
+        "worsened": 44,
+        "both_wrong": 234
+      }
+    }
+  ],
+  "history_diagnostic": {
+    "evaluated_observations": 15828,
+    "status_counts": {
+      "unknown_members": 394,
+      "current_unmatched": 162,
+      "consistent_with_current": 15195,
+      "conflict_with_current": 77
+    },
+    "histories_with_multiple_known_gt_ids": 80,
+    "unannotated_observations_before_first_frame": 86,
+    "conditional_retrieval_by_query_and_positive_history": {
+      "unknown_members": {
+        "queries": 636,
+        "eligible_queries": 636,
+        "unmatched_queries": 0,
+        "no_positive_in_gallery": 0,
+        "latest": {
+          "rank1_hits": 500,
+          "rank3_hits": 561,
+          "rank1": 0.7861635220125787,
+          "rank3": 0.8820754716981132
+        },
+        "mean": {
+          "rank1_hits": 508,
+          "rank3_hits": 556,
+          "rank1": 0.7987421383647799,
+          "rank3": 0.8742138364779874
+        },
+        "rank1_delta_percentage_points": 1.2578616352201257,
+        "rank1_transitions": {
+          "both_correct": 479,
+          "improved": 29,
+          "worsened": 21,
+          "both_wrong": 107
+        }
+      },
+      "query_and_positive_consistent": {
+        "queries": 23204,
+        "eligible_queries": 23204,
+        "unmatched_queries": 0,
+        "no_positive_in_gallery": 0,
+        "latest": {
+          "rank1_hits": 21573,
+          "rank3_hits": 22672,
+          "rank1": 0.9297103947595242,
+          "rank3": 0.9770729184623341
+        },
+        "mean": {
+          "rank1_hits": 21780,
+          "rank3_hits": 22786,
+          "rank1": 0.9386312704706086,
+          "rank3": 0.9819858645061197
+        },
+        "rank1_delta_percentage_points": 0.8920875711084296,
+        "rank1_transitions": {
+          "both_correct": 21292,
+          "improved": 488,
+          "worsened": 281,
+          "both_wrong": 1143
+        }
+      },
+      "query_or_positive_conflict": {
+        "queries": 222,
+        "eligible_queries": 222,
+        "unmatched_queries": 0,
+        "no_positive_in_gallery": 0,
+        "latest": {
+          "rank1_hits": 163,
+          "rank3_hits": 210,
+          "rank1": 0.7342342342342343,
+          "rank3": 0.9459459459459459
+        },
+        "mean": {
+          "rank1_hits": 139,
+          "rank3_hits": 213,
+          "rank1": 0.6261261261261262,
+          "rank3": 0.9594594594594594
+        },
+        "rank1_delta_percentage_points": -10.81081081081081,
+        "rank1_transitions": {
+          "both_correct": 122,
+          "improved": 17,
+          "worsened": 41,
+          "both_wrong": 42
+        }
+      }
+    },
+    "fixed_examples": [
+      {
+        "embedding_row": 10842,
+        "frame_index": 210,
+        "camera": 8,
+        "local_id": 10,
+        "gt_id": 9,
+        "gt_iou": 0.8232265621574438,
+        "gt_status": "matched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "consistent_with_current",
+        "known_different_members": 0,
+        "unknown_members": 0,
+        "distinct_known_gt_ids": 1,
+        "history_size": 8,
+        "source_embedding_rows": "[10443, 10500, 10557, 10614, 10671, 10728, 10785, 10842]",
+        "source_gt_ids": "[9, 9, 9, 9, 9, 9, 9, 9]"
+      },
+      {
+        "embedding_row": 10844,
+        "frame_index": 210,
+        "camera": 8,
+        "local_id": 12,
+        "gt_id": null,
+        "gt_iou": null,
+        "gt_status": "unmatched",
+        "gt_valid_candidates": 0,
+        "history_gt_status": "current_unmatched",
+        "known_different_members": null,
+        "unknown_members": 3,
+        "distinct_known_gt_ids": 1,
+        "history_size": 8,
+        "source_embedding_rows": "[10445, 10502, 10559, 10616, 10673, 10730, 10787, 10844]",
+        "source_gt_ids": "[18, 18, 18, 18, 18, null, null, null]"
+      },
+      {
+        "embedding_row": 11015,
+        "frame_index": 213,
+        "camera": 8,
+        "local_id": 10,
+        "gt_id": null,
+        "gt_iou": null,
+        "gt_status": "unmatched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "current_unmatched",
+        "known_different_members": null,
+        "unknown_members": 1,
+        "distinct_known_gt_ids": 1,
+        "history_size": 8,
+        "source_embedding_rows": "[10614, 10671, 10728, 10785, 10842, 10900, 10958, 11015]",
+        "source_gt_ids": "[9, 9, 9, 9, 9, 9, 9, null]"
+      },
+      {
+        "embedding_row": 11017,
+        "frame_index": 213,
+        "camera": 8,
+        "local_id": 12,
+        "gt_id": 9,
+        "gt_iou": 0.8462230410898037,
+        "gt_status": "matched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "conflict_with_current",
+        "known_different_members": 2,
+        "unknown_members": 5,
+        "distinct_known_gt_ids": 2,
+        "history_size": 8,
+        "source_embedding_rows": "[10616, 10673, 10730, 10787, 10844, 10902, 10960, 11017]",
+        "source_gt_ids": "[18, 18, null, null, null, null, null, 9]"
+      },
+      {
+        "embedding_row": 11072,
+        "frame_index": 214,
+        "camera": 8,
+        "local_id": 10,
+        "gt_id": 18,
+        "gt_iou": 0.506463239336433,
+        "gt_status": "matched",
+        "gt_valid_candidates": 2,
+        "history_gt_status": "conflict_with_current",
+        "known_different_members": 6,
+        "unknown_members": 1,
+        "distinct_known_gt_ids": 2,
+        "history_size": 8,
+        "source_embedding_rows": "[10671, 10728, 10785, 10842, 10900, 10958, 11015, 11072]",
+        "source_gt_ids": "[9, 9, 9, 9, 9, 9, null, 18]"
+      },
+      {
+        "embedding_row": 11074,
+        "frame_index": 214,
+        "camera": 8,
+        "local_id": 12,
+        "gt_id": 9,
+        "gt_iou": 0.8548042837439955,
+        "gt_status": "matched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "conflict_with_current",
+        "known_different_members": 1,
+        "unknown_members": 5,
+        "distinct_known_gt_ids": 2,
+        "history_size": 8,
+        "source_embedding_rows": "[10673, 10730, 10787, 10844, 10902, 10960, 11017, 11074]",
+        "source_gt_ids": "[18, null, null, null, null, null, 9, 9]"
+      },
+      {
+        "embedding_row": 11241,
+        "frame_index": 217,
+        "camera": 8,
+        "local_id": 10,
+        "gt_id": 18,
+        "gt_iou": 0.5330626519477344,
+        "gt_status": "matched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "conflict_with_current",
+        "known_different_members": 3,
+        "unknown_members": 2,
+        "distinct_known_gt_ids": 2,
+        "history_size": 8,
+        "source_embedding_rows": "[10842, 10900, 10958, 11015, 11072, 11129, 11185, 11241]",
+        "source_gt_ids": "[9, 9, 9, null, 18, null, 18, 18]"
+      },
+      {
+        "embedding_row": 11243,
+        "frame_index": 217,
+        "camera": 8,
+        "local_id": 12,
+        "gt_id": 9,
+        "gt_iou": 0.5673406520900929,
+        "gt_status": "matched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "conflict_with_current",
+        "known_different_members": 1,
+        "unknown_members": 4,
+        "distinct_known_gt_ids": 2,
+        "history_size": 8,
+        "source_embedding_rows": "[10844, 10902, 10960, 11017, 11074, 11131, 11187, 11243]",
+        "source_gt_ids": "[null, null, null, 9, 9, 18, null, 9]"
+      },
+      {
+        "embedding_row": 11465,
+        "frame_index": 221,
+        "camera": 8,
+        "local_id": 10,
+        "gt_id": 18,
+        "gt_iou": 0.9020864447825999,
+        "gt_status": "matched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "unknown_members",
+        "known_different_members": 0,
+        "unknown_members": 1,
+        "distinct_known_gt_ids": 1,
+        "history_size": 8,
+        "source_embedding_rows": "[11072, 11129, 11185, 11241, 11297, 11353, 11409, 11465]",
+        "source_gt_ids": "[18, null, 18, 18, 18, 18, 18, 18]"
+      },
+      {
+        "embedding_row": 11467,
+        "frame_index": 221,
+        "camera": 8,
+        "local_id": 12,
+        "gt_id": 9,
+        "gt_iou": 0.6409581224336293,
+        "gt_status": "matched",
+        "gt_valid_candidates": 1,
+        "history_gt_status": "conflict_with_current",
+        "known_different_members": 1,
+        "unknown_members": 2,
+        "distinct_known_gt_ids": 2,
+        "history_size": 8,
+        "source_embedding_rows": "[11074, 11131, 11187, 11243, 11299, 11355, 11411, 11467]",
+        "source_gt_ids": "[9, 18, null, 9, 9, null, 9, 9]"
+      }
+    ]
+  },
+  "gt_matching_totals": {
+    "4": {
+      "crops": 4437,
+      "gt_visible": 4649,
+      "matched_crops": 4371,
+      "unmatched_crops": 66,
+      "unmatched_gt": 278,
+      "excluded_zero_area_gt": 0
+    },
+    "5": {
+      "crops": 5802,
+      "gt_visible": 6013,
+      "matched_crops": 5762,
+      "unmatched_crops": 40,
+      "unmatched_gt": 251,
+      "excluded_zero_area_gt": 0
+    },
+    "8": {
+      "crops": 5589,
+      "gt_visible": 5655,
+      "matched_crops": 5533,
+      "unmatched_crops": 56,
+      "unmatched_gt": 122,
+      "excluded_zero_area_gt": 0
+    }
+  },
+  "artifacts": {
+    "by_frame.csv": {
+      "path": "by_frame.csv",
+      "sha256": "fe62b92177603485dadca8ba6c14da0c8bb41a9be02dfabdc4c8ec5c783780bb"
+    },
+    "gt_matching.csv": {
+      "path": "gt_matching.csv",
+      "sha256": "ab5d77263b5803aa64dd427046bee988c83db557c212fb4bcd67e98034c01b97"
+    },
+    "history_labels.csv": {
+      "path": "history_labels.csv",
+      "sha256": "1a471eb27e691cb8d9f0e7da279a165a18bfa1504d0ff610a7e0ec11679fe2ee"
+    },
+    "rankings.csv": {
+      "path": "rankings.csv",
+      "sha256": "bc87d40435c7aa8f03c16849ba424a71cd28ce00adaa5d4327af675e6d7a8703"
+    }
+  },
+  "limits": [
+    "One integration clip, not an independent validation/test or official benchmark",
+    "Nearby frames and directed queries are correlated; counts are not independent people",
+    "Retrieval requires a positive in the gallery; it does not evaluate rejection of absent identities",
+    "GT IoU labels can be ambiguous; label conflicts are diagnostics, not motmetrics IDSW events",
+    "History strata use query/positive labels; distractor histories can also change the ranking",
+    "Rank-1 is not global IDF1; this script creates no global IDs and does not modify tracking",
+    "No causal claims about end-to-end speed from this CPU evaluation"
+  ]
+}
