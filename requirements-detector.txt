@@ -1,0 +1,2 @@
+# RF-DETR detector baseline
+rfdetr==1.11.2
