@@ -1,0 +1,36 @@
+{
+  "dataset": "nvidia/PhysicalAI-SmartSpaces",
+  "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+  "scene": "MTMC_Tracking_2024/train/scene_001",
+  "camera_ids": [
+    4,
+    5,
+    8
+  ],
+  "files": [
+    {
+      "camera": 4,
+      "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4",
+      "size_bytes": 258128173,
+      "sha256": "4b5d471d64ac74f701abe97b040bdc41bd78a514885457f26dca4d397c3b0572",
+      "source_sha256_verified": true
+    },
+    {
+      "camera": 5,
+      "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4",
+      "size_bytes": 252849812,
+      "sha256": "363fbe6afe393a7c1deb46611243985ac4ef89d12dc4862d4b8bf80975d58a24",
+      "source_sha256_verified": true
+    },
+    {
+      "camera": 8,
+      "remote_path": "MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4",
+      "size_bytes": 292658430,
+      "sha256": "84b7acb45197d239358403ee2d700787bb6b7aca61904189a5746dd0a7377e52",
+      "source_sha256_verified": true
+    }
+  ]
+}

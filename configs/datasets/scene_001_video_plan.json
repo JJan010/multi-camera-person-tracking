@@ -1,0 +1,53 @@
+{
+  "dataset": "nvidia/PhysicalAI-SmartSpaces",
+  "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+  "scene": "MTMC_Tracking_2024/train/scene_001",
+  "role": "integration_candidate",
+  "camera_ids": [
+    4,
+    5,
+    8
+  ],
+  "files": [
+    {
+      "camera": 4,
+      "type": "file",
+      "oid": "90c45071537f0d9321816c3af72fc67e8b69da6b",
+      "size": 258128173,
+      "lfs": {
+        "oid": "4b5d471d64ac74f701abe97b040bdc41bd78a514885457f26dca4d397c3b0572",
+        "size": 258128173,
+        "pointerSize": 134
+      },
+      "xetHash": "5e626fa8ff308bc4c1f80bc638d9450183a2362c3809fec1a7c7013eda521e4e",
+      "path": "MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4"
+    },
+    {
+      "camera": 5,
+      "type": "file",
+      "oid": "aa59cf49090666a6047ee912a7da5e909dbeba5d",
+      "size": 252849812,
+      "lfs": {
+        "oid": "363fbe6afe393a7c1deb46611243985ac4ef89d12dc4862d4b8bf80975d58a24",
+        "size": 252849812,
+        "pointerSize": 134
+      },
+      "xetHash": "efeb3d0134c4bf9e239b277ed200b937b625b5c71032c9587b7f0501853409f9",
+      "path": "MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4"
+    },
+    {
+      "camera": 8,
+      "type": "file",
+      "oid": "3cfdac1e8e3eb46a2fae132d631c25b33dbe6248",
+      "size": 292658430,
+      "lfs": {
+        "oid": "84b7acb45197d239358403ee2d700787bb6b7aca61904189a5746dd0a7377e52",
+        "size": 292658430,
+        "pointerSize": 134
+      },
+      "xetHash": "2afa634e8901155907a3590b3a0db713437fe2d9effdfe68399f74468f2bb36e",
+      "path": "MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4"
+    }
+  ],
+  "total_size_bytes": 803636415
+}
