@@ -1,0 +1,667 @@
+{
+  "completed": true,
+  "created_utc": "2026-10-07T13:21:32.828417+00:00",
+  "source_run_id": "20261007T131031285535Z",
+  "protocol": {
+    "name": "scene_001_full_mtmc_global_2d_identity_v1",
+    "frames": [
+      2,
+      299
+    ],
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "fps": 30,
+    "min_iou": 0.5,
+    "width": 1920,
+    "height": 1080,
+    "runtime_identity_start_frame": 0,
+    "timing_warmup_excluded_from_quality": false,
+    "runtime_predictions_modified": false,
+    "spatial_gate": "Same camera and same frame; all IoU >= 0.5 candidates retained",
+    "box_policy": "Clip both; exclude zero-area GT; retain all predictions, including unencoded/outside",
+    "identity_matching": "One shared one-to-one GT/global identity assignment over all cameras and evaluated frames",
+    "control": "Camera-scoped original local IDs on identical boxes; no extra expiry or relabeling",
+    "selected_deployment_threshold": null
+  },
+  "inputs": {
+    "pipeline_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T131031285535Z/report.json",
+      "sha256": "a7401b11094517bd77420dd301bf1946f587021049111a2cb8ee6288d94792b0"
+    },
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T131031285535Z/tracks.jsonl",
+      "sha256": "4ac260377884146dcc3b74be4ce249d89cff6398694d98df48af9809d31a1ea6"
+    },
+    "global_tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T131031285535Z/global_tracks.jsonl",
+      "sha256": "6ed2c917a96de206ab80d45d61925b9c9386c806c7a1743ee3793a80b5052929"
+    },
+    "embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T131031285535Z/embeddings.npy",
+      "sha256": "7df353bb8b226fe9b20b7d59d9b8b6e23c37eca793ef6c3a7fb3fbb7f4d30334"
+    },
+    "mean_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T131031285535Z/mean_embeddings.npy",
+      "sha256": "d4826f4d5a023e246d5fc249ecc1668c54018298fb298be8df306d140be59568"
+    },
+    "decisions": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T131031285535Z/decisions.jsonl",
+      "sha256": "7def6e33eaaa12385c47581210533c2e59463e12e444a16b1e314e75795b73cd"
+    },
+    "scene_source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_001_source.json",
+      "sha256": "64bf042c6078e39d5d632d1acda1a13200eeefcebbe28e596010457272a74225"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "pipeline_metrics": {
+    "camera_time_slots": 894,
+    "gt_observations": 16317,
+    "predicted_observations": 15828,
+    "gt_identities": 25,
+    "predicted_identities": 50,
+    "idtp": 13821,
+    "idfp": 2007,
+    "idfn": 2496,
+    "idp": 0.873199393479909,
+    "idr": 0.8470307041735613,
+    "idf1": 0.8599160055996267
+  },
+  "no_cross_camera_control": {
+    "camera_time_slots": 894,
+    "gt_observations": 16317,
+    "predicted_observations": 15828,
+    "gt_identities": 25,
+    "predicted_identities": 73,
+    "idtp": 6852,
+    "idfp": 8976,
+    "idfn": 9465,
+    "idp": 0.43290371493555724,
+    "idr": 0.4199301342158485,
+    "idf1": 0.42631824545030333
+  },
+  "delta_idf1_vs_control_pp": 43.359776014932336,
+  "excluded_zero_area_gt": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "fully_outside_predictions": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "merge_event_diagnostics": {
+    "all_visible_members_same_gt": 19
+  },
+  "runtime_summary": {
+    "rounds": 300,
+    "images": 900,
+    "warmup_rounds": 30,
+    "measured_frame_range": [
+      30,
+      299
+    ],
+    "measured_rounds": 270,
+    "total_embeddings": 15914,
+    "measured_elapsed_s": 22.337926518,
+    "rounds_per_second": 12.08706635248499,
+    "images_per_second": 36.261199057454974,
+    "crops_per_second": 654.4474926184373,
+    "crops_per_measured_round": {
+      "min": 44,
+      "mean": 54.144444444444446,
+      "max": 59
+    },
+    "timings": {
+      "replay_ms": {
+        "mean_ms": 7.724756266666666,
+        "median_ms": 6.9361025000000005,
+        "p95_ms": 10.549454849999996
+      },
+      "detect_ms": {
+        "mean_ms": 19.649714333333336,
+        "median_ms": 17.149227,
+        "p95_ms": 25.4230488
+      },
+      "track_ms": {
+        "mean_ms": 2.4337615074074077,
+        "median_ms": 2.43834,
+        "p95_ms": 2.83032985
+      },
+      "crop_ms": {
+        "mean_ms": 0.6036531,
+        "median_ms": 0.6029855,
+        "p95_ms": 0.6808753
+      },
+      "encode_ms": {
+        "mean_ms": 43.05240144814815,
+        "median_ms": 43.659045,
+        "p95_ms": 50.44806055
+      },
+      "history_ms": {
+        "mean_ms": 1.346813925925926,
+        "median_ms": 1.3698515,
+        "p95_ms": 1.6385529499999998
+      },
+      "project_ms": {
+        "mean_ms": 1.3225427111111112,
+        "median_ms": 1.3054934999999999,
+        "p95_ms": 1.55163495
+      },
+      "associate_ms": {
+        "mean_ms": 1.7001320370370372,
+        "median_ms": 1.5118844999999999,
+        "p95_ms": 1.7679868499999998
+      },
+      "group_ms": {
+        "mean_ms": 0.3194636518518518,
+        "median_ms": 0.3172235,
+        "p95_ms": 0.4575462499999999
+      },
+      "identity_ms": {
+        "mean_ms": 1.1325186407407408,
+        "median_ms": 0.9079515,
+        "p95_ms": 1.12951655
+      },
+      "association_block_ms": {
+        "mean_ms": 4.722005077777777,
+        "median_ms": 4.340464,
+        "p95_ms": 5.05772535
+      },
+      "core_ms": {
+        "mean_ms": 79.53310565925925,
+        "median_ms": 78.043121,
+        "p95_ms": 93.51303634999998
+      },
+      "read_decode_ms": {
+        "mean_ms": 6.417218229629629,
+        "median_ms": 5.571723499999999,
+        "p95_ms": 9.0628066
+      },
+      "rgb_conversion_ms": {
+        "mean_ms": 1.2291972555555557,
+        "median_ms": 1.200839,
+        "p95_ms": 1.4017381
+      },
+      "record_ms": {
+        "mean_ms": 3.12865757037037,
+        "median_ms": 2.8858170000000003,
+        "p95_ms": 3.3765094499999995
+      },
+      "core_and_record_ms": {
+        "mean_ms": 82.66176322962964,
+        "median_ms": 81.14617799999999,
+        "p95_ms": 97.24292225
+      }
+    },
+    "replay_per_camera": {
+      "4": {
+        "read_decode_ms": {
+          "mean_ms": 2.203837922222222,
+          "median_ms": 1.8848245,
+          "p95_ms": 3.5595054
+        },
+        "rgb_conversion_ms": {
+          "mean_ms": 0.41886246666666666,
+          "median_ms": 0.4072535,
+          "p95_ms": 0.5114188499999996
+        }
+      },
+      "5": {
+        "read_decode_ms": {
+          "mean_ms": 2.0906054148148145,
+          "median_ms": 1.7334744999999998,
+          "p95_ms": 3.5605554500000003
+        },
+        "rgb_conversion_ms": {
+          "mean_ms": 0.40624220370370373,
+          "median_ms": 0.3909775,
+          "p95_ms": 0.5145098
+        }
+      },
+      "8": {
+        "read_decode_ms": {
+          "mean_ms": 2.1227748925925924,
+          "median_ms": 1.667024,
+          "p95_ms": 3.6688090499999997
+        },
+        "rgb_conversion_ms": {
+          "mean_ms": 0.40409258518518515,
+          "median_ms": 0.3896465,
+          "p95_ms": 0.50740655
+        }
+      }
+    },
+    "peak_torch_allocated_mib": 853.71923828125,
+    "peak_torch_reserved_mib": 7186.0,
+    "ever_emitted_global_ids": 50,
+    "observations": 15914,
+    "unencoded_observations": 0,
+    "merge_events": 19,
+    "absorbed_ids": 19,
+    "expired_ids": 3,
+    "allocated_ids": 50,
+    "unavailable_projected_observations": 0,
+    "retained_ids_at_end": 28,
+    "history_peaks": {
+      "history_tracks": 62,
+      "history_vectors": 484
+    }
+  },
+  "control_local_id_map": [
+    {
+      "camera": 4,
+      "local_id": 1,
+      "control_id": 1
+    },
+    {
+      "camera": 4,
+      "local_id": 2,
+      "control_id": 2
+    },
+    {
+      "camera": 4,
+      "local_id": 3,
+      "control_id": 4
+    },
+    {
+      "camera": 4,
+      "local_id": 4,
+      "control_id": 5
+    },
+    {
+      "camera": 4,
+      "local_id": 5,
+      "control_id": 6
+    },
+    {
+      "camera": 4,
+      "local_id": 6,
+      "control_id": 8
+    },
+    {
+      "camera": 4,
+      "local_id": 7,
+      "control_id": 7
+    },
+    {
+      "camera": 4,
+      "local_id": 8,
+      "control_id": 3
+    },
+    {
+      "camera": 4,
+      "local_id": 9,
+      "control_id": 9
+    },
+    {
+      "camera": 4,
+      "local_id": 10,
+      "control_id": 44
+    },
+    {
+      "camera": 4,
+      "local_id": 11,
+      "control_id": 45
+    },
+    {
+      "camera": 4,
+      "local_id": 12,
+      "control_id": 46
+    },
+    {
+      "camera": 4,
+      "local_id": 13,
+      "control_id": 48
+    },
+    {
+      "camera": 4,
+      "local_id": 14,
+      "control_id": 51
+    },
+    {
+      "camera": 4,
+      "local_id": 15,
+      "control_id": 56
+    },
+    {
+      "camera": 4,
+      "local_id": 16,
+      "control_id": 59
+    },
+    {
+      "camera": 4,
+      "local_id": 17,
+      "control_id": 61
+    },
+    {
+      "camera": 4,
+      "local_id": 18,
+      "control_id": 62
+    },
+    {
+      "camera": 4,
+      "local_id": 19,
+      "control_id": 64
+    },
+    {
+      "camera": 4,
+      "local_id": 20,
+      "control_id": 69
+    },
+    {
+      "camera": 4,
+      "local_id": 21,
+      "control_id": 70
+    },
+    {
+      "camera": 4,
+      "local_id": 22,
+      "control_id": 73
+    },
+    {
+      "camera": 5,
+      "local_id": 1,
+      "control_id": 10
+    },
+    {
+      "camera": 5,
+      "local_id": 2,
+      "control_id": 11
+    },
+    {
+      "camera": 5,
+      "local_id": 3,
+      "control_id": 13
+    },
+    {
+      "camera": 5,
+      "local_id": 4,
+      "control_id": 12
+    },
+    {
+      "camera": 5,
+      "local_id": 5,
+      "control_id": 14
+    },
+    {
+      "camera": 5,
+      "local_id": 6,
+      "control_id": 15
+    },
+    {
+      "camera": 5,
+      "local_id": 7,
+      "control_id": 16
+    },
+    {
+      "camera": 5,
+      "local_id": 8,
+      "control_id": 19
+    },
+    {
+      "camera": 5,
+      "local_id": 9,
+      "control_id": 17
+    },
+    {
+      "camera": 5,
+      "local_id": 10,
+      "control_id": 18
+    },
+    {
+      "camera": 5,
+      "local_id": 11,
+      "control_id": 20
+    },
+    {
+      "camera": 5,
+      "local_id": 12,
+      "control_id": 21
+    },
+    {
+      "camera": 5,
+      "local_id": 13,
+      "control_id": 22
+    },
+    {
+      "camera": 5,
+      "local_id": 14,
+      "control_id": 23
+    },
+    {
+      "camera": 5,
+      "local_id": 15,
+      "control_id": 24
+    },
+    {
+      "camera": 5,
+      "local_id": 16,
+      "control_id": 25
+    },
+    {
+      "camera": 5,
+      "local_id": 17,
+      "control_id": 47
+    },
+    {
+      "camera": 5,
+      "local_id": 18,
+      "control_id": 49
+    },
+    {
+      "camera": 5,
+      "local_id": 19,
+      "control_id": 50
+    },
+    {
+      "camera": 5,
+      "local_id": 20,
+      "control_id": 52
+    },
+    {
+      "camera": 5,
+      "local_id": 21,
+      "control_id": 53
+    },
+    {
+      "camera": 5,
+      "local_id": 22,
+      "control_id": 54
+    },
+    {
+      "camera": 5,
+      "local_id": 23,
+      "control_id": 58
+    },
+    {
+      "camera": 5,
+      "local_id": 24,
+      "control_id": 60
+    },
+    {
+      "camera": 5,
+      "local_id": 25,
+      "control_id": 65
+    },
+    {
+      "camera": 5,
+      "local_id": 26,
+      "control_id": 71
+    },
+    {
+      "camera": 8,
+      "local_id": 1,
+      "control_id": 26
+    },
+    {
+      "camera": 8,
+      "local_id": 2,
+      "control_id": 27
+    },
+    {
+      "camera": 8,
+      "local_id": 3,
+      "control_id": 34
+    },
+    {
+      "camera": 8,
+      "local_id": 4,
+      "control_id": 28
+    },
+    {
+      "camera": 8,
+      "local_id": 5,
+      "control_id": 30
+    },
+    {
+      "camera": 8,
+      "local_id": 6,
+      "control_id": 29
+    },
+    {
+      "camera": 8,
+      "local_id": 7,
+      "control_id": 31
+    },
+    {
+      "camera": 8,
+      "local_id": 8,
+      "control_id": 32
+    },
+    {
+      "camera": 8,
+      "local_id": 9,
+      "control_id": 33
+    },
+    {
+      "camera": 8,
+      "local_id": 10,
+      "control_id": 36
+    },
+    {
+      "camera": 8,
+      "local_id": 11,
+      "control_id": 38
+    },
+    {
+      "camera": 8,
+      "local_id": 12,
+      "control_id": 35
+    },
+    {
+      "camera": 8,
+      "local_id": 13,
+      "control_id": 37
+    },
+    {
+      "camera": 8,
+      "local_id": 14,
+      "control_id": 39
+    },
+    {
+      "camera": 8,
+      "local_id": 15,
+      "control_id": 40
+    },
+    {
+      "camera": 8,
+      "local_id": 16,
+      "control_id": 41
+    },
+    {
+      "camera": 8,
+      "local_id": 17,
+      "control_id": 42
+    },
+    {
+      "camera": 8,
+      "local_id": 18,
+      "control_id": 43
+    },
+    {
+      "camera": 8,
+      "local_id": 19,
+      "control_id": 55
+    },
+    {
+      "camera": 8,
+      "local_id": 20,
+      "control_id": 57
+    },
+    {
+      "camera": 8,
+      "local_id": 21,
+      "control_id": 63
+    },
+    {
+      "camera": 8,
+      "local_id": 22,
+      "control_id": 66
+    },
+    {
+      "camera": 8,
+      "local_id": 23,
+      "control_id": 67
+    },
+    {
+      "camera": 8,
+      "local_id": 24,
+      "control_id": 68
+    },
+    {
+      "camera": 8,
+      "local_id": 25,
+      "control_id": 72
+    }
+  ],
+  "checks": {
+    "all_300_rounds_and_prediction_keys_verified": true,
+    "embedding_rows_verified": true,
+    "both_metrics_agree_with_motmetrics": true,
+    "shared_denominators": true,
+    "frozen_inputs_unchanged": true
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "motmetrics": "1.4.0",
+    "pandas": "2.3.3"
+  },
+  "code_sha256": {
+    "scripts/evaluate_global_identity.py": "f88dd268e54196330361c0a4d35bd6856f46f842586555fd811d0cd47ef169af",
+    "scripts/evaluate_appearance_history.py": "a968b90be20312fe8fc7bf2c85f4cba55eac6f7ee6944e0de59da2ddfa0b9625",
+    "scripts/evaluate_reid_snapshot.py": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd",
+    "scripts/preview_appearance_history.py": "46039ea10712fdae7512e38f4a7b593167cdeb4c4180aa7935ac627e338f8a81",
+    "scripts/evaluate_mtmc_pipeline.py": "04bd817b07febe559edd12a788feee7cce98d8f858f6a1c3f661e67392d4b8f7"
+  },
+  "artifacts": {
+    "comparison.csv": {
+      "path": "comparison.csv",
+      "sha256": "dbc083e90faf0c6cfbcb74d743cb82e68f39d9610f96b392bdc7e16442690bcc"
+    },
+    "identity_matching.json": {
+      "path": "identity_matching.json",
+      "sha256": "6f8ecfeb0c59a8171eb36a2edcae25a18e887573626af7e69d1d18bed327d500"
+    },
+    "merge_diagnostics.json": {
+      "path": "merge_diagnostics.json",
+      "sha256": "eee61fb53d115c58a78f5f6a9bae09ea26968e60891dee52748fbddc442a4287"
+    }
+  },
+  "limits": [
+    "Same short reused training fragment; not independent validation or official AI City evaluation",
+    "Identity state starts at frame 0; old frozen association experiments started at frame 2",
+    "New model inference may change local boxes and embeddings; old 86.02% is not a paired control",
+    "Merge-event checks describe uniquely spatially matched visible members at acceptance, not whole trajectories",
+    "Ever-emitted IDs over 0..299 can differ from predicted identities evaluated over 2..299",
+    "No CLEAR ID switches or MOTA inferred from the artificial camera/time ordering"
+  ]
+}
