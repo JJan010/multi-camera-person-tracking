@@ -1,0 +1,1100 @@
+{
+  "completed": true,
+  "created_utc": "2026-10-07T08:48:41.755095+00:00",
+  "source_run_id": "20261006T204237314810Z",
+  "protocol": {
+    "name": "scene_001_multicamera_grouping_diagnostic_v1",
+    "policy": "complete_support_greedy_v1",
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "first_frame": 2,
+    "last_frame": 299,
+    "fps": 30,
+    "variants": [
+      "latest",
+      "mean"
+    ],
+    "thresholds": [
+      0.0,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "ground_truth_used_by_grouping": false,
+    "persistent_global_ids_created": false,
+    "selected_threshold": null,
+    "pair_precision": "correct / (correct + wrong_known); unresolved counted separately",
+    "pair_recall": "correct / original available positive pairs, unchanged after grouping",
+    "groups": "Frame-local partition including singletons; array indices are not global IDs",
+    "linked_group_labels": "Different known GT IDs take precedence over unknown labels; only size >= 2"
+  },
+  "inputs": {
+    "pairwise_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/pairwise_association/20261006T214019883005Z/report.json",
+      "sha256": "b9f5759c1c79c3a4d9974d72789a2dc8436d040155f71c35083dcfc9a280b051"
+    },
+    "decisions": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/pairwise_association/20261006T214019883005Z/decisions.jsonl.gz",
+      "sha256": "568707054a9705ffd9e28f76ceb098ea31faf3d30edf1544f2fce186162d9446"
+    }
+  },
+  "inherited_source_inputs_not_reverified": {
+    "history_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_history/20261006T211035258446Z/report.json",
+      "sha256": "6a1eb789a915cd2eda2d9027bc2812663da2fcb2adf1e847a43654b50e04a5dc"
+    },
+    "source_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/report.json",
+      "sha256": "c8e9b56a684f3d0b108343264d82657e9bfe4fdb9aeda8bd74ae409969155387"
+    },
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/tracks.jsonl",
+      "sha256": "2a9b529c1a0e6cb6202d6467d64214a917d9d2403a7be201fcfdc77405faa736"
+    },
+    "latest_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/embeddings.npy",
+      "sha256": "7df353bb8b226fe9b20b7d59d9b8b6e23c37eca793ef6c3a7fb3fbb7f4d30334"
+    },
+    "mean_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_history/20261006T211035258446Z/mean_embeddings.npy",
+      "sha256": "d4826f4d5a023e246d5fc249ecc1668c54018298fb298be8df306d140be59568"
+    },
+    "history_rows": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_history/20261006T211035258446Z/observations.jsonl",
+      "sha256": "59fef3cd8a72cfd365cf68557f4e735662b75cd719a68436f57397057f880f0b"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    },
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_001_source.json",
+      "sha256": "64bf042c6078e39d5d632d1acda1a13200eeefcebbe28e596010457272a74225"
+    },
+    "experiment_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/association/pairwise_diagnostic.json",
+      "sha256": "868c88db805b3d0558feddedfdbb355f6b97d8dfa00a60794584421615f8110c"
+    }
+  },
+  "inherited_source_code_sha256": {
+    "evaluate_pairwise_association.py": "f15097ff350db7bdf37263082aaa9aac5f3d42563b1c0d0c80b91ea7411bc681",
+    "pairwise.py": "0d1d349c5a08b48887a17a3225c507102d03a2a85121a417125489b8df10e44c",
+    "evaluate_appearance_history.py": "a968b90be20312fe8fc7bf2c85f4cba55eac6f7ee6944e0de59da2ddfa0b9625",
+    "preview_appearance_history.py": "46039ea10712fdae7512e38f4a7b593167cdeb4c4180aa7935ac627e338f8a81",
+    "evaluate_reid_snapshot.py": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd"
+  },
+  "code_sha256": {
+    "evaluate_multicamera_grouping.py": "827c3ced39e17bd83638b22ceb3219390d657b039d0b07a8e57d5368fddf5a75",
+    "grouping.py": "8aad7eee77436cb51f3727eb21e1049287d7e400fc709babec0933f80be007fe",
+    "pairwise.py": "0d1d349c5a08b48887a17a3225c507102d03a2a85121a417125489b8df10e44c",
+    "evaluate_pairwise_association.py": "f15097ff350db7bdf37263082aaa9aac5f3d42563b1c0d0c80b91ea7411bc681",
+    "evaluate_appearance_history.py": "a968b90be20312fe8fc7bf2c85f4cba55eac6f7ee6944e0de59da2ddfa0b9625"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3"
+  },
+  "checks": {
+    "decision_checksums_verified": true,
+    "baseline_counts_reproduced": true,
+    "same_observations_labels_and_rows_for_all_settings": true,
+    "all_observations_preserved": true,
+    "retained_edges_subset_of_original": true,
+    "unique_cameras_per_group": true,
+    "source_row_count": 15828,
+    "groups_records": 4768
+  },
+  "results": [
+    {
+      "variant": "latest",
+      "threshold": 0.0,
+      "before": {
+        "accepted_links": 14328,
+        "correct_links": 11415,
+        "wrong_known_links": 2626,
+        "unresolved_gt_links": 287,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 616,
+        "precision_labeled": 0.8129762837404744,
+        "recall_available_pairs": 0.9487989360817887,
+        "accepted_link_label_coverage": 0.9799692908989391,
+        "verified_correct_fraction_all_links": 0.7966917922948074
+      },
+      "after": {
+        "accepted_links": 12831,
+        "correct_links": 11151,
+        "wrong_known_links": 1482,
+        "unresolved_gt_links": 198,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 880,
+        "precision_labeled": 0.8826881975777725,
+        "recall_available_pairs": 0.9268556229739838,
+        "accepted_link_label_coverage": 0.9845686228664952,
+        "verified_correct_fraction_all_links": 0.8690671031096563
+      },
+      "removed": {
+        "accepted_links": 1497,
+        "correct_links": 264,
+        "wrong_known_links": 1144,
+        "unresolved_gt_links": 89
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 6535,
+        "singletons": 780,
+        "two_member_groups": 2217,
+        "three_member_groups": 3538,
+        "linked_groups_all_known_same_gt": 4403,
+        "linked_groups_different_known_gt": 1221,
+        "linked_groups_unresolved_gt": 131,
+        "merged": 9293,
+        "already_in_same_group": 3538,
+        "rejected_camera_conflict": 586,
+        "rejected_missing_pair_support": 911
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 4785,
+        "camera_conflict_components": 539,
+        "open_three_camera_components": 0,
+        "closed_three_camera_components": 3538,
+        "frames_with_camera_conflict": 290,
+        "frames_with_open_three_camera_component": 0,
+        "components_with_different_known_gt": 1255,
+        "components_with_unknown_gt": 147
+      }
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.5,
+      "before": {
+        "accepted_links": 13075,
+        "correct_links": 11412,
+        "wrong_known_links": 1503,
+        "unresolved_gt_links": 160,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 619,
+        "precision_labeled": 0.883623693379791,
+        "recall_available_pairs": 0.9485495802510182,
+        "accepted_link_label_coverage": 0.9877629063097514,
+        "verified_correct_fraction_all_links": 0.872810707456979
+      },
+      "after": {
+        "accepted_links": 12226,
+        "correct_links": 11158,
+        "wrong_known_links": 934,
+        "unresolved_gt_links": 134,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 873,
+        "precision_labeled": 0.9227588488256698,
+        "recall_available_pairs": 0.9274374532457818,
+        "accepted_link_label_coverage": 0.9890397513495829,
+        "verified_correct_fraction_all_links": 0.9126451823981678
+      },
+      "removed": {
+        "accepted_links": 849,
+        "correct_links": 254,
+        "wrong_known_links": 569,
+        "unresolved_gt_links": 26
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 7003,
+        "singletons": 1579,
+        "two_member_groups": 2023,
+        "three_member_groups": 3401,
+        "linked_groups_all_known_same_gt": 4533,
+        "linked_groups_different_known_gt": 812,
+        "linked_groups_unresolved_gt": 79,
+        "merged": 8825,
+        "already_in_same_group": 3401,
+        "rejected_camera_conflict": 263,
+        "rejected_missing_pair_support": 586
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 4984,
+        "camera_conflict_components": 355,
+        "open_three_camera_components": 155,
+        "closed_three_camera_components": 3401,
+        "frames_with_camera_conflict": 241,
+        "frames_with_open_three_camera_component": 140,
+        "components_with_different_known_gt": 1080,
+        "components_with_unknown_gt": 95
+      }
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.6,
+      "before": {
+        "accepted_links": 11949,
+        "correct_links": 11144,
+        "wrong_known_links": 694,
+        "unresolved_gt_links": 111,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 887,
+        "precision_labeled": 0.9413752323027539,
+        "recall_available_pairs": 0.926273792702186,
+        "accepted_link_label_coverage": 0.9907105197087622,
+        "verified_correct_fraction_all_links": 0.9326303456356181
+      },
+      "after": {
+        "accepted_links": 11461,
+        "correct_links": 10882,
+        "wrong_known_links": 485,
+        "unresolved_gt_links": 94,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 1149,
+        "precision_labeled": 0.9573326295416557,
+        "recall_available_pairs": 0.9044967168148949,
+        "accepted_link_label_coverage": 0.9917982724020592,
+        "verified_correct_fraction_all_links": 0.9494808480935346
+      },
+      "removed": {
+        "accepted_links": 488,
+        "correct_links": 262,
+        "wrong_known_links": 209,
+        "unresolved_gt_links": 17
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 7591,
+        "singletons": 2578,
+        "two_member_groups": 1789,
+        "three_member_groups": 3224,
+        "linked_groups_all_known_same_gt": 4515,
+        "linked_groups_different_known_gt": 445,
+        "linked_groups_unresolved_gt": 53,
+        "merged": 8237,
+        "already_in_same_group": 3224,
+        "rejected_camera_conflict": 88,
+        "rejected_missing_pair_support": 400
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 4844,
+        "camera_conflict_components": 173,
+        "open_three_camera_components": 155,
+        "closed_three_camera_components": 3224,
+        "frames_with_camera_conflict": 141,
+        "frames_with_open_three_camera_component": 122,
+        "components_with_different_known_gt": 585,
+        "components_with_unknown_gt": 67
+      }
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.7,
+      "before": {
+        "accepted_links": 10314,
+        "correct_links": 9996,
+        "wrong_known_links": 272,
+        "unresolved_gt_links": 46,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 2035,
+        "precision_labeled": 0.9735099337748344,
+        "recall_available_pairs": 0.8308536281273378,
+        "accepted_link_label_coverage": 0.9955400426604615,
+        "verified_correct_fraction_all_links": 0.9691681210005817
+      },
+      "after": {
+        "accepted_links": 9643,
+        "correct_links": 9461,
+        "wrong_known_links": 145,
+        "unresolved_gt_links": 37,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 2570,
+        "precision_labeled": 0.9849052675411202,
+        "recall_available_pairs": 0.7863851716399302,
+        "accepted_link_label_coverage": 0.996163019807114,
+        "verified_correct_fraction_all_links": 0.9811262055376957
+      },
+      "removed": {
+        "accepted_links": 671,
+        "correct_links": 535,
+        "wrong_known_links": 127,
+        "unresolved_gt_links": 9
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 8847,
+        "singletons": 4528,
+        "two_member_groups": 1657,
+        "three_member_groups": 2662,
+        "linked_groups_all_known_same_gt": 4156,
+        "linked_groups_different_known_gt": 136,
+        "linked_groups_unresolved_gt": 27,
+        "merged": 6981,
+        "already_in_same_group": 2662,
+        "rejected_camera_conflict": 30,
+        "rejected_missing_pair_support": 641
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 4232,
+        "camera_conflict_components": 132,
+        "open_three_camera_components": 414,
+        "closed_three_camera_components": 2662,
+        "frames_with_camera_conflict": 114,
+        "frames_with_open_three_camera_component": 219,
+        "components_with_different_known_gt": 252,
+        "components_with_unknown_gt": 32
+      }
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.8,
+      "before": {
+        "accepted_links": 5763,
+        "correct_links": 5720,
+        "wrong_known_links": 38,
+        "unresolved_gt_links": 5,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 6311,
+        "precision_labeled": 0.9934004862799584,
+        "recall_available_pairs": 0.47543845066910484,
+        "accepted_link_label_coverage": 0.9991323963213604,
+        "verified_correct_fraction_all_links": 0.9925386083636994
+      },
+      "after": {
+        "accepted_links": 4811,
+        "correct_links": 4797,
+        "wrong_known_links": 9,
+        "unresolved_gt_links": 5,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 7234,
+        "precision_labeled": 0.99812734082397,
+        "recall_available_pairs": 0.39871997340204474,
+        "accepted_link_label_coverage": 0.9989607150280607,
+        "verified_correct_fraction_all_links": 0.9970900020785699
+      },
+      "removed": {
+        "accepted_links": 952,
+        "correct_links": 923,
+        "wrong_known_links": 29,
+        "unresolved_gt_links": 0
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 11711,
+        "singletons": 8288,
+        "two_member_groups": 2729,
+        "three_member_groups": 694,
+        "linked_groups_all_known_same_gt": 3412,
+        "linked_groups_different_known_gt": 7,
+        "linked_groups_unresolved_gt": 4,
+        "merged": 4117,
+        "already_in_same_group": 694,
+        "rejected_camera_conflict": 0,
+        "rejected_missing_pair_support": 952
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 3420,
+        "camera_conflict_components": 5,
+        "open_three_camera_components": 942,
+        "closed_three_camera_components": 694,
+        "frames_with_camera_conflict": 5,
+        "frames_with_open_three_camera_component": 290,
+        "components_with_different_known_gt": 35,
+        "components_with_unknown_gt": 4
+      }
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.9,
+      "before": {
+        "accepted_links": 1459,
+        "correct_links": 1458,
+        "wrong_known_links": 1,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 10573,
+        "precision_labeled": 0.9993145990404386,
+        "recall_available_pairs": 0.12118693375446762,
+        "accepted_link_label_coverage": 1.0,
+        "verified_correct_fraction_all_links": 0.9993145990404386
+      },
+      "after": {
+        "accepted_links": 1400,
+        "correct_links": 1399,
+        "wrong_known_links": 1,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 10632,
+        "precision_labeled": 0.9992857142857143,
+        "recall_available_pairs": 0.11628293574931427,
+        "accepted_link_label_coverage": 1.0,
+        "verified_correct_fraction_all_links": 0.9992857142857143
+      },
+      "removed": {
+        "accepted_links": 59,
+        "correct_links": 59,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 14430,
+        "singletons": 13034,
+        "two_member_groups": 1394,
+        "three_member_groups": 2,
+        "linked_groups_all_known_same_gt": 1395,
+        "linked_groups_different_known_gt": 1,
+        "linked_groups_unresolved_gt": 0,
+        "merged": 1398,
+        "already_in_same_group": 2,
+        "rejected_camera_conflict": 0,
+        "rejected_missing_pair_support": 59
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 1396,
+        "camera_conflict_components": 0,
+        "open_three_camera_components": 59,
+        "closed_three_camera_components": 2,
+        "frames_with_camera_conflict": 0,
+        "frames_with_open_three_camera_component": 54,
+        "components_with_different_known_gt": 1,
+        "components_with_unknown_gt": 0
+      }
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.95,
+      "before": {
+        "accepted_links": 132,
+        "correct_links": 132,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 11899,
+        "precision_labeled": 1.0,
+        "recall_available_pairs": 0.010971656553902418,
+        "accepted_link_label_coverage": 1.0,
+        "verified_correct_fraction_all_links": 1.0
+      },
+      "after": {
+        "accepted_links": 132,
+        "correct_links": 132,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 11899,
+        "precision_labeled": 1.0,
+        "recall_available_pairs": 0.010971656553902418,
+        "accepted_link_label_coverage": 1.0,
+        "verified_correct_fraction_all_links": 1.0
+      },
+      "removed": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 15696,
+        "singletons": 15564,
+        "two_member_groups": 132,
+        "three_member_groups": 0,
+        "linked_groups_all_known_same_gt": 132,
+        "linked_groups_different_known_gt": 0,
+        "linked_groups_unresolved_gt": 0,
+        "merged": 132,
+        "already_in_same_group": 0,
+        "rejected_camera_conflict": 0,
+        "rejected_missing_pair_support": 0
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 132,
+        "camera_conflict_components": 0,
+        "open_three_camera_components": 0,
+        "closed_three_camera_components": 0,
+        "frames_with_camera_conflict": 0,
+        "frames_with_open_three_camera_component": 0,
+        "components_with_different_known_gt": 0,
+        "components_with_unknown_gt": 0
+      }
+    },
+    {
+      "variant": "latest",
+      "threshold": 1.0,
+      "before": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 12031,
+        "precision_labeled": null,
+        "recall_available_pairs": 0.0,
+        "accepted_link_label_coverage": null,
+        "verified_correct_fraction_all_links": null
+      },
+      "after": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 12031,
+        "precision_labeled": null,
+        "recall_available_pairs": 0.0,
+        "accepted_link_label_coverage": null,
+        "verified_correct_fraction_all_links": null
+      },
+      "removed": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 15828,
+        "singletons": 15828,
+        "two_member_groups": 0,
+        "three_member_groups": 0,
+        "linked_groups_all_known_same_gt": 0,
+        "linked_groups_different_known_gt": 0,
+        "linked_groups_unresolved_gt": 0,
+        "merged": 0,
+        "already_in_same_group": 0,
+        "rejected_camera_conflict": 0,
+        "rejected_missing_pair_support": 0
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 0,
+        "camera_conflict_components": 0,
+        "open_three_camera_components": 0,
+        "closed_three_camera_components": 0,
+        "frames_with_camera_conflict": 0,
+        "frames_with_open_three_camera_component": 0,
+        "components_with_different_known_gt": 0,
+        "components_with_unknown_gt": 0
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.0,
+      "before": {
+        "accepted_links": 14328,
+        "correct_links": 11494,
+        "wrong_known_links": 2533,
+        "unresolved_gt_links": 301,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 537,
+        "precision_labeled": 0.8194196905967064,
+        "recall_available_pairs": 0.9553653062920788,
+        "accepted_link_label_coverage": 0.9789921831379118,
+        "verified_correct_fraction_all_links": 0.8022054718034618
+      },
+      "after": {
+        "accepted_links": 12947,
+        "correct_links": 11269,
+        "wrong_known_links": 1459,
+        "unresolved_gt_links": 219,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 762,
+        "precision_labeled": 0.8853708359522313,
+        "recall_available_pairs": 0.9366636189842906,
+        "accepted_link_label_coverage": 0.9830848845292346,
+        "verified_correct_fraction_all_links": 0.8703946860276512
+      },
+      "removed": {
+        "accepted_links": 1381,
+        "correct_links": 225,
+        "wrong_known_links": 1074,
+        "unresolved_gt_links": 82
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 6485,
+        "singletons": 746,
+        "two_member_groups": 2135,
+        "three_member_groups": 3604,
+        "linked_groups_all_known_same_gt": 4410,
+        "linked_groups_different_known_gt": 1188,
+        "linked_groups_unresolved_gt": 141,
+        "merged": 9343,
+        "already_in_same_group": 3604,
+        "rejected_camera_conflict": 566,
+        "rejected_missing_pair_support": 815
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 4862,
+        "camera_conflict_components": 537,
+        "open_three_camera_components": 0,
+        "closed_three_camera_components": 3604,
+        "frames_with_camera_conflict": 286,
+        "frames_with_open_three_camera_component": 0,
+        "components_with_different_known_gt": 1262,
+        "components_with_unknown_gt": 154
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.5,
+      "before": {
+        "accepted_links": 13378,
+        "correct_links": 11508,
+        "wrong_known_links": 1669,
+        "unresolved_gt_links": 201,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 523,
+        "precision_labeled": 0.8733399104500266,
+        "recall_available_pairs": 0.9565289668356745,
+        "accepted_link_label_coverage": 0.9849753326356705,
+        "verified_correct_fraction_all_links": 0.8602182687995216
+      },
+      "after": {
+        "accepted_links": 12439,
+        "correct_links": 11257,
+        "wrong_known_links": 1011,
+        "unresolved_gt_links": 171,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 774,
+        "precision_labeled": 0.9175904792957287,
+        "recall_available_pairs": 0.9356661956612086,
+        "accepted_link_label_coverage": 0.9862529142214005,
+        "verified_correct_fraction_all_links": 0.9049762842672241
+      },
+      "removed": {
+        "accepted_links": 939,
+        "correct_links": 251,
+        "wrong_known_links": 658,
+        "unresolved_gt_links": 30
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 6842,
+        "singletons": 1309,
+        "two_member_groups": 2080,
+        "three_member_groups": 3453,
+        "linked_groups_all_known_same_gt": 4542,
+        "linked_groups_different_known_gt": 884,
+        "linked_groups_unresolved_gt": 107,
+        "merged": 8986,
+        "already_in_same_group": 3453,
+        "rejected_camera_conflict": 259,
+        "rejected_missing_pair_support": 680
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 5033,
+        "camera_conflict_components": 383,
+        "open_three_camera_components": 144,
+        "closed_three_camera_components": 3453,
+        "frames_with_camera_conflict": 258,
+        "frames_with_open_three_camera_component": 129,
+        "components_with_different_known_gt": 1130,
+        "components_with_unknown_gt": 119
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.6,
+      "before": {
+        "accepted_links": 12156,
+        "correct_links": 11317,
+        "wrong_known_links": 700,
+        "unresolved_gt_links": 139,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 714,
+        "precision_labeled": 0.9417491886494134,
+        "recall_available_pairs": 0.9406533122766187,
+        "accepted_link_label_coverage": 0.9885653175386641,
+        "verified_correct_fraction_all_links": 0.9309805857189866
+      },
+      "after": {
+        "accepted_links": 11666,
+        "correct_links": 11059,
+        "wrong_known_links": 475,
+        "unresolved_gt_links": 132,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 972,
+        "precision_labeled": 0.9588174093983006,
+        "recall_available_pairs": 0.9192087108303549,
+        "accepted_link_label_coverage": 0.9886850677181553,
+        "verified_correct_fraction_all_links": 0.9479684553403052
+      },
+      "removed": {
+        "accepted_links": 490,
+        "correct_links": 258,
+        "wrong_known_links": 225,
+        "unresolved_gt_links": 7
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 7472,
+        "singletons": 2426,
+        "two_member_groups": 1736,
+        "three_member_groups": 3310,
+        "linked_groups_all_known_same_gt": 4542,
+        "linked_groups_different_known_gt": 439,
+        "linked_groups_unresolved_gt": 65,
+        "merged": 8356,
+        "already_in_same_group": 3310,
+        "rejected_camera_conflict": 86,
+        "rejected_missing_pair_support": 404
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 4879,
+        "camera_conflict_components": 169,
+        "open_three_camera_components": 146,
+        "closed_three_camera_components": 3310,
+        "frames_with_camera_conflict": 144,
+        "frames_with_open_three_camera_component": 129,
+        "components_with_different_known_gt": 604,
+        "components_with_unknown_gt": 72
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.7,
+      "before": {
+        "accepted_links": 10968,
+        "correct_links": 10507,
+        "wrong_known_links": 363,
+        "unresolved_gt_links": 98,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 1524,
+        "precision_labeled": 0.9666053357865685,
+        "recall_available_pairs": 0.8733272379685811,
+        "accepted_link_label_coverage": 0.9910649161196207,
+        "verified_correct_fraction_all_links": 0.9579686360320934
+      },
+      "after": {
+        "accepted_links": 10431,
+        "correct_links": 10140,
+        "wrong_known_links": 210,
+        "unresolved_gt_links": 81,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 1891,
+        "precision_labeled": 0.9797101449275363,
+        "recall_available_pairs": 0.8428227080043221,
+        "accepted_link_label_coverage": 0.9922346850733391,
+        "verified_correct_fraction_all_links": 0.9721023871153293
+      },
+      "removed": {
+        "accepted_links": 537,
+        "correct_links": 367,
+        "wrong_known_links": 153,
+        "unresolved_gt_links": 17
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 8369,
+        "singletons": 3882,
+        "two_member_groups": 1515,
+        "three_member_groups": 2972,
+        "linked_groups_all_known_same_gt": 4245,
+        "linked_groups_different_known_gt": 198,
+        "linked_groups_unresolved_gt": 44,
+        "merged": 7459,
+        "already_in_same_group": 2972,
+        "rejected_camera_conflict": 44,
+        "rejected_missing_pair_support": 493
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 4383,
+        "camera_conflict_components": 156,
+        "open_three_camera_components": 243,
+        "closed_three_camera_components": 2972,
+        "frames_with_camera_conflict": 128,
+        "frames_with_open_three_camera_component": 169,
+        "components_with_different_known_gt": 323,
+        "components_with_unknown_gt": 62
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.8,
+      "before": {
+        "accepted_links": 7013,
+        "correct_links": 6904,
+        "wrong_known_links": 87,
+        "unresolved_gt_links": 22,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 5127,
+        "precision_labeled": 0.9875554284079531,
+        "recall_available_pairs": 0.5738508852131993,
+        "accepted_link_label_coverage": 0.9968629687722801,
+        "verified_correct_fraction_all_links": 0.984457436189933
+      },
+      "after": {
+        "accepted_links": 5783,
+        "correct_links": 5740,
+        "wrong_known_links": 28,
+        "unresolved_gt_links": 15,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 6291,
+        "precision_labeled": 0.9951456310679612,
+        "recall_available_pairs": 0.47710082287424155,
+        "accepted_link_label_coverage": 0.9974061905585336,
+        "verified_correct_fraction_all_links": 0.9925644129344631
+      },
+      "removed": {
+        "accepted_links": 1230,
+        "correct_links": 1164,
+        "wrong_known_links": 59,
+        "unresolved_gt_links": 7
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 11071,
+        "singletons": 7340,
+        "two_member_groups": 2705,
+        "three_member_groups": 1026,
+        "linked_groups_all_known_same_gt": 3698,
+        "linked_groups_different_known_gt": 23,
+        "linked_groups_unresolved_gt": 10,
+        "merged": 4757,
+        "already_in_same_group": 1026,
+        "rejected_camera_conflict": 3,
+        "rejected_missing_pair_support": 1227
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 3688,
+        "camera_conflict_components": 46,
+        "open_three_camera_components": 1144,
+        "closed_three_camera_components": 1026,
+        "frames_with_camera_conflict": 46,
+        "frames_with_open_three_camera_component": 297,
+        "components_with_different_known_gt": 77,
+        "components_with_unknown_gt": 18
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.9,
+      "before": {
+        "accepted_links": 2006,
+        "correct_links": 1995,
+        "wrong_known_links": 10,
+        "unresolved_gt_links": 1,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 10036,
+        "precision_labeled": 0.9950124688279302,
+        "recall_available_pairs": 0.16582162746238882,
+        "accepted_link_label_coverage": 0.9995014955134596,
+        "verified_correct_fraction_all_links": 0.9945164506480558
+      },
+      "after": {
+        "accepted_links": 1903,
+        "correct_links": 1894,
+        "wrong_known_links": 8,
+        "unresolved_gt_links": 1,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 10137,
+        "precision_labeled": 0.9957939011566772,
+        "recall_available_pairs": 0.15742664782644833,
+        "accepted_link_label_coverage": 0.999474513925381,
+        "verified_correct_fraction_all_links": 0.9952706253284288
+      },
+      "removed": {
+        "accepted_links": 103,
+        "correct_links": 101,
+        "wrong_known_links": 2,
+        "unresolved_gt_links": 0
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 13933,
+        "singletons": 12046,
+        "two_member_groups": 1879,
+        "three_member_groups": 8,
+        "linked_groups_all_known_same_gt": 1878,
+        "linked_groups_different_known_gt": 8,
+        "linked_groups_unresolved_gt": 1,
+        "merged": 1895,
+        "already_in_same_group": 8,
+        "rejected_camera_conflict": 0,
+        "rejected_missing_pair_support": 103
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 1887,
+        "camera_conflict_components": 0,
+        "open_three_camera_components": 103,
+        "closed_three_camera_components": 8,
+        "frames_with_camera_conflict": 0,
+        "frames_with_open_three_camera_component": 86,
+        "components_with_different_known_gt": 8,
+        "components_with_unknown_gt": 1
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.95,
+      "before": {
+        "accepted_links": 271,
+        "correct_links": 271,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 11760,
+        "precision_labeled": 1.0,
+        "recall_available_pairs": 0.022525143379602694,
+        "accepted_link_label_coverage": 1.0,
+        "verified_correct_fraction_all_links": 1.0
+      },
+      "after": {
+        "accepted_links": 271,
+        "correct_links": 271,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 11760,
+        "precision_labeled": 1.0,
+        "recall_available_pairs": 0.022525143379602694,
+        "accepted_link_label_coverage": 1.0,
+        "verified_correct_fraction_all_links": 1.0
+      },
+      "removed": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 15557,
+        "singletons": 15286,
+        "two_member_groups": 271,
+        "three_member_groups": 0,
+        "linked_groups_all_known_same_gt": 271,
+        "linked_groups_different_known_gt": 0,
+        "linked_groups_unresolved_gt": 0,
+        "merged": 271,
+        "already_in_same_group": 0,
+        "rejected_camera_conflict": 0,
+        "rejected_missing_pair_support": 0
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 271,
+        "camera_conflict_components": 0,
+        "open_three_camera_components": 0,
+        "closed_three_camera_components": 0,
+        "frames_with_camera_conflict": 0,
+        "frames_with_open_three_camera_component": 0,
+        "components_with_different_known_gt": 0,
+        "components_with_unknown_gt": 0
+      }
+    },
+    {
+      "variant": "mean",
+      "threshold": 1.0,
+      "before": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 12031,
+        "precision_labeled": null,
+        "recall_available_pairs": 0.0,
+        "accepted_link_label_coverage": null,
+        "verified_correct_fraction_all_links": null
+      },
+      "after": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0,
+        "available_positive_pairs": 12031,
+        "missed_positive_pairs": 12031,
+        "precision_labeled": null,
+        "recall_available_pairs": 0.0,
+        "accepted_link_label_coverage": null,
+        "verified_correct_fraction_all_links": null
+      },
+      "removed": {
+        "accepted_links": 0,
+        "correct_links": 0,
+        "wrong_known_links": 0,
+        "unresolved_gt_links": 0
+      },
+      "groups": {
+        "frames": 298,
+        "observations": 15828,
+        "groups": 15828,
+        "singletons": 15828,
+        "two_member_groups": 0,
+        "three_member_groups": 0,
+        "linked_groups_all_known_same_gt": 0,
+        "linked_groups_different_known_gt": 0,
+        "linked_groups_unresolved_gt": 0,
+        "merged": 0,
+        "already_in_same_group": 0,
+        "rejected_camera_conflict": 0,
+        "rejected_missing_pair_support": 0
+      },
+      "source_components": {
+        "frames": 298,
+        "linked_components": 0,
+        "camera_conflict_components": 0,
+        "open_three_camera_components": 0,
+        "closed_three_camera_components": 0,
+        "frames_with_camera_conflict": 0,
+        "frames_with_open_three_camera_component": 0,
+        "components_with_different_known_gt": 0,
+        "components_with_unknown_gt": 0
+      }
+    }
+  ],
+  "artifacts": {
+    "by_frame.csv": {
+      "path": "by_frame.csv",
+      "sha256": "68951dd26e1d5a9c7f33767226ec04ace1c804610234f22c7ab9d1a284f5089a"
+    },
+    "groups.jsonl.gz": {
+      "path": "groups.jsonl.gz",
+      "sha256": "d0265e15e4e5eb45b18a318c4618c8cf1e22aade85b927dbae2a2710a3f3392e"
+    },
+    "summary.csv": {
+      "path": "summary.csv",
+      "sha256": "3a733c1db41a4a1f5c4ca9cf2b39ab58f7d065ad6d7f221bf6c2377591a9398b"
+    }
+  },
+  "limits": [
+    "Integration diagnostic, not threshold calibration or independent validation",
+    "Inherits frozen IoU-derived GT labels; raw GT, boxes, embeddings and earlier input hashes are not reverified",
+    "No independent observations across time; no confidence intervals or significance claims",
+    "Greedy complete-support grouping is not a globally optimal partition",
+    "Grouping can remove correct edges; no guaranteed precision improvement",
+    "No structural camera conflict is a policy invariant, not proof of identity correctness",
+    "Pair recall is conditional on current GT-assigned observations, not all people in the scene",
+    "No persistent global IDs, temporal recovery, global IDF1 or performance measurement"
+  ]
+}
