@@ -1,0 +1,14 @@
+{
+  "package": "supervision",
+  "version": "0.30.7",
+  "uploaded_archive_sha256": "2252464a87ceb6644bfa3e93af224cf7bb3058c1543165d631544cf54b2dd432",
+  "source_sha256": {
+    "supervision/tracker/byte_tracker/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervision/tracker/byte_tracker/core.py": "018911df3dd600c7a0abbd059138b116185a458f2b4877b4c1fd32f5c341c90d",
+    "supervision/tracker/byte_tracker/kalman_filter.py": "08f2321fe92484c8105088fa96532a76952ae16a0bea0568f0e25b01f39cfb94",
+    "supervision/tracker/byte_tracker/matching.py": "3cb4282d778fbf00d78e5ea1cc6c2f1cef6eb5b0ad54628cdfa7a36cfcc64a08",
+    "supervision/tracker/byte_tracker/single_object_track.py": "1bba3c3471df1b1cf0a28cf72cfa195e135cf35abcbbffcdf83f9863474b3371",
+    "supervision/tracker/byte_tracker/utils.py": "46b008dbbedc7646796eeecb75c894c65bcc203680bdc37031f204faf088c70c",
+    "src/mtmc/tracking/bytetrack.py": "1b2b6805fbe868139da5650b42fd89f5384788a7624e78dde84071aa68e7778a"
+  }
+}

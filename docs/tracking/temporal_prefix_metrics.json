@@ -1,0 +1,136 @@
+{
+  "completed": true,
+  "passed": true,
+  "protocol": "frozen_temporal_prefix_exact_v1",
+  "run_id": "20261007T171712998154Z",
+  "inputs": {
+    "short:cache_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T154414673309Z/report.json",
+      "sha256": "c66e9320556851638ec1688d6b4429008e8b22729a45a65f432620f8054fa507"
+    },
+    "short:pipeline_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T133915524799Z/report.json",
+      "sha256": "963ac68569e1cb72c6a8c615abff0aeb2abdd377b35f1965a54df3cf8fc6c3fd"
+    },
+    "short:tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T133915524799Z/tracks.jsonl",
+      "sha256": "74851d1ddf3a293a7d3363a3c5923455aef466c98433ae36908d72cb0cd49bab"
+    },
+    "short:global_tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T133915524799Z/global_tracks.jsonl",
+      "sha256": "c0ab5cd571b478ab18dd76b47cc101fc87b9d72a1872f8b3c87056d9e9251438"
+    },
+    "short:decisions": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T133915524799Z/decisions.jsonl",
+      "sha256": "8b4b7de07fade1debde6ae821dde2f02dde112876517d210351a1201a7d9b3be"
+    },
+    "short:embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T133915524799Z/embeddings.npy",
+      "sha256": "84f82ca973134edaeb8e42fc84002ed2de2f739f2aaa83f92bca80dd94bf6a0e"
+    },
+    "short:mean_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T133915524799Z/mean_embeddings.npy",
+      "sha256": "6f9278c1ccba8721e9e94fe750286d929128c5d6ddf955154988f34609c3a6a7"
+    },
+    "short:cache:detections.jsonl": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T154414673309Z/detections.jsonl",
+      "sha256": "afd4b9ecbdf9250a49844f6bf5ded104c61ff95c34561287f9992b31e04d2c24"
+    },
+    "short:cache:embeddings.npy": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T154414673309Z/embeddings.npy",
+      "sha256": "807a1cc0047565de878d0af56831940ee97b1dc11c3ffe799bc1867bd34df009"
+    },
+    "long:cache_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/report.json",
+      "sha256": "72c9c302d6529f1742c085d1546f67fa701b3a020877f0e9a5a4e2bb49cd68e5"
+    },
+    "long:pipeline_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/report.json",
+      "sha256": "f9d67649abff3cc7083833d38f528051741ab79c66d417a7b03572178c5a7c74"
+    },
+    "long:tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/tracks.jsonl",
+      "sha256": "a79a070dabfa8873872e1128673c730c674ce8b97448722d9036ea135123135d"
+    },
+    "long:global_tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/global_tracks.jsonl",
+      "sha256": "6332a7042ab0947558a3f9f290382967f17c9290f3fabc0f14506eadbef31dfe"
+    },
+    "long:decisions": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/decisions.jsonl",
+      "sha256": "0c48f099ea571339cee078fe900e10eb88db7145ef2e2254e373704f6cb8da95"
+    },
+    "long:embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/embeddings.npy",
+      "sha256": "c770d845e76b669cf39e38ec9f0dad2990d62e29d1c57ef9f5b75ad4e7b3039c"
+    },
+    "long:mean_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/mean_embeddings.npy",
+      "sha256": "f00479d0fc6a29379967d0ad1a4d30d4a291be7e4d508c25ca5851f61aaf8c1d"
+    },
+    "long:cache:detections.jsonl": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/detections.jsonl",
+      "sha256": "ce245271bf8b409e5c8bfa1306f26e45988dbcdffd3713a8cca6d576967a5a76"
+    },
+    "long:cache:embeddings.npy": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/embeddings.npy",
+      "sha256": "2e8e5fe9a06164033ba763e726298b15dd03f1741327bcb251503a2a2eccbb06"
+    }
+  },
+  "prefix_frames": [
+    0,
+    1799
+  ],
+  "comparisons": {
+    "tracks": {
+      "compared_frames": 1800,
+      "mismatching_frames": 0,
+      "first_mismatches": [],
+      "exact": true
+    },
+    "global_tracks": {
+      "compared_frames": 1800,
+      "mismatching_frames": 0,
+      "first_mismatches": [],
+      "exact": true
+    },
+    "decisions": {
+      "compared_frames": 1800,
+      "mismatching_frames": 0,
+      "first_mismatches": [],
+      "exact": true
+    },
+    "candidates": {
+      "compared_frames": 1800,
+      "mismatching_frames": 0,
+      "first_mismatches": [],
+      "exact": true
+    },
+    "embeddings": {
+      "compared_rows": 96282,
+      "changed_rows": 0,
+      "max_absolute_error": 0.0,
+      "exact": true
+    },
+    "mean_embeddings": {
+      "compared_rows": 96282,
+      "changed_rows": 0,
+      "max_absolute_error": 0.0,
+      "exact": true
+    },
+    "candidate_embeddings": {
+      "compared_rows": 113250,
+      "changed_rows": 0,
+      "max_absolute_error": 0.0,
+      "exact": true
+    }
+  },
+  "short_source_run_id": "20261007T133915524799Z",
+  "long_source_run_id": "20261007T164721073889Z",
+  "script_sha256": "f5e5f6ebea16b038cdbbb9d3f65b3f7c2b7fe435d9e6d22c6ce0d4458ec60f98",
+  "limits": [
+    "Run scope strings are normalized; all other frozen JSON fields are compared exactly.",
+    "Feature equality is exact, not a cosine tolerance; changes require inspection.",
+    "This checks repeatability of the shared prefix, not accuracy or the unseen suffix."
+  ]
+}

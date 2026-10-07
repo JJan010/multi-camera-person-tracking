@@ -1,0 +1,755 @@
+{
+  "completed": true,
+  "protocol": "appearance_local_to_global_paired_v1",
+  "run_id": "20261007T174247370251Z",
+  "source_run_id": "20261007T164721073889Z",
+  "local_experiment_run_id": "20261007T171955616342Z",
+  "inputs": {
+    "local_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_bytetrack/20261007T171955616342Z/report.json",
+      "sha256": "7358b89de86af03ddd0dd9e821cae2cca659b2f3c09cf911990b0657debd8fb8"
+    },
+    "cache_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/report.json",
+      "sha256": "72c9c302d6529f1742c085d1546f67fa701b3a020877f0e9a5a4e2bb49cd68e5"
+    },
+    "pipeline_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/report.json",
+      "sha256": "f9d67649abff3cc7083833d38f528051741ab79c66d417a7b03572178c5a7c74"
+    },
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/tracks.jsonl",
+      "sha256": "a79a070dabfa8873872e1128673c730c674ce8b97448722d9036ea135123135d"
+    },
+    "detections.jsonl": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/detections.jsonl",
+      "sha256": "ce245271bf8b409e5c8bfa1306f26e45988dbcdffd3713a8cca6d576967a5a76"
+    },
+    "embeddings.npy": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/embeddings.npy",
+      "sha256": "2e8e5fe9a06164033ba763e726298b15dd03f1741327bcb251503a2a2eccbb06"
+    },
+    "local_variants": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_bytetrack/20261007T171955616342Z/tracks.jsonl.gz",
+      "sha256": "b2646ae04c9d014b6dd406824dff40322f080445eab135a3949ffd26aa306702"
+    },
+    "short_global_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_global/20261007T163919105755Z/report.json",
+      "sha256": "791502f9d6779b3dbc2b4b8246adb183b0409343cf0cb2104c8b9e542a537868"
+    },
+    "short_local_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_bytetrack/20261007T162104712584Z/report.json",
+      "sha256": "31ec87982a4971722f93c01435afc44091c8a00022884031fde6433f758b0640"
+    },
+    "short_local_variants": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_bytetrack/20261007T162104712584Z/tracks.jsonl.gz",
+      "sha256": "62416bd4577385dff961072f5de0fc8ca06856aeda6a2dbfe1bd6734707d0304"
+    },
+    "code:src/mtmc/association/__init__.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/__init__.py",
+      "sha256": "9a8c7b88669b4b0ca5ff8605b89bb12a17ec5d37db6fecdf127cfb317cb1ac98"
+    },
+    "code:src/mtmc/association/controlled_merge.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/controlled_merge.py",
+      "sha256": "92f5def1720cf5360d268f19e0a5caf7f69486302d93977a7fb15afb561a62be"
+    },
+    "code:src/mtmc/association/geometry.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/geometry.py",
+      "sha256": "9ee33f5371a051c5b7b63d63646a6350ef7e1f85e21b4b1c5123be92949df9b9"
+    },
+    "code:src/mtmc/association/global_identity.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/global_identity.py",
+      "sha256": "407f79469bbfaf9a75d3764340e1937fd8cf18dc7b5c18c7c5e9b15dd7038289"
+    },
+    "code:src/mtmc/association/grouping.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/grouping.py",
+      "sha256": "8aad7eee77436cb51f3727eb21e1049287d7e400fc709babec0933f80be007fe"
+    },
+    "code:src/mtmc/association/pairwise.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/pairwise.py",
+      "sha256": "0d1d349c5a08b48887a17a3225c507102d03a2a85121a417125489b8df10e44c"
+    },
+    "code:src/mtmc/pipeline/core.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/pipeline/core.py",
+      "sha256": "80cdd80493e65f3b2a6636691531144234e0a877b2d4206ed761d7a63e5ccf12"
+    },
+    "code:src/mtmc/reid/history.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/history.py",
+      "sha256": "44421f02c248ccc26af97edde22495c448f801beddc12a1450f73ca88c90b8e7"
+    },
+    "original_globals": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_pipeline/20261007T164721073889Z/global_tracks.jsonl",
+      "sha256": "6332a7042ab0947558a3f9f290382967f17c9290f3fabc0f14506eadbef31dfe"
+    },
+    "calibration": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/calibration_2025_format.json",
+      "sha256": "cad8df87ec3b9b232b1756797f8710b3b416a5fb86fff4df1906332e03673085"
+    },
+    "baseline_evaluation": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/mtmc_sequence_evaluation/20261007T165247973222Z/report.json",
+      "sha256": "e1cf4bdcb71381cda1674adc1be53fb4190e4185c886cfaf6d8e1fb11f9e7fea"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "configuration": {
+    "frames": [
+      0,
+      3599
+    ],
+    "evaluation_frames": [
+      2,
+      3599
+    ],
+    "appearance_variant": "mean",
+    "appearance_threshold": 0.7,
+    "geometry": {
+      "max_distance": 2.0,
+      "unavailable_policy": "appearance_only"
+    },
+    "identity": {
+      "max_idle_seconds": "1",
+      "min_support_rounds": 3,
+      "min_support_seconds": "1/5",
+      "max_evidence_gap": "1/10"
+    },
+    "history": {
+      "max_observations": 8,
+      "max_age_seconds": "1"
+    },
+    "local_appearance_threshold": 0.6
+  },
+  "metrics": {
+    "baseline": {
+      "camera_time_slots": 10794,
+      "gt_observations": 184207,
+      "predicted_observations": 180410,
+      "gt_identities": 25,
+      "predicted_identities": 253,
+      "idtp": 89232,
+      "idfp": 91178,
+      "idfn": 94975,
+      "idp": 0.49460672911701126,
+      "idr": 0.4844115587355529,
+      "idf1": 0.48945605937188885
+    },
+    "direct_iou": {
+      "camera_time_slots": 10794,
+      "gt_observations": 184207,
+      "predicted_observations": 180464,
+      "gt_identities": 25,
+      "predicted_identities": 253,
+      "idtp": 89242,
+      "idfp": 91222,
+      "idfn": 94965,
+      "idp": 0.4945141413245855,
+      "idr": 0.4844658454890422,
+      "idf1": 0.48943842532035725
+    },
+    "direct_appearance": {
+      "camera_time_slots": 10794,
+      "gt_observations": 184207,
+      "predicted_observations": 180461,
+      "gt_identities": 25,
+      "predicted_identities": 267,
+      "idtp": 96696,
+      "idfp": 83765,
+      "idfn": 87511,
+      "idp": 0.5358276857603582,
+      "idr": 0.5249311915399524,
+      "idf1": 0.5303234723090592
+    }
+  },
+  "lifecycle": {
+    "baseline": {
+      "observations": 180496,
+      "allocated_ids": 253,
+      "absorbed_ids": 150,
+      "expired_ids": 75,
+      "merge_events": 145,
+      "retained_ids_at_end": 28,
+      "ever_emitted_ids": 253
+    },
+    "direct_iou": {
+      "observations": 180550,
+      "allocated_ids": 253,
+      "absorbed_ids": 150,
+      "expired_ids": 75,
+      "merge_events": 145,
+      "retained_ids_at_end": 28,
+      "ever_emitted_ids": 253
+    },
+    "direct_appearance": {
+      "observations": 180547,
+      "allocated_ids": 267,
+      "absorbed_ids": 155,
+      "expired_ids": 84,
+      "merge_events": 151,
+      "retained_ids_at_end": 28,
+      "ever_emitted_ids": 267
+    }
+  },
+  "accepted_merge_diagnostics": {
+    "baseline": {
+      "all_visible_members_same_gt": 142,
+      "unresolved": 3
+    },
+    "direct_iou": {
+      "all_visible_members_same_gt": 142,
+      "unresolved": 3
+    },
+    "direct_appearance": {
+      "all_visible_members_same_gt": 148,
+      "unresolved": 3
+    }
+  },
+  "checks": {
+    "original_global_metrics_exact": true,
+    "all_variants_motmetrics_agreement": true,
+    "candidate_provenance": true,
+    "global_algorithm_source_hashes": true
+  },
+  "artifacts": {
+    "global_tracks": {
+      "path": "global_tracks.jsonl.gz",
+      "sha256": "3150ea136e610ba9a7fdd5c6b18713cba33b88d4886048312f378a68ccd3f77b"
+    },
+    "identity_matching": {
+      "path": "identity_matching.json",
+      "sha256": "fc999331ad5115b7cd630f5589f1661a577b05215a8e18e558d708a373ee9d65"
+    }
+  },
+  "script_sha256": "8d7a0055cb0e4415947be49b9034d8b64661aa59258c13a0ce5aaf77cbeb2b7e",
+  "limits": [
+    "Combined development prefix and unseen temporal suffix; see temporal_evaluation for separate scores.",
+    "Original global outputs are preserved as the baseline, not recomputed with cached features.",
+    "Direct variants share cached candidate features and identical downstream policy.",
+    "Original-vs-direct comparison includes output mapping and small cache numerical differences.",
+    "Global history still uses all encoded tracked observations, independently of the local strong-sample gallery.",
+    "Returned box counts may differ; each variant uses its own prediction denominator.",
+    "Same-GT visible merge members do not establish the purity of the whole identity."
+  ],
+  "temporal_evaluation": {
+    "split_frame": 1800,
+    "runtime_reset_at_split": false,
+    "evaluation_accumulators_reset_at_split": true,
+    "windows": {
+      "first": {
+        "frames": [
+          2,
+          1799
+        ],
+        "variants": {
+          "baseline": {
+            "global": {
+              "camera_time_slots": 5394,
+              "gt_observations": 97915,
+              "predicted_observations": 96196,
+              "gt_identities": 25,
+              "predicted_identities": 138,
+              "idtp": 69634,
+              "idfp": 26562,
+              "idfn": 28281,
+              "idp": 0.7238762526508379,
+              "idr": 0.7111678496655263,
+              "idf1": 0.7174657798888265
+            },
+            "local": {
+              "camera_0004": {
+                "num_frames": 1798,
+                "num_objects": 27563,
+                "num_predictions": 27205,
+                "idtp": 18717.0,
+                "idfp": 8488.0,
+                "idfn": 8846.0,
+                "idf1": 0.6835013146,
+                "idp": 0.6879985297,
+                "idr": 0.6790625113,
+                "precision": 0.982723764,
+                "recall": 0.9699597286,
+                "num_switches": 29,
+                "num_false_positives": 470,
+                "num_misses": 828
+              },
+              "camera_0005": {
+                "num_frames": 1798,
+                "num_objects": 34853,
+                "num_predictions": 34433,
+                "idtp": 21087.0,
+                "idfp": 13346.0,
+                "idfn": 13766.0,
+                "idf1": 0.6086943971,
+                "idp": 0.6124067029,
+                "idr": 0.605026827,
+                "precision": 0.9845497052,
+                "recall": 0.9726852782,
+                "num_switches": 47,
+                "num_false_positives": 532,
+                "num_misses": 952
+              },
+              "camera_0008": {
+                "num_frames": 1798,
+                "num_objects": 35499,
+                "num_predictions": 34558,
+                "idtp": 22744.0,
+                "idfp": 11814.0,
+                "idfn": 12755.0,
+                "idf1": 0.6492998558,
+                "idp": 0.6581399387,
+                "idr": 0.6406941041,
+                "precision": 0.9868626657,
+                "recall": 0.9607031184,
+                "num_switches": 44,
+                "num_false_positives": 454,
+                "num_misses": 1395
+              },
+              "OVERALL": {
+                "num_frames": 5394,
+                "num_objects": 97915,
+                "num_predictions": 96196,
+                "idtp": 62548.0,
+                "idfp": 33648.0,
+                "idfn": 35367.0,
+                "idf1": 0.6444560071,
+                "idp": 0.6502141461,
+                "idr": 0.6387989583,
+                "precision": 0.9848642355,
+                "recall": 0.9675739162,
+                "num_switches": 120,
+                "num_false_positives": 1456,
+                "num_misses": 3175
+              }
+            }
+          },
+          "direct_iou": {
+            "global": {
+              "camera_time_slots": 5394,
+              "gt_observations": 97915,
+              "predicted_observations": 96209,
+              "gt_identities": 25,
+              "predicted_identities": 138,
+              "idtp": 69642,
+              "idfp": 26567,
+              "idfn": 28273,
+              "idp": 0.7238615929902608,
+              "idr": 0.7112495531838839,
+              "idf1": 0.7175001545403968
+            },
+            "local": {
+              "camera_0004": {
+                "num_frames": 1798,
+                "num_objects": 27563,
+                "num_predictions": 27214,
+                "idtp": 18721.0,
+                "idfp": 8493.0,
+                "idfn": 8842.0,
+                "idf1": 0.6835350603,
+                "idp": 0.6879179834,
+                "idr": 0.6792076334,
+                "precision": 0.9826559859,
+                "recall": 0.9702136923,
+                "num_switches": 29,
+                "num_false_positives": 472,
+                "num_misses": 821
+              },
+              "camera_0005": {
+                "num_frames": 1798,
+                "num_objects": 34853,
+                "num_predictions": 34436,
+                "idtp": 21087.0,
+                "idfp": 13349.0,
+                "idfn": 13766.0,
+                "idf1": 0.6086680425,
+                "idp": 0.6123533511,
+                "idr": 0.605026827,
+                "precision": 0.9845220118,
+                "recall": 0.972742662,
+                "num_switches": 47,
+                "num_false_positives": 533,
+                "num_misses": 950
+              },
+              "camera_0008": {
+                "num_frames": 1798,
+                "num_objects": 35499,
+                "num_predictions": 34559,
+                "idtp": 22743.0,
+                "idfp": 11816.0,
+                "idfn": 12756.0,
+                "idf1": 0.64926204,
+                "idp": 0.6580919587,
+                "idr": 0.6406659343,
+                "precision": 0.9868051738,
+                "recall": 0.9606749486,
+                "num_switches": 44,
+                "num_false_positives": 456,
+                "num_misses": 1396
+              },
+              "OVERALL": {
+                "num_frames": 5394,
+                "num_objects": 97915,
+                "num_predictions": 96209,
+                "idtp": 62551.0,
+                "idfp": 33658.0,
+                "idfn": 35364.0,
+                "idf1": 0.6444437576,
+                "idp": 0.6501574697,
+                "idr": 0.6388295971,
+                "precision": 0.9848143105,
+                "recall": 0.9676556197,
+                "num_switches": 120,
+                "num_false_positives": 1461,
+                "num_misses": 3167
+              }
+            }
+          },
+          "direct_appearance": {
+            "global": {
+              "camera_time_slots": 5394,
+              "gt_observations": 97915,
+              "predicted_observations": 96215,
+              "gt_identities": 25,
+              "predicted_identities": 137,
+              "idtp": 71413,
+              "idfp": 24802,
+              "idfn": 26502,
+              "idp": 0.7422231460790937,
+              "idr": 0.7293366695603329,
+              "idf1": 0.7357234842631226
+            },
+            "local": {
+              "camera_0004": {
+                "num_frames": 1798,
+                "num_objects": 27563,
+                "num_predictions": 27211,
+                "idtp": 18721.0,
+                "idfp": 8490.0,
+                "idfn": 8842.0,
+                "idf1": 0.6835724979,
+                "idp": 0.687993826,
+                "idr": 0.6792076334,
+                "precision": 0.9826908236,
+                "recall": 0.9701411312,
+                "num_switches": 29,
+                "num_false_positives": 471,
+                "num_misses": 823
+              },
+              "camera_0005": {
+                "num_frames": 1798,
+                "num_objects": 34853,
+                "num_predictions": 34445,
+                "idtp": 21451.0,
+                "idfp": 12994.0,
+                "idfn": 13402.0,
+                "idf1": 0.6190943462,
+                "idp": 0.6227609232,
+                "idr": 0.6154706912,
+                "precision": 0.9842357381,
+                "recall": 0.9727139701,
+                "num_switches": 52,
+                "num_false_positives": 543,
+                "num_misses": 951
+              },
+              "camera_0008": {
+                "num_frames": 1798,
+                "num_objects": 35499,
+                "num_predictions": 34559,
+                "idtp": 23464.0,
+                "idfp": 11095.0,
+                "idfn": 12035.0,
+                "idf1": 0.6698449856,
+                "idp": 0.6789548309,
+                "idr": 0.6609763655,
+                "precision": 0.9868341098,
+                "recall": 0.9607031184,
+                "num_switches": 42,
+                "num_false_positives": 455,
+                "num_misses": 1395
+              },
+              "OVERALL": {
+                "num_frames": 5394,
+                "num_objects": 97915,
+                "num_predictions": 96215,
+                "idtp": 63636.0,
+                "idfp": 32579.0,
+                "idfn": 34279.0,
+                "idf1": 0.6556019162,
+                "idp": 0.6613937536,
+                "idr": 0.6499106368,
+                "precision": 0.9847321104,
+                "recall": 0.9676351938,
+                "num_switches": 123,
+                "num_false_positives": 1469,
+                "num_misses": 3169
+              }
+            }
+          }
+        }
+      },
+      "second": {
+        "frames": [
+          1800,
+          3599
+        ],
+        "variants": {
+          "baseline": {
+            "global": {
+              "camera_time_slots": 5400,
+              "gt_observations": 86292,
+              "predicted_observations": 84214,
+              "gt_identities": 25,
+              "predicted_identities": 145,
+              "idtp": 45928,
+              "idfp": 38286,
+              "idfn": 40364,
+              "idp": 0.5453725033842354,
+              "idr": 0.5322393732906874,
+              "idf1": 0.5387259099386532
+            },
+            "local": {
+              "camera_0004": {
+                "num_frames": 1800,
+                "num_objects": 22090,
+                "num_predictions": 22102,
+                "idtp": 13461.0,
+                "idfp": 8641.0,
+                "idfn": 8629.0,
+                "idf1": 0.609205286,
+                "idp": 0.6090399059,
+                "idr": 0.609370756,
+                "precision": 0.9611347389,
+                "recall": 0.9616568583,
+                "num_switches": 43,
+                "num_false_positives": 859,
+                "num_misses": 847
+              },
+              "camera_0005": {
+                "num_frames": 1800,
+                "num_objects": 31063,
+                "num_predictions": 30466,
+                "idtp": 16927.0,
+                "idfp": 13539.0,
+                "idfn": 14136.0,
+                "idf1": 0.5502120951,
+                "idp": 0.5556029672,
+                "idr": 0.5449248302,
+                "precision": 0.9829646163,
+                "recall": 0.9640730129,
+                "num_switches": 80,
+                "num_false_positives": 519,
+                "num_misses": 1116
+              },
+              "camera_0008": {
+                "num_frames": 1800,
+                "num_objects": 33139,
+                "num_predictions": 31646,
+                "idtp": 20083.0,
+                "idfp": 11563.0,
+                "idfn": 13056.0,
+                "idf1": 0.619989195,
+                "idp": 0.6346141692,
+                "idr": 0.6060231148,
+                "precision": 0.9918157113,
+                "recall": 0.9471317783,
+                "num_switches": 46,
+                "num_false_positives": 259,
+                "num_misses": 1752
+              },
+              "OVERALL": {
+                "num_frames": 5400,
+                "num_objects": 86292,
+                "num_predictions": 84214,
+                "idtp": 50471.0,
+                "idfp": 33743.0,
+                "idfn": 35821.0,
+                "idf1": 0.5920143573,
+                "idp": 0.5993184031,
+                "idr": 0.5848862003,
+                "precision": 0.9805614268,
+                "recall": 0.9569485004,
+                "num_switches": 169,
+                "num_false_positives": 1637,
+                "num_misses": 3715
+              }
+            }
+          },
+          "direct_iou": {
+            "global": {
+              "camera_time_slots": 5400,
+              "gt_observations": 86292,
+              "predicted_observations": 84255,
+              "gt_identities": 25,
+              "predicted_identities": 145,
+              "idtp": 45928,
+              "idfp": 38327,
+              "idfn": 40364,
+              "idp": 0.5451071153047297,
+              "idr": 0.5322393732906874,
+              "idf1": 0.5385963986467074
+            },
+            "local": {
+              "camera_0004": {
+                "num_frames": 1800,
+                "num_objects": 22090,
+                "num_predictions": 22141,
+                "idtp": 13461.0,
+                "idfp": 8680.0,
+                "idfn": 8629.0,
+                "idf1": 0.6086681287,
+                "idp": 0.6079671198,
+                "idr": 0.609370756,
+                "precision": 0.9604805564,
+                "recall": 0.9626980534,
+                "num_switches": 43,
+                "num_false_positives": 875,
+                "num_misses": 824
+              },
+              "camera_0005": {
+                "num_frames": 1800,
+                "num_objects": 31063,
+                "num_predictions": 30467,
+                "idtp": 16926.0,
+                "idfp": 13541.0,
+                "idfn": 14137.0,
+                "idf1": 0.5501706485,
+                "idp": 0.5555519086,
+                "idr": 0.5448926375,
+                "precision": 0.9829979978,
+                "recall": 0.9641373982,
+                "num_switches": 80,
+                "num_false_positives": 518,
+                "num_misses": 1114
+              },
+              "camera_0008": {
+                "num_frames": 1800,
+                "num_objects": 33139,
+                "num_predictions": 31647,
+                "idtp": 20082.0,
+                "idfp": 11565.0,
+                "idfn": 13057.0,
+                "idf1": 0.6199487544,
+                "idp": 0.6345625178,
+                "idr": 0.6059929388,
+                "precision": 0.9917843713,
+                "recall": 0.9471317783,
+                "num_switches": 46,
+                "num_false_positives": 260,
+                "num_misses": 1752
+              },
+              "OVERALL": {
+                "num_frames": 5400,
+                "num_objects": 86292,
+                "num_predictions": 84255,
+                "idtp": 50469.0,
+                "idfp": 33786.0,
+                "idfn": 35823.0,
+                "idf1": 0.5918485813,
+                "idp": 0.5990030265,
+                "idr": 0.5848630232,
+                "precision": 0.9803809863,
+                "recall": 0.9572382144,
+                "num_switches": 169,
+                "num_false_positives": 1653,
+                "num_misses": 3690
+              }
+            }
+          },
+          "direct_appearance": {
+            "global": {
+              "camera_time_slots": 5400,
+              "gt_observations": 86292,
+              "predicted_observations": 84246,
+              "gt_identities": 25,
+              "predicted_identities": 160,
+              "idtp": 51709,
+              "idfp": 32537,
+              "idfn": 34583,
+              "idp": 0.6137858177242836,
+              "idr": 0.599232837342975,
+              "idf1": 0.6064220291078821
+            },
+            "local": {
+              "camera_0004": {
+                "num_frames": 1800,
+                "num_objects": 22090,
+                "num_predictions": 22131,
+                "idtp": 13454.0,
+                "idfp": 8677.0,
+                "idfn": 8636.0,
+                "idf1": 0.6084891793,
+                "idp": 0.6079255343,
+                "idr": 0.6090538705,
+                "precision": 0.9605078849,
+                "recall": 0.9622906292,
+                "num_switches": 46,
+                "num_false_positives": 874,
+                "num_misses": 833
+              },
+              "camera_0005": {
+                "num_frames": 1800,
+                "num_objects": 31063,
+                "num_predictions": 30470,
+                "idtp": 17415.0,
+                "idfp": 13055.0,
+                "idfn": 13648.0,
+                "idf1": 0.5660377358,
+                "idp": 0.5715457827,
+                "idr": 0.5606348389,
+                "precision": 0.9831637676,
+                "recall": 0.9643949393,
+                "num_switches": 83,
+                "num_false_positives": 513,
+                "num_misses": 1106
+              },
+              "camera_0008": {
+                "num_frames": 1800,
+                "num_objects": 33139,
+                "num_predictions": 31645,
+                "idtp": 20419.0,
+                "idfp": 11226.0,
+                "idfn": 12720.0,
+                "idf1": 0.6303716967,
+                "idp": 0.6452520145,
+                "idr": 0.6161622258,
+                "precision": 0.9921314584,
+                "recall": 0.9474033616,
+                "num_switches": 49,
+                "num_false_positives": 249,
+                "num_misses": 1743
+              },
+              "OVERALL": {
+                "num_frames": 5400,
+                "num_objects": 86292,
+                "num_predictions": 84246,
+                "idtp": 51288.0,
+                "idfp": 32958.0,
+                "idfn": 35004.0,
+                "idf1": 0.6014847131,
+                "idp": 0.6087885478,
+                "idr": 0.5943540537,
+                "precision": 0.9805806804,
+                "recall": 0.9573309229,
+                "num_switches": 178,
+                "num_false_positives": 1636,
+                "num_misses": 3682
+              }
+            }
+          }
+        }
+      }
+    },
+    "checks": {
+      "local_variant_prefix_exact": true,
+      "first_window_local_and_global_metrics_reproduced": true,
+      "all_global_window_metrics_motmetrics_agreement": true,
+      "count_partition_verified": true
+    },
+    "limits": [
+      "Second window shares scene and people with development; not independent-scene validation.",
+      "Each window has its own identity assignment, so ID scores/counts are not additive.",
+      "Window IDSW starts with empty evaluator history; boundary-crossing changes are not counted there."
+    ]
+  },
+  "window_evaluator_sha256": "398460a51fdacfc1d30528f5c51c3790ac148a1fceb8db433c6afa1e0da304a9"
+}
