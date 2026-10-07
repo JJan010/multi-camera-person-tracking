@@ -1,0 +1,1295 @@
+[
+  {
+    "canonical_global_id": 14,
+    "absorbed_global_ids": [
+      30
+    ],
+    "frame_index": 36,
+    "timestamp": "6/5",
+    "support_rounds": 7,
+    "first_support_time": "1",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 12,
+        "frame_index": 36
+      },
+      {
+        "camera_id": 5,
+        "local_id": 10,
+        "frame_index": 36
+      },
+      {
+        "camera_id": 8,
+        "local_id": 11,
+        "frame_index": 36
+      }
+    ],
+    "retained_membership_before": [
+      [
+        14,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 10
+          },
+          {
+            "camera_id": 8,
+            "local_id": 11
+          }
+        ]
+      ],
+      [
+        30,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 12
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 12,
+        "frame_index": 36,
+        "unique_overlap_gt_id": 14
+      },
+      {
+        "camera_id": 5,
+        "local_id": 10,
+        "frame_index": 36,
+        "unique_overlap_gt_id": 14
+      },
+      {
+        "camera_id": 8,
+        "local_id": 11,
+        "frame_index": 36,
+        "unique_overlap_gt_id": 14
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 8,
+    "absorbed_global_ids": [
+      32
+    ],
+    "frame_index": 49,
+    "timestamp": "49/30",
+    "support_rounds": 7,
+    "first_support_time": "43/30",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 8,
+        "frame_index": 49
+      },
+      {
+        "camera_id": 5,
+        "local_id": 18,
+        "frame_index": 49
+      },
+      {
+        "camera_id": 8,
+        "local_id": 3,
+        "frame_index": 49
+      }
+    ],
+    "retained_membership_before": [
+      [
+        8,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 8
+          },
+          {
+            "camera_id": 8,
+            "local_id": 3
+          }
+        ]
+      ],
+      [
+        32,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 18
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 8,
+        "frame_index": 49,
+        "unique_overlap_gt_id": 5
+      },
+      {
+        "camera_id": 5,
+        "local_id": 18,
+        "frame_index": 49,
+        "unique_overlap_gt_id": 5
+      },
+      {
+        "camera_id": 8,
+        "local_id": 3,
+        "frame_index": 49,
+        "unique_overlap_gt_id": 5
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 25,
+    "absorbed_global_ids": [
+      29
+    ],
+    "frame_index": 68,
+    "timestamp": "34/15",
+    "support_rounds": 7,
+    "first_support_time": "31/15",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 11,
+        "frame_index": 68
+      },
+      {
+        "camera_id": 5,
+        "local_id": 17,
+        "frame_index": 68
+      },
+      {
+        "camera_id": 8,
+        "local_id": 16,
+        "frame_index": 68
+      }
+    ],
+    "retained_membership_before": [
+      [
+        25,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 17
+          },
+          {
+            "camera_id": 8,
+            "local_id": 16
+          }
+        ]
+      ],
+      [
+        29,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 11
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 11,
+        "frame_index": 68,
+        "unique_overlap_gt_id": 21
+      },
+      {
+        "camera_id": 5,
+        "local_id": 17,
+        "frame_index": 68,
+        "unique_overlap_gt_id": 21
+      },
+      {
+        "camera_id": 8,
+        "local_id": 16,
+        "frame_index": 68,
+        "unique_overlap_gt_id": 21
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 9,
+    "absorbed_global_ids": [
+      10
+    ],
+    "frame_index": 74,
+    "timestamp": "37/15",
+    "support_rounds": 7,
+    "first_support_time": "34/15",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 9,
+        "frame_index": 74
+      },
+      {
+        "camera_id": 5,
+        "local_id": 6,
+        "frame_index": 74
+      },
+      {
+        "camera_id": 8,
+        "local_id": 1,
+        "frame_index": 74
+      }
+    ],
+    "retained_membership_before": [
+      [
+        9,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 9
+          }
+        ]
+      ],
+      [
+        10,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 6
+          },
+          {
+            "camera_id": 8,
+            "local_id": 1
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 9,
+        "frame_index": 74,
+        "unique_overlap_gt_id": 1
+      },
+      {
+        "camera_id": 5,
+        "local_id": 6,
+        "frame_index": 74,
+        "unique_overlap_gt_id": 1
+      },
+      {
+        "camera_id": 8,
+        "local_id": 1,
+        "frame_index": 74,
+        "unique_overlap_gt_id": 1
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 21,
+    "absorbed_global_ids": [
+      31
+    ],
+    "frame_index": 87,
+    "timestamp": "29/10",
+    "support_rounds": 7,
+    "first_support_time": "27/10",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 13,
+        "frame_index": 87
+      },
+      {
+        "camera_id": 5,
+        "local_id": 20,
+        "frame_index": 87
+      },
+      {
+        "camera_id": 8,
+        "local_id": 12,
+        "frame_index": 87
+      }
+    ],
+    "retained_membership_before": [
+      [
+        21,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 12
+          }
+        ]
+      ],
+      [
+        31,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 13
+          },
+          {
+            "camera_id": 5,
+            "local_id": 20
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 13,
+        "frame_index": 87,
+        "unique_overlap_gt_id": 18
+      },
+      {
+        "camera_id": 5,
+        "local_id": 20,
+        "frame_index": 87,
+        "unique_overlap_gt_id": 18
+      },
+      {
+        "camera_id": 8,
+        "local_id": 12,
+        "frame_index": 87,
+        "unique_overlap_gt_id": 18
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 24,
+    "absorbed_global_ids": [
+      33
+    ],
+    "frame_index": 89,
+    "timestamp": "89/30",
+    "support_rounds": 7,
+    "first_support_time": "83/30",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 14,
+        "frame_index": 89
+      },
+      {
+        "camera_id": 5,
+        "local_id": 21,
+        "frame_index": 89
+      },
+      {
+        "camera_id": 8,
+        "local_id": 15,
+        "frame_index": 89
+      }
+    ],
+    "retained_membership_before": [
+      [
+        24,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 15
+          }
+        ]
+      ],
+      [
+        33,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 14
+          },
+          {
+            "camera_id": 5,
+            "local_id": 21
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 14,
+        "frame_index": 89,
+        "unique_overlap_gt_id": 2
+      },
+      {
+        "camera_id": 5,
+        "local_id": 21,
+        "frame_index": 89,
+        "unique_overlap_gt_id": 2
+      },
+      {
+        "camera_id": 8,
+        "local_id": 15,
+        "frame_index": 89,
+        "unique_overlap_gt_id": 2
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 25,
+    "absorbed_global_ids": [
+      34
+    ],
+    "frame_index": 125,
+    "timestamp": "25/6",
+    "support_rounds": 7,
+    "first_support_time": "119/30",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 11,
+        "frame_index": 125
+      },
+      {
+        "camera_id": 5,
+        "local_id": 22,
+        "frame_index": 125
+      },
+      {
+        "camera_id": 8,
+        "local_id": 16,
+        "frame_index": 125
+      }
+    ],
+    "retained_membership_before": [
+      [
+        25,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 11
+          },
+          {
+            "camera_id": 8,
+            "local_id": 16
+          }
+        ]
+      ],
+      [
+        34,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 22
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 11,
+        "frame_index": 125,
+        "unique_overlap_gt_id": 21
+      },
+      {
+        "camera_id": 5,
+        "local_id": 22,
+        "frame_index": 125,
+        "unique_overlap_gt_id": 21
+      },
+      {
+        "camera_id": 8,
+        "local_id": 16,
+        "frame_index": 125,
+        "unique_overlap_gt_id": 21
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 28,
+    "absorbed_global_ids": [
+      35
+    ],
+    "frame_index": 137,
+    "timestamp": "137/30",
+    "support_rounds": 7,
+    "first_support_time": "131/30",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 10,
+        "frame_index": 137
+      },
+      {
+        "camera_id": 5,
+        "local_id": 19,
+        "frame_index": 137
+      },
+      {
+        "camera_id": 8,
+        "local_id": 19,
+        "frame_index": 137
+      }
+    ],
+    "retained_membership_before": [
+      [
+        28,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 10
+          },
+          {
+            "camera_id": 5,
+            "local_id": 19
+          }
+        ]
+      ],
+      [
+        35,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 19
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 10,
+        "frame_index": 137,
+        "unique_overlap_gt_id": 7
+      },
+      {
+        "camera_id": 5,
+        "local_id": 19,
+        "frame_index": 137,
+        "unique_overlap_gt_id": 7
+      },
+      {
+        "camera_id": 8,
+        "local_id": 19,
+        "frame_index": 137,
+        "unique_overlap_gt_id": 7
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 20,
+    "absorbed_global_ids": [
+      37
+    ],
+    "frame_index": 140,
+    "timestamp": "14/3",
+    "support_rounds": 7,
+    "first_support_time": "67/15",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 16,
+        "frame_index": 140
+      },
+      {
+        "camera_id": 5,
+        "local_id": 23,
+        "frame_index": 140
+      },
+      {
+        "camera_id": 8,
+        "local_id": 7,
+        "frame_index": 140
+      }
+    ],
+    "retained_membership_before": [
+      [
+        20,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 23
+          },
+          {
+            "camera_id": 8,
+            "local_id": 7
+          }
+        ]
+      ],
+      [
+        37,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 16
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 16,
+        "frame_index": 140,
+        "unique_overlap_gt_id": 19
+      },
+      {
+        "camera_id": 5,
+        "local_id": 23,
+        "frame_index": 140,
+        "unique_overlap_gt_id": 19
+      },
+      {
+        "camera_id": 8,
+        "local_id": 7,
+        "frame_index": 140,
+        "unique_overlap_gt_id": 19
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 19,
+    "absorbed_global_ids": [
+      23
+    ],
+    "frame_index": 141,
+    "timestamp": "47/10",
+    "support_rounds": 7,
+    "first_support_time": "9/2",
+    "members": [
+      {
+        "camera_id": 5,
+        "local_id": 16,
+        "frame_index": 141
+      },
+      {
+        "camera_id": 8,
+        "local_id": 14,
+        "frame_index": 141
+      }
+    ],
+    "retained_membership_before": [
+      [
+        19,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 16
+          }
+        ]
+      ],
+      [
+        23,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 14
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 5,
+        "local_id": 16,
+        "frame_index": 141,
+        "unique_overlap_gt_id": 10
+      },
+      {
+        "camera_id": 8,
+        "local_id": 14,
+        "frame_index": 141,
+        "unique_overlap_gt_id": 10
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 13,
+    "absorbed_global_ids": [
+      26
+    ],
+    "frame_index": 149,
+    "timestamp": "149/30",
+    "support_rounds": 7,
+    "first_support_time": "143/30",
+    "members": [
+      {
+        "camera_id": 5,
+        "local_id": 9,
+        "frame_index": 149
+      },
+      {
+        "camera_id": 8,
+        "local_id": 17,
+        "frame_index": 149
+      }
+    ],
+    "retained_membership_before": [
+      [
+        13,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 9
+          }
+        ]
+      ],
+      [
+        26,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 17
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "different_known_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 5,
+        "local_id": 9,
+        "frame_index": 149,
+        "unique_overlap_gt_id": 24
+      },
+      {
+        "camera_id": 8,
+        "local_id": 17,
+        "frame_index": 149,
+        "unique_overlap_gt_id": 23
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 19,
+    "absorbed_global_ids": [
+      38
+    ],
+    "frame_index": 170,
+    "timestamp": "17/3",
+    "support_rounds": 7,
+    "first_support_time": "82/15",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 17,
+        "frame_index": 170
+      },
+      {
+        "camera_id": 5,
+        "local_id": 16,
+        "frame_index": 170
+      },
+      {
+        "camera_id": 8,
+        "local_id": 14,
+        "frame_index": 170
+      }
+    ],
+    "retained_membership_before": [
+      [
+        19,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 16
+          },
+          {
+            "camera_id": 8,
+            "local_id": 14
+          }
+        ]
+      ],
+      [
+        38,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 17
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 17,
+        "frame_index": 170,
+        "unique_overlap_gt_id": 10
+      },
+      {
+        "camera_id": 5,
+        "local_id": 16,
+        "frame_index": 170,
+        "unique_overlap_gt_id": 10
+      },
+      {
+        "camera_id": 8,
+        "local_id": 14,
+        "frame_index": 170,
+        "unique_overlap_gt_id": 10
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 17,
+    "absorbed_global_ids": [
+      39
+    ],
+    "frame_index": 192,
+    "timestamp": "32/5",
+    "support_rounds": 7,
+    "first_support_time": "31/5",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 18,
+        "frame_index": 192
+      },
+      {
+        "camera_id": 5,
+        "local_id": 13,
+        "frame_index": 192
+      },
+      {
+        "camera_id": 8,
+        "local_id": 20,
+        "frame_index": 192
+      }
+    ],
+    "retained_membership_before": [
+      [
+        17,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 13
+          },
+          {
+            "camera_id": 8,
+            "local_id": 20
+          }
+        ]
+      ],
+      [
+        39,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 18
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 18,
+        "frame_index": 192,
+        "unique_overlap_gt_id": 3
+      },
+      {
+        "camera_id": 5,
+        "local_id": 13,
+        "frame_index": 192,
+        "unique_overlap_gt_id": 3
+      },
+      {
+        "camera_id": 8,
+        "local_id": 20,
+        "frame_index": 192,
+        "unique_overlap_gt_id": 3
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 41,
+    "absorbed_global_ids": [
+      43
+    ],
+    "frame_index": 223,
+    "timestamp": "223/30",
+    "support_rounds": 7,
+    "first_support_time": "217/30",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 19,
+        "frame_index": 223
+      },
+      {
+        "camera_id": 8,
+        "local_id": 22,
+        "frame_index": 223
+      }
+    ],
+    "retained_membership_before": [
+      [
+        41,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 19
+          }
+        ]
+      ],
+      [
+        43,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 22
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 19,
+        "frame_index": 223,
+        "unique_overlap_gt_id": 15
+      },
+      {
+        "camera_id": 8,
+        "local_id": 22,
+        "frame_index": 223,
+        "unique_overlap_gt_id": 15
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 15,
+    "absorbed_global_ids": [
+      40
+    ],
+    "frame_index": 233,
+    "timestamp": "233/30",
+    "support_rounds": 7,
+    "first_support_time": "227/30",
+    "members": [
+      {
+        "camera_id": 5,
+        "local_id": 11,
+        "frame_index": 233
+      },
+      {
+        "camera_id": 8,
+        "local_id": 21,
+        "frame_index": 233
+      }
+    ],
+    "retained_membership_before": [
+      [
+        15,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 11
+          }
+        ]
+      ],
+      [
+        40,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 21
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 5,
+        "local_id": 11,
+        "frame_index": 233,
+        "unique_overlap_gt_id": 0
+      },
+      {
+        "camera_id": 8,
+        "local_id": 21,
+        "frame_index": 233,
+        "unique_overlap_gt_id": 0
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 12,
+    "absorbed_global_ids": [
+      41
+    ],
+    "frame_index": 238,
+    "timestamp": "119/15",
+    "support_rounds": 7,
+    "first_support_time": "116/15",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 19,
+        "frame_index": 238
+      },
+      {
+        "camera_id": 5,
+        "local_id": 8,
+        "frame_index": 238
+      },
+      {
+        "camera_id": 8,
+        "local_id": 22,
+        "frame_index": 238
+      }
+    ],
+    "retained_membership_before": [
+      [
+        12,
+        [
+          {
+            "camera_id": 5,
+            "local_id": 8
+          }
+        ]
+      ],
+      [
+        41,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 19
+          },
+          {
+            "camera_id": 8,
+            "local_id": 22
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 19,
+        "frame_index": 238,
+        "unique_overlap_gt_id": 15
+      },
+      {
+        "camera_id": 5,
+        "local_id": 8,
+        "frame_index": 238,
+        "unique_overlap_gt_id": 15
+      },
+      {
+        "camera_id": 8,
+        "local_id": 22,
+        "frame_index": 238,
+        "unique_overlap_gt_id": 15
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 22,
+    "absorbed_global_ids": [
+      25
+    ],
+    "frame_index": 243,
+    "timestamp": "81/10",
+    "support_rounds": 7,
+    "first_support_time": "79/10",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 11,
+        "frame_index": 243
+      },
+      {
+        "camera_id": 5,
+        "local_id": 22,
+        "frame_index": 243
+      },
+      {
+        "camera_id": 8,
+        "local_id": 13,
+        "frame_index": 243
+      }
+    ],
+    "retained_membership_before": [
+      [
+        22,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 13
+          }
+        ]
+      ],
+      [
+        25,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 11
+          },
+          {
+            "camera_id": 5,
+            "local_id": 22
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 11,
+        "frame_index": 243,
+        "unique_overlap_gt_id": 21
+      },
+      {
+        "camera_id": 5,
+        "local_id": 22,
+        "frame_index": 243,
+        "unique_overlap_gt_id": 21
+      },
+      {
+        "camera_id": 8,
+        "local_id": 13,
+        "frame_index": 243,
+        "unique_overlap_gt_id": 21
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 1,
+    "absorbed_global_ids": [
+      44
+    ],
+    "frame_index": 250,
+    "timestamp": "25/3",
+    "support_rounds": 7,
+    "first_support_time": "122/15",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 1,
+        "frame_index": 250
+      },
+      {
+        "camera_id": 8,
+        "local_id": 23,
+        "frame_index": 250
+      }
+    ],
+    "retained_membership_before": [
+      [
+        1,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 1
+          }
+        ]
+      ],
+      [
+        44,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 23
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 1,
+        "frame_index": 250,
+        "unique_overlap_gt_id": 8
+      },
+      {
+        "camera_id": 8,
+        "local_id": 23,
+        "frame_index": 250,
+        "unique_overlap_gt_id": 8
+      }
+    ]
+  },
+  {
+    "canonical_global_id": 36,
+    "absorbed_global_ids": [
+      45
+    ],
+    "frame_index": 261,
+    "timestamp": "87/10",
+    "support_rounds": 7,
+    "first_support_time": "17/2",
+    "members": [
+      {
+        "camera_id": 4,
+        "local_id": 15,
+        "frame_index": 261
+      },
+      {
+        "camera_id": 5,
+        "local_id": 24,
+        "frame_index": 261
+      },
+      {
+        "camera_id": 8,
+        "local_id": 24,
+        "frame_index": 261
+      }
+    ],
+    "retained_membership_before": [
+      [
+        36,
+        [
+          {
+            "camera_id": 4,
+            "local_id": 15
+          },
+          {
+            "camera_id": 5,
+            "local_id": 24
+          }
+        ]
+      ],
+      [
+        45,
+        [
+          {
+            "camera_id": 8,
+            "local_id": 24
+          }
+        ]
+      ]
+    ],
+    "diagnostic_category": "all_visible_members_same_gt",
+    "diagnostic_members": [
+      {
+        "camera_id": 4,
+        "local_id": 15,
+        "frame_index": 261,
+        "unique_overlap_gt_id": 11
+      },
+      {
+        "camera_id": 5,
+        "local_id": 24,
+        "frame_index": 261,
+        "unique_overlap_gt_id": 11
+      },
+      {
+        "camera_id": 8,
+        "local_id": 24,
+        "frame_index": 261,
+        "unique_overlap_gt_id": 11
+      }
+    ]
+  }
+]
