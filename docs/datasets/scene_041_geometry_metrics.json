@@ -1,0 +1,660 @@
+{
+  "completed": true,
+  "protocol": "validation_scene_audit_v1",
+  "run_id": "20261007T204521274581Z",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "cameras": [
+    361,
+    362,
+    364
+  ],
+  "frame_range": [
+    2,
+    3599
+  ],
+  "inputs": {
+    "video_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_videos/20261007T203915111446Z/report.json",
+      "sha256": "43f1a2c35ae6480380211762d699bc3bb190874a67fe42b159728a272409e2d3"
+    },
+    "annotation_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_annotations/20261007T203319407142Z/report.json",
+      "sha256": "df5b62a984b7e8e24475aa5dda54ff5292fb85bd8200edfc1979df650ead1f8a"
+    },
+    "selection": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_selection.json",
+      "sha256": "7488a9ea5e69fbfa68580c6aeea23356164b650f2045ede749d2a1968158ceb8"
+    },
+    "video_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_video_manifest.json",
+      "sha256": "cff9f4220e2660d4b1058a4c1b578df51e809a71afc6599794e5720826efa9de"
+    },
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_source.json",
+      "sha256": "7890b9298bfafbb593888784963631a4f0782b06b2508a0fdb8ad6e79266ada6"
+    },
+    "ground_truth.txt": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/ground_truth.txt",
+      "sha256": "4cefe073422690d6aa13cd5f41885fc46006b5d3e0b80d46d6aada5db466b5bb"
+    },
+    "calibration_2025_format.json": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/calibration_2025_format.json",
+      "sha256": "b6b04547f8d3fb69106393570e8a6d720150c25caea56567652fe3de1ecaeabe"
+    },
+    "video_361": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0361/video.mp4",
+      "sha256": "db8f05d9d23577712c6ae91c27668573a89b17ffce6d58ef9b613d4e63138658"
+    },
+    "video_362": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0362/video.mp4",
+      "sha256": "7af0d571ca4d572159e4df4f2c176448241d87978ecdb40349586a7e329efc7a"
+    },
+    "video_364": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0364/video.mp4",
+      "sha256": "d41dc37d680d9b1fc9c6467dd77d842a555d55ff469a2c0329faae9b7a06cdcf"
+    }
+  },
+  "matrix_checks": {
+    "361": {
+      "relative_errors": {
+        "P_vs_K_E": 1.4203830569498525e-16,
+        "H_vs_P_columns_0_1_3": 0.0
+      },
+      "condition_number": 11732.057468816356
+    },
+    "362": {
+      "relative_errors": {
+        "P_vs_K_E": 2.4954106603576566e-16,
+        "H_vs_P_columns_0_1_3": 0.0
+      },
+      "condition_number": 15621.015413130466
+    },
+    "364": {
+      "relative_errors": {
+        "P_vs_K_E": 1.1443999250524412e-16,
+        "H_vs_P_columns_0_1_3": 0.0
+      },
+      "condition_number": 11488.18580163044
+    }
+  },
+  "timelines": [
+    {
+      "decoded_frames": 23994,
+      "expected_frames": 23994,
+      "frame_time_bases": [
+        "1/15360"
+      ],
+      "missing_timestamps": 0,
+      "nonincreasing_steps": 0,
+      "timeline_mismatches": 0,
+      "dimension_mismatches": 0,
+      "first_mismatches": [],
+      "first_time": "0",
+      "last_time": "23993/30",
+      "passed": true,
+      "camera": 361
+    },
+    {
+      "decoded_frames": 23994,
+      "expected_frames": 23994,
+      "frame_time_bases": [
+        "1/15360"
+      ],
+      "missing_timestamps": 0,
+      "nonincreasing_steps": 0,
+      "timeline_mismatches": 0,
+      "dimension_mismatches": 0,
+      "first_mismatches": [],
+      "first_time": "0",
+      "last_time": "23993/30",
+      "passed": true,
+      "camera": 362
+    },
+    {
+      "decoded_frames": 23994,
+      "expected_frames": 23994,
+      "frame_time_bases": [
+        "1/15360"
+      ],
+      "missing_timestamps": 0,
+      "nonincreasing_steps": 0,
+      "timeline_mismatches": 0,
+      "dimension_mismatches": 0,
+      "first_mismatches": [],
+      "first_time": "0",
+      "last_time": "23993/30",
+      "passed": true,
+      "camera": 364
+    }
+  ],
+  "timestamp_audit_passed": true,
+  "visual_alignment_reviewed": false,
+  "artifacts": {
+    "gt_projection.csv": {
+      "sha256": "034605776fe83e5566eec686da9aec3e9b80cee332da48e1355432855a227647"
+    }
+  },
+  "code_sha256": "c3f95b4cd14b8dfafa0aa9f3d5eea6bd022dae1755fd797753db75c2b6c6e296",
+  "geometry_helper_sha256": "a019268eddf640c2daebe2deac6f08b38f791d6260e87ef8635c3703ebd4e106",
+  "av_version": "16.0.1",
+  "numpy_version": "2.2.6",
+  "projection_diagnostics": {
+    "361": {
+      "all_raw_boxes": {
+        "rows": 15883,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 15883,
+          "median": 0.18642415675947455,
+          "p95": 0.7415429697833873,
+          "max": 1.558384982563836
+        },
+        "pixel_discrepancy": {
+          "n": 15883,
+          "median": 22.317724406950028,
+          "p95": 113.8521106285026,
+          "max": 233.4348697533075
+        },
+        "roundtrip_px": {
+          "n": 15883,
+          "median": 2.3437142008433856e-13,
+          "p95": 5.084229945850415e-13,
+          "max": 1.1593828079623528e-12
+        }
+      },
+      "fully_inside_boxes": {
+        "rows": 13729,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 13729,
+          "median": 0.1727297447701657,
+          "p95": 0.36793225691663456,
+          "max": 1.201355330691498
+        },
+        "pixel_discrepancy": {
+          "n": 13729,
+          "median": 19.659074533735403,
+          "p95": 49.031214157281966,
+          "max": 93.24191595958152
+        },
+        "roundtrip_px": {
+          "n": 13729,
+          "median": 2.2737367544323206e-13,
+          "p95": 4.687428401686771e-13,
+          "max": 1.1425385788607957e-12
+        }
+      }
+    },
+    "362": {
+      "all_raw_boxes": {
+        "rows": 10841,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 10841,
+          "median": 0.25416684426241315,
+          "p95": 1.788974868702368,
+          "max": 3.4518011201731804
+        },
+        "pixel_discrepancy": {
+          "n": 10841,
+          "median": 26.61423451276654,
+          "p95": 148.25419054565157,
+          "max": 216.6415832254161
+        },
+        "roundtrip_px": {
+          "n": 10841,
+          "median": 2.2737367544323206e-13,
+          "p95": 4.547473508864641e-13,
+          "max": 7.190186943645084e-13
+        }
+      },
+      "fully_inside_boxes": {
+        "rows": 10635,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 10635,
+          "median": 0.25096322688934153,
+          "p95": 1.7835779169428891,
+          "max": 3.4518011201731804
+        },
+        "pixel_discrepancy": {
+          "n": 10635,
+          "median": 26.367722567349283,
+          "p95": 148.18345433815307,
+          "max": 204.44050227532472
+        },
+        "roundtrip_px": {
+          "n": 10635,
+          "median": 2.2737367544323206e-13,
+          "p95": 4.547473508864641e-13,
+          "max": 6.87429441225494e-13
+        }
+      }
+    },
+    "364": {
+      "all_raw_boxes": {
+        "rows": 32361,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 32361,
+          "median": 0.1652328810816169,
+          "p95": 1.4197839786311444,
+          "max": 4.856121822888786
+        },
+        "pixel_discrepancy": {
+          "n": 32361,
+          "median": 12.219124376298003,
+          "p95": 94.99092666221445,
+          "max": 215.24804870516905
+        },
+        "roundtrip_px": {
+          "n": 32361,
+          "median": 1.797546735911271e-13,
+          "p95": 4.547473508864641e-13,
+          "max": 8.198074455012805e-13
+        }
+      },
+      "fully_inside_boxes": {
+        "rows": 29270,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 29270,
+          "median": 0.15576488488672344,
+          "p95": 1.4331610979256453,
+          "max": 4.856121822888786
+        },
+        "pixel_discrepancy": {
+          "n": 29270,
+          "median": 10.851047868260185,
+          "p95": 56.91876441816821,
+          "max": 169.12626017828148
+        },
+        "roundtrip_px": {
+          "n": 29270,
+          "median": 1.6077746776921858e-13,
+          "p95": 3.595093471822542e-13,
+          "max": 8.198074455012805e-13
+        }
+      }
+    }
+  },
+  "gt_world_consistency": {
+    "361-362": {
+      "n": 2422,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "361-364": {
+      "n": 14874,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "362-364": {
+      "n": 8898,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    }
+  },
+  "frames_without_gt_rows": {
+    "361": [
+      1737,
+      1738,
+      1739,
+      1740,
+      1741,
+      1742,
+      1743,
+      1744,
+      1745,
+      1746,
+      1747,
+      1748,
+      1749,
+      1750,
+      1751,
+      1752,
+      1753,
+      1754,
+      1755,
+      1756,
+      1757
+    ],
+    "362": [
+      572,
+      573,
+      574,
+      575,
+      576,
+      586,
+      587,
+      588,
+      589,
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      596,
+      597,
+      598,
+      602,
+      604,
+      605,
+      606,
+      607,
+      608,
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616,
+      617,
+      618,
+      619,
+      620,
+      621,
+      622,
+      623,
+      624,
+      625,
+      626,
+      627,
+      628,
+      629,
+      630,
+      631,
+      632,
+      633,
+      634,
+      635,
+      636,
+      637,
+      638,
+      639,
+      640,
+      641,
+      642,
+      643,
+      644,
+      645,
+      646,
+      647,
+      648,
+      649,
+      650,
+      651,
+      652,
+      653,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      663,
+      664,
+      665,
+      666,
+      667,
+      668,
+      669,
+      670,
+      671,
+      672,
+      673,
+      674,
+      675,
+      676,
+      677,
+      678,
+      679,
+      680,
+      681,
+      690,
+      691,
+      692,
+      693,
+      694,
+      695,
+      696,
+      697,
+      698,
+      699,
+      700,
+      701,
+      702,
+      703,
+      704,
+      705,
+      706,
+      707,
+      708,
+      709,
+      710,
+      711,
+      712,
+      713,
+      714,
+      715,
+      716,
+      717,
+      718,
+      719,
+      720,
+      721,
+      722,
+      723,
+      724,
+      725,
+      726,
+      727,
+      728,
+      729,
+      730,
+      731,
+      732,
+      733,
+      734,
+      735,
+      736,
+      737,
+      738,
+      739,
+      740,
+      741,
+      742,
+      743,
+      744,
+      745,
+      746,
+      747,
+      748,
+      749,
+      750,
+      751,
+      752,
+      753,
+      754,
+      755,
+      756,
+      757,
+      758,
+      759,
+      760,
+      761,
+      762,
+      763,
+      764,
+      765,
+      766,
+      767,
+      768,
+      769,
+      770,
+      771,
+      772,
+      773,
+      774,
+      775,
+      776,
+      777,
+      778,
+      779,
+      780,
+      781,
+      782,
+      783,
+      784,
+      785,
+      786,
+      787,
+      788,
+      789,
+      790,
+      791,
+      792,
+      793,
+      794,
+      795,
+      796,
+      797,
+      798,
+      799,
+      1069,
+      1070,
+      1071,
+      1072,
+      1073,
+      1074,
+      1084,
+      1085,
+      1086,
+      1087,
+      1088,
+      1089,
+      1090,
+      1091,
+      1092,
+      1093,
+      1094,
+      1095,
+      1096,
+      1097,
+      1098,
+      1099,
+      1100,
+      1101,
+      1102,
+      1103,
+      1104,
+      1105,
+      1106,
+      1107,
+      1108,
+      1109,
+      1110,
+      1111,
+      1112,
+      1113,
+      1114,
+      1115,
+      1116,
+      1117,
+      1118,
+      1119,
+      1247,
+      1248,
+      1249,
+      1250,
+      1251,
+      1252,
+      1253,
+      1254,
+      1255,
+      1256,
+      1257,
+      1258,
+      1259,
+      1260,
+      1261,
+      1262,
+      1263,
+      1264,
+      1265,
+      1322,
+      1323,
+      1324,
+      1325,
+      1326,
+      1327,
+      1328,
+      1329,
+      1330,
+      1331,
+      1332,
+      1333,
+      1334,
+      1335,
+      1336,
+      1337,
+      1338,
+      1339,
+      1340,
+      1341,
+      1342,
+      1343,
+      1344,
+      1345,
+      1346,
+      1347,
+      1348,
+      1349,
+      1350,
+      1351,
+      1352,
+      1353,
+      1354,
+      1355,
+      1356,
+      1357,
+      1358,
+      1359,
+      1360,
+      1361,
+      1362,
+      1363,
+      1364,
+      1365,
+      1366,
+      1367,
+      1368,
+      1369,
+      1370,
+      1371,
+      1372,
+      1373
+    ],
+    "364": []
+  },
+  "direction": "H: world Z=0 -> image; inverse H: image -> world Z=0",
+  "coordinate_policy": "Raw xywh box bottom center; no clipping or pixel offset",
+  "world_units": "native dataset units; not independently established as meters",
+  "limits": [
+    "Equal decoded PTS grids do not by themselves prove synchronized scene content.",
+    "No automatic determination of the GT-to-video frame offset.",
+    "Missing GT rows are not independently certified empty frames.",
+    "Matrix algebra and roundtrip do not establish physical calibration accuracy.",
+    "Bottom center is a ground-contact proxy; fully inside does not imply unoccluded.",
+    "No association thresholds selected or modified."
+  ]
+}

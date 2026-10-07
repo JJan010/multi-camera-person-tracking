@@ -1,0 +1,241 @@
+{
+  "completed": true,
+  "protocol": "validation_annotation_audit_v1",
+  "run_id": "20261007T203319407142Z",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "inputs": {
+    "catalog_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_catalog/20261007T191919383486Z/report.json",
+      "sha256": "b38f3261d8ae2a523505e4956d593083b9829754c7c6e0b37a8210d724009b14"
+    },
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_source.json",
+      "sha256": "7890b9298bfafbb593888784963631a4f0782b06b2508a0fdb8ad6e79266ada6"
+    }
+  },
+  "candidate_cameras": [
+    361,
+    362,
+    363
+  ],
+  "frame_stop_exclusive": 3600,
+  "camera_selection_final": false,
+  "audit": {
+    "total_rows": 1570788,
+    "per_camera": [
+      {
+        "camera": 361,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 116025,
+        "persons": 28,
+        "annotated_frames": 23971,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 16767,
+        "fully_outside": 0
+      },
+      {
+        "camera": 362,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 91048,
+        "persons": 28,
+        "annotated_frames": 23446,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 2697,
+        "fully_outside": 0
+      },
+      {
+        "camera": 363,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 91804,
+        "persons": 28,
+        "annotated_frames": 23463,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 16627,
+        "fully_outside": 0
+      },
+      {
+        "camera": 364,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 243747,
+        "persons": 28,
+        "annotated_frames": 23992,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 25901,
+        "fully_outside": 0
+      },
+      {
+        "camera": 365,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 368147,
+        "persons": 28,
+        "annotated_frames": 23992,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 39980,
+        "fully_outside": 0
+      },
+      {
+        "camera": 366,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 312107,
+        "persons": 28,
+        "annotated_frames": 23992,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 16254,
+        "fully_outside": 0
+      },
+      {
+        "camera": 367,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 33153,
+        "persons": 28,
+        "annotated_frames": 17968,
+        "frame_min": 2,
+        "frame_max": 23363,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 8875,
+        "fully_outside": 0
+      },
+      {
+        "camera": 368,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 193614,
+        "persons": 28,
+        "annotated_frames": 23992,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 18492,
+        "fully_outside": 0
+      },
+      {
+        "camera": 369,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 48289,
+        "persons": 28,
+        "annotated_frames": 20388,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 16761,
+        "fully_outside": 0
+      },
+      {
+        "camera": 370,
+        "width": 1920,
+        "height": 1080,
+        "fps": "30",
+        "rows": 72854,
+        "persons": 28,
+        "annotated_frames": 23199,
+        "frame_min": 2,
+        "frame_max": 23993,
+        "duplicate_keys": 0,
+        "nonpositive_boxes": 0,
+        "outside_image": 1784,
+        "fully_outside": 0
+      }
+    ],
+    "window": [
+      {
+        "camera": 361,
+        "frame_range": [
+          0,
+          3599
+        ],
+        "usable_observations": 15883,
+        "persons": 24,
+        "frames_with_usable_gt": 3577
+      },
+      {
+        "camera": 362,
+        "frame_range": [
+          0,
+          3599
+        ],
+        "usable_observations": 10841,
+        "persons": 25,
+        "frames_with_usable_gt": 3278
+      },
+      {
+        "camera": 363,
+        "frame_range": [
+          0,
+          3599
+        ],
+        "usable_observations": 15963,
+        "persons": 25,
+        "frames_with_usable_gt": 3598
+      }
+    ],
+    "pairs": [
+      {
+        "camera_a": 361,
+        "camera_b": 362,
+        "same_frame_observations": 2422,
+        "same_frame_persons": 17,
+        "same_frame_count": 1962
+      },
+      {
+        "camera_a": 361,
+        "camera_b": 363,
+        "same_frame_observations": 0,
+        "same_frame_persons": 0,
+        "same_frame_count": 0
+      },
+      {
+        "camera_a": 362,
+        "camera_b": 363,
+        "same_frame_observations": 0,
+        "same_frame_persons": 0,
+        "same_frame_count": 0
+      }
+    ],
+    "positive_overlap_graph_connected": false,
+    "limits": [
+      "GT overlap is dataset coverage, not measured tracking performance.",
+      "No visible-person count, timestamp alignment, projection accuracy or video duration established.",
+      "Absent GT rows do not alone distinguish an empty scene from missing annotations.",
+      "Window is a frame-index range, not yet a verified two-minute video interval."
+    ]
+  },
+  "script_sha256": "4956a6bafb9b29b62956a983e25b0034485ff6d431d73b045c5dbc4aa7cf7132"
+}

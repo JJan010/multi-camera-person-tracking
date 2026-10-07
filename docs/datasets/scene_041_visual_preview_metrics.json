@@ -1,0 +1,420 @@
+{
+  "completed": true,
+  "protocol": "validation_scene_visual_preview_v1",
+  "run_id": "20261007T204922645465Z",
+  "inputs": {
+    "audit_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_scene_audit/20261007T204521274581Z/report.json",
+      "sha256": "832df624e7501092aa8acdecc96465676485a843891eab47b22f1ae57b75608a"
+    },
+    "video_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_videos/20261007T203915111446Z/report.json",
+      "sha256": "43f1a2c35ae6480380211762d699bc3bb190874a67fe42b159728a272409e2d3"
+    },
+    "annotation_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_annotations/20261007T203319407142Z/report.json",
+      "sha256": "df5b62a984b7e8e24475aa5dda54ff5292fb85bd8200edfc1979df650ead1f8a"
+    },
+    "selection": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_selection.json",
+      "sha256": "7488a9ea5e69fbfa68580c6aeea23356164b650f2045ede749d2a1968158ceb8"
+    },
+    "video_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_video_manifest.json",
+      "sha256": "cff9f4220e2660d4b1058a4c1b578df51e809a71afc6599794e5720826efa9de"
+    },
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_source.json",
+      "sha256": "7890b9298bfafbb593888784963631a4f0782b06b2508a0fdb8ad6e79266ada6"
+    },
+    "ground_truth.txt": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/ground_truth.txt",
+      "sha256": "4cefe073422690d6aa13cd5f41885fc46006b5d3e0b80d46d6aada5db466b5bb"
+    },
+    "calibration_2025_format.json": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/calibration_2025_format.json",
+      "sha256": "b6b04547f8d3fb69106393570e8a6d720150c25caea56567652fe3de1ecaeabe"
+    },
+    "video_361": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0361/video.mp4",
+      "sha256": "db8f05d9d23577712c6ae91c27668573a89b17ffce6d58ef9b613d4e63138658"
+    },
+    "video_362": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0362/video.mp4",
+      "sha256": "7af0d571ca4d572159e4df4f2c176448241d87978ecdb40349586a7e329efc7a"
+    },
+    "video_364": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0364/video.mp4",
+      "sha256": "d41dc37d680d9b1fc9c6467dd77d842a555d55ff469a2c0329faae9b7a06cdcf"
+    },
+    "projection_csv": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_scene_audit/20261007T204521274581Z/gt_projection.csv",
+      "sha256": "034605776fe83e5566eec686da9aec3e9b80cee332da48e1355432855a227647"
+    }
+  },
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "cameras": [
+    361,
+    362,
+    364
+  ],
+  "fixed_alignment_frame": 300,
+  "worst_inside_cases": {
+    "361": {
+      "frame": 629,
+      "gt_id": 14,
+      "world_discrepancy": 1.201355330691498
+    },
+    "362": {
+      "frame": 3422,
+      "gt_id": 19,
+      "world_discrepancy": 3.4518011201731804
+    },
+    "364": {
+      "frame": 174,
+      "gt_id": 11,
+      "world_discrepancy": 4.856121822888786
+    }
+  },
+  "longest_gt_gaps": {
+    "361": {
+      "start": 1737,
+      "end": 1757,
+      "length": 21,
+      "context": [
+        1736,
+        1747,
+        1758
+      ]
+    },
+    "362": {
+      "start": 690,
+      "end": 799,
+      "length": 110,
+      "context": [
+        689,
+        744,
+        800
+      ]
+    }
+  },
+  "cases": [
+    {
+      "kind": "alignment",
+      "camera": 361,
+      "frame": 300,
+      "gt_rows": 6,
+      "detail": null,
+      "images": {
+        "raw": "alignment_camera_0361_frame_000300_raw.png",
+        "annotated": "alignment_camera_0361_frame_000300_annotated.png"
+      }
+    },
+    {
+      "kind": "worst_inside",
+      "camera": 361,
+      "frame": 629,
+      "gt_rows": 5,
+      "detail": {
+        "gt_id": 14,
+        "xywh": [
+          541.0,
+          485.0,
+          49.0,
+          103.0
+        ],
+        "box_foot_uv": [
+          565.5,
+          588.0
+        ],
+        "gt_world_xy": [
+          -3.56769,
+          -6.47006
+        ],
+        "projected_gt_uv": [
+          585.4133921240245,
+          679.0906784798999
+        ],
+        "world_discrepancy": 1.201355330691498,
+        "zoom_bounds": [
+          441,
+          385,
+          690,
+          780
+        ]
+      },
+      "images": {
+        "raw": "worst_inside_camera_0361_frame_000629_raw.png",
+        "annotated": "worst_inside_camera_0361_frame_000629_annotated.png"
+      }
+    },
+    {
+      "kind": "alignment",
+      "camera": 362,
+      "frame": 300,
+      "gt_rows": 2,
+      "detail": null,
+      "images": {
+        "raw": "alignment_camera_0362_frame_000300_raw.png",
+        "annotated": "alignment_camera_0362_frame_000300_annotated.png"
+      }
+    },
+    {
+      "kind": "worst_inside",
+      "camera": 362,
+      "frame": 3422,
+      "gt_rows": 6,
+      "detail": {
+        "gt_id": 19,
+        "xywh": [
+          1551.0,
+          60.0,
+          22.0,
+          30.0
+        ],
+        "box_foot_uv": [
+          1562.0,
+          90.0
+        ],
+        "gt_world_xy": [
+          -7.94999,
+          10.0734
+        ],
+        "projected_gt_uv": [
+          1534.2876487171122,
+          215.51180686050418
+        ],
+        "world_discrepancy": 3.4518011201731804,
+        "zoom_bounds": [
+          1434,
+          0,
+          1673,
+          316
+        ]
+      },
+      "images": {
+        "raw": "worst_inside_camera_0362_frame_003422_raw.png",
+        "annotated": "worst_inside_camera_0362_frame_003422_annotated.png"
+      }
+    },
+    {
+      "kind": "alignment",
+      "camera": 364,
+      "frame": 300,
+      "gt_rows": 11,
+      "detail": null,
+      "images": {
+        "raw": "alignment_camera_0364_frame_000300_raw.png",
+        "annotated": "alignment_camera_0364_frame_000300_annotated.png"
+      }
+    },
+    {
+      "kind": "worst_inside",
+      "camera": 364,
+      "frame": 174,
+      "gt_rows": 13,
+      "detail": {
+        "gt_id": 11,
+        "xywh": [
+          88.0,
+          230.0,
+          23.0,
+          37.0
+        ],
+        "box_foot_uv": [
+          99.5,
+          267.0
+        ],
+        "gt_world_xy": [
+          5.81605,
+          -8.3843
+        ],
+        "projected_gt_uv": [
+          137.71434635424768,
+          380.11538807758154
+        ],
+        "world_discrepancy": 4.856121822888786,
+        "zoom_bounds": [
+          0,
+          130,
+          238,
+          481
+        ]
+      },
+      "images": {
+        "raw": "worst_inside_camera_0364_frame_000174_raw.png",
+        "annotated": "worst_inside_camera_0364_frame_000174_annotated.png"
+      }
+    },
+    {
+      "kind": "gt_gaps",
+      "camera": 361,
+      "frame": 1736,
+      "gt_rows": 1,
+      "detail": null,
+      "images": {
+        "raw": "gt_gaps_camera_0361_frame_001736_raw.png",
+        "annotated": "gt_gaps_camera_0361_frame_001736_annotated.png"
+      }
+    },
+    {
+      "kind": "gt_gaps",
+      "camera": 361,
+      "frame": 1747,
+      "gt_rows": 0,
+      "detail": null,
+      "images": {
+        "raw": "gt_gaps_camera_0361_frame_001747_raw.png",
+        "annotated": "gt_gaps_camera_0361_frame_001747_annotated.png"
+      }
+    },
+    {
+      "kind": "gt_gaps",
+      "camera": 361,
+      "frame": 1758,
+      "gt_rows": 1,
+      "detail": null,
+      "images": {
+        "raw": "gt_gaps_camera_0361_frame_001758_raw.png",
+        "annotated": "gt_gaps_camera_0361_frame_001758_annotated.png"
+      }
+    },
+    {
+      "kind": "gt_gaps",
+      "camera": 362,
+      "frame": 689,
+      "gt_rows": 1,
+      "detail": null,
+      "images": {
+        "raw": "gt_gaps_camera_0362_frame_000689_raw.png",
+        "annotated": "gt_gaps_camera_0362_frame_000689_annotated.png"
+      }
+    },
+    {
+      "kind": "gt_gaps",
+      "camera": 362,
+      "frame": 744,
+      "gt_rows": 0,
+      "detail": null,
+      "images": {
+        "raw": "gt_gaps_camera_0362_frame_000744_raw.png",
+        "annotated": "gt_gaps_camera_0362_frame_000744_annotated.png"
+      }
+    },
+    {
+      "kind": "gt_gaps",
+      "camera": 362,
+      "frame": 800,
+      "gt_rows": 1,
+      "detail": null,
+      "images": {
+        "raw": "gt_gaps_camera_0362_frame_000800_raw.png",
+        "annotated": "gt_gaps_camera_0362_frame_000800_annotated.png"
+      }
+    }
+  ],
+  "selection": "Fixed frame 300; highest finite fully-inside discrepancy per camera, earliest tie; longest GT gap, earliest tie, with neighbor frames.",
+  "world_units": "native dataset units; not independently established as meters",
+  "visual_review_completed": false,
+  "code_sha256": "77063501ad8c27435254bef463c6d5e1610d6f17c678e821aff32d2b381d3b6d",
+  "geometry_helper_sha256": "a019268eddf640c2daebe2deac6f08b38f791d6260e87ef8635c3703ebd4e106",
+  "av_version": "16.0.1",
+  "numpy_version": "2.2.6",
+  "limits": [
+    "GT frame equals zero-based video index is the candidate convention shown, not proved automatically.",
+    "One inspected gap per camera does not certify every unannotated frame.",
+    "GT-only review: no model metrics, threshold tuning or tracking changes."
+  ],
+  "artifacts": {
+    "alignment_annotated.jpg": {
+      "sha256": "157f51f9005036ac494bdca67af649cb5ba2ec95f8fc62b09b1dee8dff33be84"
+    },
+    "alignment_camera_0361_frame_000300_annotated.png": {
+      "sha256": "0c44410bfb8fd34a25069ecafa591b548c55c474f74b0c6879537398ebfa0ded"
+    },
+    "alignment_camera_0361_frame_000300_raw.png": {
+      "sha256": "a27acf28b9bab6a7cfbdd45785682f63a94490f3ff3bf7bb206da68a6709fc3c"
+    },
+    "alignment_camera_0362_frame_000300_annotated.png": {
+      "sha256": "9d9e95b71da4bcf03ed1510e91a1a700766183e601085f835f598c330a544391"
+    },
+    "alignment_camera_0362_frame_000300_raw.png": {
+      "sha256": "1782a2ca4417a1909c78ac95404b158b1256ce2fefc4db7c9a42b0cbef788ca8"
+    },
+    "alignment_camera_0364_frame_000300_annotated.png": {
+      "sha256": "bf3bf1711690e9339f6fafc33f29390a31f9ee0bc8bbdc4b0728086ab2b062b3"
+    },
+    "alignment_camera_0364_frame_000300_raw.png": {
+      "sha256": "4ed87c053001918ac3faad756a33a0149641685e9c28006d64cdc638d48f97ac"
+    },
+    "alignment_raw.jpg": {
+      "sha256": "a500307c860375062e4d7a184bd3f900f1475071f45f3a909806b4b9a1dfb859"
+    },
+    "gt_gaps_annotated.jpg": {
+      "sha256": "3df7194bc13045ea3ef3d06de44020e7fd4f413b6e9a7f2fa4602cb32eb82ab8"
+    },
+    "gt_gaps_camera_0361_frame_001736_annotated.png": {
+      "sha256": "cd7a74a15ca250a08255e9bd7ee4b61b6c6559bcf295d59907fd8007878e29e0"
+    },
+    "gt_gaps_camera_0361_frame_001736_raw.png": {
+      "sha256": "93ac6a9d49c7009a4a8edf9e2d458bcf7d23b392d534ef8dee7c73bea7b49564"
+    },
+    "gt_gaps_camera_0361_frame_001747_annotated.png": {
+      "sha256": "7eb463b4ac459f9331cc0b8a6d903e0d9a2f719247bb85d90de2d04b293fcd61"
+    },
+    "gt_gaps_camera_0361_frame_001747_raw.png": {
+      "sha256": "7eb463b4ac459f9331cc0b8a6d903e0d9a2f719247bb85d90de2d04b293fcd61"
+    },
+    "gt_gaps_camera_0361_frame_001758_annotated.png": {
+      "sha256": "c199f6f71c8e38f0a07bd2a4af2b5af968f3987a25ba51e51676d2173ae93f72"
+    },
+    "gt_gaps_camera_0361_frame_001758_raw.png": {
+      "sha256": "75cb41c6fe13a1e23dd67d41c8e26cb211d5cc5ea8baffba6ed0ccd21bdf3f15"
+    },
+    "gt_gaps_camera_0362_frame_000689_annotated.png": {
+      "sha256": "986b85a66f798dcf3a4d5b8eab2bd4ee739f7b36a9b053e33bdbb86595e6094d"
+    },
+    "gt_gaps_camera_0362_frame_000689_raw.png": {
+      "sha256": "3326c53389cf889580045ade3bb18a586e050c01e000831975d8a2550294243a"
+    },
+    "gt_gaps_camera_0362_frame_000744_annotated.png": {
+      "sha256": "ca141857fb08e76c85996ca3cfe8843ee41e53a4ecc669fe57df4a22825cc13a"
+    },
+    "gt_gaps_camera_0362_frame_000744_raw.png": {
+      "sha256": "ca141857fb08e76c85996ca3cfe8843ee41e53a4ecc669fe57df4a22825cc13a"
+    },
+    "gt_gaps_camera_0362_frame_000800_annotated.png": {
+      "sha256": "e719c6b928547f21f9c9ed9c1bdd8fa0592a754f9ff84cf405f3282d79c56de5"
+    },
+    "gt_gaps_camera_0362_frame_000800_raw.png": {
+      "sha256": "3ec2e92d051bef3802c028ce710ba7be4afa8533325cba9f4e65ba2ae9b95318"
+    },
+    "gt_gaps_raw.jpg": {
+      "sha256": "ce5a17f3283062bef8ee3c052e9b7e493f88c95f9e0603ef45905b3c6737c5a5"
+    },
+    "worst_inside_annotated.jpg": {
+      "sha256": "c51ba94b77d4be57407a94944680d94562486b90cf7343556c459a1c2c52fa8f"
+    },
+    "worst_inside_camera_0361_frame_000629_annotated.png": {
+      "sha256": "209ab0cacef36732447a1b0342866bc3080e4edde577591f7c98165cde2ab136"
+    },
+    "worst_inside_camera_0361_frame_000629_raw.png": {
+      "sha256": "eac43e03b827cdd144195e063dae72385f9d7ba037f47b0a2df25d8d0ba3c197"
+    },
+    "worst_inside_camera_0362_frame_003422_annotated.png": {
+      "sha256": "49ffc5be661c662855107919c6fe58627899880e306193af28309c8801bf4122"
+    },
+    "worst_inside_camera_0362_frame_003422_raw.png": {
+      "sha256": "1ecc042320577b1992f87e5521b0bdb543ccceda74c8c9ee3b5261edb511500b"
+    },
+    "worst_inside_camera_0364_frame_000174_annotated.png": {
+      "sha256": "5a0612807aad2497c71c465628efb62591d0a51d5b4f58df41ad9413bf3a39b5"
+    },
+    "worst_inside_camera_0364_frame_000174_raw.png": {
+      "sha256": "e27a867b7b3f8dd276a5ee50b8ed0f68f50a95b4acfece7a6c4c1e38ea26717b"
+    },
+    "worst_inside_raw.jpg": {
+      "sha256": "981ca277f3dc6d9406eaea701cf224e4e7b5a1433744566e5158b32410fc6765"
+    }
+  }
+}

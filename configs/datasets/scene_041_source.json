@@ -1,0 +1,23 @@
+{
+  "dataset": "nvidia/PhysicalAI-SmartSpaces",
+  "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+  "license": "cc-by-4.0",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "role": "validation_candidate",
+  "files": [
+    {
+      "remote_path": "MTMC_Tracking_2024/val/scene_041/ground_truth.txt",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/ground_truth.txt",
+      "size_bytes": 69702246,
+      "sha256": "4cefe073422690d6aa13cd5f41885fc46006b5d3e0b80d46d6aada5db466b5bb",
+      "source_verification": "LFS SHA-256"
+    },
+    {
+      "remote_path": "MTMC_Tracking_2024/val/scene_041/calibration_2025_format.json",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/calibration_2025_format.json",
+      "size_bytes": 26204,
+      "sha256": "b6b04547f8d3fb69106393570e8a6d720150c25caea56567652fe3de1ecaeabe",
+      "source_verification": "LFS SHA-256"
+    }
+  ]
+}

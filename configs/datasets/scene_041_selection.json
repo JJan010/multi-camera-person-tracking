@@ -1,0 +1,65 @@
+{
+  "dataset": "nvidia/PhysicalAI-SmartSpaces",
+  "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "camera_ids": [
+    361,
+    362,
+    364
+  ],
+  "frame_range": [
+    0,
+    3599
+  ],
+  "rule": "Keep anchors 361/362; choose lowest other camera ID with positive same-frame/person overlap with either anchor.",
+  "coverage_candidates": [
+    {
+      "camera": 363,
+      "with_361": 0,
+      "with_362": 0
+    },
+    {
+      "camera": 364,
+      "with_361": 14874,
+      "with_362": 8898
+    },
+    {
+      "camera": 365,
+      "with_361": 1142,
+      "with_362": 2545
+    },
+    {
+      "camera": 366,
+      "with_361": 4608,
+      "with_362": 10698
+    },
+    {
+      "camera": 367,
+      "with_361": 3168,
+      "with_362": 75
+    },
+    {
+      "camera": 368,
+      "with_361": 250,
+      "with_362": 7480
+    },
+    {
+      "camera": 369,
+      "with_361": 649,
+      "with_362": 0
+    },
+    {
+      "camera": 370,
+      "with_361": 1190,
+      "with_362": 4469
+    }
+  ],
+  "source_manifest_sha256": "7890b9298bfafbb593888784963631a4f0782b06b2508a0fdb8ad6e79266ada6",
+  "selection_uses": "annotation coverage, not tracker quality",
+  "runtime_starts_at_frame": 0,
+  "evaluation_frame_range": [
+    2,
+    3599
+  ],
+  "frame_alignment_validated": false
+}

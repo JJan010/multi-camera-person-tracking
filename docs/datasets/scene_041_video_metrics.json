@@ -1,0 +1,87 @@
+{
+  "completed": true,
+  "protocol": "validation_video_preparation_v1",
+  "run_id": "20261007T203915111446Z",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "camera_ids": [
+    361,
+    362,
+    364
+  ],
+  "inputs": {
+    "annotation_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/validation_annotations/20261007T203319407142Z/report.json",
+      "sha256": "df5b62a984b7e8e24475aa5dda54ff5292fb85bd8200edfc1979df650ead1f8a"
+    },
+    "selection": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_selection.json",
+      "sha256": "7488a9ea5e69fbfa68580c6aeea23356164b650f2045ede749d2a1968158ceb8"
+    },
+    "video_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_video_manifest.json",
+      "sha256": "cff9f4220e2660d4b1058a4c1b578df51e809a71afc6599794e5720826efa9de"
+    }
+  },
+  "video_metadata": [
+    {
+      "camera": 361,
+      "stream": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration": "799.800000",
+        "nb_frames": "23994"
+      }
+    },
+    {
+      "camera": 362,
+      "stream": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration": "799.800000",
+        "nb_frames": "23994"
+      }
+    },
+    {
+      "camera": 364,
+      "stream": {
+        "codec_name": "h264",
+        "profile": "High",
+        "width": 1920,
+        "height": 1080,
+        "pix_fmt": "yuv420p",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/15360",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration": "799.800000",
+        "nb_frames": "23994"
+      }
+    }
+  ],
+  "script_sha256": "9c1471c1a49848bbd666511e1570d82faafebf6ecb2128d45ff6cd4f962f60e7",
+  "helper_sha256": "4956a6bafb9b29b62956a983e25b0034485ff6d431d73b045c5dbc4aa7cf7132",
+  "ffprobe_version": "ffprobe version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2007-2021 the FFmpeg developers",
+  "timestamp_audit_passed": false,
+  "visual_alignment_reviewed": false,
+  "limits": [
+    "Container metadata is not a decoded timestamp audit.",
+    "No inference, tracking quality evaluation or parameter tuning."
+  ]
+}

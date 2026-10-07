@@ -1,0 +1,42 @@
+{
+  "dataset": "nvidia/PhysicalAI-SmartSpaces",
+  "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "camera_ids": [
+    361,
+    362,
+    364
+  ],
+  "files": [
+    {
+      "camera": 361,
+      "remote_path": "MTMC_Tracking_2024/val/scene_041/camera_0361/video.mp4",
+      "size_bytes": 211092386,
+      "source_hash_algorithm": "sha256",
+      "source_hash": "db8f05d9d23577712c6ae91c27668573a89b17ffce6d58ef9b613d4e63138658",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0361/video.mp4",
+      "sha256": "db8f05d9d23577712c6ae91c27668573a89b17ffce6d58ef9b613d4e63138658",
+      "source_checksum_verified": true
+    },
+    {
+      "camera": 362,
+      "remote_path": "MTMC_Tracking_2024/val/scene_041/camera_0362/video.mp4",
+      "size_bytes": 196838146,
+      "source_hash_algorithm": "sha256",
+      "source_hash": "7af0d571ca4d572159e4df4f2c176448241d87978ecdb40349586a7e329efc7a",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0362/video.mp4",
+      "sha256": "7af0d571ca4d572159e4df4f2c176448241d87978ecdb40349586a7e329efc7a",
+      "source_checksum_verified": true
+    },
+    {
+      "camera": 364,
+      "remote_path": "MTMC_Tracking_2024/val/scene_041/camera_0364/video.mp4",
+      "size_bytes": 232666878,
+      "source_hash_algorithm": "sha256",
+      "source_hash": "d41dc37d680d9b1fc9c6467dd77d842a555d55ff469a2c0329faae9b7a06cdcf",
+      "local_path": "data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0364/video.mp4",
+      "sha256": "d41dc37d680d9b1fc9c6467dd77d842a555d55ff469a2c0329faae9b7a06cdcf",
+      "source_checksum_verified": true
+    }
+  ]
+}
