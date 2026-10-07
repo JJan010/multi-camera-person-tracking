@@ -1,0 +1,652 @@
+{
+  "completed": true,
+  "created_utc": "2026-10-07T10:05:59.052947+00:00",
+  "source_replay_id": "20261007T093510175809Z",
+  "protocol": {
+    "name": "scene_001_global_identity_failure_diagnostic_v1",
+    "variant": "mean",
+    "threshold": 0.7,
+    "selection_role": "Explicit diagnostic case, not deployment calibration",
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "first_frame": 2,
+    "last_frame": 299,
+    "min_iou": 0.5,
+    "evidence": "Only mutually unique IoU>=0.5 overlaps: one candidate on both GT and prediction sides",
+    "spatial_ceiling": "Independent maximum-cardinality box matching per camera/frame; GT-assisted upper bound",
+    "predictions_modified": false,
+    "ground_truth_used_for_runtime_changes": false
+  },
+  "inputs": {
+    "evaluation_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/global_identity_evaluation/20261007T094804760266Z/report.json",
+      "sha256": "8eabb9f3e506d2c4e06f731147b9b2211c0432f72b5208db43a728f985706ffc"
+    },
+    "identity_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/global_identity/20261007T093510175809Z/report.json",
+      "sha256": "3b63711aff4e99ba7f33e763abceca29167b54d22919f07452d3a24c9f1c72ce"
+    },
+    "assignments": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/global_identity/20261007T093510175809Z/assignments.jsonl.gz",
+      "sha256": "1939f7bae63b74228e114f9bfca520d5b95a87d223d3ce98fe3834d1c4678bb0"
+    },
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/tracks.jsonl",
+      "sha256": "2a9b529c1a0e6cb6202d6467d64214a917d9d2403a7be201fcfdc77405faa736"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "global_metrics_reproduced": {
+    "camera_time_slots": 894,
+    "gt_observations": 16317,
+    "predicted_observations": 15828,
+    "gt_identities": 25,
+    "predicted_identities": 50,
+    "idtp": 11690,
+    "idfp": 4138,
+    "idfn": 4627,
+    "idp": 0.7385645691180187,
+    "idr": 0.7164307164307164,
+    "idf1": 0.7273292891585006
+  },
+  "decomposition": {
+    "framewise_maximum_spatial_matches": 15666,
+    "global_identity_matches": 11690,
+    "shared_identity_assignment_gap": 3976,
+    "minimum_fn_with_fixed_boxes": 651,
+    "minimum_fp_with_fixed_boxes": 162,
+    "framewise_spatial_f1_ceiling": 0.9747083527764816
+  },
+  "spatial_diagnostics": {
+    "gt_without_spatial_candidate": 606,
+    "predictions_without_spatial_candidate": 136,
+    "gt_with_multiple_candidates": 81,
+    "predictions_with_multiple_candidates": 100,
+    "mutually_unique_pairs": 15493
+  },
+  "existing_id_conflicts": {
+    "total": 2333,
+    "all_members_same_gt": 2077,
+    "different_known_gt": 171,
+    "unresolved": 85
+  },
+  "evidence_summary": {
+    "gt_identities_with_evidence": 25,
+    "global_ids_with_evidence": 50,
+    "gt_identities_with_multiple_global_ids": 18,
+    "global_ids_with_multiple_gt_ids": 7,
+    "local_tracks_with_multiple_gt_ids": 8
+  },
+  "top_gt_fragmentation": [
+    {
+      "gt_id": 21,
+      "unique_overlap_observations": 770,
+      "distinct_global_ids": 4,
+      "largest_global_id": 29,
+      "largest_global_support": 273,
+      "support_outside_largest_global": 497,
+      "frames_with_multiple_global_ids": 260,
+      "support_by_global_id": "{\"22\": 63, \"25\": 250, \"29\": 273, \"34\": 184}"
+    },
+    {
+      "gt_id": 10,
+      "unique_overlap_observations": 730,
+      "distinct_global_ids": 4,
+      "largest_global_id": 19,
+      "largest_global_support": 292,
+      "support_outside_largest_global": 438,
+      "frames_with_multiple_global_ids": 281,
+      "support_by_global_id": "{\"19\": 292, \"20\": 87, \"23\": 200, \"38\": 151}"
+    },
+    {
+      "gt_id": 18,
+      "unique_overlap_observations": 754,
+      "distinct_global_ids": 4,
+      "largest_global_id": 31,
+      "largest_global_support": 440,
+      "support_outside_largest_global": 314,
+      "frames_with_multiple_global_ids": 239,
+      "support_by_global_id": "{\"3\": 73, \"5\": 35, \"21\": 206, \"31\": 440}"
+    },
+    {
+      "gt_id": 14,
+      "unique_overlap_observations": 795,
+      "distinct_global_ids": 3,
+      "largest_global_id": 14,
+      "largest_global_support": 492,
+      "support_outside_largest_global": 303,
+      "frames_with_multiple_global_ids": 277,
+      "support_by_global_id": "{\"14\": 492, \"30\": 277, \"48\": 26}"
+    },
+    {
+      "gt_id": 2,
+      "unique_overlap_observations": 758,
+      "distinct_global_ids": 2,
+      "largest_global_id": 33,
+      "largest_global_support": 470,
+      "support_outside_largest_global": 288,
+      "frames_with_multiple_global_ids": 240,
+      "support_by_global_id": "{\"24\": 288, \"33\": 470}"
+    }
+  ],
+  "top_global_mixing": [
+    {
+      "global_id": 20,
+      "unique_overlap_observations": 465,
+      "distinct_gt_ids": 2,
+      "largest_gt_id": 19,
+      "largest_gt_support": 378,
+      "support_outside_largest_gt": 87,
+      "frames_with_multiple_gt_ids": 0,
+      "support_by_gt_id": "{\"10\": 87, \"19\": 378}"
+    },
+    {
+      "global_id": 23,
+      "unique_overlap_observations": 287,
+      "distinct_gt_ids": 2,
+      "largest_gt_id": 10,
+      "largest_gt_support": 200,
+      "support_outside_largest_gt": 87,
+      "frames_with_multiple_gt_ids": 0,
+      "support_by_gt_id": "{\"10\": 200, \"19\": 87}"
+    },
+    {
+      "global_id": 21,
+      "unique_overlap_observations": 288,
+      "distinct_gt_ids": 2,
+      "largest_gt_id": 18,
+      "largest_gt_support": 206,
+      "support_outside_largest_gt": 82,
+      "frames_with_multiple_gt_ids": 0,
+      "support_by_gt_id": "{\"9\": 82, \"18\": 206}"
+    },
+    {
+      "global_id": 3,
+      "unique_overlap_observations": 826,
+      "distinct_gt_ids": 2,
+      "largest_gt_id": 4,
+      "largest_gt_support": 753,
+      "support_outside_largest_gt": 73,
+      "frames_with_multiple_gt_ids": 0,
+      "support_by_gt_id": "{\"4\": 753, \"18\": 73}"
+    },
+    {
+      "global_id": 22,
+      "unique_overlap_observations": 270,
+      "distinct_gt_ids": 2,
+      "largest_gt_id": 11,
+      "largest_gt_support": 207,
+      "support_outside_largest_gt": 63,
+      "frames_with_multiple_gt_ids": 0,
+      "support_by_gt_id": "{\"11\": 207, \"21\": 63}"
+    }
+  ],
+  "conflict_examples": {
+    "all_members_same_gt": [
+      {
+        "frame_index": 30,
+        "timestamp": "1",
+        "anchor_global_ids": [
+          14,
+          30
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 12,
+            "frame_index": 30,
+            "global_id": 30,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 5,
+            "local_id": 10,
+            "frame_index": 30,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 8,
+            "local_id": 11,
+            "frame_index": 30,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          }
+        ]
+      },
+      {
+        "frame_index": 31,
+        "timestamp": "31/30",
+        "anchor_global_ids": [
+          14,
+          30
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 12,
+            "frame_index": 31,
+            "global_id": 30,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 5,
+            "local_id": 10,
+            "frame_index": 31,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 8,
+            "local_id": 11,
+            "frame_index": 31,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          }
+        ]
+      },
+      {
+        "frame_index": 32,
+        "timestamp": "16/15",
+        "anchor_global_ids": [
+          14,
+          30
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 12,
+            "frame_index": 32,
+            "global_id": 30,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 5,
+            "local_id": 10,
+            "frame_index": 32,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 8,
+            "local_id": 11,
+            "frame_index": 32,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          }
+        ]
+      },
+      {
+        "frame_index": 33,
+        "timestamp": "11/10",
+        "anchor_global_ids": [
+          14,
+          30
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 12,
+            "frame_index": 33,
+            "global_id": 30,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 5,
+            "local_id": 10,
+            "frame_index": 33,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 8,
+            "local_id": 11,
+            "frame_index": 33,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          }
+        ]
+      },
+      {
+        "frame_index": 34,
+        "timestamp": "17/15",
+        "anchor_global_ids": [
+          14,
+          30
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 12,
+            "frame_index": 34,
+            "global_id": 30,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 5,
+            "local_id": 10,
+            "frame_index": 34,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          },
+          {
+            "camera_id": 8,
+            "local_id": 11,
+            "frame_index": 34,
+            "global_id": 14,
+            "unique_overlap_gt_id": 14
+          }
+        ]
+      }
+    ],
+    "different_known_gt": [
+      {
+        "frame_index": 26,
+        "timestamp": "13/15",
+        "anchor_global_ids": [
+          10,
+          25
+        ],
+        "members": [
+          {
+            "camera_id": 5,
+            "local_id": 6,
+            "frame_index": 26,
+            "global_id": 10,
+            "unique_overlap_gt_id": 1
+          },
+          {
+            "camera_id": 8,
+            "local_id": 16,
+            "frame_index": 26,
+            "global_id": 25,
+            "unique_overlap_gt_id": 21
+          }
+        ]
+      },
+      {
+        "frame_index": 43,
+        "timestamp": "43/30",
+        "anchor_global_ids": [
+          10,
+          29
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 11,
+            "frame_index": 43,
+            "global_id": 29,
+            "unique_overlap_gt_id": 21
+          },
+          {
+            "camera_id": 8,
+            "local_id": 1,
+            "frame_index": 43,
+            "global_id": 10,
+            "unique_overlap_gt_id": 1
+          }
+        ]
+      },
+      {
+        "frame_index": 44,
+        "timestamp": "22/15",
+        "anchor_global_ids": [
+          10,
+          29
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 11,
+            "frame_index": 44,
+            "global_id": 29,
+            "unique_overlap_gt_id": 21
+          },
+          {
+            "camera_id": 8,
+            "local_id": 1,
+            "frame_index": 44,
+            "global_id": 10,
+            "unique_overlap_gt_id": 1
+          }
+        ]
+      },
+      {
+        "frame_index": 45,
+        "timestamp": "3/2",
+        "anchor_global_ids": [
+          10,
+          29
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 11,
+            "frame_index": 45,
+            "global_id": 29,
+            "unique_overlap_gt_id": 21
+          },
+          {
+            "camera_id": 8,
+            "local_id": 1,
+            "frame_index": 45,
+            "global_id": 10,
+            "unique_overlap_gt_id": 1
+          }
+        ]
+      },
+      {
+        "frame_index": 46,
+        "timestamp": "23/15",
+        "anchor_global_ids": [
+          10,
+          29
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 11,
+            "frame_index": 46,
+            "global_id": 29,
+            "unique_overlap_gt_id": 21
+          },
+          {
+            "camera_id": 8,
+            "local_id": 1,
+            "frame_index": 46,
+            "global_id": 10,
+            "unique_overlap_gt_id": 1
+          }
+        ]
+      }
+    ],
+    "unresolved": [
+      {
+        "frame_index": 10,
+        "timestamp": "1/3",
+        "anchor_global_ids": [
+          1,
+          8
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 1,
+            "frame_index": 10,
+            "global_id": 1,
+            "unique_overlap_gt_id": 8
+          },
+          {
+            "camera_id": 5,
+            "local_id": 14,
+            "frame_index": 10,
+            "global_id": 8,
+            "unique_overlap_gt_id": null
+          }
+        ]
+      },
+      {
+        "frame_index": 28,
+        "timestamp": "14/15",
+        "anchor_global_ids": [
+          10,
+          25
+        ],
+        "members": [
+          {
+            "camera_id": 5,
+            "local_id": 6,
+            "frame_index": 28,
+            "global_id": 10,
+            "unique_overlap_gt_id": 1
+          },
+          {
+            "camera_id": 8,
+            "local_id": 16,
+            "frame_index": 28,
+            "global_id": 25,
+            "unique_overlap_gt_id": null
+          }
+        ]
+      },
+      {
+        "frame_index": 88,
+        "timestamp": "44/15",
+        "anchor_global_ids": [
+          25,
+          29
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 11,
+            "frame_index": 88,
+            "global_id": 29,
+            "unique_overlap_gt_id": 21
+          },
+          {
+            "camera_id": 5,
+            "local_id": 17,
+            "frame_index": 88,
+            "global_id": 25,
+            "unique_overlap_gt_id": null
+          },
+          {
+            "camera_id": 8,
+            "local_id": 16,
+            "frame_index": 88,
+            "global_id": 25,
+            "unique_overlap_gt_id": 21
+          }
+        ]
+      },
+      {
+        "frame_index": 109,
+        "timestamp": "109/30",
+        "anchor_global_ids": [
+          25,
+          29,
+          34
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 11,
+            "frame_index": 109,
+            "global_id": 29,
+            "unique_overlap_gt_id": 21
+          },
+          {
+            "camera_id": 5,
+            "local_id": 22,
+            "frame_index": 109,
+            "global_id": 34,
+            "unique_overlap_gt_id": 21
+          },
+          {
+            "camera_id": 8,
+            "local_id": 16,
+            "frame_index": 109,
+            "global_id": 25,
+            "unique_overlap_gt_id": null
+          }
+        ]
+      },
+      {
+        "frame_index": 109,
+        "timestamp": "109/30",
+        "anchor_global_ids": [
+          21,
+          31
+        ],
+        "members": [
+          {
+            "camera_id": 4,
+            "local_id": 13,
+            "frame_index": 109,
+            "global_id": 31,
+            "unique_overlap_gt_id": 18
+          },
+          {
+            "camera_id": 5,
+            "local_id": 20,
+            "frame_index": 109,
+            "global_id": 31,
+            "unique_overlap_gt_id": 18
+          },
+          {
+            "camera_id": 8,
+            "local_id": 12,
+            "frame_index": 109,
+            "global_id": 21,
+            "unique_overlap_gt_id": null
+          }
+        ]
+      }
+    ]
+  },
+  "code_sha256": {
+    "diagnose_global_identity.py": "957b8171594b97e8ae9205d2f472280cca11e032015e4ef3063440b17a78c7b8",
+    "evaluate_global_identity.py": "f88dd268e54196330361c0a4d35bd6856f46f842586555fd811d0cd47ef169af",
+    "evaluate_appearance_history.py": "a968b90be20312fe8fc7bf2c85f4cba55eac6f7ee6944e0de59da2ddfa0b9625",
+    "evaluate_reid_snapshot.py": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd"
+  },
+  "artifacts": {
+    "conflict_examples.json": {
+      "path": "conflict_examples.json",
+      "sha256": "eb0fbdb7952fa21dd52293602195860c77777a16b7a3e05ef243e7a74e33cb64"
+    },
+    "global_identity_mixing.csv": {
+      "path": "global_identity_mixing.csv",
+      "sha256": "6f90614b9911c9551e3ff869eba72c874373a32e13910a5a6b33560cb351c5f4"
+    },
+    "gt_fragmentation.csv": {
+      "path": "gt_fragmentation.csv",
+      "sha256": "90d4ddfeffbf53e92b03c426688cc26217f563e145c5b33530f180ce7eed7588"
+    },
+    "local_track_labels.csv": {
+      "path": "local_track_labels.csv",
+      "sha256": "02ff25d931e4726532c7f514be90093bdc78a92bbd0d85e5f77c02a669644435"
+    },
+    "support_by_track.csv": {
+      "path": "support_by_track.csv",
+      "sha256": "2988a9958f59652792bba1c4e544c60a292f0293e93412997d8a7345faaa4098"
+    }
+  },
+  "limits": [
+    "Spatial ceiling is not a promised achievable causal identity score",
+    "Assignment gap includes competition and duplicate compatible boxes, not only incorrect association logic",
+    "Unique IoU overlap is diagnostic evidence, not visual proof; excludes ambiguous overlaps",
+    "Evidence histograms are not IDTP/IDFP/IDFN and are not CLEAR fragmentation or ID-switch metrics",
+    "Repeated same-person conflicts suggest investigation, not permission to use GT to merge runtime IDs",
+    "First/last frame ranges in support CSV may contain gaps; support counts are observation counts",
+    "Short reused training clip; no final threshold or merge rule is selected"
+  ]
+}
