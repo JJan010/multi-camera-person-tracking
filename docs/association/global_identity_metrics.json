@@ -1,0 +1,859 @@
+{
+  "completed": true,
+  "created_utc": "2026-10-07T09:48:04.760266+00:00",
+  "source_replay_id": "20261007T093510175809Z",
+  "protocol": {
+    "name": "scene_001_global_2d_identity_v1",
+    "cameras": [
+      4,
+      5,
+      8
+    ],
+    "first_frame": 2,
+    "last_frame": 299,
+    "fps": 30,
+    "min_iou": 0.5,
+    "width": 1920,
+    "height": 1080,
+    "box_policy": "Clip both; exclude zero-area GT; keep every prediction including zero-area",
+    "spatial_matching": "Same camera and same frame only; every IoU >= 0.5 is admissible",
+    "identity_matching": "One shared one-to-one GT/predicted identity assignment across all cameras and frames",
+    "preassigned_gt_labels_used": false,
+    "selected_threshold": null,
+    "max_idle_seconds": "1",
+    "idtp": "Admissible observation pairs under the single whole-clip identity assignment",
+    "idfp": "All prediction observations minus IDTP",
+    "idfn": "All evaluated GT observations minus IDTP",
+    "idf1": "2*IDTP/(GT observations + predicted observations)",
+    "control": "Frozen local IDs scoped by camera; no cross-camera association, no extra expiry or relabeling",
+    "scope": "Project integration subset; not official AI City evaluation"
+  },
+  "inputs": {
+    "identity_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/global_identity/20261007T093510175809Z/report.json",
+      "sha256": "3b63711aff4e99ba7f33e763abceca29167b54d22919f07452d3a24c9f1c72ce"
+    },
+    "assignments": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/global_identity/20261007T093510175809Z/assignments.jsonl.gz",
+      "sha256": "1939f7bae63b74228e114f9bfca520d5b95a87d223d3ce98fe3834d1c4678bb0"
+    },
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/tracks.jsonl",
+      "sha256": "2a9b529c1a0e6cb6202d6467d64214a917d9d2403a7be201fcfdc77405faa736"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "excluded_zero_area_gt": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "fully_outside_predictions": {
+    "4": 0,
+    "5": 0,
+    "8": 0
+  },
+  "no_cross_camera_control": {
+    "camera_time_slots": 894,
+    "gt_observations": 16317,
+    "predicted_observations": 15828,
+    "gt_identities": 25,
+    "predicted_identities": 73,
+    "idtp": 6852,
+    "idfp": 8976,
+    "idfn": 9465,
+    "idp": 0.43290371493555724,
+    "idr": 0.4199301342158485,
+    "idf1": 0.42631824545030333
+  },
+  "control_local_id_map": [
+    {
+      "camera": 4,
+      "local_id": 1,
+      "control_id": 1
+    },
+    {
+      "camera": 4,
+      "local_id": 2,
+      "control_id": 2
+    },
+    {
+      "camera": 4,
+      "local_id": 3,
+      "control_id": 3
+    },
+    {
+      "camera": 4,
+      "local_id": 4,
+      "control_id": 4
+    },
+    {
+      "camera": 4,
+      "local_id": 5,
+      "control_id": 5
+    },
+    {
+      "camera": 4,
+      "local_id": 6,
+      "control_id": 6
+    },
+    {
+      "camera": 4,
+      "local_id": 7,
+      "control_id": 7
+    },
+    {
+      "camera": 4,
+      "local_id": 8,
+      "control_id": 8
+    },
+    {
+      "camera": 4,
+      "local_id": 9,
+      "control_id": 9
+    },
+    {
+      "camera": 4,
+      "local_id": 10,
+      "control_id": 10
+    },
+    {
+      "camera": 4,
+      "local_id": 11,
+      "control_id": 11
+    },
+    {
+      "camera": 4,
+      "local_id": 12,
+      "control_id": 12
+    },
+    {
+      "camera": 4,
+      "local_id": 13,
+      "control_id": 13
+    },
+    {
+      "camera": 4,
+      "local_id": 14,
+      "control_id": 14
+    },
+    {
+      "camera": 4,
+      "local_id": 15,
+      "control_id": 15
+    },
+    {
+      "camera": 4,
+      "local_id": 16,
+      "control_id": 16
+    },
+    {
+      "camera": 4,
+      "local_id": 17,
+      "control_id": 17
+    },
+    {
+      "camera": 4,
+      "local_id": 18,
+      "control_id": 18
+    },
+    {
+      "camera": 4,
+      "local_id": 19,
+      "control_id": 19
+    },
+    {
+      "camera": 4,
+      "local_id": 20,
+      "control_id": 20
+    },
+    {
+      "camera": 4,
+      "local_id": 21,
+      "control_id": 21
+    },
+    {
+      "camera": 4,
+      "local_id": 22,
+      "control_id": 22
+    },
+    {
+      "camera": 5,
+      "local_id": 1,
+      "control_id": 23
+    },
+    {
+      "camera": 5,
+      "local_id": 2,
+      "control_id": 24
+    },
+    {
+      "camera": 5,
+      "local_id": 3,
+      "control_id": 25
+    },
+    {
+      "camera": 5,
+      "local_id": 4,
+      "control_id": 26
+    },
+    {
+      "camera": 5,
+      "local_id": 5,
+      "control_id": 27
+    },
+    {
+      "camera": 5,
+      "local_id": 6,
+      "control_id": 28
+    },
+    {
+      "camera": 5,
+      "local_id": 7,
+      "control_id": 29
+    },
+    {
+      "camera": 5,
+      "local_id": 8,
+      "control_id": 30
+    },
+    {
+      "camera": 5,
+      "local_id": 9,
+      "control_id": 31
+    },
+    {
+      "camera": 5,
+      "local_id": 10,
+      "control_id": 32
+    },
+    {
+      "camera": 5,
+      "local_id": 11,
+      "control_id": 33
+    },
+    {
+      "camera": 5,
+      "local_id": 12,
+      "control_id": 34
+    },
+    {
+      "camera": 5,
+      "local_id": 13,
+      "control_id": 35
+    },
+    {
+      "camera": 5,
+      "local_id": 14,
+      "control_id": 36
+    },
+    {
+      "camera": 5,
+      "local_id": 15,
+      "control_id": 37
+    },
+    {
+      "camera": 5,
+      "local_id": 16,
+      "control_id": 38
+    },
+    {
+      "camera": 5,
+      "local_id": 17,
+      "control_id": 39
+    },
+    {
+      "camera": 5,
+      "local_id": 18,
+      "control_id": 40
+    },
+    {
+      "camera": 5,
+      "local_id": 19,
+      "control_id": 41
+    },
+    {
+      "camera": 5,
+      "local_id": 20,
+      "control_id": 42
+    },
+    {
+      "camera": 5,
+      "local_id": 21,
+      "control_id": 43
+    },
+    {
+      "camera": 5,
+      "local_id": 22,
+      "control_id": 44
+    },
+    {
+      "camera": 5,
+      "local_id": 23,
+      "control_id": 45
+    },
+    {
+      "camera": 5,
+      "local_id": 24,
+      "control_id": 46
+    },
+    {
+      "camera": 5,
+      "local_id": 25,
+      "control_id": 47
+    },
+    {
+      "camera": 5,
+      "local_id": 26,
+      "control_id": 48
+    },
+    {
+      "camera": 8,
+      "local_id": 1,
+      "control_id": 49
+    },
+    {
+      "camera": 8,
+      "local_id": 2,
+      "control_id": 50
+    },
+    {
+      "camera": 8,
+      "local_id": 3,
+      "control_id": 51
+    },
+    {
+      "camera": 8,
+      "local_id": 4,
+      "control_id": 52
+    },
+    {
+      "camera": 8,
+      "local_id": 5,
+      "control_id": 53
+    },
+    {
+      "camera": 8,
+      "local_id": 6,
+      "control_id": 54
+    },
+    {
+      "camera": 8,
+      "local_id": 7,
+      "control_id": 55
+    },
+    {
+      "camera": 8,
+      "local_id": 8,
+      "control_id": 56
+    },
+    {
+      "camera": 8,
+      "local_id": 9,
+      "control_id": 57
+    },
+    {
+      "camera": 8,
+      "local_id": 10,
+      "control_id": 58
+    },
+    {
+      "camera": 8,
+      "local_id": 11,
+      "control_id": 59
+    },
+    {
+      "camera": 8,
+      "local_id": 12,
+      "control_id": 60
+    },
+    {
+      "camera": 8,
+      "local_id": 13,
+      "control_id": 61
+    },
+    {
+      "camera": 8,
+      "local_id": 14,
+      "control_id": 62
+    },
+    {
+      "camera": 8,
+      "local_id": 15,
+      "control_id": 63
+    },
+    {
+      "camera": 8,
+      "local_id": 16,
+      "control_id": 64
+    },
+    {
+      "camera": 8,
+      "local_id": 17,
+      "control_id": 65
+    },
+    {
+      "camera": 8,
+      "local_id": 18,
+      "control_id": 66
+    },
+    {
+      "camera": 8,
+      "local_id": 19,
+      "control_id": 67
+    },
+    {
+      "camera": 8,
+      "local_id": 20,
+      "control_id": 68
+    },
+    {
+      "camera": 8,
+      "local_id": 21,
+      "control_id": 69
+    },
+    {
+      "camera": 8,
+      "local_id": 22,
+      "control_id": 70
+    },
+    {
+      "camera": 8,
+      "local_id": 23,
+      "control_id": 71
+    },
+    {
+      "camera": 8,
+      "local_id": 24,
+      "control_id": 72
+    },
+    {
+      "camera": 8,
+      "local_id": 25,
+      "control_id": 73
+    }
+  ],
+  "control_identity_matching": [
+    {
+      "gt_id": 0,
+      "global_id": 33,
+      "idtp": 298
+    },
+    {
+      "gt_id": 1,
+      "global_id": 49,
+      "idtp": 298
+    },
+    {
+      "gt_id": 2,
+      "global_id": 63,
+      "idtp": 292
+    },
+    {
+      "gt_id": 3,
+      "global_id": 35,
+      "idtp": 298
+    },
+    {
+      "gt_id": 4,
+      "global_id": 54,
+      "idtp": 264
+    },
+    {
+      "gt_id": 5,
+      "global_id": 51,
+      "idtp": 298
+    },
+    {
+      "gt_id": 6,
+      "global_id": 4,
+      "idtp": 298
+    },
+    {
+      "gt_id": 7,
+      "global_id": 10,
+      "idtp": 261
+    },
+    {
+      "gt_id": 8,
+      "global_id": 1,
+      "idtp": 298
+    },
+    {
+      "gt_id": 9,
+      "global_id": 5,
+      "idtp": 298
+    },
+    {
+      "gt_id": 10,
+      "global_id": 38,
+      "idtp": 292
+    },
+    {
+      "gt_id": 11,
+      "global_id": 61,
+      "idtp": 235
+    },
+    {
+      "gt_id": 12,
+      "global_id": 2,
+      "idtp": 110
+    },
+    {
+      "gt_id": 13,
+      "global_id": 6,
+      "idtp": 298
+    },
+    {
+      "gt_id": 14,
+      "global_id": 59,
+      "idtp": 291
+    },
+    {
+      "gt_id": 15,
+      "global_id": 30,
+      "idtp": 298
+    },
+    {
+      "gt_id": 16,
+      "global_id": 37,
+      "idtp": 298
+    },
+    {
+      "gt_id": 17,
+      "global_id": 29,
+      "idtp": 298
+    },
+    {
+      "gt_id": 18,
+      "global_id": 13,
+      "idtp": 261
+    },
+    {
+      "gt_id": 19,
+      "global_id": 55,
+      "idtp": 211
+    },
+    {
+      "gt_id": 20,
+      "global_id": 7,
+      "idtp": 298
+    },
+    {
+      "gt_id": 21,
+      "global_id": 11,
+      "idtp": 273
+    },
+    {
+      "gt_id": 22,
+      "global_id": 34,
+      "idtp": 190
+    },
+    {
+      "gt_id": 23,
+      "global_id": 65,
+      "idtp": 298
+    },
+    {
+      "gt_id": 24,
+      "global_id": 31,
+      "idtp": 298
+    }
+  ],
+  "results": [
+    {
+      "variant": "latest",
+      "threshold": 0.0,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 41,
+      "idtp": 11028,
+      "idfp": 4800,
+      "idfn": 5289,
+      "idp": 0.6967399545109931,
+      "idr": 0.6758595330023901,
+      "idf1": 0.6861409239384041,
+      "delta_idf1_vs_no_cross_camera_pp": 25.982267848810075
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.5,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 43,
+      "idtp": 11288,
+      "idfp": 4540,
+      "idfn": 5029,
+      "idp": 0.7131665403083144,
+      "idr": 0.6917938346509775,
+      "idf1": 0.7023176232695598,
+      "delta_idf1_vs_no_cross_camera_pp": 27.59993778192565
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.6,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 49,
+      "idtp": 11281,
+      "idfp": 4547,
+      "idfn": 5036,
+      "idp": 0.7127242860753096,
+      "idr": 0.691364834221977,
+      "idf1": 0.7018820967491056,
+      "delta_idf1_vs_no_cross_camera_pp": 27.55638512988023
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.7,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 54,
+      "idtp": 10988,
+      "idfp": 4840,
+      "idfn": 5329,
+      "idp": 0.6942127874652515,
+      "idr": 0.6734081019795306,
+      "idf1": 0.6836522009643802,
+      "delta_idf1_vs_no_cross_camera_pp": 25.733395551407686
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.8,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 64,
+      "idtp": 8780,
+      "idfp": 7048,
+      "idfn": 7537,
+      "idp": 0.5547131665403083,
+      "idr": 0.538089109517681,
+      "idf1": 0.5462746927982579,
+      "delta_idf1_vs_no_cross_camera_pp": 11.995644734795457
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.9,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 68,
+      "idtp": 8010,
+      "idfp": 7818,
+      "idfn": 8307,
+      "idp": 0.5060652009097801,
+      "idr": 0.49089906232763375,
+      "idf1": 0.4983667755482968,
+      "delta_idf1_vs_no_cross_camera_pp": 7.204853009799344
+    },
+    {
+      "variant": "latest",
+      "threshold": 0.95,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 73,
+      "idtp": 6852,
+      "idfp": 8976,
+      "idfn": 9465,
+      "idp": 0.43290371493555724,
+      "idr": 0.4199301342158485,
+      "idf1": 0.42631824545030333,
+      "delta_idf1_vs_no_cross_camera_pp": 0.0
+    },
+    {
+      "variant": "latest",
+      "threshold": 1.0,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 73,
+      "idtp": 6852,
+      "idfp": 8976,
+      "idfn": 9465,
+      "idp": 0.43290371493555724,
+      "idr": 0.4199301342158485,
+      "idf1": 0.42631824545030333,
+      "delta_idf1_vs_no_cross_camera_pp": 0.0
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.0,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 40,
+      "idtp": 10978,
+      "idfp": 4850,
+      "idfn": 5339,
+      "idp": 0.693580995703816,
+      "idr": 0.6727952442238156,
+      "idf1": 0.6830300202208741,
+      "delta_idf1_vs_no_cross_camera_pp": 25.67117747705708
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.5,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 43,
+      "idtp": 11206,
+      "idfp": 4622,
+      "idfn": 5111,
+      "idp": 0.7079858478645439,
+      "idr": 0.6867684010541153,
+      "idf1": 0.6972157411728107,
+      "delta_idf1_vs_no_cross_camera_pp": 27.08974957225074
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.6,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 48,
+      "idtp": 11438,
+      "idfp": 4390,
+      "idfn": 4879,
+      "idp": 0.7226434167298459,
+      "idr": 0.700986700986701,
+      "idf1": 0.7116503344221496,
+      "delta_idf1_vs_no_cross_camera_pp": 28.533208897184632
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.7,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 50,
+      "idtp": 11690,
+      "idfp": 4138,
+      "idfn": 4627,
+      "idp": 0.7385645691180187,
+      "idr": 0.7164307164307164,
+      "idf1": 0.7273292891585006,
+      "delta_idf1_vs_no_cross_camera_pp": 30.101104370819726
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.8,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 64,
+      "idtp": 8780,
+      "idfp": 7048,
+      "idfn": 7537,
+      "idp": 0.5547131665403083,
+      "idr": 0.538089109517681,
+      "idf1": 0.5462746927982579,
+      "delta_idf1_vs_no_cross_camera_pp": 11.995644734795457
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.9,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 68,
+      "idtp": 8010,
+      "idfp": 7818,
+      "idfn": 8307,
+      "idp": 0.5060652009097801,
+      "idr": 0.49089906232763375,
+      "idf1": 0.4983667755482968,
+      "delta_idf1_vs_no_cross_camera_pp": 7.204853009799344
+    },
+    {
+      "variant": "mean",
+      "threshold": 0.95,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 73,
+      "idtp": 6852,
+      "idfp": 8976,
+      "idfn": 9465,
+      "idp": 0.43290371493555724,
+      "idr": 0.4199301342158485,
+      "idf1": 0.42631824545030333,
+      "delta_idf1_vs_no_cross_camera_pp": 0.0
+    },
+    {
+      "variant": "mean",
+      "threshold": 1.0,
+      "camera_time_slots": 894,
+      "gt_observations": 16317,
+      "predicted_observations": 15828,
+      "gt_identities": 25,
+      "predicted_identities": 73,
+      "idtp": 6852,
+      "idfp": 8976,
+      "idfn": 9465,
+      "idp": 0.43290371493555724,
+      "idr": 0.4199301342158485,
+      "idf1": 0.42631824545030333,
+      "delta_idf1_vs_no_cross_camera_pp": 0.0
+    }
+  ],
+  "checks": {
+    "checksums_verified": true,
+    "all_predictions_covered": true,
+    "shared_denominators": true,
+    "no_cross_camera_control_motmetrics_parity": true
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "motmetrics": "1.4.0",
+    "pandas": "2.3.3"
+  },
+  "code_sha256": {
+    "evaluate_global_identity.py": "f88dd268e54196330361c0a4d35bd6856f46f842586555fd811d0cd47ef169af",
+    "evaluate_appearance_history.py": "a968b90be20312fe8fc7bf2c85f4cba55eac6f7ee6944e0de59da2ddfa0b9625",
+    "evaluate_reid_snapshot.py": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd"
+  },
+  "artifacts": {
+    "identity_matching.csv": {
+      "path": "identity_matching.csv",
+      "sha256": "858015a879849ad60619a9ccff8218b68ce1751d5dcb0ec0f7b278065e471269"
+    },
+    "summary.csv": {
+      "path": "summary.csv",
+      "sha256": "b81a1cabcede2930c60c6bd38ea85f91881506d524be26f272cb12fe2a7611d7"
+    }
+  },
+  "limits": [
+    "Only 298 frames from one reused training-scene fragment; no final threshold calibration",
+    "Includes localization, missing/false predictions and identity errors; not pure association accuracy",
+    "No CLEAR ID-switch/MOTA figures are inferred from serialized camera/time slots",
+    "The GT-to-predicted identity matching is offline evaluation only; runtime assignments are unchanged",
+    "The local-ID control is evaluated globally and is not the earlier pooled per-camera IDF1",
+    "Equal-cost identity matchings may have different pairings but identical aggregate ID metrics"
+  ]
+}
