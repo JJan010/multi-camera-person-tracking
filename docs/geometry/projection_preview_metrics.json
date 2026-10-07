@@ -1,0 +1,279 @@
+{
+  "completed": true,
+  "protocol": "scene_001_geometry_visual_audit_v1",
+  "inputs": {
+    "audit_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/geometry_audit/20261007T110015275411Z/report.json",
+      "sha256": "9602ea6db1b2575469cceb77036f02f97fad98b7ad89215fdfb9b3aaf899afd3"
+    },
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_001_source.json",
+      "sha256": "64bf042c6078e39d5d632d1acda1a13200eeefcebbe28e596010457272a74225"
+    },
+    "calibration_2025_format.json": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/calibration_2025_format.json",
+      "sha256": "cad8df87ec3b9b232b1756797f8710b3b416a5fb86fff4df1906332e03673085"
+    },
+    "ground_truth.txt": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    },
+    "projection_csv": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/geometry_audit/20261007T110015275411Z/gt_projection.csv",
+      "sha256": "1015446d1efa10b2577fe8318ba29313280952d99331b237e5b55cd6e2c27e90"
+    },
+    "video_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_001_video_manifest.json",
+      "sha256": "3991d3ba1f1b62e3a3bc40791ebc447fa30ad7d7192f9d19d962871728797866"
+    },
+    "video_4": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0004/video.mp4",
+      "sha256": "4b5d471d64ac74f701abe97b040bdc41bd78a514885457f26dca4d397c3b0572"
+    },
+    "video_5": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0005/video.mp4",
+      "sha256": "363fbe6afe393a7c1deb46611243985ac4ef89d12dc4862d4b8bf80975d58a24"
+    },
+    "video_8": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/camera_0008/video.mp4",
+      "sha256": "84b7acb45197d239358403ee2d700787bb6b7aca61904189a5746dd0a7377e52"
+    }
+  },
+  "code_sha256": "5d9fe6d8f1c6a892f1c9d162de89e3838e6fb00f3c31375558b93e45691f4c56",
+  "audit_helper_sha256": "a019268eddf640c2daebe2deac6f08b38f791d6260e87ef8635c3703ebd4e106",
+  "cases": [
+    {
+      "kind": "frame149",
+      "camera": 4,
+      "frame": 149,
+      "image": "frame149_camera_0004_frame_000149.png",
+      "observations": [],
+      "missing_requested_gt_ids": [
+        23,
+        24
+      ]
+    },
+    {
+      "kind": "worst_inside",
+      "camera": 4,
+      "frame": 136,
+      "image": "worst_inside_camera_0004_frame_000136.png",
+      "observations": [
+        {
+          "gt_id": 5,
+          "raw_xywh": [
+            1403.0,
+            783.0,
+            112.0,
+            270.0
+          ],
+          "foot_uv": [
+            1459.0,
+            1053.0
+          ],
+          "gt_world_xy": [
+            -4.68178,
+            6.70344
+          ],
+          "projected_gt_uv": [
+            1417.9217335924423,
+            963.0156542158975
+          ],
+          "estimated_world_xy": [
+            -5.1013036033197,
+            7.104534340821154
+          ],
+          "world_discrepancy": 0.5804108234527514,
+          "pixel_discrepancy": 98.91716967869236,
+          "projected_gt_in_image": true
+        }
+      ],
+      "missing_requested_gt_ids": []
+    },
+    {
+      "kind": "frame149",
+      "camera": 5,
+      "frame": 149,
+      "image": "frame149_camera_0005_frame_000149.png",
+      "observations": [
+        {
+          "gt_id": 24,
+          "raw_xywh": [
+            721.0,
+            281.0,
+            42.0,
+            133.0
+          ],
+          "foot_uv": [
+            742.0,
+            414.0
+          ],
+          "gt_world_xy": [
+            5.55411,
+            -3.04988
+          ],
+          "projected_gt_uv": [
+            744.8163258447202,
+            412.05115570803287
+          ],
+          "estimated_world_xy": [
+            5.568085128484602,
+            -2.968257697783003
+          ],
+          "world_discrepancy": 0.0828100503282297,
+          "pixel_discrepancy": 3.424862820314351,
+          "projected_gt_in_image": true
+        }
+      ],
+      "missing_requested_gt_ids": [
+        23
+      ]
+    },
+    {
+      "kind": "worst_inside",
+      "camera": 5,
+      "frame": 293,
+      "image": "worst_inside_camera_0005_frame_000293.png",
+      "observations": [
+        {
+          "gt_id": 20,
+          "raw_xywh": [
+            1050.0,
+            526.0,
+            52.0,
+            101.0
+          ],
+          "foot_uv": [
+            1076.0,
+            627.0
+          ],
+          "gt_world_xy": [
+            0.383079,
+            4.08014
+          ],
+          "projected_gt_uv": [
+            1073.0941066143705,
+            706.3773236176985
+          ],
+          "estimated_world_xy": [
+            0.5316540961278771,
+            2.510331888369491
+          ],
+          "world_discrepancy": 1.5768234100654241,
+          "pixel_discrepancy": 79.43049616537392,
+          "projected_gt_in_image": true
+        }
+      ],
+      "missing_requested_gt_ids": []
+    },
+    {
+      "kind": "frame149",
+      "camera": 8,
+      "frame": 149,
+      "image": "frame149_camera_0008_frame_000149.png",
+      "observations": [
+        {
+          "gt_id": 23,
+          "raw_xywh": [
+            1269.0,
+            150.0,
+            41.0,
+            140.0
+          ],
+          "foot_uv": [
+            1289.5,
+            290.0
+          ],
+          "gt_world_xy": [
+            -0.0937173,
+            13.4765
+          ],
+          "projected_gt_uv": [
+            1279.896785174333,
+            286.37199088889975
+          ],
+          "estimated_world_xy": [
+            0.06819429388696825,
+            13.406628017114025
+          ],
+          "world_discrepancy": 0.1763447142032798,
+          "pixel_discrepancy": 10.265679962775828,
+          "projected_gt_in_image": true
+        }
+      ],
+      "missing_requested_gt_ids": [
+        24
+      ]
+    },
+    {
+      "kind": "worst_inside",
+      "camera": 8,
+      "frame": 199,
+      "image": "worst_inside_camera_0008_frame_000199.png",
+      "observations": [
+        {
+          "gt_id": 8,
+          "raw_xywh": [
+            1245.0,
+            224.0,
+            38.0,
+            75.0
+          ],
+          "foot_uv": [
+            1264.0,
+            299.0
+          ],
+          "gt_world_xy": [
+            0.557441,
+            10.9563
+          ],
+          "projected_gt_uv": [
+            1257.558304469048,
+            357.28174550664846
+          ],
+          "estimated_world_xy": [
+            -0.10457450087327486,
+            12.909336707987944
+          ],
+          "world_discrepancy": 2.0621874081045286,
+          "pixel_discrepancy": 58.63665492347961,
+          "projected_gt_in_image": true
+        }
+      ],
+      "missing_requested_gt_ids": []
+    }
+  ],
+  "versions": {
+    "numpy": "2.2.6",
+    "av": "16.0.1"
+  },
+  "interpretation": "GT boxes and GT world positions only; not tracked boxes, keypoints or a geometry gate",
+  "world_units": "native dataset coordinates; metric unit not independently verified by this audit",
+  "selection": "frame 149 for GT 23/24; highest discrepancy fully-inside GT box per camera, frames 2..299",
+  "artifacts": {
+    "frame149_camera_0004_frame_000149.png": {
+      "sha256": "e047a13bda9b578767322b606a10537c2168998abf27157c199fb8d44687a30e"
+    },
+    "frame149_camera_0005_frame_000149.png": {
+      "sha256": "a4a8caae5eb773f1c8680e292db00d0049e0dbb109027645b27f3256fecec900"
+    },
+    "frame149_camera_0008_frame_000149.png": {
+      "sha256": "4ded60a88d5f19a4cb6a41eb72b7b84f02740c03f397f5707711b98062b06d48"
+    },
+    "frame149_contact.jpg": {
+      "sha256": "50cb7e98ad8180ac1a52a61d72d903f5220582a1bfb64674a74d0b5ee406add3"
+    },
+    "worst_inside_camera_0004_frame_000136.png": {
+      "sha256": "fe66dd08e9e75f57c4534353fb57b18810fcd7218dc09c18274cc0a6084a12a1"
+    },
+    "worst_inside_camera_0005_frame_000293.png": {
+      "sha256": "6f6f8321c96d91c64cb680d5aab1336be10863cce615cb5b20ffce81bdaf98e2"
+    },
+    "worst_inside_camera_0008_frame_000199.png": {
+      "sha256": "39044a73018f471bc5d7f4d2217d810fbd62fba53362acba7785a7abb05e493b"
+    },
+    "worst_inside_contact.jpg": {
+      "sha256": "8b3fcdd4c8bdb0cf6ee67e5676227bcc911670ec614b4a7772ab2118fb2403e1"
+    }
+  }
+}

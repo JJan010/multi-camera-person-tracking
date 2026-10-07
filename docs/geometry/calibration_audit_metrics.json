@@ -1,0 +1,236 @@
+{
+  "completed": true,
+  "run_id": "20261007T110015275411Z",
+  "protocol": "scene_001_geometry_audit_v1",
+  "inputs": {
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_001_source.json",
+      "sha256": "64bf042c6078e39d5d632d1acda1a13200eeefcebbe28e596010457272a74225"
+    },
+    "calibration_2025_format.json": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/calibration_2025_format.json",
+      "sha256": "cad8df87ec3b9b232b1756797f8710b3b416a5fb86fff4df1906332e03673085"
+    },
+    "ground_truth.txt": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "calibration_type": "cartesian",
+  "cameras": [
+    4,
+    5,
+    8
+  ],
+  "frame_range": [
+    2,
+    299
+  ],
+  "algebra_tolerance": 1e-06,
+  "matrix_checks": {
+    "4": {
+      "relative_errors": {
+        "P_vs_K_E": 2.943923379528912e-17,
+        "H_vs_P_columns_0_1_3": 0.0
+      },
+      "homography_condition_number": 14842.35979067944,
+      "rotation_orthogonality_error": 3.220022562870974e-05,
+      "rotation_determinant": 0.9999913787470607
+    },
+    "5": {
+      "relative_errors": {
+        "P_vs_K_E": 1.2847681398743202e-16,
+        "H_vs_P_columns_0_1_3": 0.0
+      },
+      "homography_condition_number": 23561.97266159839,
+      "rotation_orthogonality_error": 3.077407856061398e-05,
+      "rotation_determinant": 0.9999973618411869
+    },
+    "8": {
+      "relative_errors": {
+        "P_vs_K_E": 1.1532976079200933e-16,
+        "H_vs_P_columns_0_1_3": 0.0
+      },
+      "homography_condition_number": 12239.65686347916,
+      "rotation_orthogonality_error": 3.082437253251114e-05,
+      "rotation_determinant": 1.0000030455547428
+    }
+  },
+  "projection_diagnostics": {
+    "4": {
+      "all_raw_boxes": {
+        "rows": 4649,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 4649,
+          "median": 0.17402569925378172,
+          "p95": 0.38580461399487537,
+          "max": 1.096220955049389
+        },
+        "pixel_discrepancy": {
+          "n": 4649,
+          "median": 22.51900599970047,
+          "p95": 57.62810909810243,
+          "max": 178.41704492574496
+        },
+        "roundtrip_px": {
+          "n": 4649,
+          "median": 2.0495186137532011e-13,
+          "p95": 4.856703836433968e-13,
+          "max": 1.016845989170083e-12
+        }
+      },
+      "fully_inside_boxes": {
+        "rows": 4393,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 4393,
+          "median": 0.1700831850773478,
+          "p95": 0.3547659445588654,
+          "max": 0.5804108234527514
+        },
+        "pixel_discrepancy": {
+          "n": 4393,
+          "median": 21.327229433468446,
+          "p95": 52.68419217984473,
+          "max": 98.91716967869236
+        },
+        "roundtrip_px": {
+          "n": 4393,
+          "median": 1.7053025658242404e-13,
+          "p95": 4.687428401686771e-13,
+          "max": 1.016845989170083e-12
+        }
+      }
+    },
+    "5": {
+      "all_raw_boxes": {
+        "rows": 6013,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 6013,
+          "median": 0.1371105330670883,
+          "p95": 0.6440471877011742,
+          "max": 2.034893937845014
+        },
+        "pixel_discrepancy": {
+          "n": 6013,
+          "median": 10.40695643585001,
+          "p95": 68.15003496067864,
+          "max": 254.35084312308757
+        },
+        "roundtrip_px": {
+          "n": 6013,
+          "median": 4.687428401686771e-13,
+          "p95": 9.374856803373542e-13,
+          "max": 1.7316263224219958e-12
+        }
+      },
+      "fully_inside_boxes": {
+        "rows": 5087,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 5087,
+          "median": 0.1209683427512719,
+          "p95": 0.3293330775534682,
+          "max": 1.5768234100654241
+        },
+        "pixel_discrepancy": {
+          "n": 5087,
+          "median": 9.55056780972896,
+          "p95": 29.557244125568687,
+          "max": 79.43049616537392
+        },
+        "roundtrip_px": {
+          "n": 5087,
+          "median": 4.687428401686771e-13,
+          "p95": 9.165725883006586e-13,
+          "max": 1.7316263224219958e-12
+        }
+      }
+    },
+    "8": {
+      "all_raw_boxes": {
+        "rows": 5655,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 5655,
+          "median": 0.16841139644076264,
+          "p95": 0.35202794366372886,
+          "max": 2.0621874081045286
+        },
+        "pixel_discrepancy": {
+          "n": 5655,
+          "median": 10.547755671208131,
+          "p95": 30.648087721941625,
+          "max": 145.95634519549313
+        },
+        "roundtrip_px": {
+          "n": 5655,
+          "median": 7.190186943645084e-13,
+          "p95": 1.3935335428108445e-12,
+          "max": 2.145038964057813e-12
+        }
+      },
+      "fully_inside_boxes": {
+        "rows": 5540,
+        "invalid_inverse_projections": 0,
+        "world_discrepancy": {
+          "n": 5540,
+          "median": 0.1674425516276788,
+          "p95": 0.3348874210129649,
+          "max": 2.0621874081045286
+        },
+        "pixel_discrepancy": {
+          "n": 5540,
+          "median": 10.422998752437607,
+          "p95": 27.987422741032635,
+          "max": 59.25231289201003
+        },
+        "roundtrip_px": {
+          "n": 5540,
+          "median": 7.190186943645084e-13,
+          "p95": 1.3935335428108445e-12,
+          "max": 2.145038964057813e-12
+        }
+      }
+    }
+  },
+  "gt_world_consistency": {
+    "4-5": {
+      "n": 4072,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "4-8": {
+      "n": 4286,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    },
+    "5-8": {
+      "n": 4412,
+      "median": 0.0,
+      "p95": 0.0,
+      "max": 0.0
+    }
+  },
+  "direction": "H maps world Z=0 to image; inverse H maps image to world Z=0",
+  "coordinate_policy": "Raw GT xywh; foot=(x+w/2,y+h); no clipping or pixel offset",
+  "world_units": "native dataset coordinates; metric unit not independently verified by this audit",
+  "limits": [
+    "Algebra/roundtrip does not establish physical calibration accuracy",
+    "GT-box bottom center is a footpoint proxy, not a measured foot contact",
+    "Fully inside the image does not imply unoccluded feet",
+    "GT world-position semantics and physical units need confirmation",
+    "No geometry association gate or distance threshold is selected"
+  ],
+  "numpy_version": "2.2.6",
+  "code_sha256": "a019268eddf640c2daebe2deac6f08b38f791d6260e87ef8635c3703ebd4e106",
+  "artifacts": {
+    "gt_projection.csv": {
+      "sha256": "1015446d1efa10b2577fe8318ba29313280952d99331b237e5b55cd6e2c27e90"
+    }
+  }
+}

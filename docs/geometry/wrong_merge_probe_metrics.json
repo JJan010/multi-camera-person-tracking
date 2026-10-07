@@ -1,0 +1,94 @@
+{
+  "completed": true,
+  "protocol": "scene_001_wrong_merge_geometry_probe_v1",
+  "inputs": {
+    "geometry_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/geometry_audit/20261007T110015275411Z/report.json",
+      "sha256": "9602ea6db1b2575469cceb77036f02f97fad98b7ad89215fdfb9b3aaf899afd3"
+    },
+    "identity_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/controlled_merge/20261007T104647560154Z/report.json",
+      "sha256": "6668eed7fa439c4d544c4511f7efbb55fee44a4f5c5141c63e829693d71985ab"
+    },
+    "calibration_2025_format.json": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/calibration_2025_format.json",
+      "sha256": "cad8df87ec3b9b232b1756797f8710b3b416a5fb86fff4df1906332e03673085"
+    },
+    "ground_truth.txt": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    },
+    "tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/local_reid/20261006T204237314810Z/tracks.jsonl",
+      "sha256": "2a9b529c1a0e6cb6202d6467d64214a917d9d2403a7be201fcfdc77405faa736"
+    }
+  },
+  "frame": 149,
+  "timestamp": "149/30",
+  "source_run_id": "20261006T204237314810Z",
+  "observations": {
+    "5": {
+      "local_id": 9,
+      "diagnostic_gt_id": 24,
+      "tracked_xyxy": [
+        719.99853515625,
+        279.30755615234375,
+        765.2957153320312,
+        416.03167724609375
+      ],
+      "tracked_box_fully_inside": true,
+      "gt_world_xy": [
+        5.55411,
+        -3.04988
+      ],
+      "gt_box_projected_xy": [
+        5.568085128484602,
+        -2.968257697783003
+      ],
+      "tracker_box_projected_xy": [
+        5.536130056477891,
+        -2.8919144674148094
+      ],
+      "tracker_world_discrepancy": 0.15898549573461446,
+      "gt_box_world_discrepancy": 0.0828100503282297
+    },
+    "8": {
+      "local_id": 17,
+      "diagnostic_gt_id": 23,
+      "tracked_xyxy": [
+        1261.785400390625,
+        148.19662475585938,
+        1308.2772216796875,
+        284.3191833496094
+      ],
+      "tracked_box_fully_inside": true,
+      "gt_world_xy": [
+        -0.0937173,
+        13.4765
+      ],
+      "gt_box_projected_xy": [
+        0.06819429388696825,
+        13.406628017114025
+      ],
+      "tracker_box_projected_xy": [
+        -0.061943874889583084,
+        13.588078506304456
+      ],
+      "tracker_world_discrepancy": 0.11601428193278951,
+      "gt_box_world_discrepancy": 0.1763447142032798
+    }
+  },
+  "pair_distances": {
+    "gt_world_xy": 17.464798570697152,
+    "gt_box_projected_xy": 17.273843850412387,
+    "tracker_box_projected_xy": 17.4048441577307
+  },
+  "code_sha256": "8c904455983751cb46ee83776d37e9af9bf3b65b28d3551a8ee0ccd44b75eb7b",
+  "helper_sha256": "a019268eddf640c2daebe2deac6f08b38f791d6260e87ef8635c3703ebd4e106",
+  "limits": [
+    "One previously selected wrong merge; no threshold selection or association replay",
+    "Diagnostic GT IDs explicitly select this case; this is not runtime logic",
+    "Raw un-clipped tracked and GT boxes; footpoint approximation may be unreliable",
+    "Native dataset units; no independent physical-scale verification"
+  ]
+}
