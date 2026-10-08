@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "experiment": "confidence_and_normalized_border_admission_v1",
+  "min_confidence": 0.5,
+  "border_fraction": 0.01,
+  "variants": ["all_available", "confidence_only", "confidence_and_border"],
+  "bounds": "raw_xyxy_before_clipping",
+  "boundaries": "inclusive",
+  "threshold_search": false,
+  "status": "single_development_hypothesis_not_calibrated",
+  "scope": "sample_admission_diagnostic_only_no_runtime_changes",
+  "limitations": [
+    "A border margin does not detect all occlusions or false detections.",
+    "It may reject useful partial-person observations.",
+    "Confidence is not calibrated crop suitability or identity probability.",
+    "Scene_041 informed this hypothesis and is now development evidence for it."
+  ]
+}

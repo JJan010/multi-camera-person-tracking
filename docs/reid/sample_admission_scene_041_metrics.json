@@ -1,0 +1,797 @@
+{
+  "totals": {
+    "all_available": {
+      "observations": 60602,
+      "accepted": 60602,
+      "rejected": 0,
+      "mutually_unique_gt": 54620,
+      "accepted_mutually_unique_gt": 54620,
+      "no_admissible_gt": 5712,
+      "accepted_no_admissible_gt": 5712,
+      "ambiguous_gt": 270,
+      "accepted_ambiguous_gt": 270
+    },
+    "confidence_only": {
+      "observations": 60602,
+      "accepted": 56334,
+      "rejected": 4268,
+      "mutually_unique_gt": 54620,
+      "accepted_mutually_unique_gt": 53666,
+      "no_admissible_gt": 5712,
+      "accepted_no_admissible_gt": 2458,
+      "rejected_no_admissible_gt": 3254,
+      "rejected_mutually_unique_gt": 954,
+      "ambiguous_gt": 270,
+      "accepted_ambiguous_gt": 210,
+      "rejected_ambiguous_gt": 60
+    },
+    "confidence_and_border": {
+      "observations": 60602,
+      "accepted": 48911,
+      "rejected": 11691,
+      "mutually_unique_gt": 54620,
+      "rejected_mutually_unique_gt": 8119,
+      "accepted_mutually_unique_gt": 46501,
+      "no_admissible_gt": 5712,
+      "accepted_no_admissible_gt": 2204,
+      "rejected_no_admissible_gt": 3508,
+      "ambiguous_gt": 270,
+      "accepted_ambiguous_gt": 206,
+      "rejected_ambiguous_gt": 64
+    }
+  },
+  "per_camera": {
+    "all_available": {
+      "361": {
+        "observations": 16279,
+        "accepted": 16279,
+        "rejected": 0,
+        "mutually_unique_gt": 15640,
+        "accepted_mutually_unique_gt": 15640,
+        "no_admissible_gt": 595,
+        "accepted_no_admissible_gt": 595,
+        "ambiguous_gt": 44,
+        "accepted_ambiguous_gt": 44
+      },
+      "362": {
+        "observations": 13864,
+        "accepted": 13864,
+        "rejected": 0,
+        "mutually_unique_gt": 9742,
+        "accepted_mutually_unique_gt": 9742,
+        "no_admissible_gt": 4039,
+        "accepted_no_admissible_gt": 4039,
+        "ambiguous_gt": 83,
+        "accepted_ambiguous_gt": 83
+      },
+      "364": {
+        "observations": 30459,
+        "accepted": 30459,
+        "rejected": 0,
+        "mutually_unique_gt": 29238,
+        "accepted_mutually_unique_gt": 29238,
+        "no_admissible_gt": 1078,
+        "accepted_no_admissible_gt": 1078,
+        "ambiguous_gt": 143,
+        "accepted_ambiguous_gt": 143
+      }
+    },
+    "confidence_only": {
+      "361": {
+        "observations": 16279,
+        "accepted": 15804,
+        "rejected": 475,
+        "mutually_unique_gt": 15640,
+        "accepted_mutually_unique_gt": 15576,
+        "rejected_mutually_unique_gt": 64,
+        "no_admissible_gt": 595,
+        "accepted_no_admissible_gt": 190,
+        "rejected_no_admissible_gt": 405,
+        "ambiguous_gt": 44,
+        "accepted_ambiguous_gt": 38,
+        "rejected_ambiguous_gt": 6
+      },
+      "362": {
+        "observations": 13864,
+        "accepted": 11172,
+        "rejected": 2692,
+        "mutually_unique_gt": 9742,
+        "accepted_mutually_unique_gt": 9400,
+        "rejected_mutually_unique_gt": 342,
+        "no_admissible_gt": 4039,
+        "rejected_no_admissible_gt": 2330,
+        "accepted_no_admissible_gt": 1709,
+        "ambiguous_gt": 83,
+        "accepted_ambiguous_gt": 63,
+        "rejected_ambiguous_gt": 20
+      },
+      "364": {
+        "observations": 30459,
+        "accepted": 29358,
+        "rejected": 1101,
+        "mutually_unique_gt": 29238,
+        "accepted_mutually_unique_gt": 28690,
+        "no_admissible_gt": 1078,
+        "accepted_no_admissible_gt": 559,
+        "rejected_no_admissible_gt": 519,
+        "rejected_mutually_unique_gt": 548,
+        "ambiguous_gt": 143,
+        "accepted_ambiguous_gt": 109,
+        "rejected_ambiguous_gt": 34
+      }
+    },
+    "confidence_and_border": {
+      "361": {
+        "observations": 16279,
+        "accepted": 12521,
+        "rejected": 3758,
+        "mutually_unique_gt": 15640,
+        "rejected_mutually_unique_gt": 3185,
+        "accepted_mutually_unique_gt": 12455,
+        "no_admissible_gt": 595,
+        "accepted_no_admissible_gt": 28,
+        "rejected_no_admissible_gt": 567,
+        "ambiguous_gt": 44,
+        "accepted_ambiguous_gt": 38,
+        "rejected_ambiguous_gt": 6
+      },
+      "362": {
+        "observations": 13864,
+        "accepted": 10462,
+        "rejected": 3402,
+        "mutually_unique_gt": 9742,
+        "accepted_mutually_unique_gt": 8717,
+        "rejected_mutually_unique_gt": 1025,
+        "no_admissible_gt": 4039,
+        "rejected_no_admissible_gt": 2353,
+        "accepted_no_admissible_gt": 1686,
+        "ambiguous_gt": 83,
+        "accepted_ambiguous_gt": 59,
+        "rejected_ambiguous_gt": 24
+      },
+      "364": {
+        "observations": 30459,
+        "accepted": 25928,
+        "rejected": 4531,
+        "mutually_unique_gt": 29238,
+        "accepted_mutually_unique_gt": 25329,
+        "no_admissible_gt": 1078,
+        "accepted_no_admissible_gt": 490,
+        "rejected_no_admissible_gt": 588,
+        "rejected_mutually_unique_gt": 3909,
+        "ambiguous_gt": 143,
+        "accepted_ambiguous_gt": 109,
+        "rejected_ambiguous_gt": 34
+      }
+    }
+  },
+  "segments_observed": 206,
+  "segments_without_accepted_sample": {
+    "all_available": 0,
+    "confidence_only": 0,
+    "confidence_and_border": 21
+  },
+  "GT_people_without_uniquely_matched_accepted_sample": {
+    "all_available": [],
+    "confidence_only": [],
+    "confidence_and_border": []
+  },
+  "per_gt_unique_evidence": {
+    "0": {
+      "all_available_observations": 1681,
+      "all_available_accepted": 1681,
+      "confidence_only_observations": 1681,
+      "confidence_only_accepted": 1649,
+      "confidence_and_border_observations": 1681,
+      "confidence_and_border_accepted": 1101
+    },
+    "1": {
+      "all_available_observations": 1846,
+      "all_available_accepted": 1846,
+      "confidence_only_observations": 1846,
+      "confidence_only_accepted": 1790,
+      "confidence_and_border_observations": 1846,
+      "confidence_and_border_accepted": 1487
+    },
+    "2": {
+      "all_available_observations": 1918,
+      "all_available_accepted": 1918,
+      "confidence_only_observations": 1918,
+      "confidence_only_accepted": 1900,
+      "confidence_and_border_observations": 1918,
+      "confidence_and_border_accepted": 1384
+    },
+    "3": {
+      "all_available_observations": 847,
+      "all_available_accepted": 847,
+      "confidence_only_observations": 847,
+      "confidence_only_accepted": 838,
+      "confidence_and_border_observations": 847,
+      "confidence_and_border_accepted": 685
+    },
+    "4": {
+      "all_available_observations": 3371,
+      "all_available_accepted": 3371,
+      "confidence_only_observations": 3371,
+      "confidence_only_accepted": 3350,
+      "confidence_and_border_observations": 3371,
+      "confidence_and_border_accepted": 3046
+    },
+    "5": {
+      "all_available_observations": 1418,
+      "all_available_accepted": 1418,
+      "confidence_only_observations": 1418,
+      "confidence_only_accepted": 1387,
+      "confidence_and_border_observations": 1418,
+      "confidence_and_border_accepted": 1204
+    },
+    "7": {
+      "all_available_observations": 4183,
+      "all_available_accepted": 4183,
+      "confidence_only_observations": 4183,
+      "confidence_only_accepted": 4167,
+      "confidence_and_border_observations": 4183,
+      "confidence_and_border_accepted": 3663
+    },
+    "8": {
+      "all_available_observations": 2018,
+      "all_available_accepted": 2018,
+      "confidence_only_observations": 2018,
+      "confidence_only_accepted": 1966,
+      "confidence_and_border_observations": 2018,
+      "confidence_and_border_accepted": 1749
+    },
+    "9": {
+      "all_available_observations": 969,
+      "all_available_accepted": 969,
+      "confidence_only_observations": 969,
+      "confidence_only_accepted": 955,
+      "confidence_and_border_observations": 969,
+      "confidence_and_border_accepted": 850
+    },
+    "10": {
+      "all_available_observations": 2373,
+      "all_available_accepted": 2373,
+      "confidence_only_observations": 2373,
+      "confidence_only_accepted": 2367,
+      "confidence_and_border_observations": 2373,
+      "confidence_and_border_accepted": 1819
+    },
+    "11": {
+      "all_available_observations": 2714,
+      "all_available_accepted": 2714,
+      "confidence_only_observations": 2714,
+      "confidence_only_accepted": 2684,
+      "confidence_and_border_observations": 2714,
+      "confidence_and_border_accepted": 2068
+    },
+    "12": {
+      "all_available_observations": 816,
+      "all_available_accepted": 816,
+      "confidence_only_observations": 816,
+      "confidence_only_accepted": 773,
+      "confidence_and_border_observations": 816,
+      "confidence_and_border_accepted": 629
+    },
+    "13": {
+      "all_available_observations": 190,
+      "all_available_accepted": 190,
+      "confidence_only_observations": 190,
+      "confidence_only_accepted": 185,
+      "confidence_and_border_observations": 190,
+      "confidence_and_border_accepted": 180
+    },
+    "14": {
+      "all_available_observations": 1524,
+      "all_available_accepted": 1524,
+      "confidence_only_observations": 1524,
+      "confidence_only_accepted": 1431,
+      "confidence_and_border_observations": 1524,
+      "confidence_and_border_accepted": 1278
+    },
+    "15": {
+      "all_available_observations": 621,
+      "all_available_accepted": 621,
+      "confidence_only_observations": 621,
+      "confidence_only_accepted": 588,
+      "confidence_and_border_observations": 621,
+      "confidence_and_border_accepted": 508
+    },
+    "16": {
+      "all_available_observations": 2659,
+      "all_available_accepted": 2659,
+      "confidence_only_observations": 2659,
+      "confidence_only_accepted": 2638,
+      "confidence_and_border_observations": 2659,
+      "confidence_and_border_accepted": 2418
+    },
+    "17": {
+      "all_available_observations": 2270,
+      "all_available_accepted": 2270,
+      "confidence_only_observations": 2270,
+      "confidence_only_accepted": 2251,
+      "confidence_and_border_observations": 2270,
+      "confidence_and_border_accepted": 2006
+    },
+    "18": {
+      "all_available_observations": 2494,
+      "all_available_accepted": 2494,
+      "confidence_only_observations": 2494,
+      "confidence_only_accepted": 2382,
+      "confidence_and_border_observations": 2494,
+      "confidence_and_border_accepted": 2136
+    },
+    "19": {
+      "all_available_observations": 2378,
+      "all_available_accepted": 2378,
+      "confidence_only_observations": 2378,
+      "confidence_only_accepted": 2326,
+      "confidence_and_border_observations": 2378,
+      "confidence_and_border_accepted": 1934
+    },
+    "20": {
+      "all_available_observations": 686,
+      "all_available_accepted": 686,
+      "confidence_only_observations": 686,
+      "confidence_only_accepted": 651,
+      "confidence_and_border_observations": 686,
+      "confidence_and_border_accepted": 333
+    },
+    "21": {
+      "all_available_observations": 1093,
+      "all_available_accepted": 1093,
+      "confidence_only_observations": 1093,
+      "confidence_only_accepted": 1062,
+      "confidence_and_border_observations": 1093,
+      "confidence_and_border_accepted": 789
+    },
+    "22": {
+      "all_available_observations": 2112,
+      "all_available_accepted": 2112,
+      "confidence_only_observations": 2112,
+      "confidence_only_accepted": 2077,
+      "confidence_and_border_observations": 2112,
+      "confidence_and_border_accepted": 2031
+    },
+    "23": {
+      "all_available_observations": 3840,
+      "all_available_accepted": 3840,
+      "confidence_only_observations": 3840,
+      "confidence_only_accepted": 3829,
+      "confidence_and_border_observations": 3840,
+      "confidence_and_border_accepted": 3131
+    },
+    "24": {
+      "all_available_observations": 2581,
+      "all_available_accepted": 2581,
+      "confidence_only_observations": 2581,
+      "confidence_only_accepted": 2554,
+      "confidence_and_border_observations": 2581,
+      "confidence_and_border_accepted": 2386
+    },
+    "25": {
+      "all_available_observations": 3901,
+      "all_available_accepted": 3901,
+      "confidence_only_observations": 3901,
+      "confidence_only_accepted": 3835,
+      "confidence_and_border_observations": 3901,
+      "confidence_and_border_accepted": 3790
+    },
+    "26": {
+      "all_available_observations": 2428,
+      "all_available_accepted": 2428,
+      "confidence_only_observations": 2428,
+      "confidence_only_accepted": 2412,
+      "confidence_and_border_observations": 2428,
+      "confidence_and_border_accepted": 2357
+    },
+    "27": {
+      "all_available_observations": 1689,
+      "all_available_accepted": 1689,
+      "confidence_only_observations": 1689,
+      "confidence_only_accepted": 1619,
+      "confidence_and_border_observations": 1689,
+      "confidence_and_border_accepted": 1539
+    }
+  },
+  "inspected_visual_cases": [
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1648
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1648
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": true,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00013102777302265167,
+      "confidence": 0.6906411051750183,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1649
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1649
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": true,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00016014836728572845,
+      "confidence": 0.691858172416687,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1651
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1651
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": true,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00023722276091575623,
+      "confidence": 0.5765863060951233,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1673
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1673
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.0003012903034687042,
+      "confidence": 0.12413333356380463,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1674
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1674
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.0,
+      "confidence": 0.10908766835927963,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1675
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1675
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00044694170355796814,
+      "confidence": 0.15484805405139923,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1676
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1676
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.000437052920460701,
+      "confidence": 0.17956304550170898,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1677
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1677
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.0004330351948738098,
+      "confidence": 0.1887197494506836,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1678
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1678
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00046016275882720947,
+      "confidence": 0.1864888221025467,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1679
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1679
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.0003004409372806549,
+      "confidence": 0.10717462748289108,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1680
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 22,
+        "frame_index": 1680
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": false,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00033531151711940765,
+      "confidence": 0.14423619210720062,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 33,
+        "frame_index": 2747
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 2147483654,
+        "frame_index": 2747
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": true,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.0002937484532594681,
+      "confidence": 0.5571303963661194,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 33,
+        "frame_index": 2779
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 2147483654,
+        "frame_index": 2779
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": true,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.0003059469163417816,
+      "confidence": 0.7579483985900879,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 33,
+        "frame_index": 2780
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 2147483654,
+        "frame_index": 2780
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": true,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00037201307713985443,
+      "confidence": 0.6999942660331726,
+      "diagnostic_gt": null,
+      "spatial_category": "no_admissible_gt"
+    },
+    {
+      "key": {
+        "camera_id": 361,
+        "local_id": 33,
+        "frame_index": 2781
+      },
+      "identity_key": {
+        "camera_id": 361,
+        "local_id": 2147483654,
+        "frame_index": 2781
+      },
+      "accepted": {
+        "all_available": true,
+        "confidence_only": true,
+        "confidence_and_border": false
+      },
+      "normalized_clearance": 0.00023377873003482819,
+      "confidence": 0.6151075959205627,
+      "diagnostic_gt": 18,
+      "spatial_category": "mutually_unique_gt"
+    }
+  ],
+  "run_id": "20261008T130950879141Z",
+  "completed": true,
+  "protocol": "frozen_sample_admission_audit_v1",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "source_run_id": "20261008T111045386342Z",
+  "inputs": {
+    "source_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_validation/20261008T111045386342Z/report.json",
+      "sha256": "94e6be0ed4c3fb46d23fc8e91e91f42b33553e06fc3ada7769a5518d3a8070a3"
+    },
+    "scene_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/scenes/scene_041_two_minutes.json",
+      "sha256": "80a7d7ea63e509617c5e17feb8d76f78afc475af2b5c59cb4cb03549abe65259"
+    },
+    "global_tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_validation/20261008T111045386342Z/global_tracks.jsonl.gz",
+      "sha256": "0f30d956b0d0535d16585398afcc3255f514c5d502401f31b0b82772e41bbb88"
+    },
+    "configuration": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/reid/sample_admission_experiment.json",
+      "sha256": "10644c5fcb4bd122cd8a12a43dfa042fa6f343b605951a64a404897f802c463b"
+    },
+    "code:scripts/audit_sample_admission.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/audit_sample_admission.py",
+      "sha256": "64212ee46c36329e161d7119c25090f0ba525a069fcc64583dcc92e25fff2ff6"
+    },
+    "code:src/mtmc/reid/sample_quality.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/sample_quality.py",
+      "sha256": "71693bee32637bded12a07e12c150f2c9684202b81231bcf81e126e2ff5833b9"
+    },
+    "code:src/mtmc/reid/crops.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/crops.py",
+      "sha256": "9225a4650e5ca5ac0742de9bc299f8f18cabd64c0ece65de554b614d53cfdc8e"
+    },
+    "code:src/mtmc/data/ground_truth.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/data/ground_truth.py",
+      "sha256": "53cd59e4dbf90f189b707f1c401973fa450f1deace4a2c6a3a0b61df30a154d0"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/ground_truth.txt",
+      "sha256": "4cefe073422690d6aa13cd5f41885fc46006b5d3e0b80d46d6aada5db466b5bb"
+    }
+  },
+  "configuration": {
+    "schema_version": 1,
+    "experiment": "confidence_and_normalized_border_admission_v1",
+    "min_confidence": 0.5,
+    "border_fraction": 0.01,
+    "variants": [
+      "all_available",
+      "confidence_only",
+      "confidence_and_border"
+    ],
+    "bounds": "raw_xyxy_before_clipping",
+    "boundaries": "inclusive",
+    "threshold_search": false,
+    "status": "single_development_hypothesis_not_calibrated",
+    "scope": "sample_admission_diagnostic_only_no_runtime_changes",
+    "limitations": [
+      "A border margin does not detect all occlusions or false detections.",
+      "It may reject useful partial-person observations.",
+      "Confidence is not calibrated crop suitability or identity probability.",
+      "Scene_041 informed this hypothesis and is now development evidence for it."
+    ]
+  },
+  "runtime_observations": 60638,
+  "evaluation_frames": [
+    2,
+    3599
+  ],
+  "artifacts": {
+    "admission.jsonl.gz": {
+      "path": "admission.jsonl.gz",
+      "sha256": "eedfc5561874f7517373e075d94d6097cf9e3de6e0cfc75301606213f21674b1"
+    }
+  },
+  "limits": [
+    "Masks are not integrated into histories, archives, tracking or global identity; quality metrics are unchanged by construction.",
+    "Mutually unique GT is spatial evidence, not proof that a crop is suitable for Re-ID.",
+    "No-admissible-GT and ambiguous-GT categories are not necessarily background/false detections.",
+    "Segment sample coverage is measured only within the evaluation interval, not descriptor availability over time.",
+    "Both scenes have informed development; this is not independent validation."
+  ]
+}

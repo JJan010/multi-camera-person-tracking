@@ -1,0 +1,465 @@
+{
+  "totals": {
+    "all_available": {
+      "observations": 180461,
+      "accepted": 180461,
+      "rejected": 0,
+      "mutually_unique_gt": 175027,
+      "accepted_mutually_unique_gt": 175027,
+      "no_admissible_gt": 2988,
+      "accepted_no_admissible_gt": 2988,
+      "ambiguous_gt": 2446,
+      "accepted_ambiguous_gt": 2446
+    },
+    "confidence_only": {
+      "observations": 180461,
+      "accepted": 175352,
+      "rejected": 5109,
+      "mutually_unique_gt": 175027,
+      "accepted_mutually_unique_gt": 172154,
+      "no_admissible_gt": 2988,
+      "accepted_no_admissible_gt": 1246,
+      "rejected_no_admissible_gt": 1742,
+      "rejected_mutually_unique_gt": 2873,
+      "ambiguous_gt": 2446,
+      "accepted_ambiguous_gt": 1952,
+      "rejected_ambiguous_gt": 494
+    },
+    "confidence_and_border": {
+      "observations": 180461,
+      "accepted": 144864,
+      "rejected": 35597,
+      "mutually_unique_gt": 175027,
+      "accepted_mutually_unique_gt": 142589,
+      "rejected_mutually_unique_gt": 32438,
+      "no_admissible_gt": 2988,
+      "accepted_no_admissible_gt": 488,
+      "rejected_no_admissible_gt": 2500,
+      "ambiguous_gt": 2446,
+      "accepted_ambiguous_gt": 1787,
+      "rejected_ambiguous_gt": 659
+    }
+  },
+  "per_camera": {
+    "all_available": {
+      "4": {
+        "observations": 49342,
+        "accepted": 49342,
+        "rejected": 0,
+        "mutually_unique_gt": 47728,
+        "accepted_mutually_unique_gt": 47728,
+        "no_admissible_gt": 1334,
+        "accepted_no_admissible_gt": 1334,
+        "ambiguous_gt": 280,
+        "accepted_ambiguous_gt": 280
+      },
+      "5": {
+        "observations": 64915,
+        "accepted": 64915,
+        "rejected": 0,
+        "mutually_unique_gt": 62698,
+        "accepted_mutually_unique_gt": 62698,
+        "no_admissible_gt": 1006,
+        "accepted_no_admissible_gt": 1006,
+        "ambiguous_gt": 1211,
+        "accepted_ambiguous_gt": 1211
+      },
+      "8": {
+        "observations": 66204,
+        "accepted": 66204,
+        "rejected": 0,
+        "mutually_unique_gt": 64601,
+        "accepted_mutually_unique_gt": 64601,
+        "ambiguous_gt": 955,
+        "accepted_ambiguous_gt": 955,
+        "no_admissible_gt": 648,
+        "accepted_no_admissible_gt": 648
+      }
+    },
+    "confidence_only": {
+      "4": {
+        "observations": 49342,
+        "accepted": 48107,
+        "rejected": 1235,
+        "mutually_unique_gt": 47728,
+        "accepted_mutually_unique_gt": 47238,
+        "no_admissible_gt": 1334,
+        "accepted_no_admissible_gt": 638,
+        "rejected_mutually_unique_gt": 490,
+        "ambiguous_gt": 280,
+        "accepted_ambiguous_gt": 231,
+        "rejected_no_admissible_gt": 696,
+        "rejected_ambiguous_gt": 49
+      },
+      "5": {
+        "observations": 64915,
+        "accepted": 63079,
+        "rejected": 1836,
+        "mutually_unique_gt": 62698,
+        "accepted_mutually_unique_gt": 61689,
+        "no_admissible_gt": 1006,
+        "accepted_no_admissible_gt": 430,
+        "rejected_no_admissible_gt": 576,
+        "rejected_mutually_unique_gt": 1009,
+        "ambiguous_gt": 1211,
+        "accepted_ambiguous_gt": 960,
+        "rejected_ambiguous_gt": 251
+      },
+      "8": {
+        "observations": 66204,
+        "accepted": 64166,
+        "rejected": 2038,
+        "mutually_unique_gt": 64601,
+        "accepted_mutually_unique_gt": 63227,
+        "rejected_mutually_unique_gt": 1374,
+        "ambiguous_gt": 955,
+        "accepted_ambiguous_gt": 761,
+        "rejected_ambiguous_gt": 194,
+        "no_admissible_gt": 648,
+        "rejected_no_admissible_gt": 470,
+        "accepted_no_admissible_gt": 178
+      }
+    },
+    "confidence_and_border": {
+      "4": {
+        "observations": 49342,
+        "accepted": 30818,
+        "rejected": 18524,
+        "mutually_unique_gt": 47728,
+        "accepted_mutually_unique_gt": 30621,
+        "rejected_mutually_unique_gt": 17107,
+        "no_admissible_gt": 1334,
+        "rejected_no_admissible_gt": 1269,
+        "ambiguous_gt": 280,
+        "rejected_ambiguous_gt": 148,
+        "accepted_ambiguous_gt": 132,
+        "accepted_no_admissible_gt": 65
+      },
+      "5": {
+        "observations": 64915,
+        "accepted": 56159,
+        "rejected": 8756,
+        "mutually_unique_gt": 62698,
+        "accepted_mutually_unique_gt": 54941,
+        "rejected_mutually_unique_gt": 7757,
+        "no_admissible_gt": 1006,
+        "accepted_no_admissible_gt": 276,
+        "rejected_no_admissible_gt": 730,
+        "ambiguous_gt": 1211,
+        "accepted_ambiguous_gt": 942,
+        "rejected_ambiguous_gt": 269
+      },
+      "8": {
+        "observations": 66204,
+        "accepted": 57887,
+        "rejected": 8317,
+        "mutually_unique_gt": 64601,
+        "accepted_mutually_unique_gt": 57027,
+        "rejected_mutually_unique_gt": 7574,
+        "ambiguous_gt": 955,
+        "accepted_ambiguous_gt": 713,
+        "rejected_ambiguous_gt": 242,
+        "no_admissible_gt": 648,
+        "rejected_no_admissible_gt": 501,
+        "accepted_no_admissible_gt": 147
+      }
+    }
+  },
+  "segments_observed": 337,
+  "segments_without_accepted_sample": {
+    "all_available": 0,
+    "confidence_only": 0,
+    "confidence_and_border": 38
+  },
+  "GT_people_without_uniquely_matched_accepted_sample": {
+    "all_available": [],
+    "confidence_only": [],
+    "confidence_and_border": []
+  },
+  "per_gt_unique_evidence": {
+    "0": {
+      "all_available_observations": 5418,
+      "all_available_accepted": 5418,
+      "confidence_only_observations": 5418,
+      "confidence_only_accepted": 5083,
+      "confidence_and_border_observations": 5418,
+      "confidence_and_border_accepted": 4352
+    },
+    "1": {
+      "all_available_observations": 7418,
+      "all_available_accepted": 7418,
+      "confidence_only_observations": 7418,
+      "confidence_only_accepted": 7225,
+      "confidence_and_border_observations": 7418,
+      "confidence_and_border_accepted": 6460
+    },
+    "2": {
+      "all_available_observations": 7773,
+      "all_available_accepted": 7773,
+      "confidence_only_observations": 7773,
+      "confidence_only_accepted": 7654,
+      "confidence_and_border_observations": 7773,
+      "confidence_and_border_accepted": 6275
+    },
+    "3": {
+      "all_available_observations": 6578,
+      "all_available_accepted": 6578,
+      "confidence_only_observations": 6578,
+      "confidence_only_accepted": 6465,
+      "confidence_and_border_observations": 6578,
+      "confidence_and_border_accepted": 5344
+    },
+    "4": {
+      "all_available_observations": 8629,
+      "all_available_accepted": 8629,
+      "confidence_only_observations": 8629,
+      "confidence_only_accepted": 8541,
+      "confidence_and_border_observations": 8629,
+      "confidence_and_border_accepted": 7430
+    },
+    "5": {
+      "all_available_observations": 7176,
+      "all_available_accepted": 7176,
+      "confidence_only_observations": 7176,
+      "confidence_only_accepted": 7005,
+      "confidence_and_border_observations": 7176,
+      "confidence_and_border_accepted": 4962
+    },
+    "6": {
+      "all_available_observations": 7075,
+      "all_available_accepted": 7075,
+      "confidence_only_observations": 7075,
+      "confidence_only_accepted": 7006,
+      "confidence_and_border_observations": 7075,
+      "confidence_and_border_accepted": 6228
+    },
+    "7": {
+      "all_available_observations": 7208,
+      "all_available_accepted": 7208,
+      "confidence_only_observations": 7208,
+      "confidence_only_accepted": 7117,
+      "confidence_and_border_observations": 7208,
+      "confidence_and_border_accepted": 5990
+    },
+    "8": {
+      "all_available_observations": 6828,
+      "all_available_accepted": 6828,
+      "confidence_only_observations": 6828,
+      "confidence_only_accepted": 6646,
+      "confidence_and_border_observations": 6828,
+      "confidence_and_border_accepted": 6140
+    },
+    "9": {
+      "all_available_observations": 8813,
+      "all_available_accepted": 8813,
+      "confidence_only_observations": 8813,
+      "confidence_only_accepted": 8666,
+      "confidence_and_border_observations": 8813,
+      "confidence_and_border_accepted": 6971
+    },
+    "10": {
+      "all_available_observations": 8417,
+      "all_available_accepted": 8417,
+      "confidence_only_observations": 8417,
+      "confidence_only_accepted": 8334,
+      "confidence_and_border_observations": 8417,
+      "confidence_and_border_accepted": 6028
+    },
+    "11": {
+      "all_available_observations": 7578,
+      "all_available_accepted": 7578,
+      "confidence_only_observations": 7578,
+      "confidence_only_accepted": 7550,
+      "confidence_and_border_observations": 7578,
+      "confidence_and_border_accepted": 6172
+    },
+    "12": {
+      "all_available_observations": 6919,
+      "all_available_accepted": 6919,
+      "confidence_only_observations": 6919,
+      "confidence_only_accepted": 6880,
+      "confidence_and_border_observations": 6919,
+      "confidence_and_border_accepted": 5031
+    },
+    "13": {
+      "all_available_observations": 6722,
+      "all_available_accepted": 6722,
+      "confidence_only_observations": 6722,
+      "confidence_only_accepted": 6623,
+      "confidence_and_border_observations": 6722,
+      "confidence_and_border_accepted": 5724
+    },
+    "14": {
+      "all_available_observations": 7679,
+      "all_available_accepted": 7679,
+      "confidence_only_observations": 7679,
+      "confidence_only_accepted": 7530,
+      "confidence_and_border_observations": 7679,
+      "confidence_and_border_accepted": 6727
+    },
+    "15": {
+      "all_available_observations": 8248,
+      "all_available_accepted": 8248,
+      "confidence_only_observations": 8248,
+      "confidence_only_accepted": 8122,
+      "confidence_and_border_observations": 8248,
+      "confidence_and_border_accepted": 6510
+    },
+    "16": {
+      "all_available_observations": 5737,
+      "all_available_accepted": 5737,
+      "confidence_only_observations": 5737,
+      "confidence_only_accepted": 5657,
+      "confidence_and_border_observations": 5737,
+      "confidence_and_border_accepted": 5255
+    },
+    "17": {
+      "all_available_observations": 6400,
+      "all_available_accepted": 6400,
+      "confidence_only_observations": 6400,
+      "confidence_only_accepted": 6291,
+      "confidence_and_border_observations": 6400,
+      "confidence_and_border_accepted": 4453
+    },
+    "18": {
+      "all_available_observations": 6086,
+      "all_available_accepted": 6086,
+      "confidence_only_observations": 6086,
+      "confidence_only_accepted": 6010,
+      "confidence_and_border_observations": 6086,
+      "confidence_and_border_accepted": 5438
+    },
+    "19": {
+      "all_available_observations": 6057,
+      "all_available_accepted": 6057,
+      "confidence_only_observations": 6057,
+      "confidence_only_accepted": 5927,
+      "confidence_and_border_observations": 6057,
+      "confidence_and_border_accepted": 4537
+    },
+    "20": {
+      "all_available_observations": 7656,
+      "all_available_accepted": 7656,
+      "confidence_only_observations": 7656,
+      "confidence_only_accepted": 7592,
+      "confidence_and_border_observations": 7656,
+      "confidence_and_border_accepted": 6189
+    },
+    "21": {
+      "all_available_observations": 6348,
+      "all_available_accepted": 6348,
+      "confidence_only_observations": 6348,
+      "confidence_only_accepted": 6225,
+      "confidence_and_border_observations": 6348,
+      "confidence_and_border_accepted": 4809
+    },
+    "22": {
+      "all_available_observations": 5409,
+      "all_available_accepted": 5409,
+      "confidence_only_observations": 5409,
+      "confidence_only_accepted": 5313,
+      "confidence_and_border_observations": 5409,
+      "confidence_and_border_accepted": 4584
+    },
+    "23": {
+      "all_available_observations": 7659,
+      "all_available_accepted": 7659,
+      "confidence_only_observations": 7659,
+      "confidence_only_accepted": 7590,
+      "confidence_and_border_observations": 7659,
+      "confidence_and_border_accepted": 6719
+    },
+    "24": {
+      "all_available_observations": 5196,
+      "all_available_accepted": 5196,
+      "confidence_only_observations": 5196,
+      "confidence_only_accepted": 5102,
+      "confidence_and_border_observations": 5196,
+      "confidence_and_border_accepted": 4261
+    }
+  },
+  "inspected_visual_cases": [],
+  "run_id": "20261008T125100261603Z",
+  "completed": true,
+  "protocol": "frozen_sample_admission_audit_v1",
+  "scene": "MTMC_Tracking_2024/train/scene_001",
+  "source_run_id": "20261008T105229140571Z",
+  "inputs": {
+    "source_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_experiment/20261008T105229140571Z/report.json",
+      "sha256": "4b26bad0859a3f93941ab1c3a778296283bf2a5ceaf1d8f6eb5bc8b460fcbf90"
+    },
+    "scene_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/scenes/scene_001_two_minutes.json",
+      "sha256": "f971f0046c6acb348ec21c7a9fa8e31a03a0186d230401e69b221687b14dcf0f"
+    },
+    "global_tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_experiment/20261008T105229140571Z/global_tracks.jsonl.gz",
+      "sha256": "48217b2a0042f55e0dd1a0dda46fe0873d6c5796d4f1124610ecaba4b2463d3e"
+    },
+    "configuration": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/reid/sample_admission_experiment.json",
+      "sha256": "10644c5fcb4bd122cd8a12a43dfa042fa6f343b605951a64a404897f802c463b"
+    },
+    "code:scripts/audit_sample_admission.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/audit_sample_admission.py",
+      "sha256": "64212ee46c36329e161d7119c25090f0ba525a069fcc64583dcc92e25fff2ff6"
+    },
+    "code:src/mtmc/reid/sample_quality.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/sample_quality.py",
+      "sha256": "71693bee32637bded12a07e12c150f2c9684202b81231bcf81e126e2ff5833b9"
+    },
+    "code:src/mtmc/reid/crops.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/crops.py",
+      "sha256": "9225a4650e5ca5ac0742de9bc299f8f18cabd64c0ece65de554b614d53cfdc8e"
+    },
+    "code:src/mtmc/data/ground_truth.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/data/ground_truth.py",
+      "sha256": "53cd59e4dbf90f189b707f1c401973fa450f1deace4a2c6a3a0b61df30a154d0"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "configuration": {
+    "schema_version": 1,
+    "experiment": "confidence_and_normalized_border_admission_v1",
+    "min_confidence": 0.5,
+    "border_fraction": 0.01,
+    "variants": [
+      "all_available",
+      "confidence_only",
+      "confidence_and_border"
+    ],
+    "bounds": "raw_xyxy_before_clipping",
+    "boundaries": "inclusive",
+    "threshold_search": false,
+    "status": "single_development_hypothesis_not_calibrated",
+    "scope": "sample_admission_diagnostic_only_no_runtime_changes",
+    "limitations": [
+      "A border margin does not detect all occlusions or false detections.",
+      "It may reject useful partial-person observations.",
+      "Confidence is not calibrated crop suitability or identity probability.",
+      "Scene_041 informed this hypothesis and is now development evidence for it."
+    ]
+  },
+  "runtime_observations": 180547,
+  "evaluation_frames": [
+    2,
+    3599
+  ],
+  "artifacts": {
+    "admission.jsonl.gz": {
+      "path": "admission.jsonl.gz",
+      "sha256": "dca02d6ad2999aacf7767cb1de1b08a466a16c4eebf24026c1fdca4cbd1e084f"
+    }
+  },
+  "limits": [
+    "Masks are not integrated into histories, archives, tracking or global identity; quality metrics are unchanged by construction.",
+    "Mutually unique GT is spatial evidence, not proof that a crop is suitable for Re-ID.",
+    "No-admissible-GT and ambiguous-GT categories are not necessarily background/false detections.",
+    "Segment sample coverage is measured only within the evaluation interval, not descriptor availability over time.",
+    "Both scenes have informed development; this is not independent validation."
+  ]
+}
