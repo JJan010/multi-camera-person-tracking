@@ -1,0 +1,658 @@
+{
+  "completed": true,
+  "protocol": "dormant_recovery_context_v1",
+  "source_run_id": "20261008T094135187275Z",
+  "context_frames_each_side": 15,
+  "inputs": {
+    "/home/jakjan/projects/multi-camera-person-tracking/artifacts/dormant_recovery/20261008T094135187275Z/report.json": "eb2e49083a3448c28ffeb906569508437857eb4fa6d2a246df89cace995413f9",
+    "/home/jakjan/projects/multi-camera-person-tracking/artifacts/dormant_recovery/20261008T094135187275Z/global_tracks.jsonl.gz": "81b32e26353bf4b5e6465ab1a4cf583b3075675c05f5a056c9f2b86cc8f8e045",
+    "/home/jakjan/projects/multi-camera-person-tracking/artifacts/dormant_recovery/20261008T094135187275Z/reactivation_diagnostics.json": "4be004cba76df06b1c17fa765a537de033bbf1b0a0900852920ff26caf7c787b",
+    "/home/jakjan/projects/multi-camera-person-tracking/configs/scenes/scene_001_two_minutes.json": "f971f0046c6acb348ec21c7a9fa8e31a03a0186d230401e69b221687b14dcf0f",
+    "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+  },
+  "events": [
+    {
+      "event": 1,
+      "global_id": 154,
+      "original_category": "same_last_visible_gt",
+      "gap_frames": 38,
+      "gap_seconds": "19/15",
+      "before": {
+        "boundary": [
+          {
+            "event": 1,
+            "side": "before",
+            "frame_index": 2016,
+            "camera_id": 5,
+            "local_id": 72,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 9,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1259.77197265625,
+              284.61724853515625,
+              1299.106689453125,
+              423.0764465332031
+            ],
+            "best_gt": 9,
+            "best_iou": 0.8290102786561527,
+            "admissible_gt": [
+              {
+                "gt_id": 9,
+                "iou": 0.8290102786561527,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 154
+          }
+        ],
+        "unique_gt_counts": {
+          "9": 5
+        },
+        "reason_counts": {
+          "mutually_unique": 5,
+          "multiple_admissible_gt": 6,
+          "gt_has_competing_predictions": 1
+        },
+        "absent_slots": 4,
+        "nearest_known": [
+          {
+            "event": 1,
+            "side": "before",
+            "frame_index": 2016,
+            "camera_id": 5,
+            "local_id": 72,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 9,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1259.77197265625,
+              284.61724853515625,
+              1299.106689453125,
+              423.0764465332031
+            ],
+            "best_gt": 9,
+            "best_iou": 0.8290102786561527,
+            "admissible_gt": [
+              {
+                "gt_id": 9,
+                "iou": 0.8290102786561527,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 154
+          }
+        ]
+      },
+      "after": {
+        "boundary": [
+          {
+            "event": 1,
+            "side": "after",
+            "frame_index": 2054,
+            "camera_id": 5,
+            "local_id": 46,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 9,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1258.2218017578125,
+              288.5285949707031,
+              1297.215087890625,
+              423.0613708496094
+            ],
+            "best_gt": 9,
+            "best_iou": 0.6443157689574948,
+            "admissible_gt": [
+              {
+                "gt_id": 9,
+                "iou": 0.6443157689574948,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 154
+          }
+        ],
+        "unique_gt_counts": {
+          "9": 16
+        },
+        "reason_counts": {
+          "mutually_unique": 16
+        },
+        "absent_slots": 0,
+        "nearest_known": [
+          {
+            "event": 1,
+            "side": "after",
+            "frame_index": 2054,
+            "camera_id": 5,
+            "local_id": 46,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 9,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1258.2218017578125,
+              288.5285949707031,
+              1297.215087890625,
+              423.0613708496094
+            ],
+            "best_gt": 9,
+            "best_iou": 0.6443157689574948,
+            "admissible_gt": [
+              {
+                "gt_id": 9,
+                "iou": 0.6443157689574948,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 154
+          }
+        ]
+      }
+    },
+    {
+      "event": 2,
+      "global_id": 186,
+      "original_category": "unresolved",
+      "gap_frames": 94,
+      "gap_seconds": "47/15",
+      "before": {
+        "boundary": [
+          {
+            "event": 2,
+            "side": "before",
+            "frame_index": 2434,
+            "camera_id": 4,
+            "local_id": 65,
+            "boundary": true,
+            "present": true,
+            "unique_gt": null,
+            "reason": "no_admissible_gt",
+            "raw_xyxy": [
+              700.6609497070312,
+              1066.873046875,
+              736.9464111328125,
+              1079.8631591796875
+            ],
+            "best_gt": 2,
+            "best_iou": 0.0,
+            "admissible_gt": [],
+            "global_id": 186
+          }
+        ],
+        "unique_gt_counts": {},
+        "reason_counts": {
+          "no_admissible_gt": 3
+        },
+        "absent_slots": 13,
+        "nearest_known": []
+      },
+      "after": {
+        "boundary": [
+          {
+            "event": 2,
+            "side": "after",
+            "frame_index": 2528,
+            "camera_id": 4,
+            "local_id": 69,
+            "boundary": true,
+            "present": true,
+            "unique_gt": null,
+            "reason": "no_admissible_gt",
+            "raw_xyxy": [
+              466.39410400390625,
+              1051.1793212890625,
+              519.2545166015625,
+              1079.996337890625
+            ],
+            "best_gt": 1,
+            "best_iou": 0.0,
+            "admissible_gt": [],
+            "global_id": 186
+          }
+        ],
+        "unique_gt_counts": {},
+        "reason_counts": {
+          "no_admissible_gt": 3
+        },
+        "absent_slots": 13,
+        "nearest_known": []
+      }
+    },
+    {
+      "event": 3,
+      "global_id": 175,
+      "original_category": "unresolved",
+      "gap_frames": 46,
+      "gap_seconds": "23/15",
+      "before": {
+        "boundary": [
+          {
+            "event": 3,
+            "side": "before",
+            "frame_index": 2570,
+            "camera_id": 5,
+            "local_id": 84,
+            "boundary": true,
+            "present": true,
+            "unique_gt": null,
+            "reason": "no_admissible_gt",
+            "raw_xyxy": [
+              1575.060791015625,
+              242.74896240234375,
+              1600.9205322265625,
+              341.4374084472656
+            ],
+            "best_gt": 1,
+            "best_iou": 0.0,
+            "admissible_gt": [],
+            "global_id": 175
+          }
+        ],
+        "unique_gt_counts": {
+          "8": 8
+        },
+        "reason_counts": {
+          "mutually_unique": 8,
+          "no_admissible_gt": 8
+        },
+        "absent_slots": 0,
+        "nearest_known": [
+          {
+            "event": 3,
+            "side": "before",
+            "frame_index": 2562,
+            "camera_id": 5,
+            "local_id": 84,
+            "boundary": false,
+            "present": true,
+            "unique_gt": 8,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1575.3958740234375,
+              223.48556518554688,
+              1608.688720703125,
+              332.9510498046875
+            ],
+            "best_gt": 8,
+            "best_iou": 0.8517573258971753,
+            "admissible_gt": [
+              {
+                "gt_id": 8,
+                "iou": 0.8517573258971753,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 175
+          }
+        ]
+      },
+      "after": {
+        "boundary": [
+          {
+            "event": 3,
+            "side": "after",
+            "frame_index": 2616,
+            "camera_id": 5,
+            "local_id": 96,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 8,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1439.2408447265625,
+              227.56170654296875,
+              1488.0750732421875,
+              335.0120544433594
+            ],
+            "best_gt": 8,
+            "best_iou": 0.9414852816167897,
+            "admissible_gt": [
+              {
+                "gt_id": 8,
+                "iou": 0.9414852816167897,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 175
+          }
+        ],
+        "unique_gt_counts": {
+          "8": 16
+        },
+        "reason_counts": {
+          "mutually_unique": 16
+        },
+        "absent_slots": 0,
+        "nearest_known": [
+          {
+            "event": 3,
+            "side": "after",
+            "frame_index": 2616,
+            "camera_id": 5,
+            "local_id": 96,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 8,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1439.2408447265625,
+              227.56170654296875,
+              1488.0750732421875,
+              335.0120544433594
+            ],
+            "best_gt": 8,
+            "best_iou": 0.9414852816167897,
+            "admissible_gt": [
+              {
+                "gt_id": 8,
+                "iou": 0.9414852816167897,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 175
+          }
+        ]
+      }
+    },
+    {
+      "event": 4,
+      "global_id": 202,
+      "original_category": "unresolved",
+      "gap_frames": 31,
+      "gap_seconds": "31/30",
+      "before": {
+        "boundary": [
+          {
+            "event": 4,
+            "side": "before",
+            "frame_index": 2643,
+            "camera_id": 4,
+            "local_id": 71,
+            "boundary": true,
+            "present": true,
+            "unique_gt": null,
+            "reason": "no_admissible_gt",
+            "raw_xyxy": [
+              1046.533447265625,
+              0.1443403959274292,
+              1076.8538818359375,
+              26.420495986938477
+            ],
+            "best_gt": 2,
+            "best_iou": 0.04872574162081838,
+            "admissible_gt": [],
+            "global_id": 202
+          }
+        ],
+        "unique_gt_counts": {
+          "5": 12
+        },
+        "reason_counts": {
+          "no_admissible_gt": 3,
+          "mutually_unique": 12
+        },
+        "absent_slots": 1,
+        "nearest_known": [
+          {
+            "event": 4,
+            "side": "before",
+            "frame_index": 2641,
+            "camera_id": 4,
+            "local_id": 71,
+            "boundary": false,
+            "present": true,
+            "unique_gt": 5,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1027.2392578125,
+              0.03502696752548218,
+              1068.585693359375,
+              30.71831703186035
+            ],
+            "best_gt": 5,
+            "best_iou": 0.7003115625743438,
+            "admissible_gt": [
+              {
+                "gt_id": 5,
+                "iou": 0.7003115625743438,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 202
+          }
+        ]
+      },
+      "after": {
+        "boundary": [
+          {
+            "event": 4,
+            "side": "after",
+            "frame_index": 2674,
+            "camera_id": 4,
+            "local_id": 74,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 5,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1132.087158203125,
+              0.36497992277145386,
+              1218.5648193359375,
+              27.339658737182617
+            ],
+            "best_gt": 5,
+            "best_iou": 0.815836713423376,
+            "admissible_gt": [
+              {
+                "gt_id": 5,
+                "iou": 0.815836713423376,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 202
+          }
+        ],
+        "unique_gt_counts": {
+          "5": 14
+        },
+        "reason_counts": {
+          "mutually_unique": 14
+        },
+        "absent_slots": 2,
+        "nearest_known": [
+          {
+            "event": 4,
+            "side": "after",
+            "frame_index": 2674,
+            "camera_id": 4,
+            "local_id": 74,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 5,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              1132.087158203125,
+              0.36497992277145386,
+              1218.5648193359375,
+              27.339658737182617
+            ],
+            "best_gt": 5,
+            "best_iou": 0.815836713423376,
+            "admissible_gt": [
+              {
+                "gt_id": 5,
+                "iou": 0.815836713423376,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 202
+          }
+        ]
+      }
+    },
+    {
+      "event": 5,
+      "global_id": 213,
+      "original_category": "same_last_visible_gt",
+      "gap_frames": 38,
+      "gap_seconds": "19/15",
+      "before": {
+        "boundary": [
+          {
+            "event": 5,
+            "side": "before",
+            "frame_index": 3393,
+            "camera_id": 8,
+            "local_id": 85,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 14,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              888.7401733398438,
+              188.0247039794922,
+              926.25341796875,
+              274.49273681640625
+            ],
+            "best_gt": 14,
+            "best_iou": 0.682630472002336,
+            "admissible_gt": [
+              {
+                "gt_id": 14,
+                "iou": 0.682630472002336,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 213
+          }
+        ],
+        "unique_gt_counts": {
+          "14": 16
+        },
+        "reason_counts": {
+          "mutually_unique": 16
+        },
+        "absent_slots": 0,
+        "nearest_known": [
+          {
+            "event": 5,
+            "side": "before",
+            "frame_index": 3393,
+            "camera_id": 8,
+            "local_id": 85,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 14,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              888.7401733398438,
+              188.0247039794922,
+              926.25341796875,
+              274.49273681640625
+            ],
+            "best_gt": 14,
+            "best_iou": 0.682630472002336,
+            "admissible_gt": [
+              {
+                "gt_id": 14,
+                "iou": 0.682630472002336,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 213
+          }
+        ]
+      },
+      "after": {
+        "boundary": [
+          {
+            "event": 5,
+            "side": "after",
+            "frame_index": 3431,
+            "camera_id": 8,
+            "local_id": 91,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 14,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              869.5418701171875,
+              161.75868225097656,
+              903.4154052734375,
+              264.6598815917969
+            ],
+            "best_gt": 14,
+            "best_iou": 0.6455078945618931,
+            "admissible_gt": [
+              {
+                "gt_id": 14,
+                "iou": 0.6455078945618931,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 213
+          }
+        ],
+        "unique_gt_counts": {
+          "14": 16
+        },
+        "reason_counts": {
+          "mutually_unique": 16
+        },
+        "absent_slots": 0,
+        "nearest_known": [
+          {
+            "event": 5,
+            "side": "after",
+            "frame_index": 3431,
+            "camera_id": 8,
+            "local_id": 91,
+            "boundary": true,
+            "present": true,
+            "unique_gt": 14,
+            "reason": "mutually_unique",
+            "raw_xyxy": [
+              869.5418701171875,
+              161.75868225097656,
+              903.4154052734375,
+              264.6598815917969
+            ],
+            "best_gt": 14,
+            "best_iou": 0.6455078945618931,
+            "admissible_gt": [
+              {
+                "gt_id": 14,
+                "iou": 0.6455078945618931,
+                "competing_local_ids": []
+              }
+            ],
+            "global_id": 213
+          }
+        ]
+      }
+    }
+  ],
+  "checks": {
+    "all_endpoint_labels_reproduced": true,
+    "return_events_reproduced": true,
+    "frozen_inputs_unchanged": true
+  },
+  "artifacts": {
+    "observations": {
+      "path": "observations.json",
+      "sha256": "d598de3aef85e6cd2ac7f6352da19824fba64cbd2dea5ca04b8f2d2bfc558688"
+    }
+  },
+  "code_sha256": "b9a077f83fc359d7103de9751c6ee7a3d703a4809f1be98d0cf9fbaa096d2541",
+  "limits": [
+    "GT context is offline, including future observations after return.",
+    "Context labels do not replace endpoint labels or prove archive descriptor purity.",
+    "All camera predictions participate in mutual spatial uniqueness.",
+    "No predictions, metrics or runtime settings were changed."
+  ]
+}

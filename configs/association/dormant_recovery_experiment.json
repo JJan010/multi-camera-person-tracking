@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment": "dormant_birth_recovery_fixed_radius_v1",
+  "development_scene": "MTMC_Tracking_2024/train/scene_001",
+  "local_variant": "staged",
+  "history_update_policy": "all_updates",
+  "runtime_frames": [0, 3599],
+  "evaluation_frames": [2, 3599],
+  "variants": ["disabled", "enabled"],
+  "archive": {
+    "max_age_seconds": "5",
+    "min_similarity": 0.8,
+    "min_margin": 0.05,
+    "max_speed": 0.0,
+    "position_slack": 2.0,
+    "max_identities": 128
+  },
+  "spatial_policy": "fixed_radius_in_native_units_no_motion_prediction",
+  "setting_rationale": {
+    "max_age_seconds": "One bounded five-second development hypothesis; not calibrated.",
+    "min_similarity": "One stricter-than-current-cross-camera appearance gate; not a confidence probability.",
+    "min_margin": "Explicit ambiguity rejection margin; no threshold sweep.",
+    "max_speed": "Zero expansion: avoid assuming a physical walking speed or meter scale.",
+    "position_slack": "Reuse the frozen two-native-unit spatial tolerance as a conservative return radius.",
+    "max_identities": "Bounded archive resource budget, not an estimate of the number of people."
+  },
+  "recovery_scope": "wholly_new_unanchored_groups_at_birth_only",
+  "status": "development_hypothesis_not_deployment_calibration",
+  "gt_used_during_replay": false,
+  "threshold_search": false
+}
