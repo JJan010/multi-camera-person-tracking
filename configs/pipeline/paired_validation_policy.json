@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "variants": [
+    "staged",
+    "competitive_iou"
+  ],
+  "local": {
+    "tracker": {
+      "track_activation_threshold": 0.5,
+      "lost_track_buffer": 30,
+      "minimum_matching_threshold": 0.8,
+      "frame_rate": 30,
+      "minimum_consecutive_frames": 1
+    },
+    "appearance_threshold": 0.6,
+    "strong_history_size": 8,
+    "strong_history_max_age_frames": 30,
+    "weak_motion_min_iou": 0.5
+  },
+  "global": {
+    "history": {
+      "max_observations": 8,
+      "max_age_seconds": "1"
+    },
+    "appearance_variant": "mean",
+    "appearance_threshold": 0.7,
+    "geometry": {
+      "max_distance": 2.0,
+      "unavailable_policy": "appearance_only"
+    },
+    "identity": {
+      "max_idle_seconds": "1",
+      "min_support_rounds": 3,
+      "min_support_seconds": "1/5",
+      "max_evidence_gap": "1/10"
+    }
+  }
+}

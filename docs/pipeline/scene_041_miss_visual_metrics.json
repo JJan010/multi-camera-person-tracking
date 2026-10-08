@@ -1,0 +1,90 @@
+{
+  "source_run_id": "20261007T220413363583Z",
+  "source_report_sha256": "f77e29b4568b766f097c35ec84765d25a74ec152aa28daae3b749236135e1d2a",
+  "reviewed_images": [
+    "example_01_frame_002303_gt_0013.jpg",
+    "example_02_frame_000345_gt_0018.jpg",
+    "example_03_frame_000268_gt_0024.jpg",
+    "example_04_frame_000074_gt_0021.jpg",
+    "example_05_frame_003038_gt_0022.jpg",
+    "example_06_frame_000190_gt_0017.jpg"
+  ],
+  "artifact_checksums_verified": true,
+  "reproduced_local_metrics": {
+    "num_frames": 3598,
+    "num_objects": 32361,
+    "num_predictions": 30459,
+    "num_false_positives": 1086,
+    "num_misses": 2988,
+    "num_switches": 64,
+    "idf1": 0.6100604903,
+    "precision": 0.9643455136,
+    "recall": 0.9076666358
+  },
+  "categories": {
+    "admissible_detection_not_emitted": {
+      "count": 1316,
+      "fraction_of_misses": 0.4404283801874163,
+      "median_clipped_width": 39.0,
+      "median_clipped_height": 65.0,
+      "maximum_admissible_score_bins": {
+        "below_0_5": 1150,
+        "from_0_5_below_0_6": 109,
+        "at_least_0_6": 57
+      }
+    },
+    "admissible_prediction_unmatched": {
+      "count": 77,
+      "fraction_of_misses": 0.025769745649263723,
+      "median_clipped_width": 45.0,
+      "median_clipped_height": 139.0
+    },
+    "no_admissible_cached_detection": {
+      "count": 1595,
+      "fraction_of_misses": 0.5338018741633199,
+      "median_clipped_width": 27.0,
+      "median_clipped_height": 76.0
+    }
+  },
+  "partially_outside_misses": 23,
+  "total_misses": 2988,
+  "findings": [
+    {
+      "frame": 2303,
+      "gt_id": 13,
+      "description": "GT denotes a tiny fragment behind shelving; the person is not reliably recognizable from this fragment alone."
+    },
+    {
+      "frame": 345,
+      "gt_id": 18,
+      "description": "GT covers a narrow fragment largely occluded by shelving."
+    },
+    {
+      "frame": 268,
+      "gt_id": 24,
+      "description": "Visible head/upper-body fragment behind shelving; cached IoU 0.8397 and score 0.1858, no admissible emitted track."
+    },
+    {
+      "frame": 74,
+      "gt_id": 21,
+      "description": "Head/shoulder fragment above shelving; cached IoU 0.8727 and score 0.4632, no admissible emitted track."
+    },
+    {
+      "frame": 3038,
+      "gt_id": 22,
+      "description": "Closely overlapping annotated silhouettes; an emitted candidate was spatially admissible, but the selected GT is a CLEAR MISS. Assigned partner not established from the preview."
+    },
+    {
+      "frame": 190,
+      "gt_id": 17,
+      "description": "People overlap near shelving, with closely overlapping GT boxes. The selected GT is an evaluator MISS despite an admissible prediction."
+    }
+  ],
+  "limits": [
+    "Six deterministic examples, not a random sample or per-frame occlusion labeling.",
+    "No suitable cached candidate only concerns the frozen collection threshold 0.1.",
+    "Candidate availability is not proof of an incorrect tracker decision.",
+    "The highest-IoU candidate shown at IoU zero is an arbitrary tie winner, not a detection of the missed target.",
+    "No thresholds, regions, annotations, predictions or runtime states changed."
+  ]
+}

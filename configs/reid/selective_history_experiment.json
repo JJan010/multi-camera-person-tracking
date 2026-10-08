@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "experiment": "confidence_only_global_history_v1",
+  "status": "contract_tested_not_integrated",
+  "development_scene": "MTMC_Tracking_2024/train/scene_001",
+  "runtime_frames": [0, 3599],
+  "evaluation_frames": [2, 3599],
+  "local_variant": "staged",
+  "descriptor_variant": "mean",
+  "max_observations": 8,
+  "max_age_seconds": "1",
+  "variants": {
+    "all_updates": {"update_policy": "accept_all"},
+    "strong_updates": {"update_policy": "confidence_at_least", "minimum_score": 0.5}
+  },
+  "minimum_score_origin": "Reuse frozen local high-stage confidence boundary; no threshold sweep",
+  "rejected_update": "reuse_unexpired_accepted_history_without_refreshing_sample_times",
+  "no_retained_history": "appearance_unavailable_preserve_local_observation",
+  "cancellation": "latest_accepted_sample",
+  "fixed_components": ["detections", "local_tracks", "candidate_embeddings", "geometry", "grouping", "identity_policy"],
+  "inference_ground_truth_input": false,
+  "quality_claim": "none_until_paired_evaluation"
+}

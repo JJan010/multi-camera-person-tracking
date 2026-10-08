@@ -1,0 +1,35 @@
+{
+  "dataset": "nvidia/PhysicalAI-SmartSpaces",
+  "revision": "2cbe9563cbe9f47f846e5c871ee994572bbbc60e",
+  "scene": "MTMC_Tracking_2024/train/scene_001",
+  "schema_version": 1,
+  "camera_ids": [
+    4,
+    5,
+    8
+  ],
+  "fps": 30,
+  "runtime": {
+    "first_frame": 0,
+    "rounds": 3600
+  },
+  "evaluation": {
+    "first_frame": 2,
+    "last_frame": 3599,
+    "gt_to_video_offset": 0,
+    "min_iou": 0.5,
+    "empty_slot_policy": "retain_slot_and_count_predictions"
+  },
+  "source_manifest": {
+    "path": "configs/datasets/scene_001_source.json",
+    "sha256": "64bf042c6078e39d5d632d1acda1a13200eeefcebbe28e596010457272a74225"
+  },
+  "video_manifest": {
+    "path": "configs/datasets/scene_001_video_manifest.json",
+    "sha256": "3991d3ba1f1b62e3a3bc40791ebc447fa30ad7d7192f9d19d962871728797866"
+  },
+  "preparation_evidence": {
+    "path": "artifacts/mtmc_pipeline/20261007T164721073889Z/report.json",
+    "sha256": "f9d67649abff3cc7083833d38f528051741ab79c66d417a7b03572178c5a7c74"
+  }
+}

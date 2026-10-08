@@ -1,0 +1,96 @@
+{
+  "source_run_id": "20261007T215537181420Z",
+  "source_report_sha256": "64882a4da44d944071f1715e15175b80f1b4a5dd85bb211eb133fe7d81b1bbb4",
+  "reviewed_images": [
+    "example_01_frame_000753_local_0009.jpg",
+    "example_02_frame_000574_local_0003.jpg",
+    "example_03_frame_002773_local_0029.jpg",
+    "example_04_frame_001016_local_0009.jpg",
+    "example_05_frame_002432_local_0035.jpg",
+    "example_06_frame_000124_local_0002.jpg"
+  ],
+  "artifact_checksums_verified": true,
+  "categories": {
+    "no_admissible_gt": 3714,
+    "admissible_but_unmatched": 8,
+    "empty_gt_slot": 325
+  },
+  "FP_track_statistics": [
+    {
+      "local_id": 9,
+      "fp_observations": 1486,
+      "frame_min": 226,
+      "frame_max": 1711,
+      "consecutive_FP_frames": true,
+      "score_min": 0.10027410089969635,
+      "score_median": 0.31173063814640045,
+      "score_max": 0.7236405611038208,
+      "score_ge_0_5": 191,
+      "score_ge_0_6": 34,
+      "box_coordinate_min": [
+        1403.122314453125,
+        836.8289184570312,
+        1682.109619140625,
+        1001.5364379882812
+      ],
+      "box_coordinate_max": [
+        1430.0911865234375,
+        853.5285034179688,
+        1829.788818359375,
+        1060.38037109375
+      ]
+    },
+    {
+      "local_id": 29,
+      "fp_observations": 1653,
+      "frame_min": 1947,
+      "frame_max": 3599,
+      "consecutive_FP_frames": true,
+      "score_min": 0.10685066133737564,
+      "score_median": 0.5147557258605957,
+      "score_max": 0.7549047470092773,
+      "score_ge_0_5": 951,
+      "score_ge_0_6": 137,
+      "box_coordinate_min": [
+        1375.804931640625,
+        806.2425537109375,
+        1697.60107421875,
+        1023.5685424804688
+      ],
+      "box_coordinate_max": [
+        1447.1533203125,
+        852.4867553710938,
+        1791.0745849609375,
+        1062.83056640625
+      ]
+    }
+  ],
+  "visual_findings": [
+    {
+      "frames": [
+        753,
+        1016,
+        2773
+      ],
+      "finding": "Selected boxes cover pallet/shelving background; no person visible inside the selected box in these samples."
+    },
+    {
+      "frames": [
+        574
+      ],
+      "finding": "Visible partially occluded person inside selected box, despite no GT rows for this camera/frame. Annotation protocol or annotation omission requires separate assessment."
+    },
+    {
+      "frames": [
+        2432,
+        124
+      ],
+      "finding": "Selected predictions overlap annotated people. Other predictions are omitted in the preview, so the competing matching partner is not visually established."
+    }
+  ],
+  "limits": [
+    "Only six frames visually inspected; CSV aggregates cover all FP observations, not all images.",
+    "No guarantee that removing these local IDs would be a valid deployable rule.",
+    "No GT, threshold, ROI, prediction or runtime change."
+  ]
+}
