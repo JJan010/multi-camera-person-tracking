@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experiment": "sparse_reference_confirmed_discontinuity_v1",
+  "development_scene": "MTMC_Tracking_2024/train/scene_001",
+  "local_variant": "staged",
+  "global_history_update_policy": "all_updates",
+  "dormant_recovery_enabled": false,
+  "runtime_frames": [0, 3599],
+  "evaluation_frames": [2, 3599],
+  "variants": ["disabled", "enabled"],
+  "continuity": {
+    "max_reference_samples": 8,
+    "max_reference_age": "3",
+    "reference_sample_interval": "1/5",
+    "min_reference_samples": 3,
+    "min_confidence": 0.5,
+    "break_similarity": 0.6,
+    "candidate_similarity": 0.8,
+    "min_support_rounds": 3,
+    "min_support_seconds": "1/5",
+    "max_support_gap": "1/10"
+  },
+  "gt_used_during_replay": false,
+  "threshold_search": false,
+  "status": "development_hypothesis_not_deployment_calibration"
+}
