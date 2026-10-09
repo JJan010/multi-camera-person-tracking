@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "architecture": "ViT-B-16",
+  "training_dataset": "MSMT17",
+  "checkpoint_num_classes": 1041,
+  "input_size_hw": [
+    256,
+    128
+  ],
+  "stride_size": [
+    16,
+    16
+  ],
+  "sie_camera": false,
+  "sie_view": false,
+  "neck_feat": "before",
+  "feature_dim": 1280,
+  "feature_composition": "concatenate final image CLS(768) and its learned projection(512), then joint L2 normalization",
+  "normalization": {
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "upstream_repository": "https://github.com/Syliz517/CLIP-ReID",
+  "upstream_revision": "eb1898b72c882875f478bebfc6d41644eece0a5d",
+  "weights_page": "https://drive.google.com/file/d/1BVaZo93kOksYLjFNH3Gf7JxIbPlWSkcO/view",
+  "paper": "https://arxiv.org/abs/2211.13977",
+  "code_license": "MIT; upstream license and underlying OpenAI CLIP license retained",
+  "checkpoint_license_note": "Official author-linked checkpoint; no separate checkpoint-license grant verified. Do not infer one from code license.",
+  "assets": {
+    "visual_source": {
+      "path": "artifacts/models/clipreid/upstream/model/clip/model.py",
+      "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/model/clip/model.py",
+      "bytes": 19154,
+      "sha256": "31990f19a71d646b9d807d95f0a0398ddeebef985b1207e8c4cf8c6b735e59ad"
+    },
+    "inference_reference": {
+      "path": "artifacts/models/clipreid/upstream/model/make_model_clipreid.py",
+      "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/model/make_model_clipreid.py",
+      "bytes": 9999,
+      "sha256": "b854c08c3f4c4c51f778158f6ae13edeb443f70e0e87b6b14840296d5d11b17b"
+    },
+    "validation_transform_reference": {
+      "path": "artifacts/models/clipreid/upstream/datasets/make_dataloader_clipreid.py",
+      "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/datasets/make_dataloader_clipreid.py",
+      "bytes": 4496,
+      "sha256": "1d8a5be7713f64db55f6f495ea8d7644f8445d141fe7447c91e0b100ca83d389"
+    },
+    "configuration_reference": {
+      "path": "artifacts/models/clipreid/upstream/configs/person/vit_clipreid.yml",
+      "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/configs/person/vit_clipreid.yml",
+      "bytes": 1696,
+      "sha256": "5bd03d2b750e3ecafe2e8f031be3218abd8e55d8bd591b8339a676a9be1268e2"
+    },
+    "defaults_reference": {
+      "path": "artifacts/models/clipreid/upstream/config/defaults.py",
+      "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/config/defaults.py",
+      "bytes": 7907,
+      "sha256": "642c0cb456f53975c5f91854eb2ca86ee72a65e7e23903358ad43f85ff8ce7c2"
+    },
+    "license": {
+      "path": "artifacts/models/clipreid/upstream/LICENSE",
+      "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/LICENSE",
+      "bytes": 1065,
+      "sha256": "418d11035badfb4f4c15f8936dcaf1eb2256339b4f32011555acded8e3f34cf7"
+    },
+    "readme": {
+      "path": "artifacts/models/clipreid/upstream/README.md",
+      "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/README.md",
+      "bytes": 9870,
+      "sha256": "ead72b91852b17991fad0a6ec1697280cd6e2182584f07c71b2a4dccda25aac1"
+    },
+    "weights": {
+      "path": "artifacts/models/clipreid/MSMT17_clipreid_ViT-B-16_60.pth",
+      "url": "https://drive.usercontent.google.com/download?id=1BVaZo93kOksYLjFNH3Gf7JxIbPlWSkcO&export=download&confirm=t",
+      "bytes": 511251513,
+      "sha256": "9974ef57c418e8c88e59581f66f3f53fbe02f879311f7438009f84fd150b1c63"
+    },
+    "openai_clip_license": {
+      "path": "artifacts/models/clipreid/upstream/LICENSE.openai_clip",
+      "url": "https://raw.githubusercontent.com/openai/CLIP/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+      "bytes": 1064,
+      "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db"
+    }
+  },
+  "status": "experimental_encoder_not_integrated_into_OSNet_runtime",
+  "checksum_provenance": "SHA256 computed from official author-linked bytes on 2026-10-08; not an author-published signed checksum."
+}

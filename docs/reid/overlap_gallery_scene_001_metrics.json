@@ -1,0 +1,568 @@
+{
+  "completed": true,
+  "protocol": "gallery_only_overlap_paired_v1",
+  "run_id": "20261009T201804713051Z",
+  "scene": "MTMC_Tracking_2024/train/scene_001",
+  "source_run_id": "20261009T194904982876Z",
+  "inputs": {
+    "recovery_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/confirmed_clip_return/20261009T194904982876Z/report.json",
+      "sha256": "2f28c14c6a1560b06b3a2da34e7655ca8f190ea2835ca0ef56e1e9bf024ecf5d"
+    },
+    "source:experiment_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/clipreid_global_experiment/20261009T191501187432Z/report.json",
+      "sha256": "1ecabc12f6251778f14314f6fc99680e48fd6a50c1b13144e40dc89c41f0f518"
+    },
+    "source:source:compatibility_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/feature_identity_checks/20261009T190727645206Z/report.json",
+      "sha256": "dcbbc2128ba36587fa701b7651179a34c49b17044645247014821e107d448a82"
+    },
+    "source:source:history_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/feature_history/20261009T185808088973Z/report.json",
+      "sha256": "bf148bc6d97548f6cf864c7502eb4da7fed134b2d1799d52b8f85afdf8a5d63f"
+    },
+    "source:source:history:clip_cache_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/clipreid_track_cache/20261009T184852964847Z/report.json",
+      "sha256": "394316e617ad7117929e71995f303b8d52f5ef32cc669a48fc2e2d6933cb6e02"
+    },
+    "source:source:history:source_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_experiment/20261008T105229140571Z/report.json",
+      "sha256": "4b26bad0859a3f93941ab1c3a778296283bf2a5ceaf1d8f6eb5bc8b460fcbf90"
+    },
+    "source:source:history:source_tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_experiment/20261008T105229140571Z/global_tracks.jsonl.gz",
+      "sha256": "48217b2a0042f55e0dd1a0dda46fe0873d6c5796d4f1124610ecaba4b2463d3e"
+    },
+    "source:source:history:scene_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/scenes/scene_001_two_minutes.json",
+      "sha256": "f971f0046c6acb348ec21c7a9fa8e31a03a0186d230401e69b221687b14dcf0f"
+    },
+    "source:source:history:source_vectors": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/embeddings.npy",
+      "sha256": "2e8e5fe9a06164033ba763e726298b15dd03f1741327bcb251503a2a2eccbb06"
+    },
+    "source:source:history:cache_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/detection_embeddings/20261007T165444228264Z/report.json",
+      "sha256": "72c9c302d6529f1742c085d1546f67fa701b3a020877f0e9a5a4e2bb49cd68e5"
+    },
+    "source:source:history:clipreid_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/models/clipreid_vit_b16_msmt17.json",
+      "sha256": "6a8a18f8a96f5238d010db901509b099b72444233b39acdf8d7b92e55c25859c"
+    },
+    "source:source:history:clipreid_embeddings.npy": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/clipreid_track_cache/20261009T184852964847Z/clipreid_embeddings.npy",
+      "sha256": "3efe52aa77d528fa7f41a5c54aad635a0f60a8cd42cf22d25370df45ba2493a8"
+    },
+    "source:source:history:observations.jsonl.gz": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/clipreid_track_cache/20261009T184852964847Z/observations.jsonl.gz",
+      "sha256": "655dbd8e575f567f14e98b5bc34ac2f0087c88143d89827e664e5fa225fc459c"
+    },
+    "source:source:history:osnet_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/models/osnet_x1_0_msmt17.json",
+      "sha256": "e046393cff52acc09dabb899586b7921e19f4ff62c4a414b3fab1e5512ec33b6"
+    },
+    "source:source:history:code:src/mtmc/reid/history.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/history.py",
+      "sha256": "44421f02c248ccc26af97edde22495c448f801beddc12a1450f73ca88c90b8e7"
+    },
+    "source:source:history:code:src/mtmc/reid/osnet.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/osnet.py",
+      "sha256": "8a20f08d566348658c03ed09bb7496bb03e979418e72e58681ffc658995cb5a9"
+    },
+    "source:source:history:code:src/mtmc/reid/feature_history.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/feature_history.py",
+      "sha256": "c6157e786a2a1d7728f6172b5f8a7f440516550ebff1fcbe724e563f21ae53ee"
+    },
+    "source:source:history:code:src/mtmc/data/scene.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/data/scene.py",
+      "sha256": "06ded1523588a9d980954067f46719c0856ff106103c488d64ee9c484b66ad30"
+    },
+    "source:source:history:code:scripts/cache_clipreid_tracks.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/cache_clipreid_tracks.py",
+      "sha256": "84fb617a1cce1d587665cf6fa67de8788ece4c0a4eecdc7c8e470d8dc79aa60c"
+    },
+    "source:source:history:code:scripts/compare_reid_temporal.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/compare_reid_temporal.py",
+      "sha256": "96dc0e9b7cb3f04414ac723dd10fa1f9d0b51a86c127d43d3a2b0e5d1821c3b0"
+    },
+    "source:source:history:code:scripts/check_feature_history.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_feature_history.py",
+      "sha256": "3712b96ac90da633db2253822d0bfb26a55e8f6c8abb3229b34cf54deb7bc6ce"
+    },
+    "source:source:history:code:scripts/replay_feature_history.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/replay_feature_history.py",
+      "sha256": "5f530d3a98f8aa6854471b2d5e6629b22f3df81566480fc64d6c5d111e05b407"
+    },
+    "source:source:artifact:mean_embeddings.npy": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/feature_history/20261009T185808088973Z/mean_embeddings.npy",
+      "sha256": "3346a3b6fb387963e31d8838dc18277a89257af4fdad691ef694ebe7fd650d71"
+    },
+    "source:source:artifact:history_rows.jsonl.gz": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/feature_history/20261009T185808088973Z/history_rows.jsonl.gz",
+      "sha256": "44102d9e3c6f6fc7380d3f435d51674d45fd90616375d5bb462fa5e7adec9441"
+    },
+    "source:source:code:scripts/check_feature_association.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_feature_association.py",
+      "sha256": "446f71c91da2e2ee6f1696b24e7879b0a894694348533d323e10107a0def9f81"
+    },
+    "source:source:code:scripts/check_feature_identity_replay.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_feature_identity_replay.py",
+      "sha256": "2916096d050a1bf4bd58c34a4195cf4937648a987249cd6d8bce216df83f3c10"
+    },
+    "source:source:code:src/mtmc/association/feature_geometry.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/feature_geometry.py",
+      "sha256": "9650ed9f77338e0654764a55d2b583a578d0d7ab13d93305d37fdd93286c1f82"
+    },
+    "source:source:code:src/mtmc/pipeline/feature_identity.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/pipeline/feature_identity.py",
+      "sha256": "62222a9af3aa0364a372fe26b12b45ee219a08add6619abc637db57ff91c05fb"
+    },
+    "source:source:code:src/mtmc/association/geometry.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/geometry.py",
+      "sha256": "9ee33f5371a051c5b7b63d63646a6350ef7e1f85e21b4b1c5123be92949df9b9"
+    },
+    "source:source:code:src/mtmc/association/pairwise.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/pairwise.py",
+      "sha256": "0d1d349c5a08b48887a17a3225c507102d03a2a85121a417125489b8df10e44c"
+    },
+    "source:source:code:src/mtmc/association/grouping.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/grouping.py",
+      "sha256": "8aad7eee77436cb51f3727eb21e1049287d7e400fc709babec0933f80be007fe"
+    },
+    "source:source:code:src/mtmc/association/global_identity.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/global_identity.py",
+      "sha256": "407f79469bbfaf9a75d3764340e1937fd8cf18dc7b5c18c7c5e9b15dd7038289"
+    },
+    "source:source:code:src/mtmc/association/controlled_merge.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/controlled_merge.py",
+      "sha256": "92f5def1720cf5360d268f19e0a5caf7f69486302d93977a7fb15afb561a62be"
+    },
+    "source:source:code:src/mtmc/pipeline/core.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/pipeline/core.py",
+      "sha256": "80cdd80493e65f3b2a6636691531144234e0a877b2d4206ed761d7a63e5ccf12"
+    },
+    "source:source:experiment_code:scripts/experiment_clipreid_global.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/experiment_clipreid_global.py",
+      "sha256": "2d233d98435751ca650e963c3e28649fb9f316f4e4775ad40e4b05e3ca5009fd"
+    },
+    "source:source:experiment_code:scripts/check_clipreid_global_experiment.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_clipreid_global_experiment.py",
+      "sha256": "0be8d05ee0462472b54f4c9227a76f4c0a602a59f875eff9f03f4ffe30e98ea4"
+    },
+    "source:source:experiment_code:scripts/evaluate_appearance_global.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/evaluate_appearance_global.py",
+      "sha256": "8d7a0055cb0e4415947be49b9034d8b64661aa59258c13a0ce5aaf77cbeb2b7e"
+    },
+    "source:source:experiment_code:scripts/evaluate_global_identity.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/evaluate_global_identity.py",
+      "sha256": "f88dd268e54196330361c0a4d35bd6856f46f842586555fd811d0cd47ef169af"
+    },
+    "source:source:experiment_code:src/mtmc/data/ground_truth.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/data/ground_truth.py",
+      "sha256": "53cd59e4dbf90f189b707f1c401973fa450f1deace4a2c6a3a0b61df30a154d0"
+    },
+    "source:configuration": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/association/clipreid_confirmed_return.json",
+      "sha256": "27aae91c570b3ef094c1c26e078acc58b9ad5063659bd1b8b9ca6485b58238ac"
+    },
+    "source:frozen_trace": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/clipreid_global_experiment/20261009T191501187432Z/global_tracks.jsonl.gz",
+      "sha256": "6638df2d0942ded1373adf755cf14886ba329cd7ca2afb41ff19aa7f020a0e8a"
+    },
+    "source:code:scripts/experiment_confirmed_clip_return.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/experiment_confirmed_clip_return.py",
+      "sha256": "1246795a624dd611a06820ce1e327238a4ac077dc33dd9ed1174bb13f99cf4f6"
+    },
+    "source:code:scripts/check_confirmed_return.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_confirmed_return.py",
+      "sha256": "ae37c23100af4f84b269f7174a69d10895de6e6c8da695c7269226d176384346"
+    },
+    "source:code:scripts/check_confirmed_return_registry.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_confirmed_return_registry.py",
+      "sha256": "1a0b066492d9b12e246338a25d702b870798d53639d920582bcfb248049fe8ce"
+    },
+    "source:code:src/mtmc/association/confirmed_return.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/confirmed_return.py",
+      "sha256": "ed4632bac56d8bf4789f8736946ac313a031c0d87c7468b1eb0ec49152d9414f"
+    },
+    "source:code:src/mtmc/pipeline/confirmed_return.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/pipeline/confirmed_return.py",
+      "sha256": "209810340c385b672c2d0fa627bfab6c770aa95b6862fb69f55dd4f23a084cf1"
+    },
+    "source:code:src/mtmc/association/dormant.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/association/dormant.py",
+      "sha256": "19ca9dccb176aac11551028ad761a87de7c7a70efbfe30caad4b10fc344242b2"
+    },
+    "source:code:src/mtmc/reid/sample_quality.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/sample_quality.py",
+      "sha256": "71693bee32637bded12a07e12c150f2c9684202b81231bcf81e126e2ff5833b9"
+    },
+    "gate_configuration": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/reid/overlap_gallery_experiment.json",
+      "sha256": "5c400c96a31aee2926b1a382204cae13022d28956d66630f890cd4c73c09edf1"
+    },
+    "frozen_trace": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/confirmed_clip_return/20261009T194904982876Z/global_tracks.jsonl.gz",
+      "sha256": "debd2e82aeec461dca7a0c44f2a45e2d16e9571b919d08713598b5c4cf7e3523"
+    },
+    "code:scripts/experiment_overlap_gallery.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/experiment_overlap_gallery.py",
+      "sha256": "dbae218d9aadbe4c24c3e46f498db90d910b5d45db0fc7329e00e77fed56d6f2"
+    },
+    "code:scripts/check_overlap_gallery.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_overlap_gallery.py",
+      "sha256": "7918bbb98c234b6e7764606213a830fc3cc6d3cbf9c2ec67d63cea8c58746d8c"
+    },
+    "code:src/mtmc/pipeline/overlap_gallery.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/pipeline/overlap_gallery.py",
+      "sha256": "cb0c0776ad905ecf483d39c339174d44faafea9b6df5bbffbe2da4ecebf98ed7"
+    },
+    "code:scripts/experiment_confirmed_clip_return.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/experiment_confirmed_clip_return.py",
+      "sha256": "1246795a624dd611a06820ce1e327238a4ac077dc33dd9ed1174bb13f99cf4f6"
+    },
+    "code:scripts/check_feature_identity_replay.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_feature_identity_replay.py",
+      "sha256": "2916096d050a1bf4bd58c34a4195cf4937648a987249cd6d8bce216df83f3c10"
+    },
+    "code:scripts/experiment_clipreid_global.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/experiment_clipreid_global.py",
+      "sha256": "2d233d98435751ca650e963c3e28649fb9f316f4e4775ad40e4b05e3ca5009fd"
+    },
+    "code:src/mtmc/pipeline/confirmed_return.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/pipeline/confirmed_return.py",
+      "sha256": "209810340c385b672c2d0fa627bfab6c770aa95b6862fb69f55dd4f23a084cf1"
+    },
+    "evaluation_ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "configuration": {
+    "schema_version": 1,
+    "experiment": "gallery_only_tracked_overlap_v1",
+    "threshold_search": false,
+    "max_overlap": 0.3,
+    "metric": "max_same_camera_intersection_over_own_clipped_continuous_area",
+    "boundary": "accept_at_equality",
+    "competitors": "all_current_local_track_boxes_including_weak",
+    "scope": "archive_gallery_updates_only",
+    "recovery_enabled_in_both_variants": true
+  },
+  "recovery_configuration": {
+    "schema_version": 1,
+    "experiment": "clipreid_confirmed_retired_return_v1",
+    "status": "development_hypothesis_not_calibrated",
+    "informed_by": "scene_001_G11_G76_retrospective_probe",
+    "threshold_search": false,
+    "feature_dimension": 1280,
+    "max_live_gallery_identities": 128,
+    "gallery": {
+      "max_per_camera": 8,
+      "max_sample_age_seconds": "30",
+      "min_confidence": 0.5,
+      "border_fraction": 0.01
+    },
+    "archive": {
+      "max_age_seconds": "30",
+      "max_identities": 128,
+      "min_similarity": 0.9,
+      "min_margin": 0.05,
+      "max_speed_native_units_per_second": 1.0,
+      "position_slack_native_units": 2.0
+    },
+    "confirmation": {
+      "max_query_age_seconds": "2",
+      "max_descriptor_age_seconds": "1/10",
+      "min_support_rounds": 3,
+      "min_support_seconds": "1/5",
+      "max_support_gap_seconds": "1/10",
+      "candidate_similarity": 0.8,
+      "max_queries_per_round": 128
+    },
+    "query_admission": {
+      "all_visible_members_required": true,
+      "min_confidence": 0.5,
+      "border_fraction": 0.01,
+      "descriptor_source": "current_accepted_raw_clip_features",
+      "retry_after_rejected_first_observation": true
+    },
+    "limitations": [
+      "Model hashes must be supplied by the checked run, not inferred from dimension.",
+      "Native geometry units are not assumed to be meters; motion settings are experimental.",
+      "A 30-second age is a declared hypothesis, not a measured optimal archive lifetime.",
+      "Historical source times never refresh when references are reused or retired.",
+      "The archive produces claims; registry integration must enforce whole-young-identity eligibility, atomic remapping and lifecycle accounting.",
+      "This configuration has not been evaluated on real recordings."
+    ]
+  },
+  "space": {
+    "model_config_sha256": "6a8a18f8a96f5238d010db901509b099b72444233b39acdf8d7b92e55c25859c",
+    "dimension": 1280,
+    "normalization": "l2"
+  },
+  "variant_meaning": {
+    "disabled": "recovery_on_overlap_off",
+    "enabled": "recovery_on_overlap_on"
+  },
+  "summary": {
+    "rounds": 3600,
+    "observations": 180547,
+    "encoded": 180547,
+    "variants": {
+      "disabled": {
+        "lifecycle": {
+          "observations": 180547,
+          "allocated_id_slots": 168,
+          "ever_emitted_ids": 168,
+          "absorbed_ids": 71,
+          "superseded_ids": 25,
+          "expiration_events": 72,
+          "reactivation_events": 25,
+          "currently_inactive_ids": 47,
+          "retained_ids": 25,
+          "merge_events": 62,
+          "archived_ids": 11,
+          "gallery_vectors": 445,
+          "pending_returns": 1
+        },
+        "admission": {
+          "accepted": 144944,
+          "base_quality_rejected": 35603,
+          "retained_id_rounds_without_gallery": 1702
+        },
+        "return_decisions": {
+          "no_feasible_reference": 1119,
+          "query_quality_rejected": 3858,
+          "pending": 199,
+          "confirmed": 25,
+          "ambiguous_query": 397,
+          "appearance_rejected": 452
+        },
+        "resets": {
+          "query_quality_rejected": 6,
+          "ambiguous_query": 6,
+          "appearance_rejected": 7
+        },
+        "archive_events": {
+          "retired": 61,
+          "skipped_retirements": 11,
+          "expired": 25,
+          "capacity_evicted": 0,
+          "blocked_removed": 0,
+          "skipped:missing_evidence": 11
+        },
+        "peaks": {
+          "gallery_vectors": 565,
+          "archived_ids": 13,
+          "pending_returns": 1
+        }
+      },
+      "enabled": {
+        "lifecycle": {
+          "observations": 180547,
+          "allocated_id_slots": 168,
+          "ever_emitted_ids": 168,
+          "absorbed_ids": 71,
+          "superseded_ids": 29,
+          "expiration_events": 72,
+          "reactivation_events": 29,
+          "currently_inactive_ids": 43,
+          "retained_ids": 25,
+          "merge_events": 62,
+          "archived_ids": 8,
+          "gallery_vectors": 445,
+          "pending_returns": 1
+        },
+        "admission": {
+          "accepted": 135089,
+          "base_quality_rejected": 35603,
+          "overlap_rejected": 9855,
+          "retained_id_rounds_without_gallery": 2070
+        },
+        "return_decisions": {
+          "no_feasible_reference": 1155,
+          "query_quality_rejected": 3833,
+          "pending": 220,
+          "confirmed": 29,
+          "ambiguous_query": 340,
+          "appearance_rejected": 406
+        },
+        "resets": {
+          "query_quality_rejected": 7,
+          "ambiguous_query": 8,
+          "appearance_rejected": 4
+        },
+        "archive_events": {
+          "retired": 58,
+          "skipped_retirements": 14,
+          "expired": 21,
+          "capacity_evicted": 0,
+          "blocked_removed": 0,
+          "skipped:missing_evidence": 14
+        },
+        "peaks": {
+          "gallery_vectors": 560,
+          "archived_ids": 10,
+          "pending_returns": 2
+        }
+      }
+    }
+  },
+  "global_metrics": {
+    "disabled": {
+      "full": {
+        "camera_time_slots": 10794,
+        "gt_observations": 184207,
+        "predicted_observations": 180461,
+        "gt_identities": 25,
+        "predicted_identities": 168,
+        "idtp": 124876,
+        "idfp": 55585,
+        "idfn": 59331,
+        "idp": 0.6919833094131141,
+        "idr": 0.6779112628727464,
+        "idf1": 0.6848750095977711
+      },
+      "first": {
+        "camera_time_slots": 5394,
+        "gt_observations": 97915,
+        "predicted_observations": 96215,
+        "gt_identities": 25,
+        "predicted_identities": 79,
+        "idtp": 81069,
+        "idfp": 15146,
+        "idfn": 16846,
+        "idp": 0.8425817180273346,
+        "idr": 0.8279528162181484,
+        "idf1": 0.8352032143409056
+      },
+      "second": {
+        "camera_time_slots": 5400,
+        "gt_observations": 86292,
+        "predicted_observations": 84246,
+        "gt_identities": 25,
+        "predicted_identities": 116,
+        "idtp": 66040,
+        "idfp": 18206,
+        "idfn": 20252,
+        "idp": 0.7838947843221044,
+        "idr": 0.7653084874611783,
+        "idf1": 0.7744901429593405
+      }
+    },
+    "enabled": {
+      "full": {
+        "camera_time_slots": 10794,
+        "gt_observations": 184207,
+        "predicted_observations": 180461,
+        "gt_identities": 25,
+        "predicted_identities": 168,
+        "idtp": 124840,
+        "idfp": 55621,
+        "idfn": 59367,
+        "idp": 0.6917838203268296,
+        "idr": 0.677715830560185,
+        "idf1": 0.6846775697346628
+      },
+      "first": {
+        "camera_time_slots": 5394,
+        "gt_observations": 97915,
+        "predicted_observations": 96215,
+        "gt_identities": 25,
+        "predicted_identities": 79,
+        "idtp": 81069,
+        "idfp": 15146,
+        "idfn": 16846,
+        "idp": 0.8425817180273346,
+        "idr": 0.8279528162181484,
+        "idf1": 0.8352032143409056
+      },
+      "second": {
+        "camera_time_slots": 5400,
+        "gt_observations": 86292,
+        "predicted_observations": 84246,
+        "gt_identities": 25,
+        "predicted_identities": 116,
+        "idtp": 66419,
+        "idfp": 17827,
+        "idfn": 19873,
+        "idp": 0.7883935142321297,
+        "idr": 0.7697005516154453,
+        "idf1": 0.7789349001395584
+      }
+    }
+  },
+  "windows": {
+    "full": [
+      2,
+      3599
+    ],
+    "first": [
+      2,
+      1799
+    ],
+    "second": [
+      1800,
+      3599
+    ]
+  },
+  "accepted_merge_diagnostics": {
+    "disabled": {
+      "all_visible_members_same_gt": 56,
+      "unresolved": 4,
+      "different_known_gt": 2
+    },
+    "enabled": {
+      "all_visible_members_same_gt": 56,
+      "unresolved": 4,
+      "different_known_gt": 2
+    }
+  },
+  "return_gt_diagnostics": {
+    "disabled": {
+      "unresolved": 12,
+      "same_last_visible_gt": 12,
+      "different_last_visible_gt": 1
+    },
+    "enabled": {
+      "unresolved": 14,
+      "same_last_visible_gt": 12,
+      "different_last_visible_gt": 3
+    }
+  },
+  "checks": {
+    "recovered_control_records_exact": true,
+    "control_metrics_lifecycle_exact": true,
+    "fixed_local_observations": true,
+    "full_window_motmetrics_verified": true,
+    "predictions_frozen_before_gt": true,
+    "inputs_unchanged": true
+  },
+  "artifacts": {
+    "global_tracks.jsonl.gz": {
+      "path": "global_tracks.jsonl.gz",
+      "sha256": "559cd477f4bfca541c8438f823643387e8cecc2dc51850e0720634d698c7a1ad"
+    },
+    "prediction_freeze.json": {
+      "path": "prediction_freeze.json",
+      "sha256": "223fcec771c007c6d45637b4fbf8e06c3d9192bf0613177f88577449700afbea"
+    },
+    "identity_matching.json": {
+      "path": "identity_matching.json",
+      "sha256": "cc855d7a4a1199de0ac3e611906c4561e9cfc760773c8181740e2e0e10042b39"
+    },
+    "reactivation_diagnostics.json": {
+      "path": "reactivation_diagnostics.json",
+      "sha256": "ae80b174750e414774e0db6bcc1d518b83ecc9a2e79bf19748251c132021903c"
+    }
+  },
+  "limits": [
+    "One development hypothesis; both scenes have already been inspected.",
+    "Overlap is not an occlusion detector: static occluders and missing person boxes are not covered.",
+    "Duplicates and close but distinct people can reject useful samples.",
+    "Only gallery updates are gated; current return queries and association descriptors are unchanged.",
+    "Older evidence keeps its true age; past predictions are not relabeled.",
+    "Endpoint GT labels do not establish whole-gallery identity purity."
+  ]
+}

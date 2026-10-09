@@ -1,0 +1,764 @@
+{
+  "completed": true,
+  "protocol": "paired_reid_snapshot_v1",
+  "run_id": "20261008T134442155626Z",
+  "inputs": {
+    "osnet_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_embeddings/20261006T194219632494Z/manifest.json",
+      "sha256": "da15f8ca3c20bb3712aa1f6bf3c06f985facdbfabfc472106199b0b3209e1f18"
+    },
+    "osnet_evaluation": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_evaluation/20261006T194834726351Z/report.json",
+      "sha256": "e098287a5dbef64214fa8c55d51938e258780916018a8af5d6db68f85461dfe3"
+    },
+    "clipreid_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/models/clipreid_vit_b16_msmt17.json",
+      "sha256": "6a8a18f8a96f5238d010db901509b099b72444233b39acdf8d7b92e55c25859c"
+    },
+    "model_check": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/clipreid_model_checks/20261008T133550336467Z/report.json",
+      "sha256": "43aa1a948cf05079ea02ff60ce5db46deaed8367b46d945d9db0f5d857b1ea90"
+    },
+    "gate_code:scripts/check_clipreid_model.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_clipreid_model.py",
+      "sha256": "aff5cfa9de8f7018e2f99b6350ad5edc12a9c25871e3e4167f2af40f8b9359cb"
+    },
+    "gate_code:src/mtmc/reid/clipreid_model.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/clipreid_model.py",
+      "sha256": "8c71a3e2d434113cad5756e88af843ff8c0b6a828b94226b0f7fefb0f4005abb"
+    },
+    "code:scripts/compare_clipreid_snapshot.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/compare_clipreid_snapshot.py",
+      "sha256": "cd81cc4bcbeb533275efa49c38bd438743c9b5252d375a0292be10b038f49fab"
+    },
+    "code:scripts/evaluate_reid_snapshot.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/evaluate_reid_snapshot.py",
+      "sha256": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd"
+    },
+    "code:scripts/preview_osnet_embeddings.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/preview_osnet_embeddings.py",
+      "sha256": "968bcd7ac1d654d7748074e61e9c1d92492ae47e3c0751e10d90718146599fac"
+    },
+    "osnet_embeddings": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_embeddings/20261006T194219632494Z/embeddings.npy",
+      "sha256": "b1b873087e08b67901cb80e4f0c921df3b040ef23e4b29c2bdb173d8a0546766"
+    },
+    "crop_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/manifest.json",
+      "sha256": "493b3cbccbcd846e101fbc567d38ea9ae5909e0055cc33a00ef62f60acba5a13"
+    },
+    "crop:0": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000001.png",
+      "sha256": "30e20cc2a0ecb9dd4e229dd0b09e99442a1ffe4e27e16106ea19dfc4df96633f"
+    },
+    "crop:1": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000003.png",
+      "sha256": "80427f31a0a088410fe628d3e0f31f538a9b509e05536abd6db22ce8d6718969"
+    },
+    "crop:2": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000004.png",
+      "sha256": "42d5f5f385e0f3a5dbeebb03837f37bed706f9af8cc58590d19640066ab94501"
+    },
+    "crop:3": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000005.png",
+      "sha256": "b011770c8a861faab35f552c1c2e5d8a8b862ed7ebd973edab13d0ea7e7695a8"
+    },
+    "crop:4": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000006.png",
+      "sha256": "ada40b7e61ba35b2c33e736aaaa4afb6e2e0c64dc97bfb1b43ca1d8bb3e6c398"
+    },
+    "crop:5": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000007.png",
+      "sha256": "f132252e8b994aa2420287e8ee397939cfd2f70570ac32c3dd1bad2a1b8beaef"
+    },
+    "crop:6": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000008.png",
+      "sha256": "d1beb5d3efe7dae8c5840dfb328c7d5efc88d1473a99dfb64f7e90cd499821e0"
+    },
+    "crop:7": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000009.png",
+      "sha256": "2b9b688dac6e4297820262a9b150a611dfafc0245b69b73ffc88bd802e8458c0"
+    },
+    "crop:8": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000010.png",
+      "sha256": "f20f431eeb12c089efd70dbabc9eb5e3a9424fed3b5543ebd36151730c52c4a3"
+    },
+    "crop:9": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000011.png",
+      "sha256": "56c7dc329006876cdb71800834b55615ebb5b53cbc4de464cc8fbe71939d2431"
+    },
+    "crop:10": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000012.png",
+      "sha256": "618d4e54417420a980fa98f4fe08da3508824f28355f323ddd4d98ec9fc4b530"
+    },
+    "crop:11": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000013.png",
+      "sha256": "4d38745280d823289ecdce88bc63d00f28af2f62e9f91eef2d836b53771c0c69"
+    },
+    "crop:12": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000014.png",
+      "sha256": "b0defacf7e82ed7306c1f9bcd6198981ad56bd2d51b3dc47accfee262795731c"
+    },
+    "crop:13": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000015.png",
+      "sha256": "78c27dd400c3b57530dc751a427459142e3bf786ca40d31821a6b46749183b2b"
+    },
+    "crop:14": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000016.png",
+      "sha256": "5a8c2f5be8f799f7647b28e519f84b78872f753bcdce1032f6b1b7a7a61cc649"
+    },
+    "crop:15": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0004/frame_000150_local_000017.png",
+      "sha256": "003c58bdeda1e0366febe8d13d676483cd47643db2dff6214a5c1d31103500b9"
+    },
+    "crop:16": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000001.png",
+      "sha256": "def12781a9e7c53433ded1133328e68b08cdb1c1fcca2970d8038c4235e75390"
+    },
+    "crop:17": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000002.png",
+      "sha256": "d8056d710a9ed10831b4b9ae25e3b4e1bcef9dab1e853fae745449d4f835c998"
+    },
+    "crop:18": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000003.png",
+      "sha256": "0c5a99708e7bc2ab30bf6ef94d38a6604f37dc99fe5d1ff8ce7a5b0158aa87e6"
+    },
+    "crop:19": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000004.png",
+      "sha256": "982c07466c40253f34a01bf7ae8cd7fe03c274d954089b3d6ea9e6147d7307c2"
+    },
+    "crop:20": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000005.png",
+      "sha256": "9fad18ee8346ef30ac87a435bc8236527bc823349ff9027ad7ff35d03c3dbf51"
+    },
+    "crop:21": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000006.png",
+      "sha256": "cd71d62cacc8fc95af753770f457586bc9da7054b2f6d8ec91c227847798f2cf"
+    },
+    "crop:22": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000007.png",
+      "sha256": "f5feafa8ac205df292a4480c5f763dc37037912cceb49cd9f0e179da4ed0cc81"
+    },
+    "crop:23": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000008.png",
+      "sha256": "86cf1023380a88641c300c1dab19596e9e334307401131752e4a7764e4161804"
+    },
+    "crop:24": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000009.png",
+      "sha256": "e6fe3d92ff1a2f1570724aa73d62452b6f0c94e21cc173792cfcdb0bf021fcb0"
+    },
+    "crop:25": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000010.png",
+      "sha256": "8bd34d165f83f19cb8dc39a90e02348b51496b7d8683da531cea9fc6ae0a32c6"
+    },
+    "crop:26": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000011.png",
+      "sha256": "afeb2fa19007360c93d3b632aff8767d507818aae37c9faebb52b993f2b191f4"
+    },
+    "crop:27": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000012.png",
+      "sha256": "58fd3da080c2f6bba02f58177a51926a45e35d644e527332f60a322f42008323"
+    },
+    "crop:28": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000013.png",
+      "sha256": "3d22d331d8b9a8c0c29e67ad56b3fc56a14c6d8952c22208dfaaab668a9963ce"
+    },
+    "crop:29": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000015.png",
+      "sha256": "c756abadaaeedb19164bbb47c5a56276ab7135f1f466a9f32cd5033fec7c3478"
+    },
+    "crop:30": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000016.png",
+      "sha256": "47ca4cc610f554f0fdfde286891f7b8be060cc7ba28d6306c42985cd5e10b906"
+    },
+    "crop:31": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000018.png",
+      "sha256": "a93ac6b9534075fdc51f0a3a8e8581524600ad50f6aa7275f7d3910fbc5319b0"
+    },
+    "crop:32": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000019.png",
+      "sha256": "ae3f1546790f40d9d80204491d933726bf4b97daa4d26db48f7a677a949f456e"
+    },
+    "crop:33": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000020.png",
+      "sha256": "b120fe2b5921b565af035aaa99f6857c35c6061009201f68d95bbe446871391d"
+    },
+    "crop:34": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000021.png",
+      "sha256": "fd95bbf61f16fcd789db63812309a009ecb3eded68a9af70467c191111afb134"
+    },
+    "crop:35": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000022.png",
+      "sha256": "0e986351013d73aef14b151f349073949ba0b11a2b6c6878e946733b8c7ea396"
+    },
+    "crop:36": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000023.png",
+      "sha256": "6bcb8b71d9e13f16e8811f86e79b2ae5aa76fa7227e09fcdc4a65629bab4d3cd"
+    },
+    "crop:37": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0005/frame_000150_local_000024.png",
+      "sha256": "6e5910741fdc3ed160cf2230e15f330c365dcd68238f6166ac65addb78db9a6e"
+    },
+    "crop:38": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000001.png",
+      "sha256": "4fc1b506ed297015461d63490fc6467f43442a12de33f623522429d1ff108e86"
+    },
+    "crop:39": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000002.png",
+      "sha256": "3344331f1e696e41773ed2e2754b43c6c962d56122b7811a031aad5b0b3c5c27"
+    },
+    "crop:40": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000003.png",
+      "sha256": "a11c324618e5e9311d833b0e377267f30f8f417dd6d597c9d15e655f947cde5a"
+    },
+    "crop:41": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000005.png",
+      "sha256": "0e33d6c2755b2bad75a5d2e08cd970a33f3669213220d8c9901b2a1fc1ed69e8"
+    },
+    "crop:42": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000006.png",
+      "sha256": "5d84c411a4b1c78cccf04af00192ecbed3977b35d0f6157d5136f8c27fb3afef"
+    },
+    "crop:43": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000007.png",
+      "sha256": "1d9e04cf10b17ccc72656d242504617796e54c8220322e37f376fd216da9da49"
+    },
+    "crop:44": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000008.png",
+      "sha256": "9f9e3f916a43f07ca97e654bb1885930220ed8c9f16953b9d9aed155e1b814b6"
+    },
+    "crop:45": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000009.png",
+      "sha256": "730eb0da04904097b995d60aa5242f4e63ed9ed1560c6cd69fb15bf86c5cfd75"
+    },
+    "crop:46": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000010.png",
+      "sha256": "49b5db59b54af2eacc37dc5117b9c57e6b27fee6fd413d9ec60d66887fe7f162"
+    },
+    "crop:47": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000011.png",
+      "sha256": "a54874b9a541eedc483910349f9aeff31ee8e6a1d25688602217116a8c3b158d"
+    },
+    "crop:48": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000012.png",
+      "sha256": "15a7654cf474257457a1a47ef5dc91ec18eb2edbc8bb0c25b05ef634e7a0b7eb"
+    },
+    "crop:49": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000013.png",
+      "sha256": "ea30456a8cccc23ce0deb4f710c71e7559c1863846b579ce1984275e266ee27d"
+    },
+    "crop:50": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000014.png",
+      "sha256": "3be5b35e024f44fe81781a8b6cd065d073955d584388f482493b23ff8a80b775"
+    },
+    "crop:51": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000015.png",
+      "sha256": "f10bd50945978e919104a66586d35f306a3d65db792591e699199a36104869e5"
+    },
+    "crop:52": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000016.png",
+      "sha256": "3f19d8112f93234ab71d666be018270f3553dfe2c6c17377f97d39c6fee08a80"
+    },
+    "crop:53": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000017.png",
+      "sha256": "323af419c6e072d804ecb5db1470ea94849d7656635cdba658cdff6464172587"
+    },
+    "crop:54": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000018.png",
+      "sha256": "6a3b49fcdaca570e403645ffbaa93863ffbf26ab78c0c07fe7d214ae0a54635d"
+    },
+    "crop:55": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000019.png",
+      "sha256": "b1bef9b6e4fa4ebe0350d76eec72868ec1ce6ffce77a5d328d0d37ca3829a8b5"
+    },
+    "crop:56": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/reid_crops/20261006T191941008562Z/camera_0008/frame_000150_local_000020.png",
+      "sha256": "86b956ecdb0422a13539abc7fafea21aa24d6d304b0ad52527f651fb6415f9c0"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/train/scene_001/ground_truth.txt",
+      "sha256": "64b8a675408fb7d3bb7e8751d224e0e51fad71a0ac3a57fe58da1efedf0fceac"
+    }
+  },
+  "frame_index": 150,
+  "cameras": [
+    4,
+    5,
+    8
+  ],
+  "crop_count": 57,
+  "batch_size": 16,
+  "device": "cuda:0",
+  "feature_dimensions": {
+    "osnet": 512,
+    "clipreid": 1280
+  },
+  "results": {
+    "osnet": {
+      "directions": [
+        {
+          "query_camera": 4,
+          "gallery_camera": 5,
+          "queries": 16,
+          "evaluated_queries": 15,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 1,
+          "rank1_hits": 14,
+          "rank1": 0.9333333333333333,
+          "rank3_hits": 14,
+          "rank3": 0.9333333333333333,
+          "mAP_single_positive": 0.9393939393939394
+        },
+        {
+          "query_camera": 4,
+          "gallery_camera": 8,
+          "queries": 16,
+          "evaluated_queries": 16,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 0,
+          "rank1_hits": 14,
+          "rank1": 0.875,
+          "rank3_hits": 16,
+          "rank3": 1.0,
+          "mAP_single_positive": 0.9375
+        },
+        {
+          "query_camera": 5,
+          "gallery_camera": 4,
+          "queries": 22,
+          "evaluated_queries": 15,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 7,
+          "rank1_hits": 14,
+          "rank1": 0.9333333333333333,
+          "rank3_hits": 14,
+          "rank3": 0.9333333333333333,
+          "mAP_single_positive": 0.9388888888888888
+        },
+        {
+          "query_camera": 5,
+          "gallery_camera": 8,
+          "queries": 22,
+          "evaluated_queries": 17,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 5,
+          "rank1_hits": 16,
+          "rank1": 0.9411764705882353,
+          "rank3_hits": 16,
+          "rank3": 0.9411764705882353,
+          "mAP_single_positive": 0.946078431372549
+        },
+        {
+          "query_camera": 8,
+          "gallery_camera": 4,
+          "queries": 19,
+          "evaluated_queries": 16,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 3,
+          "rank1_hits": 14,
+          "rank1": 0.875,
+          "rank3_hits": 16,
+          "rank3": 1.0,
+          "mAP_single_positive": 0.9270833333333333
+        },
+        {
+          "query_camera": 8,
+          "gallery_camera": 5,
+          "queries": 19,
+          "evaluated_queries": 17,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 2,
+          "rank1_hits": 16,
+          "rank1": 0.9411764705882353,
+          "rank3_hits": 16,
+          "rank3": 0.9411764705882353,
+          "mAP_single_positive": 0.9453781512605041
+        }
+      ],
+      "pooled": {
+        "queries": 114,
+        "evaluated_queries": 96,
+        "unmatched_queries": 0,
+        "no_positive_in_gallery": 18,
+        "rank1_hits": 88,
+        "rank1": 0.9166666666666666,
+        "rank3_hits": 92,
+        "rank3": 0.9583333333333334,
+        "mAP_single_positive": 0.9391910173160173
+      },
+      "pair_similarities": {
+        "same_gt": {
+          "count": 48,
+          "min": 0.3581625819206238,
+          "p05": 0.5628248661756515,
+          "median": 0.7995809316635132,
+          "p95": 0.9158483684062958,
+          "max": 0.9419722557067871
+        },
+        "different_gt": {
+          "count": 1026,
+          "min": 0.2161574363708496,
+          "p05": 0.2798202708363533,
+          "median": 0.40604396164417267,
+          "p95": 0.5966253727674484,
+          "max": 0.7758693695068359
+        }
+      }
+    },
+    "clipreid": {
+      "directions": [
+        {
+          "query_camera": 4,
+          "gallery_camera": 5,
+          "queries": 16,
+          "evaluated_queries": 15,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 1,
+          "rank1_hits": 14,
+          "rank1": 0.9333333333333333,
+          "rank3_hits": 15,
+          "rank3": 1.0,
+          "mAP_single_positive": 0.9666666666666667
+        },
+        {
+          "query_camera": 4,
+          "gallery_camera": 8,
+          "queries": 16,
+          "evaluated_queries": 16,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 0,
+          "rank1_hits": 16,
+          "rank1": 1.0,
+          "rank3_hits": 16,
+          "rank3": 1.0,
+          "mAP_single_positive": 1.0
+        },
+        {
+          "query_camera": 5,
+          "gallery_camera": 4,
+          "queries": 22,
+          "evaluated_queries": 15,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 7,
+          "rank1_hits": 14,
+          "rank1": 0.9333333333333333,
+          "rank3_hits": 15,
+          "rank3": 1.0,
+          "mAP_single_positive": 0.9666666666666667
+        },
+        {
+          "query_camera": 5,
+          "gallery_camera": 8,
+          "queries": 22,
+          "evaluated_queries": 17,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 5,
+          "rank1_hits": 17,
+          "rank1": 1.0,
+          "rank3_hits": 17,
+          "rank3": 1.0,
+          "mAP_single_positive": 1.0
+        },
+        {
+          "query_camera": 8,
+          "gallery_camera": 4,
+          "queries": 19,
+          "evaluated_queries": 16,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 3,
+          "rank1_hits": 15,
+          "rank1": 0.9375,
+          "rank3_hits": 16,
+          "rank3": 1.0,
+          "mAP_single_positive": 0.96875
+        },
+        {
+          "query_camera": 8,
+          "gallery_camera": 5,
+          "queries": 19,
+          "evaluated_queries": 17,
+          "unmatched_queries": 0,
+          "no_positive_in_gallery": 2,
+          "rank1_hits": 17,
+          "rank1": 1.0,
+          "rank3_hits": 17,
+          "rank3": 1.0,
+          "mAP_single_positive": 1.0
+        }
+      ],
+      "pooled": {
+        "queries": 114,
+        "evaluated_queries": 96,
+        "unmatched_queries": 0,
+        "no_positive_in_gallery": 18,
+        "rank1_hits": 93,
+        "rank1": 0.96875,
+        "rank3_hits": 96,
+        "rank3": 1.0,
+        "mAP_single_positive": 0.984375
+      },
+      "pair_similarities": {
+        "same_gt": {
+          "count": 48,
+          "min": 0.8306795954704285,
+          "p05": 0.864786347746849,
+          "median": 0.9421928822994232,
+          "p95": 0.9800203114748001,
+          "max": 0.9813355207443237
+        },
+        "different_gt": {
+          "count": 1026,
+          "min": 0.6530346274375916,
+          "p05": 0.7074458748102188,
+          "median": 0.770748108625412,
+          "p95": 0.8472455143928528,
+          "max": 0.9150950312614441
+        }
+      }
+    }
+  },
+  "rank1_transitions": {
+    "both_correct": 86,
+    "improved": 7,
+    "worsened": 2,
+    "both_wrong": 1
+  },
+  "changed_rankings": [
+    {
+      "query_camera": 4,
+      "gallery_camera": 5,
+      "query_local_id": 15,
+      "query_gt_id": 11,
+      "osnet_rank": 1,
+      "clipreid_rank": 2,
+      "category": "worsened"
+    },
+    {
+      "query_camera": 4,
+      "gallery_camera": 5,
+      "query_local_id": 17,
+      "query_gt_id": 10,
+      "osnet_rank": 11,
+      "clipreid_rank": 1,
+      "category": "improved"
+    },
+    {
+      "query_camera": 4,
+      "gallery_camera": 8,
+      "query_local_id": 1,
+      "query_gt_id": 8,
+      "osnet_rank": 2,
+      "clipreid_rank": 1,
+      "category": "improved"
+    },
+    {
+      "query_camera": 4,
+      "gallery_camera": 8,
+      "query_local_id": 17,
+      "query_gt_id": 10,
+      "osnet_rank": 2,
+      "clipreid_rank": 1,
+      "category": "improved"
+    },
+    {
+      "query_camera": 5,
+      "gallery_camera": 4,
+      "query_local_id": 16,
+      "query_gt_id": 10,
+      "osnet_rank": 12,
+      "clipreid_rank": 2,
+      "category": "both_wrong"
+    },
+    {
+      "query_camera": 5,
+      "gallery_camera": 8,
+      "query_local_id": 24,
+      "query_gt_id": 11,
+      "osnet_rank": 12,
+      "clipreid_rank": 1,
+      "category": "improved"
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 4,
+      "query_local_id": 3,
+      "query_gt_id": 5,
+      "osnet_rank": 2,
+      "clipreid_rank": 1,
+      "category": "improved"
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 4,
+      "query_local_id": 14,
+      "query_gt_id": 10,
+      "osnet_rank": 3,
+      "clipreid_rank": 1,
+      "category": "improved"
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 4,
+      "query_local_id": 18,
+      "query_gt_id": 8,
+      "osnet_rank": 1,
+      "clipreid_rank": 2,
+      "category": "worsened"
+    },
+    {
+      "query_camera": 8,
+      "gallery_camera": 5,
+      "query_local_id": 13,
+      "query_gt_id": 11,
+      "osnet_rank": 14,
+      "clipreid_rank": 1,
+      "category": "improved"
+    }
+  ],
+  "gt_matching": [
+    {
+      "camera": 4,
+      "crops": 16,
+      "gt_visible": 16,
+      "matched_crops": 16,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "camera": 5,
+      "crops": 22,
+      "gt_visible": 22,
+      "matched_crops": 22,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "camera": 8,
+      "crops": 19,
+      "gt_visible": 19,
+      "matched_crops": 19,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    }
+  ],
+  "model": {
+    "checkpoint_tensor_count": 315,
+    "loaded_visual_tensors": 152,
+    "unused_inference_branches": {
+      "classifier": 1,
+      "classifier_proj": 1,
+      "bottleneck": 5,
+      "bottleneck_proj": 5,
+      "prompt_learner": 3,
+      "text_encoder": 148
+    },
+    "visual_parameters": 86140416,
+    "config_sha256": "6a8a18f8a96f5238d010db901509b099b72444233b39acdf8d7b92e55c25859c",
+    "assets": {
+      "visual_source": {
+        "path": "artifacts/models/clipreid/upstream/model/clip/model.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/model/clip/model.py",
+        "bytes": 19154,
+        "sha256": "31990f19a71d646b9d807d95f0a0398ddeebef985b1207e8c4cf8c6b735e59ad"
+      },
+      "inference_reference": {
+        "path": "artifacts/models/clipreid/upstream/model/make_model_clipreid.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/model/make_model_clipreid.py",
+        "bytes": 9999,
+        "sha256": "b854c08c3f4c4c51f778158f6ae13edeb443f70e0e87b6b14840296d5d11b17b"
+      },
+      "validation_transform_reference": {
+        "path": "artifacts/models/clipreid/upstream/datasets/make_dataloader_clipreid.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/datasets/make_dataloader_clipreid.py",
+        "bytes": 4496,
+        "sha256": "1d8a5be7713f64db55f6f495ea8d7644f8445d141fe7447c91e0b100ca83d389"
+      },
+      "configuration_reference": {
+        "path": "artifacts/models/clipreid/upstream/configs/person/vit_clipreid.yml",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/configs/person/vit_clipreid.yml",
+        "bytes": 1696,
+        "sha256": "5bd03d2b750e3ecafe2e8f031be3218abd8e55d8bd591b8339a676a9be1268e2"
+      },
+      "defaults_reference": {
+        "path": "artifacts/models/clipreid/upstream/config/defaults.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/config/defaults.py",
+        "bytes": 7907,
+        "sha256": "642c0cb456f53975c5f91854eb2ca86ee72a65e7e23903358ad43f85ff8ce7c2"
+      },
+      "license": {
+        "path": "artifacts/models/clipreid/upstream/LICENSE",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/LICENSE",
+        "bytes": 1065,
+        "sha256": "418d11035badfb4f4c15f8936dcaf1eb2256339b4f32011555acded8e3f34cf7"
+      },
+      "readme": {
+        "path": "artifacts/models/clipreid/upstream/README.md",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/README.md",
+        "bytes": 9870,
+        "sha256": "ead72b91852b17991fad0a6ec1697280cd6e2182584f07c71b2a4dccda25aac1"
+      },
+      "weights": {
+        "path": "artifacts/models/clipreid/MSMT17_clipreid_ViT-B-16_60.pth",
+        "url": "https://drive.usercontent.google.com/download?id=1BVaZo93kOksYLjFNH3Gf7JxIbPlWSkcO&export=download&confirm=t",
+        "bytes": 511251513,
+        "sha256": "9974ef57c418e8c88e59581f66f3f53fbe02f879311f7438009f84fd150b1c63"
+      },
+      "openai_clip_license": {
+        "path": "artifacts/models/clipreid/upstream/LICENSE.openai_clip",
+        "url": "https://raw.githubusercontent.com/openai/CLIP/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+        "bytes": 1064,
+        "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db"
+      }
+    },
+    "upstream_revision": "eb1898b72c882875f478bebfc6d41644eece0a5d",
+    "strict_visual_load": true
+  },
+  "artifacts": {
+    "clipreid_embeddings.npy": {
+      "path": "clipreid_embeddings.npy",
+      "sha256": "3357eb7755ab3399269979b2df0e2218d5c08fb67c84e904f0afa110efbd7896",
+      "shape": [
+        57,
+        1280
+      ],
+      "dtype": "float32"
+    },
+    "osnet_rankings.csv": {
+      "path": "osnet_rankings.csv",
+      "sha256": "809764de8edbfc5b4b997fbb6ea136bff978efd1174be791060d8e9f3bc1c9c8"
+    },
+    "clipreid_rankings.csv": {
+      "path": "clipreid_rankings.csv",
+      "sha256": "508bd6db8d3333b05a50d8c7b787b8a4fe8ca34bcfc76c75a9de1370b6a6342b"
+    },
+    "observations.json": {
+      "path": "observations.json",
+      "sha256": "6125d87d2d6716c369ef87da65c7b2b8c2466899df55e565e3a3a4f0dd56c2a9"
+    }
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pillow": "12.3.0"
+  },
+  "checks": {
+    "original_osnet_metrics": true,
+    "original_gt_labels": true,
+    "identical_crop_bytes": true,
+    "keyed_row_mapping": true,
+    "common_query_population": true,
+    "inputs_unchanged": true
+  },
+  "limits": [
+    "One synchronized integration frame; not independent validation or a global-ID evaluation.",
+    "One positive per eligible query: AP equals reciprocal positive rank; mAP equals MRR here.",
+    "Unknown gallery observations remain distractors; queries without gallery positives are excluded from rank metrics.",
+    "Directed queries share observations and are not independent statistical samples.",
+    "No threshold selection, runtime replacement, latency benchmark or model superiority claim."
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "experiment": "gallery_only_tracked_overlap_v1",
+  "threshold_search": false,
+  "max_overlap": 0.3,
+  "metric": "max_same_camera_intersection_over_own_clipped_continuous_area",
+  "boundary": "accept_at_equality",
+  "competitors": "all_current_local_track_boxes_including_weak",
+  "scope": "archive_gallery_updates_only",
+  "recovery_enabled_in_both_variants": true
+}

@@ -1,0 +1,4738 @@
+{
+  "completed": true,
+  "protocol": "paired_reid_temporal_grid_v1",
+  "run_id": "20261008T140027299407Z",
+  "scene": "MTMC_Tracking_2024/val/scene_041",
+  "source_run_id": "20261008T111045386342Z",
+  "configuration": {
+    "schema_version": 1,
+    "experiment": "fixed_grid_reid_model_comparison_v1",
+    "frame_start": 2,
+    "frame_stop": 3600,
+    "frame_stride": 30,
+    "fps": 30,
+    "time_gap_frames": 300,
+    "source_variant": "enabled",
+    "batch_size": 16,
+    "crop_admission": "all_positive_area_crops_from_frozen_local_observations",
+    "protocols": [
+      "same_time_cross_camera",
+      "plus_10s_cross_camera",
+      "plus_10s_same_camera"
+    ],
+    "threshold_selection": false,
+    "note": "Scene_001 and scene_041 are development evidence; future-frame galleries are offline retrieval, not causal identity recovery."
+  },
+  "selected_frames": [
+    2,
+    32,
+    62,
+    92,
+    122,
+    152,
+    182,
+    212,
+    242,
+    272,
+    302,
+    332,
+    362,
+    392,
+    422,
+    452,
+    482,
+    512,
+    542,
+    572,
+    602,
+    632,
+    662,
+    692,
+    722,
+    752,
+    782,
+    812,
+    842,
+    872,
+    902,
+    932,
+    962,
+    992,
+    1022,
+    1052,
+    1082,
+    1112,
+    1142,
+    1172,
+    1202,
+    1232,
+    1262,
+    1292,
+    1322,
+    1352,
+    1382,
+    1412,
+    1442,
+    1472,
+    1502,
+    1532,
+    1562,
+    1592,
+    1622,
+    1652,
+    1682,
+    1712,
+    1742,
+    1772,
+    1802,
+    1832,
+    1862,
+    1892,
+    1922,
+    1952,
+    1982,
+    2012,
+    2042,
+    2072,
+    2102,
+    2132,
+    2162,
+    2192,
+    2222,
+    2252,
+    2282,
+    2312,
+    2342,
+    2372,
+    2402,
+    2432,
+    2462,
+    2492,
+    2522,
+    2552,
+    2582,
+    2612,
+    2642,
+    2672,
+    2702,
+    2732,
+    2762,
+    2792,
+    2822,
+    2852,
+    2882,
+    2912,
+    2942,
+    2972,
+    3002,
+    3032,
+    3062,
+    3092,
+    3122,
+    3152,
+    3182,
+    3212,
+    3242,
+    3272,
+    3302,
+    3332,
+    3362,
+    3392,
+    3422,
+    3452,
+    3482,
+    3512,
+    3542,
+    3572
+  ],
+  "summary": {
+    "sampled_frames": 120,
+    "selected_observations": 2019,
+    "paired_crops": 2019,
+    "fully_outside": 0,
+    "source_runtime_observations": 60638,
+    "osnet_reference_parity": {
+      "compared": 2019,
+      "max_absolute_error": 3.5762786865234375e-07,
+      "minimum_cosine": 0.9999998312044744
+    }
+  },
+  "metrics": {
+    "same_time_cross_camera": {
+      "osnet": {
+        "full": {
+          "queries": 4038,
+          "evaluated_queries": 1648,
+          "unmatched_queries": 376,
+          "no_positive_in_gallery": 2014,
+          "rank1_hits": 1506,
+          "rank1": 0.9138349514563107,
+          "rank3_hits": 1616,
+          "rank3": 0.9805825242718447,
+          "mAP_single_positive": 0.9490951032516567
+        },
+        "first_query_minute": {
+          "queries": 1892,
+          "evaluated_queries": 720,
+          "unmatched_queries": 152,
+          "no_positive_in_gallery": 1020,
+          "rank1_hits": 704,
+          "rank1": 0.9777777777777777,
+          "rank3_hits": 718,
+          "rank3": 0.9972222222222222,
+          "mAP_single_positive": 0.987582671957672
+        },
+        "second_query_minute": {
+          "queries": 2146,
+          "evaluated_queries": 928,
+          "unmatched_queries": 224,
+          "no_positive_in_gallery": 994,
+          "rank1_hits": 802,
+          "rank1": 0.8642241379310345,
+          "rank3_hits": 898,
+          "rank3": 0.9676724137931034,
+          "mAP_single_positive": 0.9192340585659551
+        },
+        "directions": {
+          "361->362": {
+            "queries": 540,
+            "evaluated_queries": 77,
+            "unmatched_queries": 18,
+            "no_positive_in_gallery": 445,
+            "rank1_hits": 60,
+            "rank1": 0.7792207792207793,
+            "rank3_hits": 74,
+            "rank3": 0.961038961038961,
+            "mAP_single_positive": 0.8738095238095238
+          },
+          "361->364": {
+            "queries": 540,
+            "evaluated_queries": 463,
+            "unmatched_queries": 18,
+            "no_positive_in_gallery": 59,
+            "rank1_hits": 453,
+            "rank1": 0.978401727861771,
+            "rank3_hits": 459,
+            "rank3": 0.9913606911447084,
+            "mAP_single_positive": 0.985805135589153
+          },
+          "362->361": {
+            "queries": 467,
+            "evaluated_queries": 77,
+            "unmatched_queries": 137,
+            "no_positive_in_gallery": 253,
+            "rank1_hits": 64,
+            "rank1": 0.8311688311688312,
+            "rank3_hits": 74,
+            "rank3": 0.961038961038961,
+            "mAP_single_positive": 0.8982683982683981
+          },
+          "362->364": {
+            "queries": 467,
+            "evaluated_queries": 284,
+            "unmatched_queries": 137,
+            "no_positive_in_gallery": 46,
+            "rank1_hits": 233,
+            "rank1": 0.8204225352112676,
+            "rank3_hits": 271,
+            "rank3": 0.954225352112676,
+            "mAP_single_positive": 0.8909540576794098
+          },
+          "364->361": {
+            "queries": 1012,
+            "evaluated_queries": 463,
+            "unmatched_queries": 33,
+            "no_positive_in_gallery": 516,
+            "rank1_hits": 451,
+            "rank1": 0.9740820734341252,
+            "rank3_hits": 460,
+            "rank3": 0.9935205183585313,
+            "mAP_single_positive": 0.984521238300936
+          },
+          "364->362": {
+            "queries": 1012,
+            "evaluated_queries": 284,
+            "unmatched_queries": 33,
+            "no_positive_in_gallery": 695,
+            "rank1_hits": 245,
+            "rank1": 0.8626760563380281,
+            "rank3_hits": 278,
+            "rank3": 0.9788732394366197,
+            "mAP_single_positive": 0.9238262910798122
+          }
+        },
+        "evaluated_slot_pairs": 720,
+        "pair_similarities": {
+          "same": {
+            "count": 1648,
+            "min": 0.3314230740070343,
+            "p05": 0.5221370458602905,
+            "median": 0.7910494208335876,
+            "p95": 0.9364525079727173,
+            "max": 0.965770959854126
+          },
+          "different": {
+            "count": 16206,
+            "min": 0.1515188366174698,
+            "p05": 0.2551124095916748,
+            "median": 0.40345123410224915,
+            "p95": 0.5955883264541626,
+            "max": 0.8188586831092834
+          }
+        }
+      },
+      "clipreid": {
+        "full": {
+          "queries": 4038,
+          "evaluated_queries": 1648,
+          "unmatched_queries": 376,
+          "no_positive_in_gallery": 2014,
+          "rank1_hits": 1574,
+          "rank1": 0.9550970873786407,
+          "rank3_hits": 1632,
+          "rank3": 0.9902912621359223,
+          "mAP_single_positive": 0.9736852750809061
+        },
+        "first_query_minute": {
+          "queries": 1892,
+          "evaluated_queries": 720,
+          "unmatched_queries": 152,
+          "no_positive_in_gallery": 1020,
+          "rank1_hits": 708,
+          "rank1": 0.9833333333333333,
+          "rank3_hits": 720,
+          "rank3": 1.0,
+          "mAP_single_positive": 0.9909722222222223
+        },
+        "second_query_minute": {
+          "queries": 2146,
+          "evaluated_queries": 928,
+          "unmatched_queries": 224,
+          "no_positive_in_gallery": 994,
+          "rank1_hits": 866,
+          "rank1": 0.9331896551724138,
+          "rank3_hits": 912,
+          "rank3": 0.9827586206896551,
+          "mAP_single_positive": 0.9602729885057472
+        },
+        "directions": {
+          "361->362": {
+            "queries": 540,
+            "evaluated_queries": 77,
+            "unmatched_queries": 18,
+            "no_positive_in_gallery": 445,
+            "rank1_hits": 71,
+            "rank1": 0.922077922077922,
+            "rank3_hits": 76,
+            "rank3": 0.987012987012987,
+            "mAP_single_positive": 0.9545454545454546
+          },
+          "361->364": {
+            "queries": 540,
+            "evaluated_queries": 463,
+            "unmatched_queries": 18,
+            "no_positive_in_gallery": 59,
+            "rank1_hits": 455,
+            "rank1": 0.9827213822894169,
+            "rank3_hits": 460,
+            "rank3": 0.9935205183585313,
+            "mAP_single_positive": 0.9892008639308856
+          },
+          "362->361": {
+            "queries": 467,
+            "evaluated_queries": 77,
+            "unmatched_queries": 137,
+            "no_positive_in_gallery": 253,
+            "rank1_hits": 65,
+            "rank1": 0.8441558441558441,
+            "rank3_hits": 75,
+            "rank3": 0.974025974025974,
+            "mAP_single_positive": 0.9134199134199134
+          },
+          "362->364": {
+            "queries": 467,
+            "evaluated_queries": 284,
+            "unmatched_queries": 137,
+            "no_positive_in_gallery": 46,
+            "rank1_hits": 254,
+            "rank1": 0.8943661971830986,
+            "rank3_hits": 279,
+            "rank3": 0.9823943661971831,
+            "mAP_single_positive": 0.9400821596244132
+          },
+          "364->361": {
+            "queries": 1012,
+            "evaluated_queries": 463,
+            "unmatched_queries": 33,
+            "no_positive_in_gallery": 516,
+            "rank1_hits": 457,
+            "rank1": 0.9870410367170627,
+            "rank3_hits": 462,
+            "rank3": 0.9978401727861771,
+            "mAP_single_positive": 0.9926205903527718
+          },
+          "364->362": {
+            "queries": 1012,
+            "evaluated_queries": 284,
+            "unmatched_queries": 33,
+            "no_positive_in_gallery": 695,
+            "rank1_hits": 272,
+            "rank1": 0.9577464788732394,
+            "rank3_hits": 280,
+            "rank3": 0.9859154929577465,
+            "mAP_single_positive": 0.9726525821596245
+          }
+        },
+        "evaluated_slot_pairs": 720,
+        "pair_similarities": {
+          "same": {
+            "count": 1648,
+            "min": 0.7450069189071655,
+            "p05": 0.8416658848524093,
+            "median": 0.9517628252506256,
+            "p95": 0.983842134475708,
+            "max": 0.9906955361366272
+          },
+          "different": {
+            "count": 16206,
+            "min": 0.6602113842964172,
+            "p05": 0.7174239754676819,
+            "median": 0.7796328067779541,
+            "p95": 0.8537325859069824,
+            "max": 0.9677495956420898
+          }
+        }
+      }
+    },
+    "plus_10s_cross_camera": {
+      "osnet": {
+        "full": {
+          "queries": 3548,
+          "evaluated_queries": 1079,
+          "unmatched_queries": 340,
+          "no_positive_in_gallery": 2129,
+          "rank1_hits": 915,
+          "rank1": 0.8480074142724745,
+          "rank3_hits": 1041,
+          "rank3": 0.9647822057460612,
+          "mAP_single_positive": 0.9079887983502442
+        },
+        "first_query_minute": {
+          "queries": 1892,
+          "evaluated_queries": 525,
+          "unmatched_queries": 152,
+          "no_positive_in_gallery": 1215,
+          "rank1_hits": 459,
+          "rank1": 0.8742857142857143,
+          "rank3_hits": 508,
+          "rank3": 0.9676190476190476,
+          "mAP_single_positive": 0.923718820861678
+        },
+        "second_query_minute": {
+          "queries": 1656,
+          "evaluated_queries": 554,
+          "unmatched_queries": 188,
+          "no_positive_in_gallery": 914,
+          "rank1_hits": 456,
+          "rank1": 0.8231046931407943,
+          "rank3_hits": 533,
+          "rank3": 0.9620938628158845,
+          "mAP_single_positive": 0.8930821885695532
+        },
+        "directions": {
+          "361->362": {
+            "queries": 486,
+            "evaluated_queries": 83,
+            "unmatched_queries": 15,
+            "no_positive_in_gallery": 388,
+            "rank1_hits": 68,
+            "rank1": 0.8192771084337349,
+            "rank3_hits": 81,
+            "rank3": 0.9759036144578314,
+            "mAP_single_positive": 0.8949799196787148
+          },
+          "361->364": {
+            "queries": 486,
+            "evaluated_queries": 319,
+            "unmatched_queries": 15,
+            "no_positive_in_gallery": 152,
+            "rank1_hits": 273,
+            "rank1": 0.8557993730407524,
+            "rank3_hits": 309,
+            "rank3": 0.9686520376175548,
+            "mAP_single_positive": 0.9108102973306733
+          },
+          "362->361": {
+            "queries": 406,
+            "evaluated_queries": 71,
+            "unmatched_queries": 123,
+            "no_positive_in_gallery": 212,
+            "rank1_hits": 55,
+            "rank1": 0.7746478873239436,
+            "rank3_hits": 68,
+            "rank3": 0.9577464788732394,
+            "mAP_single_positive": 0.8650234741784038
+          },
+          "362->364": {
+            "queries": 406,
+            "evaluated_queries": 164,
+            "unmatched_queries": 123,
+            "no_positive_in_gallery": 119,
+            "rank1_hits": 113,
+            "rank1": 0.6890243902439024,
+            "rank3_hits": 146,
+            "rank3": 0.8902439024390244,
+            "mAP_single_positive": 0.8029761904761904
+          },
+          "364->361": {
+            "queries": 882,
+            "evaluated_queries": 291,
+            "unmatched_queries": 32,
+            "no_positive_in_gallery": 559,
+            "rank1_hits": 274,
+            "rank1": 0.9415807560137457,
+            "rank3_hits": 288,
+            "rank3": 0.9896907216494846,
+            "mAP_single_positive": 0.9663230240549828
+          },
+          "364->362": {
+            "queries": 882,
+            "evaluated_queries": 151,
+            "unmatched_queries": 32,
+            "no_positive_in_gallery": 699,
+            "rank1_hits": 132,
+            "rank1": 0.8741721854304636,
+            "rank3_hits": 149,
+            "rank3": 0.9867549668874173,
+            "mAP_single_positive": 0.9310154525386313
+          }
+        },
+        "evaluated_slot_pairs": 660,
+        "pair_similarities": {
+          "same": {
+            "count": 1079,
+            "min": 0.27142393589019775,
+            "p05": 0.44462818503379825,
+            "median": 0.6986134052276611,
+            "p95": 0.8734846115112302,
+            "max": 0.9482947587966919
+          },
+          "different": {
+            "count": 13823,
+            "min": 0.1435144543647766,
+            "p05": 0.2573570281267166,
+            "median": 0.4087127149105072,
+            "p95": 0.6027192413806916,
+            "max": 0.8339085578918457
+          }
+        }
+      },
+      "clipreid": {
+        "full": {
+          "queries": 3548,
+          "evaluated_queries": 1079,
+          "unmatched_queries": 340,
+          "no_positive_in_gallery": 2129,
+          "rank1_hits": 1013,
+          "rank1": 0.9388322520852641,
+          "rank3_hits": 1064,
+          "rank3": 0.9860982391102873,
+          "mAP_single_positive": 0.9634655273672882
+        },
+        "first_query_minute": {
+          "queries": 1892,
+          "evaluated_queries": 525,
+          "unmatched_queries": 152,
+          "no_positive_in_gallery": 1215,
+          "rank1_hits": 503,
+          "rank1": 0.9580952380952381,
+          "rank3_hits": 521,
+          "rank3": 0.9923809523809524,
+          "mAP_single_positive": 0.9757959183673468
+        },
+        "second_query_minute": {
+          "queries": 1656,
+          "evaluated_queries": 554,
+          "unmatched_queries": 188,
+          "no_positive_in_gallery": 914,
+          "rank1_hits": 510,
+          "rank1": 0.9205776173285198,
+          "rank3_hits": 543,
+          "rank3": 0.98014440433213,
+          "mAP_single_positive": 0.951780590047738
+        },
+        "directions": {
+          "361->362": {
+            "queries": 486,
+            "evaluated_queries": 83,
+            "unmatched_queries": 15,
+            "no_positive_in_gallery": 388,
+            "rank1_hits": 78,
+            "rank1": 0.9397590361445783,
+            "rank3_hits": 79,
+            "rank3": 0.9518072289156626,
+            "mAP_single_positive": 0.9546184738955822
+          },
+          "361->364": {
+            "queries": 486,
+            "evaluated_queries": 319,
+            "unmatched_queries": 15,
+            "no_positive_in_gallery": 152,
+            "rank1_hits": 307,
+            "rank1": 0.9623824451410659,
+            "rank3_hits": 317,
+            "rank3": 0.9937304075235109,
+            "mAP_single_positive": 0.9777750984647536
+          },
+          "362->361": {
+            "queries": 406,
+            "evaluated_queries": 71,
+            "unmatched_queries": 123,
+            "no_positive_in_gallery": 212,
+            "rank1_hits": 60,
+            "rank1": 0.8450704225352113,
+            "rank3_hits": 71,
+            "rank3": 1.0,
+            "mAP_single_positive": 0.9154929577464789
+          },
+          "362->364": {
+            "queries": 406,
+            "evaluated_queries": 164,
+            "unmatched_queries": 123,
+            "no_positive_in_gallery": 119,
+            "rank1_hits": 139,
+            "rank1": 0.8475609756097561,
+            "rank3_hits": 157,
+            "rank3": 0.9573170731707317,
+            "mAP_single_positive": 0.9071283391405343
+          },
+          "364->361": {
+            "queries": 882,
+            "evaluated_queries": 291,
+            "unmatched_queries": 32,
+            "no_positive_in_gallery": 559,
+            "rank1_hits": 285,
+            "rank1": 0.979381443298969,
+            "rank3_hits": 290,
+            "rank3": 0.9965635738831615,
+            "mAP_single_positive": 0.9882588774341351
+          },
+          "364->362": {
+            "queries": 882,
+            "evaluated_queries": 151,
+            "unmatched_queries": 32,
+            "no_positive_in_gallery": 699,
+            "rank1_hits": 144,
+            "rank1": 0.9536423841059603,
+            "rank3_hits": 150,
+            "rank3": 0.9933774834437086,
+            "mAP_single_positive": 0.9740618101545253
+          }
+        },
+        "evaluated_slot_pairs": 660,
+        "pair_similarities": {
+          "same": {
+            "count": 1079,
+            "min": 0.7448165416717529,
+            "p05": 0.8190855979919434,
+            "median": 0.9274510145187378,
+            "p95": 0.9704832851886749,
+            "max": 0.9849920868873596
+          },
+          "different": {
+            "count": 13823,
+            "min": 0.6515200138092041,
+            "p05": 0.7164654493331909,
+            "median": 0.7792404294013977,
+            "p95": 0.8599721550941467,
+            "max": 0.9423133134841919
+          }
+        }
+      }
+    },
+    "plus_10s_same_camera": {
+      "osnet": {
+        "full": {
+          "queries": 1774,
+          "evaluated_queries": 776,
+          "unmatched_queries": 170,
+          "no_positive_in_gallery": 828,
+          "rank1_hits": 692,
+          "rank1": 0.8917525773195877,
+          "rank3_hits": 758,
+          "rank3": 0.9768041237113402,
+          "mAP_single_positive": 0.9348705203730976
+        },
+        "first_query_minute": {
+          "queries": 946,
+          "evaluated_queries": 409,
+          "unmatched_queries": 76,
+          "no_positive_in_gallery": 461,
+          "rank1_hits": 375,
+          "rank1": 0.9168704156479217,
+          "rank3_hits": 402,
+          "rank3": 0.9828850855745721,
+          "mAP_single_positive": 0.9503259983700082
+        },
+        "second_query_minute": {
+          "queries": 828,
+          "evaluated_queries": 367,
+          "unmatched_queries": 94,
+          "no_positive_in_gallery": 367,
+          "rank1_hits": 317,
+          "rank1": 0.8637602179836512,
+          "rank3_hits": 356,
+          "rank3": 0.9700272479564033,
+          "mAP_single_positive": 0.917646295575451
+        },
+        "directions": {
+          "361->361": {
+            "queries": 486,
+            "evaluated_queries": 208,
+            "unmatched_queries": 15,
+            "no_positive_in_gallery": 263,
+            "rank1_hits": 194,
+            "rank1": 0.9326923076923077,
+            "rank3_hits": 207,
+            "rank3": 0.9951923076923077,
+            "mAP_single_positive": 0.9643429487179488
+          },
+          "362->362": {
+            "queries": 406,
+            "evaluated_queries": 69,
+            "unmatched_queries": 123,
+            "no_positive_in_gallery": 214,
+            "rank1_hits": 52,
+            "rank1": 0.7536231884057971,
+            "rank3_hits": 64,
+            "rank3": 0.927536231884058,
+            "mAP_single_positive": 0.8486887508626639
+          },
+          "364->364": {
+            "queries": 882,
+            "evaluated_queries": 499,
+            "unmatched_queries": 32,
+            "no_positive_in_gallery": 351,
+            "rank1_hits": 446,
+            "rank1": 0.8937875751503006,
+            "rank3_hits": 487,
+            "rank3": 0.9759519038076152,
+            "mAP_single_positive": 0.934502338009352
+          }
+        },
+        "evaluated_slot_pairs": 330,
+        "pair_similarities": {
+          "same": {
+            "count": 776,
+            "min": 0.28914692997932434,
+            "p05": 0.5026369839906693,
+            "median": 0.743976354598999,
+            "p95": 0.9329860210418701,
+            "max": 0.9788271188735962
+          },
+          "different": {
+            "count": 9334,
+            "min": 0.1484997719526291,
+            "p05": 0.2579595252871513,
+            "median": 0.409694105386734,
+            "p95": 0.6057403743267059,
+            "max": 0.8616290092468262
+          }
+        }
+      },
+      "clipreid": {
+        "full": {
+          "queries": 1774,
+          "evaluated_queries": 776,
+          "unmatched_queries": 170,
+          "no_positive_in_gallery": 828,
+          "rank1_hits": 741,
+          "rank1": 0.9548969072164949,
+          "rank3_hits": 765,
+          "rank3": 0.9858247422680413,
+          "mAP_single_positive": 0.9721649484536082
+        },
+        "first_query_minute": {
+          "queries": 946,
+          "evaluated_queries": 409,
+          "unmatched_queries": 76,
+          "no_positive_in_gallery": 461,
+          "rank1_hits": 398,
+          "rank1": 0.9731051344743277,
+          "rank3_hits": 406,
+          "rank3": 0.9926650366748166,
+          "mAP_single_positive": 0.9843113284433578
+        },
+        "second_query_minute": {
+          "queries": 828,
+          "evaluated_queries": 367,
+          "unmatched_queries": 94,
+          "no_positive_in_gallery": 367,
+          "rank1_hits": 343,
+          "rank1": 0.9346049046321526,
+          "rank3_hits": 359,
+          "rank3": 0.9782016348773842,
+          "mAP_single_positive": 0.9586285195277021
+        },
+        "directions": {
+          "361->361": {
+            "queries": 486,
+            "evaluated_queries": 208,
+            "unmatched_queries": 15,
+            "no_positive_in_gallery": 263,
+            "rank1_hits": 203,
+            "rank1": 0.9759615384615384,
+            "rank3_hits": 208,
+            "rank3": 1.0,
+            "mAP_single_positive": 0.9855769230769231
+          },
+          "362->362": {
+            "queries": 406,
+            "evaluated_queries": 69,
+            "unmatched_queries": 123,
+            "no_positive_in_gallery": 214,
+            "rank1_hits": 59,
+            "rank1": 0.855072463768116,
+            "rank3_hits": 65,
+            "rank3": 0.9420289855072463,
+            "mAP_single_positive": 0.9106280193236714
+          },
+          "364->364": {
+            "queries": 882,
+            "evaluated_queries": 499,
+            "unmatched_queries": 32,
+            "no_positive_in_gallery": 351,
+            "rank1_hits": 479,
+            "rank1": 0.9599198396793587,
+            "rank3_hits": 492,
+            "rank3": 0.9859719438877755,
+            "mAP_single_positive": 0.9750835003340014
+          }
+        },
+        "evaluated_slot_pairs": 330,
+        "pair_similarities": {
+          "same": {
+            "count": 776,
+            "min": 0.7411128878593445,
+            "p05": 0.8548439741134644,
+            "median": 0.9358187317848206,
+            "p95": 0.9821442067623138,
+            "max": 0.9938847422599792
+          },
+          "different": {
+            "count": 9334,
+            "min": 0.6533508896827698,
+            "p05": 0.7190782934427261,
+            "median": 0.7796846926212311,
+            "p95": 0.8613505154848099,
+            "max": 0.9548332691192627
+          }
+        }
+      }
+    }
+  },
+  "rank1_transitions": {
+    "same_time_cross_camera": {
+      "both_correct": 1478,
+      "improved": 96,
+      "worsened": 28,
+      "both_wrong": 46
+    },
+    "plus_10s_cross_camera": {
+      "both_correct": 899,
+      "improved": 114,
+      "worsened": 16,
+      "both_wrong": 50
+    },
+    "plus_10s_same_camera": {
+      "both_correct": 683,
+      "improved": 58,
+      "worsened": 9,
+      "both_wrong": 26
+    }
+  },
+  "gt_matching": [
+    {
+      "frame_index": 2,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 11,
+      "matched_crops": 9,
+      "unmatched_crops": 1,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 32,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 32,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 32,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 12,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 62,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 62,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 62,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 11,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 92,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 92,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 92,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 13,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 122,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 122,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 122,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 12,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 152,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 152,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 152,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 11,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 182,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 7,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 182,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 182,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 12,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 212,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 212,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 212,
+      "camera": 364,
+      "crops": 11,
+      "gt_visible": 12,
+      "matched_crops": 11,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 242,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 242,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 242,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 11,
+      "matched_crops": 8,
+      "unmatched_crops": 1,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 272,
+      "camera": 361,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 272,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 272,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 11,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 302,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 302,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 302,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 11,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 332,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 332,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 332,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 12,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 362,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 362,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 362,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 12,
+      "matched_crops": 7,
+      "unmatched_crops": 1,
+      "unmatched_gt": 5,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 392,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 392,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 392,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 10,
+      "matched_crops": 7,
+      "unmatched_crops": 1,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 422,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 422,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 422,
+      "camera": 364,
+      "crops": 6,
+      "gt_visible": 9,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 452,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 452,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 452,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 10,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 482,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 482,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 482,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 10,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 512,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 512,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 512,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 11,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 542,
+      "camera": 361,
+      "crops": 7,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 542,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 542,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 572,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 572,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 572,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 9,
+      "matched_crops": 6,
+      "unmatched_crops": 2,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 602,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 602,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 602,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 632,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 632,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 632,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 662,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 662,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 662,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 692,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 692,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 692,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 722,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 722,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 722,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 752,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 752,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 752,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 782,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 782,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 782,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 812,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 812,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 812,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 842,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 842,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 842,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 872,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 872,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 1,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 872,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 902,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 902,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 902,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 932,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 932,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 932,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 962,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 962,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 962,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 992,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 992,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 992,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1022,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1022,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1022,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1052,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1052,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1052,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1082,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1082,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1082,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1112,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1112,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1112,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1142,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1142,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 3,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1142,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1172,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1172,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1172,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1202,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1202,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1202,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1232,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1232,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1232,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1262,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1262,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1262,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1292,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1292,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1292,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1322,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1322,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1322,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1352,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1352,
+      "camera": 362,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1352,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 8,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1382,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1382,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1382,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1412,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1412,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1412,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1442,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1442,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1442,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1472,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1472,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1472,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1502,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1502,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1502,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1532,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1532,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1532,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1562,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1562,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1562,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1592,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1592,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1592,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 8,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1622,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1622,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1622,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1652,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1652,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1652,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1682,
+      "camera": 361,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1682,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1682,
+      "camera": 364,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1712,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1712,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1712,
+      "camera": 364,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1742,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 0,
+      "matched_crops": 0,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1742,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1742,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1772,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1772,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1772,
+      "camera": 364,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1802,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1802,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1802,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1832,
+      "camera": 361,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1832,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1832,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1862,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1862,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1862,
+      "camera": 364,
+      "crops": 6,
+      "gt_visible": 7,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1892,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1892,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1892,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1922,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1922,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1922,
+      "camera": 364,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1952,
+      "camera": 361,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1952,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1952,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1982,
+      "camera": 361,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1982,
+      "camera": 362,
+      "crops": 2,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 1982,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2012,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2012,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2012,
+      "camera": 364,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2042,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2042,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2042,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 7,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2072,
+      "camera": 361,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2072,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2072,
+      "camera": 364,
+      "crops": 4,
+      "gt_visible": 6,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2102,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2102,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2102,
+      "camera": 364,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2132,
+      "camera": 361,
+      "crops": 1,
+      "gt_visible": 1,
+      "matched_crops": 1,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2132,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2132,
+      "camera": 364,
+      "crops": 4,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2162,
+      "camera": 361,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2162,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2162,
+      "camera": 364,
+      "crops": 3,
+      "gt_visible": 5,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2192,
+      "camera": 361,
+      "crops": 2,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2192,
+      "camera": 362,
+      "crops": 3,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2192,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2222,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2222,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2222,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 7,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2252,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2252,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2252,
+      "camera": 364,
+      "crops": 5,
+      "gt_visible": 7,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2282,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2282,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2282,
+      "camera": 364,
+      "crops": 6,
+      "gt_visible": 8,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2312,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2312,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 2,
+      "matched_crops": 2,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2312,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 8,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2342,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2342,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2342,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 7,
+      "matched_crops": 6,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2372,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2372,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2372,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 9,
+      "matched_crops": 6,
+      "unmatched_crops": 2,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2402,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2402,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2402,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2432,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2432,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2432,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2462,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2462,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2462,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2492,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2492,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2492,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2522,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2522,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2522,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2552,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2552,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2552,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 8,
+      "matched_crops": 7,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2582,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2582,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2582,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2612,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2612,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2612,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2642,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2642,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2642,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 11,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 3,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2672,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2672,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2672,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 11,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2702,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2702,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2702,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 8,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2732,
+      "camera": 361,
+      "crops": 3,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2732,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2732,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 9,
+      "matched_crops": 7,
+      "unmatched_crops": 1,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2762,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 3,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2762,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2762,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 8,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2792,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2792,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2792,
+      "camera": 364,
+      "crops": 7,
+      "gt_visible": 8,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2822,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2822,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2822,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2852,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2852,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2852,
+      "camera": 364,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 8,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2882,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2882,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2882,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 9,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2912,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2912,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 3,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2912,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 10,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2942,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2942,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2942,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 10,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2972,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2972,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 2972,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 10,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3002,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3002,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3002,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 10,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3032,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3032,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3032,
+      "camera": 364,
+      "crops": 11,
+      "gt_visible": 10,
+      "matched_crops": 10,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3062,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3062,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3062,
+      "camera": 364,
+      "crops": 9,
+      "gt_visible": 10,
+      "matched_crops": 9,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3092,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3092,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3092,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 10,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3122,
+      "camera": 361,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3122,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3122,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 11,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3152,
+      "camera": 361,
+      "crops": 8,
+      "gt_visible": 8,
+      "matched_crops": 7,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3152,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3152,
+      "camera": 364,
+      "crops": 10,
+      "gt_visible": 10,
+      "matched_crops": 10,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3182,
+      "camera": 361,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 7,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3182,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3182,
+      "camera": 364,
+      "crops": 12,
+      "gt_visible": 13,
+      "matched_crops": 12,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3212,
+      "camera": 361,
+      "crops": 7,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3212,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3212,
+      "camera": 364,
+      "crops": 13,
+      "gt_visible": 14,
+      "matched_crops": 13,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3242,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3242,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3242,
+      "camera": 364,
+      "crops": 13,
+      "gt_visible": 12,
+      "matched_crops": 12,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3272,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3272,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3272,
+      "camera": 364,
+      "crops": 13,
+      "gt_visible": 14,
+      "matched_crops": 12,
+      "unmatched_crops": 1,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3302,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3302,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3302,
+      "camera": 364,
+      "crops": 13,
+      "gt_visible": 13,
+      "matched_crops": 13,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3332,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3332,
+      "camera": 362,
+      "crops": 8,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3332,
+      "camera": 364,
+      "crops": 14,
+      "gt_visible": 14,
+      "matched_crops": 14,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3362,
+      "camera": 361,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 4,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3362,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 7,
+      "matched_crops": 5,
+      "unmatched_crops": 2,
+      "unmatched_gt": 2,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3362,
+      "camera": 364,
+      "crops": 14,
+      "gt_visible": 14,
+      "matched_crops": 14,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3392,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3392,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3392,
+      "camera": 364,
+      "crops": 13,
+      "gt_visible": 13,
+      "matched_crops": 13,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3422,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3422,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 6,
+      "matched_crops": 5,
+      "unmatched_crops": 2,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3422,
+      "camera": 364,
+      "crops": 15,
+      "gt_visible": 14,
+      "matched_crops": 14,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3452,
+      "camera": 361,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3452,
+      "camera": 362,
+      "crops": 7,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 2,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3452,
+      "camera": 364,
+      "crops": 14,
+      "gt_visible": 14,
+      "matched_crops": 14,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3482,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3482,
+      "camera": 362,
+      "crops": 5,
+      "gt_visible": 5,
+      "matched_crops": 4,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3482,
+      "camera": 364,
+      "crops": 12,
+      "gt_visible": 13,
+      "matched_crops": 12,
+      "unmatched_crops": 0,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3512,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3512,
+      "camera": 362,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3512,
+      "camera": 364,
+      "crops": 13,
+      "gt_visible": 13,
+      "matched_crops": 13,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3542,
+      "camera": 361,
+      "crops": 6,
+      "gt_visible": 5,
+      "matched_crops": 5,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3542,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3542,
+      "camera": 364,
+      "crops": 11,
+      "gt_visible": 11,
+      "matched_crops": 11,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3572,
+      "camera": 361,
+      "crops": 7,
+      "gt_visible": 6,
+      "matched_crops": 6,
+      "unmatched_crops": 1,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3572,
+      "camera": 362,
+      "crops": 4,
+      "gt_visible": 4,
+      "matched_crops": 3,
+      "unmatched_crops": 1,
+      "unmatched_gt": 1,
+      "excluded_zero_area_gt": 0
+    },
+    {
+      "frame_index": 3572,
+      "camera": 364,
+      "crops": 11,
+      "gt_visible": 11,
+      "matched_crops": 11,
+      "unmatched_crops": 0,
+      "unmatched_gt": 0,
+      "excluded_zero_area_gt": 0
+    }
+  ],
+  "inputs": {
+    "source_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_validation/20261008T111045386342Z/report.json",
+      "sha256": "94e6be0ed4c3fb46d23fc8e91e91f42b33553e06fc3ada7769a5518d3a8070a3"
+    },
+    "scene_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/scenes/scene_041_two_minutes.json",
+      "sha256": "80a7d7ea63e509617c5e17feb8d76f78afc475af2b5c59cb4cb03549abe65259"
+    },
+    "reference_vectors": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/scene_candidates/20261007T212800237556Z/embeddings.npy",
+      "sha256": "9c0a6932c5b3e894b46cd4491f4241adbbf80a4e6995c1ec515c222983d75f5b"
+    },
+    "cache_report": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/scene_candidates/20261007T212800237556Z/report.json",
+      "sha256": "1644504fd9bf92d59faf293046e25a49904b3bfabd3cc5a08f70aefc564cb1ed"
+    },
+    "osnet_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/models/osnet_x1_0_msmt17.json",
+      "sha256": "e046393cff52acc09dabb899586b7921e19f4ff62c4a414b3fab1e5512ec33b6"
+    },
+    "source_tracks": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/appearance_continuity_validation/20261008T111045386342Z/global_tracks.jsonl.gz",
+      "sha256": "0f30d956b0d0535d16585398afcc3255f514c5d502401f31b0b82772e41bbb88"
+    },
+    "experiment_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/reid/model_comparison_temporal.json",
+      "sha256": "6dd0bf05306ff2b11e3daac50adc020747e01a253bd2c8ae634fc1decadfc1a6"
+    },
+    "source_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_source.json",
+      "sha256": "7890b9298bfafbb593888784963631a4f0782b06b2508a0fdb8ad6e79266ada6"
+    },
+    "video_manifest": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/datasets/scene_041_video_manifest.json",
+      "sha256": "cff9f4220e2660d4b1058a4c1b578df51e809a71afc6599794e5720826efa9de"
+    },
+    "calibration": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/calibration_2025_format.json",
+      "sha256": "b6b04547f8d3fb69106393570e8a6d720150c25caea56567652fe3de1ecaeabe"
+    },
+    "video:361": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0361/video.mp4",
+      "sha256": "db8f05d9d23577712c6ae91c27668573a89b17ffce6d58ef9b613d4e63138658"
+    },
+    "video:362": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0362/video.mp4",
+      "sha256": "7af0d571ca4d572159e4df4f2c176448241d87978ecdb40349586a7e329efc7a"
+    },
+    "video:364": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/camera_0364/video.mp4",
+      "sha256": "d41dc37d680d9b1fc9c6467dd77d842a555d55ff469a2c0329faae9b7a06cdcf"
+    },
+    "clipreid_config": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/configs/models/clipreid_vit_b16_msmt17.json",
+      "sha256": "6a8a18f8a96f5238d010db901509b099b72444233b39acdf8d7b92e55c25859c"
+    },
+    "clipreid_check": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/clipreid_model_checks/20261008T133550336467Z/report.json",
+      "sha256": "43aa1a948cf05079ea02ff60ce5db46deaed8367b46d945d9db0f5d857b1ea90"
+    },
+    "gate_code:scripts/check_clipreid_model.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/check_clipreid_model.py",
+      "sha256": "aff5cfa9de8f7018e2f99b6350ad5edc12a9c25871e3e4167f2af40f8b9359cb"
+    },
+    "gate_code:src/mtmc/reid/clipreid_model.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/clipreid_model.py",
+      "sha256": "8c71a3e2d434113cad5756e88af843ff8c0b6a828b94226b0f7fefb0f4005abb"
+    },
+    "osnet_asset:source": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/_vendor/osnet.py",
+      "sha256": "c7c1c29187d6330f859c91da229271531920464c7011aec13842a086b2263cae"
+    },
+    "osnet_asset:license": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/_vendor/LICENSE.osnet",
+      "sha256": "3ac8ce2a83d170cb1c7c84152e0c1faca1f187794303514383960d2441716247"
+    },
+    "osnet_asset:weights": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/osnet/osnet_x1_0_msmt17_combineall.pth",
+      "sha256": "48df972f72887b95cf3b43b3a07c3a7d2398381aea0f9cae64a7ef11d512b727"
+    },
+    "clipreid_asset:visual_source": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/model/clip/model.py",
+      "sha256": "31990f19a71d646b9d807d95f0a0398ddeebef985b1207e8c4cf8c6b735e59ad"
+    },
+    "clipreid_asset:inference_reference": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/model/make_model_clipreid.py",
+      "sha256": "b854c08c3f4c4c51f778158f6ae13edeb443f70e0e87b6b14840296d5d11b17b"
+    },
+    "clipreid_asset:validation_transform_reference": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/datasets/make_dataloader_clipreid.py",
+      "sha256": "1d8a5be7713f64db55f6f495ea8d7644f8445d141fe7447c91e0b100ca83d389"
+    },
+    "clipreid_asset:configuration_reference": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/configs/person/vit_clipreid.yml",
+      "sha256": "5bd03d2b750e3ecafe2e8f031be3218abd8e55d8bd591b8339a676a9be1268e2"
+    },
+    "clipreid_asset:defaults_reference": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/config/defaults.py",
+      "sha256": "642c0cb456f53975c5f91854eb2ca86ee72a65e7e23903358ad43f85ff8ce7c2"
+    },
+    "clipreid_asset:license": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/LICENSE",
+      "sha256": "418d11035badfb4f4c15f8936dcaf1eb2256339b4f32011555acded8e3f34cf7"
+    },
+    "clipreid_asset:readme": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/README.md",
+      "sha256": "ead72b91852b17991fad0a6ec1697280cd6e2182584f07c71b2a4dccda25aac1"
+    },
+    "clipreid_asset:weights": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/MSMT17_clipreid_ViT-B-16_60.pth",
+      "sha256": "9974ef57c418e8c88e59581f66f3f53fbe02f879311f7438009f84fd150b1c63"
+    },
+    "clipreid_asset:openai_clip_license": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/artifacts/models/clipreid/upstream/LICENSE.openai_clip",
+      "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db"
+    },
+    "code:scripts/compare_reid_temporal.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/compare_reid_temporal.py",
+      "sha256": "96dc0e9b7cb3f04414ac723dd10fa1f9d0b51a86c127d43d3a2b0e5d1821c3b0"
+    },
+    "code:scripts/evaluate_reid_snapshot.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/scripts/evaluate_reid_snapshot.py",
+      "sha256": "3b45025c43f277d359096c89326ef16f4b5ebe1be9a78f8d98bd153bad86d6dd"
+    },
+    "code:src/mtmc/reid/osnet.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/osnet.py",
+      "sha256": "8a20f08d566348658c03ed09bb7496bb03e979418e72e58681ffc658995cb5a9"
+    },
+    "code:src/mtmc/reid/crops.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/reid/crops.py",
+      "sha256": "9225a4650e5ca5ac0742de9bc299f8f18cabd64c0ece65de554b614d53cfdc8e"
+    },
+    "code:src/mtmc/data/scene.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/data/scene.py",
+      "sha256": "06ded1523588a9d980954067f46719c0856ff106103c488d64ee9c484b66ad30"
+    },
+    "code:src/mtmc/data/ground_truth.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/data/ground_truth.py",
+      "sha256": "53cd59e4dbf90f189b707f1c401973fa450f1deace4a2c6a3a0b61df30a154d0"
+    },
+    "code:src/mtmc/data/candidates.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/data/candidates.py",
+      "sha256": "6b47fc2e4311246e8d126536b6f72ea82d83484663180bcf4bfd99cc7c876ad1"
+    },
+    "code:src/mtmc/video/reader.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/video/reader.py",
+      "sha256": "1ba403c235db0f823ba00da96574f34dd40ba962550d57db79bde4f57eaa773d"
+    },
+    "code:src/mtmc/video/replay.py": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/src/mtmc/video/replay.py",
+      "sha256": "fce8c7cac68c93d96cebe0d4c049ae5bf909fa29c9d5aaac3de0a2a81c3020cd"
+    },
+    "ground_truth": {
+      "path": "/home/jakjan/projects/multi-camera-person-tracking/data/physicalai_smartspaces/MTMC_Tracking_2024/val/scene_041/ground_truth.txt",
+      "sha256": "4cefe073422690d6aa13cd5f41885fc46006b5d3e0b80d46d6aada5db466b5bb"
+    }
+  },
+  "artifacts": {
+    "osnet_embeddings.npy": {
+      "path": "osnet_embeddings.npy",
+      "sha256": "475e520efaf2c9432707050603c308ca9cf3d25486959e1a9ebf39c515b8967e"
+    },
+    "clipreid_embeddings.npy": {
+      "path": "clipreid_embeddings.npy",
+      "sha256": "de8828f8ad82c28a76e1957f2d2f5a84a15810ab5c6f50156422c7aa0d8644dc"
+    },
+    "observations.json": {
+      "path": "observations.json",
+      "sha256": "4e267e5cdb365c5193539d7b9cbcb0cd9ec39a820a81eafda5aa77f7f96b53dc"
+    },
+    "features_frozen.json": {
+      "path": "features_frozen.json",
+      "sha256": "661fff55cbbc91022acea9a5e0f1d43f9ccafea937025b1d42ff6c7edc18cef8"
+    },
+    "rankings.jsonl.gz": {
+      "path": "rankings.jsonl.gz",
+      "sha256": "d50ad0d45455a04f8caed377c47d884a622865ad2f8acca2990e7420e3c14b1d"
+    },
+    "labeled_observations.json": {
+      "path": "labeled_observations.json",
+      "sha256": "aaf76dc24971b667a6ef1d7b9ee6415fef4cd194de5906528a3e581dc3f48854"
+    }
+  },
+  "clipreid_model": {
+    "checkpoint_tensor_count": 315,
+    "loaded_visual_tensors": 152,
+    "unused_inference_branches": {
+      "classifier": 1,
+      "classifier_proj": 1,
+      "bottleneck": 5,
+      "bottleneck_proj": 5,
+      "prompt_learner": 3,
+      "text_encoder": 148
+    },
+    "visual_parameters": 86140416,
+    "config_sha256": "6a8a18f8a96f5238d010db901509b099b72444233b39acdf8d7b92e55c25859c",
+    "assets": {
+      "visual_source": {
+        "path": "artifacts/models/clipreid/upstream/model/clip/model.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/model/clip/model.py",
+        "bytes": 19154,
+        "sha256": "31990f19a71d646b9d807d95f0a0398ddeebef985b1207e8c4cf8c6b735e59ad"
+      },
+      "inference_reference": {
+        "path": "artifacts/models/clipreid/upstream/model/make_model_clipreid.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/model/make_model_clipreid.py",
+        "bytes": 9999,
+        "sha256": "b854c08c3f4c4c51f778158f6ae13edeb443f70e0e87b6b14840296d5d11b17b"
+      },
+      "validation_transform_reference": {
+        "path": "artifacts/models/clipreid/upstream/datasets/make_dataloader_clipreid.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/datasets/make_dataloader_clipreid.py",
+        "bytes": 4496,
+        "sha256": "1d8a5be7713f64db55f6f495ea8d7644f8445d141fe7447c91e0b100ca83d389"
+      },
+      "configuration_reference": {
+        "path": "artifacts/models/clipreid/upstream/configs/person/vit_clipreid.yml",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/configs/person/vit_clipreid.yml",
+        "bytes": 1696,
+        "sha256": "5bd03d2b750e3ecafe2e8f031be3218abd8e55d8bd591b8339a676a9be1268e2"
+      },
+      "defaults_reference": {
+        "path": "artifacts/models/clipreid/upstream/config/defaults.py",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/config/defaults.py",
+        "bytes": 7907,
+        "sha256": "642c0cb456f53975c5f91854eb2ca86ee72a65e7e23903358ad43f85ff8ce7c2"
+      },
+      "license": {
+        "path": "artifacts/models/clipreid/upstream/LICENSE",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/LICENSE",
+        "bytes": 1065,
+        "sha256": "418d11035badfb4f4c15f8936dcaf1eb2256339b4f32011555acded8e3f34cf7"
+      },
+      "readme": {
+        "path": "artifacts/models/clipreid/upstream/README.md",
+        "url": "https://raw.githubusercontent.com/Syliz517/CLIP-ReID/eb1898b72c882875f478bebfc6d41644eece0a5d/README.md",
+        "bytes": 9870,
+        "sha256": "ead72b91852b17991fad0a6ec1697280cd6e2182584f07c71b2a4dccda25aac1"
+      },
+      "weights": {
+        "path": "artifacts/models/clipreid/MSMT17_clipreid_ViT-B-16_60.pth",
+        "url": "https://drive.usercontent.google.com/download?id=1BVaZo93kOksYLjFNH3Gf7JxIbPlWSkcO&export=download&confirm=t",
+        "bytes": 511251513,
+        "sha256": "9974ef57c418e8c88e59581f66f3f53fbe02f879311f7438009f84fd150b1c63"
+      },
+      "openai_clip_license": {
+        "path": "artifacts/models/clipreid/upstream/LICENSE.openai_clip",
+        "url": "https://raw.githubusercontent.com/openai/CLIP/d05afc436d78f1c48dc0dbf8e5980a9d471f35f6/LICENSE",
+        "bytes": 1064,
+        "sha256": "987e63b32f6c89ff5160e429458a872ff048e6860b590a3912e938f9da8f14db"
+      }
+    },
+    "upstream_revision": "eb1898b72c882875f478bebfc6d41644eece0a5d",
+    "strict_visual_load": true
+  },
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "av": "16.0.1",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "pillow": "12.3.0"
+  },
+  "checks": {
+    "frozen_local_records": true,
+    "osnet_recomputation_parity": true,
+    "same_crop_pixels": true,
+    "paired_query_population": true,
+    "features_frozen_before_GT": true,
+    "inputs_outputs_unchanged": true
+  },
+  "limits": [
+    "Fixed local tracks were produced using OSNet; this is a conditional encoder comparison, not end-to-end tracker replacement.",
+    "Both scenes informed development; no held-out generalization or threshold selection.",
+    "Future-frame galleries evaluate appearance over time, not causal recovery or absence/reappearance.",
+    "Single-positive gallery slots imply mAP=MRR; unknown gallery observations remain distractors.",
+    "Queries without an assigned gallery positive are excluded from rank metrics and counted explicitly.",
+    "Query-window summaries may have gallery frames in the next window; they are not global-ID metrics.",
+    "Samples/directions share people and frames; no independent-sample significance claim.",
+    "No crop filter, temporal feature averaging, identity association or latency benchmark."
+  ]
+}

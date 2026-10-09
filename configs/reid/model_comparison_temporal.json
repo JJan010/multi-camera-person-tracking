@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "experiment": "fixed_grid_reid_model_comparison_v1",
+  "frame_start": 2,
+  "frame_stop": 3600,
+  "frame_stride": 30,
+  "fps": 30,
+  "time_gap_frames": 300,
+  "source_variant": "enabled",
+  "batch_size": 16,
+  "crop_admission": "all_positive_area_crops_from_frozen_local_observations",
+  "protocols": ["same_time_cross_camera", "plus_10s_cross_camera", "plus_10s_same_camera"],
+  "threshold_selection": false,
+  "note": "Scene_001 and scene_041 are development evidence; future-frame galleries are offline retrieval, not causal identity recovery."
+}

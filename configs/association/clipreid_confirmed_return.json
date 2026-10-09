@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "experiment": "clipreid_confirmed_retired_return_v1",
+  "status": "development_hypothesis_not_calibrated",
+  "informed_by": "scene_001_G11_G76_retrospective_probe",
+  "threshold_search": false,
+  "feature_dimension": 1280,
+  "max_live_gallery_identities": 128,
+  "gallery": {
+    "max_per_camera": 8,
+    "max_sample_age_seconds": "30",
+    "min_confidence": 0.5,
+    "border_fraction": 0.01
+  },
+  "archive": {
+    "max_age_seconds": "30",
+    "max_identities": 128,
+    "min_similarity": 0.9,
+    "min_margin": 0.05,
+    "max_speed_native_units_per_second": 1.0,
+    "position_slack_native_units": 2.0
+  },
+  "confirmation": {
+    "max_query_age_seconds": "2",
+    "max_descriptor_age_seconds": "1/10",
+    "min_support_rounds": 3,
+    "min_support_seconds": "1/5",
+    "max_support_gap_seconds": "1/10",
+    "candidate_similarity": 0.8,
+    "max_queries_per_round": 128
+  },
+  "query_admission": {
+    "all_visible_members_required": true,
+    "min_confidence": 0.5,
+    "border_fraction": 0.01,
+    "descriptor_source": "current_accepted_raw_clip_features",
+    "retry_after_rejected_first_observation": true
+  },
+  "limitations": [
+    "Model hashes must be supplied by the checked run, not inferred from dimension.",
+    "Native geometry units are not assumed to be meters; motion settings are experimental.",
+    "A 30-second age is a declared hypothesis, not a measured optimal archive lifetime.",
+    "Historical source times never refresh when references are reused or retired.",
+    "The archive produces claims; registry integration must enforce whole-young-identity eligibility, atomic remapping and lifecycle accounting.",
+    "This configuration has not been evaluated on real recordings."
+  ]
+}
